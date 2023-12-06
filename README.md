@@ -6,7 +6,6 @@ First, extract the zip files and run the Juypter notebook Start_Data_preparation
 
 Once it runs everything and all the normalization files are generated, then run the other Jupyter notebook Perform_spatial_analysis.ipynb
  
-This notebook generates all the figures in the respective directory and the notebook itself. 
-
+By default, the tutorial generates all the figures both in the respective directory and inside the notebook. Please refer to the documentation to know the details of the function's arguments. 
 
 
