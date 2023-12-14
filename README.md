@@ -11,3 +11,6 @@ By default, the tutorial generates all the figures both in the respective direct
 The detailed documentation of NiCo modules and their functions can be seen here. 
 
 https://nico-sc-sp.readthedocs.io/en/latest/
+
+
+> **_NOTE:_**  The note content. If you face any problem during running the tutorial or if you have any question please feel to email me (ankitplusplus[at]gmail.com) or raise an issue on github. 
