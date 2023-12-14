@@ -9,4 +9,5 @@ After running this script and having generated normalised data files, run the Ju
 By default, the tutorial generates all the figures both in the respective directory and inside the notebook. Please refer to the documentation for details on functions and parameters. 
 
 The detailed documentation of NiCo modules and their functions can be seen here. 
+
 https://nico-sc-sp.readthedocs.io/en/latest/
