@@ -13,7 +13,7 @@ By default, the tutorial generates all the figures both in the respective direct
 The detailed documentation of NiCo modules and their functions can be seen here. 
 [Documentation of NiCo](https://nico-sc-sp.readthedocs.io/en/latest/)
 
-# Vizgen data 
+## Vizgen data 
 If you are working with Vizgen data, please process with "process_vizgenData.py" script to convert Vizgen data into gene_by_cell.csv and tissue_positions_list.csv files. 
 
 
