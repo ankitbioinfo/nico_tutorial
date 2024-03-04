@@ -1,5 +1,12 @@
 # NiCo Tutorial
 
+<div align="center">
+
+<img src="Figure1old.png" width="640px" />
+
+</div>
+
+
 We are providing a tutorial on running the NiCo pipeline for the data integration of single-cell RNA sequencing (reference) and single-cell resolution of spatial transcriptomics data (query). This tutorial explains all steps of the NiCo pipeline, i.e., annotation of cell types in the spatial modality by label transfer from the scRNA-seq data, prediction of significant niche interactions, and derivation of cell state covariation within the local niche. 
 
 Please keep all the files (NiCoLRdb.txt and *.ipynb) and folders (inputRef, inputQuery) in the same path to complete the tutorial. 
@@ -18,3 +25,7 @@ If you are working with Vizgen data, please process with "process_vizgenData.py"
 
 
 > **_contact:_** If you face any problem during the tutorial or have any questions, please email me (ankitplusplus at gmail.com) or raise an issue on Git Hub. 
+
+
+
+
