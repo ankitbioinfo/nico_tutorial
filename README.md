@@ -11,19 +11,25 @@
 -   [NiCo](#nico)
     -   [Table of Contents](#table-of-contents)
     -   [Overview](#overview)
-        -   [Background](#background)
+        -   [About Tutorial](#background)
     -   [Getting Started](#getting-started)
         -   [Prerequisites](#prerequisites)
         -   [Installation](#installation)
+        -   [Data preparation](#preparation-NiCo)
         -   [Running NiCo](#running-NiCo)
+    -   [Documentation](#documentation)
     -   [MERSCOPE data](#Vizgen-MERSCOPE-data)
     -   [Citing NiCo](#citing-nico)
-    -   [References](#references)
     -   [Contact](#contact)
 
 ## Overview
 
 We have developed the NiCo (Niche Covariation) package for the integration of single-cell resolution spatial transcriptomics and scRNA-seq data to (1) perform cell type annotations in the spatial modality by label transfer, (2) predict niche cell type interactions within local neighborhoods, and (3) infer cell state covariation and the underlying molecular crosstalk in the niche. NiCo infers factors capturing cell state variability in both modalities and identifies genes correlated to these latent factors for the prediction of ligand-receptor interactions and factor-associated pathways.
+
+## About Tutorial
+We are providing a tutorial on running the NiCo pipeline for the data integration of single-cell RNA sequencing (reference) and single-cell resolution of spatial transcriptomics data (query). This tutorial explains all steps of the NiCo pipeline, i.e., annotation of cell types in the spatial modality by label transfer from the scRNA-seq data, prediction of significant niche interactions, and derivation of cell state covariation within the local niche. 
+
+Please keep all the files (NiCoLRdb.txt and *.ipynb) and folders (inputRef, inputQuery) in the same path to complete the tutorial. 
 
 ### Prerequisites
 
@@ -37,26 +43,27 @@ For detailed instruction please follow the instructions at [nico-sc-sp pip repos
 pip install nico-sc-sp
 ```
 
-We are providing a tutorial on running the NiCo pipeline for the data integration of single-cell RNA sequencing (reference) and single-cell resolution of spatial transcriptomics data (query). This tutorial explains all steps of the NiCo pipeline, i.e., annotation of cell types in the spatial modality by label transfer from the scRNA-seq data, prediction of significant niche interactions, and derivation of cell state covariation within the local niche. 
-
-Please keep all the files (NiCoLRdb.txt and *.ipynb) and folders (inputRef, inputQuery) in the same path to complete the tutorial. 
+### Data preparation
 
 For data preparation, first extract all zip files and run the Juypter notebook Start_Data_preparation_for_niche_analysis.ipynb.
 
+### Running NiCo
 After running this script and having generated normalised data files, run the Jupyter notebook Perform_spatial_analysis.ipynb to perform the core steps of NiCo.
 
 By default, the tutorial generates all the figures both in the respective directory and inside the notebook. Please refer to the documentation for details on functions and parameters. 
 
-The detailed documentation of NiCo modules and their functions can be seen here. 
+## Documentation 
+
+The detailed documentation of NiCo modules and their usage functions can be seen here. 
 [Documentation of NiCo](https://nico-sc-sp.readthedocs.io/en/latest/)
+
+## Vizgen MERSCOPE data 
+If you are working with Vizgen MERSCOPE spatial data, please process with "process_vizgenData.py" script to convert Vizgen data into gene_by_cell.csv and tissue_positions_list.csv files. 
 
 ## Citing NiCo
 
 -   Ankit Agrawal, Stefan Thomann, Dominic Grün. NiCo Identifies Extrinsic Drivers of Cell State Modulation by Niche Covariation Analysis.
-    ***Submitted***, 2023
-
-## Vizgen MERSCOPE data 
-If you are working with Vizgen data, please process with "process_vizgenData.py" script to convert Vizgen data into gene_by_cell.csv and tissue_positions_list.csv files. 
+    ***Submitted***, 2024
 
 ## Contact
 
