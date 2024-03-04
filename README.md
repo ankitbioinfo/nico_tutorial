@@ -6,6 +6,36 @@
 
 </div>
 
+## Table of Contents
+
+-   [NiCo](#nico)
+    -   [Table of Contents](#table-of-contents)
+    -   [Overview](#overview)
+        -   [Background](#background)
+    -   [Getting Started](#getting-started)
+        -   [Prerequisites](#prerequisites)
+        -   [Installation](#installation)
+        -   [Running NiCo](#running-NiCo)
+    -   [MERSCOPE data](#Vizgen-MERSCOPE-data)
+    -   [Citing NiCo](#citing-nico)
+    -   [References](#references)
+    -   [Contact](#contact)
+
+## Overview
+
+We have developed the NiCo (Niche Covariation) package for the integration of single-cell resolution spatial transcriptomics and scRNA-seq data to (1) perform cell type annotations in the spatial modality by label transfer, (2) predict niche cell type interactions within local neighborhoods, and (3) infer cell state covariation and the underlying molecular crosstalk in the niche. NiCo infers factors capturing cell state variability in both modalities and identifies genes correlated to these latent factors for the prediction of ligand-receptor interactions and factor-associated pathways.
+
+### Prerequisites
+
+Please follow the information provided at [nico-sc-sp pip repository](https://pypi.org/project/nico-sc-sp/)
+
+
+### Installation
+For detailed instruction please follow the instructions at [nico-sc-sp pip repository](https://pypi.org/project/nico-sc-sp/)
+
+``` console
+pip install nico-sc-sp
+```
 
 We are providing a tutorial on running the NiCo pipeline for the data integration of single-cell RNA sequencing (reference) and single-cell resolution of spatial transcriptomics data (query). This tutorial explains all steps of the NiCo pipeline, i.e., annotation of cell types in the spatial modality by label transfer from the scRNA-seq data, prediction of significant niche interactions, and derivation of cell state covariation within the local niche. 
 
@@ -20,9 +50,15 @@ By default, the tutorial generates all the figures both in the respective direct
 The detailed documentation of NiCo modules and their functions can be seen here. 
 [Documentation of NiCo](https://nico-sc-sp.readthedocs.io/en/latest/)
 
-## Vizgen data 
+## Citing NiCo
+
+-   Ankit Agrawal, Stefan Thomann, Dominic Grün. NiCo Identifies Extrinsic Drivers of Cell State Modulation by Niche Covariation Analysis.
+    ***Submitted***, 2023
+
+## Vizgen MERSCOPE data 
 If you are working with Vizgen data, please process with "process_vizgenData.py" script to convert Vizgen data into gene_by_cell.csv and tissue_positions_list.csv files. 
 
+## Contact
 
 > **_contact:_** If you face any problem during the tutorial or have any questions, please email me (ankitplusplus at gmail.com) or raise an issue on Git Hub. 
 
