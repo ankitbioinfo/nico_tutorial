@@ -54,8 +54,7 @@ By default, the tutorial generates all the figures both in the respective direct
 
 ## Documentation 
 
-The detailed documentation of NiCo modules and their usage functions can be seen here. 
-[Documentation of NiCo](https://nico-sc-sp.readthedocs.io/en/latest/)
+The detailed [documentation of NiCo](https://nico-sc-sp.readthedocs.io/en/latest/) modules and their usage functions can be seen in the given link. 
 
 ## Vizgen MERSCOPE data 
 If you are working with Vizgen MERSCOPE spatial data, please process with "process_vizgenData.py" script to convert Vizgen data into gene_by_cell.csv and tissue_positions_list.csv files. 
