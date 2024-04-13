@@ -40,8 +40,20 @@ Please follow the information provided at [nico-sc-sp pip repository](https://py
 For detailed instruction please follow the instructions at [nico-sc-sp pip repository](https://pypi.org/project/nico-sc-sp/)
 
 ``` console
+conda create -n nicoUser python=3.11
+conda activate nicoUser
 pip install nico-sc-sp
 ```
+Sometimes, the pygraphviz package cannot be installed via pip, so an alternative method of installation is needed.
+
+``` console
+conda create -y -n nicoUser python=3.11
+conda activate nicoUser
+conda install -c conda-forge pygraphviz
+pip install nico-sc-sp
+pip install jupyterlab
+```
+
 
 ### Data preparation
 
