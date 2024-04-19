@@ -58,9 +58,10 @@ pip install jupyterlab
 ### Data preparation
 
 For data preparation, first extract all zip files and run the Juypter notebook Start_Data_preparation_for_niche_analysis.ipynb.
+The newer version of Start_Data_prep_new.ipynb is available for updated version. 
 
 ### Running NiCo
-After running this script and having generated normalised data files, run the Jupyter notebook Perform_spatial_analysis.ipynb to perform the core steps of NiCo.
+After running this script and having generated normalised data files, run the Jupyter notebook Perform_spatial_analysis.ipynb (Perform_spatial_analysis_new.ipynb for newer version) to perform the core steps of NiCo.
 
 By default, the tutorial generates all the figures both in the respective directory and inside the notebook. Please refer to the documentation for details on functions and parameters. 
 
