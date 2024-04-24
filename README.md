@@ -72,6 +72,10 @@ The detailed [documentation of NiCo](https://nico-sc-sp.readthedocs.io/en/latest
 ## Vizgen MERSCOPE data 
 If you are working with Vizgen MERSCOPE spatial data, please process with "process_vizgenData.py" script to convert Vizgen data into gene_by_cell.csv and tissue_positions_list.csv files. 
 
+## Cellbarcode name 
+If you face any running issue must check cell barcode name should be character not integer number. When pandas dataframe read numeric then it get confused. 
+So plese change your cellbarcode number to string character if it pure numeric. 
+
 ## Citing NiCo
 
 -   Ankit Agrawal, Stefan Thomann, Dominic Grün. NiCo Identifies Extrinsic Drivers of Cell State Modulation by Niche Covariation Analysis.
