@@ -73,8 +73,7 @@ The detailed [documentation of NiCo](https://nico-sc-sp.readthedocs.io/en/latest
 If you are working with Vizgen MERSCOPE spatial data, please process with "process_vizgenData.py" script to convert Vizgen data into gene_by_cell.csv and tissue_positions_list.csv files. 
 
 ## Cellbarcode name 
-If you face any running issue must check cell barcode name should be character not integer number. When pandas dataframe read numeric then it get confused. 
-So plese change your cellbarcode number to string character if it pure numeric. 
+If you encounter any issues while running, please ensure that the cell barcode name is composed of characters rather than integer numbers. When pandas reads numeric values, it will read as int64 instead of object which create datatype confusion for other parts of the code. Therefore, please convert your cell barcode numbers to strings if they are purely numeric.
 
 ## Citing NiCo
 
