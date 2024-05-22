@@ -44,7 +44,8 @@ conda create -n nicoUser python=3.11
 conda activate nicoUser
 pip install nico-sc-sp
 ```
-Sometimes, the pygraphviz package cannot be installed via pip, so an alternative method of installation is needed.
+Sometimes, the pygraphviz package cannot be installed via pip, or during the cell type interaction part it gives error that "neato" not found in path so an alternative conda way of installation is recommended. Please follow the installation of pygraphviz [here](https://pygraphviz.github.io/documentation/stable/install.html)
+
 
 ``` console
 conda create -y -n nicoUser python=3.11
