@@ -54,6 +54,15 @@ conda install -c conda-forge pygraphviz
 pip install nico-sc-sp
 pip install jupyterlab
 ```
+### Warnings 
+If at any step it shows the warning ```findfont: Font family 'Helvetica' not found```
+Then please initialize the matplotlibrc file to different font as 
+
+```
+import matplotlib.pyplot as plt
+plt.rcParams['font.family']='DejaVu Sans'
+```
+
 
 
 ### Data preparation
