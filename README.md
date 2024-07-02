@@ -95,5 +95,6 @@ If you encounter any issues while running, please ensure that the cell barcode n
 > **_contact:_** If you face any problem during the tutorial or have any questions, please email me (ankitplusplus at gmail.com) or raise an issue on Git Hub. 
 
 
-
+## License 
+[MIT License](LICENSE)
 
