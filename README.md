@@ -66,15 +66,21 @@ plt.rcParams['font.sans-serif'] = ['Tahoma', 'DejaVu Sans','Lucida Grande', 'Ver
 
 
 
-### Data preparation
+### Data preparation for high resolution spatial technologies 
 
 For data preparation, first extract all zip files and run the Juypter notebook Start_Data_preparation_for_niche_analysis.ipynb.
 The newer version of Start_Data_prep_new.ipynb is available for updated version. 
 
-### Running NiCo
+### Running NiCo for high resolution spatial technologies 
 After running this script and having generated normalised data files, run the Jupyter notebook Perform_spatial_analysis.ipynb (Perform_spatial_analysis_new.ipynb for newer version) to perform the core steps of NiCo.
 
 By default, the tutorial generates all the figures both in the respective directory and inside the notebook. Please refer to the documentation for details on functions and parameters. 
+
+### Running NiCo for sequencing based spatial technologies 
+To run the NiCo on cerebellum data from Slide-seqV2 technology [data is taken from figure 3 of Cable, D. M. et al. Nature methods 19, 1076–1087 (2022)] 
+The NiCo niche detection and covariation analysis task is shown in following jupyter notebook. 
+nico_analysis_lowres_seq_tech.ipynb
+
 
 ## Documentation 
 
