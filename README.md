@@ -64,13 +64,15 @@ pip install jupyterlab
 
 ### Tuturial 1A: Data preparation for high resolution spatial technologies 
 
-For data preparation, first extract all zip files and run the Juypter notebook Start_Data_preparation_for_niche_analysis.ipynb.
-The newer version of Start_Data_prep_new.ipynb is available for updated version. 
+For data preparation, first extract all zip files and run the Juypter notebook [``Start_Data_prep_new.ipynb``](Start_Data_prep_new.ipynb) for creating the data files for NiCo analysis. 
 
 ### Tutorial 1B: Running NiCo for high resolution spatial technologies 
-After running this script and having generated normalised data files, run the Jupyter notebook Perform_spatial_analysis.ipynb (Perform_spatial_analysis_new.ipynb for newer version) to perform the core steps of NiCo.
+After running the data preparation script and having generated normalised data files, run the Jupyter notebook [``nico_analysis_highres_image_tech.ipynb``](nico_analysis_highres_image_tech.ipynb) to perform the core steps of NiCo.
 
 By default, the tutorial generates all the figures both in the respective directory and inside the notebook. Please refer to the documentation for details on functions and parameters. 
+The source of data is provided in the manuscript. 
+
+If user want to perform NiCo analysis without specifying any cell type for the whole then please look this script. [nico_analysis_highres_image_tech_whole.py](nico_analysis_highres_image_tech_whole.py)
 
 ### Tutorial 2: Running NiCo for sequencing based spatial technologies 
 To run the NiCo on cerebellum data from Slide-seqV2 technology [data is taken from figure 3 of Cable, D. M. et al. Nature methods 19, 1076–1087 (2022)]. <br> 
