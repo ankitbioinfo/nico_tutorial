@@ -78,9 +78,9 @@ By default, the tutorial generates all the figures both in the respective direct
 
 ### Running NiCo for sequencing based spatial technologies 
 To run the NiCo on cerebellum data from Slide-seqV2 technology [data is taken from figure 3 of Cable, D. M. et al. Nature methods 19, 1076–1087 (2022)]. <br> 
-The NiCo niche detection and covariation analysis task is shown in following [jupyter notebook](nico_analysis_lowres_seq_tech.ipynb)
+The NiCo niche detection and covariation analysis task is shown in following [jupyter notebook nico_analysis_lowres_seq_tech](nico_analysis_lowres_seq_tech.ipynb)
 Please download the data from [this link](https://www.dropbox.com/scl/fi/6hxyp2pxpxalw9rfirby6/nico_cerebellum.zip?rlkey=9ye6rsk92uj9648ogjw5ypcum&st=lvc8e366&dl=0)
-and keep the data in following way ``nico_cerebellum/cerebellum.h5ad`` to complete the tutorial.  
+and keep the data in following path ``nico_cerebellum/cerebellum.h5ad`` to complete the tutorial.  
 
 
 ## Documentation 
