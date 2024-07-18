@@ -27,9 +27,11 @@
 We have developed the NiCo (Niche Covariation) package for the integration of single-cell resolution spatial transcriptomics and scRNA-seq data to (1) perform cell type annotations in the spatial modality by label transfer, (2) predict niche cell type interactions within local neighborhoods, and (3) infer cell state covariation and the underlying molecular crosstalk in the niche. NiCo infers factors capturing cell state variability in both modalities and identifies genes correlated to these latent factors for the prediction of ligand-receptor interactions and factor-associated pathways.
 
 ### About Tutorial
-NiCo can run any spatial technologies, but it is mainly designed for single-cell resolution of spatial technologies such as MERFISH, SEQFISH, XENIUM. etc. <br>
-We are providing a **first** tutorial on running the NiCo pipeline for the data integration of single-cell RNA sequencing (reference) and single-cell resolution of spatial transcriptomics data (query). <br>
-This tutorial explains all steps of the NiCo pipeline, i.e., annotation of cell types in the spatial modality by label transfer from the scRNA-seq data, prediction of significant cell type niche interactions, and derivation of cell state covariation within the local niche.  <br>
+NiCo can run any spatial technologies, but it is mainly designed for single-cell resolution of spatial technologies such as MERFISH, SEQFISH, XENIUM. etc. 
+
+We are providing a **first** tutorial on running the NiCo pipeline for the data integration of single-cell RNA sequencing (reference) and single-cell resolution of spatial transcriptomics data (query). 
+This tutorial explains all steps of the NiCo pipeline, i.e., annotation of cell types in the spatial modality by label transfer from the scRNA-seq data, prediction of significant cell type niche interactions, and derivation of cell state covariation within the local niche.  
+
 The **second** NiCo tutorial is designed for low-resoution sequencing-based spatial transcriptomics technologies where integration with single-cell RNA sequencing is not required. 
 
 Please get the tutorial link below and keep all the files (NiCoLRdb.txt and *.ipynb) and folders (inputRef, inputQuery) in the same path to complete the tutorial. 
