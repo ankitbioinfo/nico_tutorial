@@ -77,9 +77,8 @@ After running this script and having generated normalised data files, run the Ju
 By default, the tutorial generates all the figures both in the respective directory and inside the notebook. Please refer to the documentation for details on functions and parameters. 
 
 ### Running NiCo for sequencing based spatial technologies 
-To run the NiCo on cerebellum data from Slide-seqV2 technology [data is taken from figure 3 of Cable, D. M. et al. Nature methods 19, 1076–1087 (2022)] 
-The NiCo niche detection and covariation analysis task is shown in following jupyter notebook. 
-nico_analysis_lowres_seq_tech.ipynb
+To run the NiCo on cerebellum data from Slide-seqV2 technology [data is taken from figure 3 of Cable, D. M. et al. Nature methods 19, 1076–1087 (2022)]. <br> 
+The NiCo niche detection and covariation analysis task is shown in following [jupyter notebook](nico_analysis_lowres_seq_tech.ipynb)
 
 
 ## Documentation 
