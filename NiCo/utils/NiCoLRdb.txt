@@ -1,0 +1,4372 @@
+A2M	LRP1	# Natmi_primary# Natmi_additional
+AANAT	MTNR1A	# Natmi_primary# Natmi_additional
+AANAT	MTNR1B	# Natmi_primary# Natmi_additional
+ACE	BDKRB2	# Natmi_primary# Natmi_additional
+ACKR1	CCL2	# cellphonedb
+ACKR1	CCL5	# cellphonedb
+ACKR1	CXCL1	# cellphonedb
+ACKR1	CXCL8	# cellphonedb
+ACKR2	CCL2	# cellphonedb
+ACKR2	CCL11	# cellphonedb
+ACVR2A	INHBC	# cellphonedb
+ACVR2A	INHBE	# cellphonedb
+ACVR2B	INHBC	# cellphonedb
+ACVR2B	INHBE	# cellphonedb
+ADAM2	ADAM21	# Natmi_additional
+ADAM2	ADAM30	# Natmi_additional
+ADAM2	ITGA6	# Natmi_primary# Natmi_additional
+ADAM2	ITGA9	# Natmi_primary# Natmi_additional
+ADAM2	ITGB1	# Natmi_primary# Natmi_additional
+ADAM2	ITGB7	# Natmi_primary# Natmi_additional
+ADAM7	ITGA4	# Natmi_primary# Natmi_additional
+ADAM7	ITGB7	# Natmi_primary# Natmi_additional
+ADAM8	ITGA9	# Natmi_additional
+ADAM8	ITGB1	# Natmi_additional
+ADAM9	ITGA3	# Natmi_primary# Natmi_additional
+ADAM9	ITGA6	# Natmi_primary# Natmi_additional
+ADAM9	ITGAV	# Natmi_primary# Natmi_additional
+ADAM9	ITGB1	# Natmi_primary# Natmi_additional
+ADAM9	ITGB5	# Natmi_primary# Natmi_additional
+ADAM10	EPHA1	# Natmi_additional
+ADAM10	EPHA2	# Natmi_additional
+ADAM10	EPHA3	# Natmi_primary# Natmi_additional
+ADAM10	EPHA4	# Natmi_additional
+ADAM10	EPHA5	# Natmi_additional
+ADAM10	EPHA6	# Natmi_additional
+ADAM10	EPHA7	# Natmi_additional
+ADAM10	EPHA8	# Natmi_additional
+ADAM10	EPHA10	# Natmi_additional
+ADAM11	ITGA4	# Natmi_primary# Natmi_additional
+ADAM12	ITGA9	# Natmi_primary# Natmi_additional
+ADAM12	ITGB1	# Natmi_primary# Natmi_additional
+ADAM12	SDC4	# Natmi_primary# Natmi_additional
+ADAM15	ITGA5	# Natmi_primary# Natmi_additional
+ADAM15	ITGA9	# Natmi_primary# Natmi_additional
+ADAM15	ITGAV	# Natmi_primary# Natmi_additional
+ADAM15	ITGB1	# Natmi_primary# Natmi_additional
+ADAM15	ITGB3	# Natmi_primary# Natmi_additional
+ADAM17	ITGA5	# Natmi_primary# Natmi_additional
+ADAM17	ITGB1	# Natmi_primary# Natmi_additional
+ADAM17	NOTCH1	# Natmi_primary# Natmi_additional
+ADAM20	ADAM21	# Natmi_additional
+ADAM20	ADAM30	# Natmi_additional
+ADAM23	ADAM22	# Natmi_additional
+ADAM23	CACNG2	# Natmi_additional
+ADAM23	CACNG3	# Natmi_additional
+ADAM23	CACNG4	# Natmi_additional
+ADAM23	CACNG8	# Natmi_additional
+ADAM23	ITGA4	# Natmi_primary# Natmi_additional
+ADAM23	ITGA5	# Natmi_primary# Natmi_additional
+ADAM23	ITGB3	# Natmi_primary# Natmi_additional
+ADAM28	ITGA4	# Natmi_primary# Natmi_additional
+ADAM28	ITGB1	# Natmi_additional
+ADAM29	ITGA4	# Natmi_primary# Natmi_additional
+ADCYAP1	ADCYAP1R1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+ADCYAP1	DPP4	# cellphonedb
+ADCYAP1	SCTR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+ADCYAP1	VIPR1	# Natmi_primary# Natmi_additional# Omnipath
+ADCYAP1	VIPR2	# Natmi_primary# Natmi_additional# Omnipath
+ADGRB1	RTN4RL1	# Natmi_primary# Natmi_additional
+ADGRB1	RTN4RL2	# Natmi_primary# Natmi_additional
+ADGRB1	RTN4R	# Natmi_primary# Natmi_additional
+ADGRE5	CD55	# cellphonedb# Natmi_primary# Natmi_additional
+ADIPOQ	ADIPOR1	# Natmi_primary# Natmi_additional# Omnipath
+ADIPOQ	ADIPOR2	# Natmi_primary# Natmi_additional# Omnipath
+ADM2	CALCRL	# Natmi_primary# Natmi_additional# Omnipath
+ADM2	CALCR	# cellphonedb# Natmi_primary# Natmi_additional
+ADM2	RAMP1	# Natmi_primary# Natmi_additional# Omnipath
+ADM2	RAMP2	# Natmi_primary# Natmi_additional# Omnipath
+ADM2	RAMP3	# Natmi_primary# Natmi_additional# Omnipath
+ADM	CALCRL	# Natmi_primary# Natmi_additional# Omnipath
+ADM	CALCR	# cellphonedb# Natmi_primary# Natmi_additional
+ADM	GPR182	# Natmi_additional# Omnipath
+ADM	MRGPRX2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+ADM	RAMP1	# Omnipath
+ADM	RAMP2	# Natmi_primary# Natmi_additional# Omnipath
+ADM	RAMP3	# Natmi_primary# Natmi_additional# Omnipath
+ADORA2A	ADORA1	# Natmi_additional
+ADORA2A	ADORA2A	# Natmi_additional
+ADORA2A	ADORA2B	# Natmi_additional
+ADORA2A	NAMPT	# cellphonedb
+ADRB2	VEGFB	# cellphonedb
+AFDN	EPHA7	# Natmi_primary# Natmi_additional
+AFDN	EPHB2	# Natmi_primary# Natmi_additional
+AFDN	EPHB3	# Natmi_primary# Natmi_additional
+AFDN	EPHB6	# Natmi_primary# Natmi_additional
+AFDN	F11R	# Natmi_primary# Natmi_additional
+AFDN	NECTIN1	# Natmi_primary# Natmi_additional
+AFDN	NECTIN2	# Natmi_primary# Natmi_additional
+AFDN	NECTIN3	# Natmi_primary# Natmi_additional
+AFDN	NECTIN4	# Natmi_primary# Natmi_additional
+AFDN	PVR	# Natmi_additional
+AGRN	ATP1A3	# Natmi_primary# Natmi_additional
+AGRN	CHRM1	# Natmi_additional
+AGRN	CHRNA1	# Natmi_additional
+AGRN	CHRNB1	# Natmi_additional
+AGRN	CHRNG	# Natmi_additional
+AGRN	DAG1	# Natmi_primary# Natmi_additional
+AGRN	ITGA1	# Natmi_additional
+AGRN	ITGA2	# Natmi_additional
+AGRN	ITGA3	# Natmi_additional
+AGRN	ITGA5	# Natmi_additional
+AGRN	ITGA6	# Natmi_additional
+AGRN	ITGA7	# Natmi_additional
+AGRN	ITGA8	# Natmi_additional
+AGRN	ITGA9	# Natmi_additional
+AGRN	ITGAV	# Natmi_additional
+AGRN	ITGB1	# Natmi_additional
+AGRN	LRP4	# Natmi_primary# Natmi_additional
+AGRN	MUSK	# Natmi_primary# Natmi_additional
+AGRP	MC3R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+AGRP	MC4R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+AGRP	MC5R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+AGRP	SDC3	# Natmi_primary# Natmi_additional# Omnipath
+AGT	ADRB2	# Natmi_additional
+AGT	AGTR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+AGT	AGTR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+AGT	CCR3	# Natmi_additional
+AGT	CCR5	# Natmi_additional
+AGT	CFTR	# Natmi_additional
+AGT	CHRM1	# Natmi_additional
+AGT	CXCR4	# Natmi_additional
+AGT	FPR1	# Natmi_additional
+AGT	HTR2C	# Natmi_additional
+AGT	LRP2	# Natmi_primary# Natmi_additional# Omnipath
+AGT	MAS1	# Natmi_primary# Natmi_additional# Omnipath
+AGT	P2RY2	# Natmi_additional
+AGT	PTGER1	# Natmi_additional
+AHSG	BAMBI	# Natmi_additional
+AHSG	BMPR1A	# Natmi_additional
+AHSG	BMPR1B	# Natmi_additional
+AHSG	BMPR2	# Natmi_additional
+AHSG	HJV	# Natmi_additional
+AHSG	INSR	# Natmi_primary# Natmi_additional
+AHSG	RGMB	# Natmi_additional
+ALB	LRP2	# Natmi_primary# Natmi_additional
+ALCAM	CD6	# cellphonedb# Natmi_primary# Natmi_additional
+ALCAM	CHL1	# Natmi_primary# Natmi_additional
+ALCAM	L1CAM	# Natmi_primary# Natmi_additional
+ALCAM	NRP1	# Natmi_primary# Natmi_additional
+ALKAL1	ALK	# Natmi_primary# Natmi_additional# Omnipath
+ALKAL1	LTK	# Natmi_primary# Natmi_additional
+ALKAL2	ALK	# Natmi_primary# Natmi_additional# Omnipath
+ALKAL2	LTK	# Natmi_primary# Natmi_additional
+AMBN	CD63	# Natmi_primary# Natmi_additional# Omnipath
+AMELX	CD63	# Natmi_primary# Natmi_additional
+AMELX	LAMP1	# Natmi_primary# Natmi_additional# Omnipath
+AMELX	LAMP2	# Natmi_primary# Natmi_additional
+AMELY	CD63	# Natmi_primary# Natmi_additional
+AMELY	LAMP1	# Natmi_primary# Natmi_additional# Omnipath
+AMELY	LAMP2	# Natmi_primary# Natmi_additional
+AMH	ACVR1	# Natmi_primary# Natmi_additional# Omnipath
+AMH	AMHR2	# Natmi_primary# Natmi_additional# Omnipath
+AMH	EGFR	# Natmi_primary# Natmi_additional# Omnipath
+ANGPT1	ITGA5	# Natmi_primary# Natmi_additional# Omnipath
+ANGPT1	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+ANGPT1	TEK	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+ANGPT1	TIE1	# Natmi_primary# Natmi_additional# Omnipath
+ANGPT2	TEK	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+ANGPT2	TIE1	# Natmi_primary# Natmi_additional# Omnipath
+ANGPT4	TEK	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+ANGPT4	TIE1	# Omnipath
+ANGPTL1	TEK	# Natmi_primary# Natmi_additional# Omnipath
+ANGPTL2	ITGA5	# Natmi_primary# Natmi_additional
+ANGPTL2	ITGB1	# Natmi_primary# Natmi_additional
+ANGPTL2	LILRB2	# Natmi_primary# Natmi_additional# Omnipath
+ANGPTL3	ITGA5	# Natmi_primary# Natmi_additional# Omnipath
+ANGPTL3	ITGAV	# Natmi_primary# Natmi_additional# Omnipath
+ANGPTL3	ITGB3	# Natmi_primary# Natmi_additional# Omnipath
+ANG	EGFR	# Omnipath
+ANG	PLXNB2	# Natmi_primary# Natmi_additional
+ANOS1	FGFR1	# Natmi_primary# Natmi_additional# Omnipath
+ANOS1	SDC2	# Natmi_primary# Natmi_additional# Omnipath
+ANPEP	SELE	# Natmi_primary# Natmi_additional
+ANXA1	DYSF	# Natmi_primary# Natmi_additional
+ANXA1	EGFR	# Natmi_primary# Natmi_additional# Omnipath
+ANXA1	FPR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+ANXA1	FPR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+ANXA1	FPR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+ANXA2	DYSF	# Natmi_additional
+ANXA2	ROBO4	# Natmi_primary# Natmi_additional
+ANXA2	TLR2	# Natmi_primary# Natmi_additional
+APELA	APLNR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+APLN	APLNR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+APLN	GRM7	# Omnipath
+APOA2	APP	# Natmi_additional
+APOA2	GPC1	# Natmi_additional
+APOA2	GPC2	# Natmi_additional
+APOA2	GPC4	# Natmi_additional
+APOA2	GPC5	# Natmi_additional
+APOA2	SDC1	# Natmi_additional
+APOA2	SDC2	# Natmi_additional
+APOA2	SDC3	# Natmi_additional
+APOA2	SDC4	# Natmi_additional
+APOA4	APP	# Natmi_additional
+APOA4	GPC1	# Natmi_additional
+APOA4	GPC2	# Natmi_additional
+APOA4	GPC4	# Natmi_additional
+APOA4	GPC5	# Natmi_additional
+APOA4	SDC1	# Natmi_additional
+APOA4	SDC2	# Natmi_additional
+APOA4	SDC3	# Natmi_additional
+APOA4	SDC4	# Natmi_additional
+APOA5	APP	# Natmi_additional
+APOB	APP	# Natmi_additional
+APOB	CD36	# Natmi_additional
+APOB	COLEC12	# Natmi_additional
+APOB	ENO1	# Natmi_primary# Natmi_additional
+APOB	GPC1	# Natmi_additional
+APOB	GPC2	# Natmi_additional
+APOB	GPC4	# Natmi_additional
+APOB	GPC5	# Natmi_additional
+APOB	LDLR	# Natmi_primary# Natmi_additional# Omnipath
+APOB	LRP2	# Natmi_primary# Natmi_additional# Omnipath
+APOB	LSR	# Natmi_primary# Natmi_additional# Omnipath
+APOB	OLR1	# Natmi_primary# Natmi_additional# Omnipath
+APOB	SDC1	# Natmi_additional
+APOB	SDC2	# Natmi_additional
+APOB	SDC3	# Natmi_additional
+APOB	SDC4	# Natmi_additional
+APOB	SORT1	# Natmi_additional
+APOB	TLR4	# Natmi_additional
+APOB	TLR6	# Natmi_additional
+APOB	VLDLR	# Natmi_additional
+APOC1	APP	# Natmi_additional
+APOC1	LSR	# Natmi_additional
+APOC1	VLDLR	# Natmi_additional
+APOC2	APP	# Natmi_additional
+APOC2	GPC1	# Natmi_additional
+APOC2	GPC2	# Natmi_additional
+APOC2	GPC4	# Natmi_additional
+APOC2	GPC5	# Natmi_additional
+APOC2	SDC1	# Natmi_additional
+APOC2	SDC2	# Natmi_additional
+APOC2	SDC3	# Natmi_additional
+APOC2	SDC4	# Natmi_additional
+APOC3	APP	# Natmi_additional
+APOC3	GPC1	# Natmi_additional
+APOC3	GPC2	# Natmi_additional
+APOC3	GPC4	# Natmi_additional
+APOC3	GPC5	# Natmi_additional
+APOC3	SDC1	# Natmi_additional
+APOC3	SDC3	# Natmi_additional
+APOC3	SDC4	# Natmi_additional
+APOC4	APP	# Natmi_additional
+APOC4	LSR	# Natmi_additional
+APOC4	VLDLR	# Natmi_additional
+APOD	LEPR	# Natmi_primary# Natmi_additional# Omnipath
+APOE	APP	# Natmi_additional
+APOE	GPC1	# Natmi_additional
+APOE	GPC2	# Natmi_additional
+APOE	GPC4	# Natmi_additional
+APOE	GPC5	# Natmi_additional
+APOE	LDLR	# Natmi_primary# Natmi_additional# Omnipath
+APOE	LRP1	# Natmi_primary# Natmi_additional# Omnipath
+APOE	LRP2	# Natmi_primary# Natmi_additional# Omnipath
+APOE	LRP5	# Natmi_primary# Natmi_additional# Omnipath
+APOE	LRP8	# Natmi_primary# Natmi_additional# Omnipath
+APOE	SCARB1	# Natmi_primary# Natmi_additional# Omnipath
+APOE	SDC1	# Natmi_additional
+APOE	SDC2	# Natmi_additional# Omnipath
+APOE	SDC3	# Natmi_additional
+APOE	SDC4	# Natmi_additional
+APOE	SORL1	# Natmi_primary# Natmi_additional
+APOE	TREM2	# Omnipath
+APOE	VLDLR	# Natmi_primary# Natmi_additional# Omnipath
+APOL1	APP	# Natmi_additional
+APP	CAV1	# Natmi_primary# Natmi_additional
+APP	CD74	# cellphonedb# Natmi_primary# Natmi_additional
+APP	FPR2	# cellphonedb# Natmi_primary# Natmi_additional
+APP	GPC1	# Natmi_primary# Natmi_additional
+APP	LRP1	# Natmi_primary# Natmi_additional
+APP	NCSTN	# Natmi_primary# Natmi_additional
+APP	SORL1	# Natmi_additional
+APP	TNFRSF21	# Natmi_primary# Natmi_additional
+AREG	EGFR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+AREG	ERBB2	# Natmi_additional# Omnipath
+AREG	ERBB3	# Natmi_primary# Natmi_additional# Omnipath
+ARF1	CD4	# Natmi_additional
+ARF1	CD74	# Natmi_additional
+ARF1	CHRM3	# Natmi_primary# Natmi_additional
+ARF1	IGF2R	# Natmi_additional
+ARF1	INSR	# Natmi_primary# Natmi_additional
+ARF1	PLD2	# Natmi_primary# Natmi_additional
+ARF1	SORT1	# Natmi_additional
+ARF1	TFRC	# Natmi_additional
+ARTN	GFRA1	# Natmi_primary# Natmi_additional# Omnipath
+ARTN	GFRA2	# Natmi_additional
+ARTN	GFRA3	# Natmi_primary# Natmi_additional
+ARTN	GFRA4	# Natmi_additional
+ARTN	RET	# Natmi_primary# Natmi_additional# Omnipath
+ASGR2	ADIPOQ	# cellphonedb
+ASIP	ATRN	# Natmi_primary# Natmi_additional
+ASIP	F11R	# Natmi_primary# Natmi_additional
+ASIP	MC1R	# Natmi_primary# Natmi_additional
+ASIP	MC2R	# Natmi_primary# Natmi_additional
+ASIP	MC3R	# Natmi_primary# Natmi_additional
+ASIP	MC4R	# Natmi_primary# Natmi_additional
+ASIP	MC5R	# Natmi_primary# Natmi_additional
+AVPR1A	AVP	# cellphonedb
+AVPR1A	VIP	# cellphonedb
+AVP	AVPR1A	# Natmi_primary# Natmi_additional# Omnipath
+AVP	AVPR1B	# Natmi_primary# Natmi_additional# Omnipath
+AVP	AVPR2	# Natmi_primary# Natmi_additional# Omnipath
+AVP	OXTR	# Natmi_primary# Natmi_additional# Omnipath
+AZGP1	ITGAV	# Natmi_primary# Natmi_additional# Omnipath
+B2M	CD1A	# Natmi_primary# Natmi_additional
+B2M	CD1B	# Natmi_primary# Natmi_additional
+B2M	CD1C	# Natmi_additional
+B2M	CD1D	# Natmi_additional
+B2M	CD3E	# Natmi_additional
+B2M	CD8A	# Natmi_additional
+B2M	GYPC	# Natmi_additional
+B2M	HFE	# Natmi_additional
+B2M	HJV	# Natmi_additional
+B2M	HLA-B	# Natmi_additional
+B2M	HLA-F	# Natmi_primary# Natmi_additional
+B2M	KIR2DL4	# Natmi_additional
+B2M	KIR3DL2	# Natmi_additional
+B2M	KLRC2	# Natmi_additional
+B2M	KLRC4	# Natmi_additional
+B2M	LILRA1	# Natmi_additional
+B2M	LILRA2	# Natmi_additional
+B2M	LILRA4	# Natmi_additional
+B2M	LILRA5	# Natmi_additional
+B2M	LILRA6	# Natmi_additional
+B2M	LILRB1	# Natmi_primary# Natmi_additional
+B2M	LILRB3	# Natmi_additional
+B2M	LILRB5	# Natmi_additional
+B2M	TFR2	# Natmi_additional
+B2M	TYROBP	# Natmi_additional
+BAG6	NCR3	# Natmi_primary# Natmi_additional# Omnipath
+BDNF	NGFR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+BDNF	NTRK1	# Natmi_additional
+BDNF	NTRK2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+BDNF	SORT1	# cellphonedb# Natmi_primary# Natmi_additional
+BGN	FGFR3	# Natmi_primary# Natmi_additional
+BGN	TLR2	# Natmi_primary# Natmi_additional
+BGN	TLR4	# Natmi_primary# Natmi_additional
+BMP2	ACVR1	# Omnipath
+BMP2	ACVR2A	# Natmi_primary# Natmi_additional# Omnipath
+BMP2	ACVR2B	# Natmi_primary# Natmi_additional# Omnipath
+BMP2	BAMBI	# Natmi_additional
+BMP2	BMPR1A	# Natmi_primary# Natmi_additional# Omnipath
+BMP2	BMPR1B	# Natmi_primary# Natmi_additional# Omnipath
+BMP2	BMPR2	# Natmi_primary# Natmi_additional# Omnipath
+BMP2	ENG	# Natmi_primary# Natmi_additional
+BMP2	HJV	# Natmi_primary# Natmi_additional
+BMP2	RGMB	# Natmi_primary# Natmi_additional
+BMP3	ACVR2B	# Natmi_primary# Natmi_additional# Omnipath
+BMP4	BAMBI	# Natmi_additional
+BMP4	BMPR1A	# Natmi_primary# Natmi_additional# Omnipath
+BMP4	BMPR1B	# Natmi_primary# Natmi_additional# Omnipath
+BMP4	BMPR2	# Natmi_primary# Natmi_additional# Omnipath
+BMP4	CFC1	# Natmi_primary# Natmi_additional
+BMP4	HJV	# Natmi_additional
+BMP4	RGMB	# Natmi_primary# Natmi_additional
+BMP5	ACVR1	# Natmi_additional
+BMP5	ACVR2A	# Natmi_additional
+BMP5	ACVR2B	# Natmi_additional
+BMP5	BMPR1A	# Omnipath
+BMP5	BMPR1B	# Natmi_additional
+BMP5	BMPR2	# Natmi_additional
+BMP5	HJV	# Natmi_primary# Natmi_additional
+BMP6	ACVR1	# Natmi_primary# Natmi_additional# Omnipath
+BMP6	ACVR2A	# Natmi_primary# Natmi_additional# Omnipath
+BMP6	ACVR2B	# Natmi_additional# Omnipath
+BMP6	AMHR2	# Omnipath
+BMP6	BAMBI	# Natmi_additional
+BMP6	BMPR1A	# Natmi_primary# Natmi_additional# Omnipath
+BMP6	BMPR1B	# Natmi_primary# Natmi_additional# Omnipath
+BMP6	BMPR2	# Natmi_primary# Natmi_additional# Omnipath
+BMP6	HJV	# Natmi_primary# Natmi_additional
+BMP7	ACVR1	# Natmi_primary# Natmi_additional# Omnipath
+BMP7	ACVR2A	# Natmi_primary# Natmi_additional# Omnipath
+BMP7	ACVR2B	# Natmi_primary# Natmi_additional# Omnipath
+BMP7	BAMBI	# Natmi_additional
+BMP7	BMPR1A	# Natmi_primary# Natmi_additional# Omnipath
+BMP7	BMPR1B	# Natmi_primary# Natmi_additional# Omnipath
+BMP7	BMPR2	# Natmi_primary# Natmi_additional# Omnipath
+BMP7	ENG	# Natmi_primary# Natmi_additional
+BMP7	HJV	# Natmi_primary# Natmi_additional
+BMP8A	ACVR2A	# Natmi_primary# Natmi_additional
+BMP8A	ACVR2B	# Natmi_primary# Natmi_additional
+BMP8A	BMPR1A	# Natmi_primary# Natmi_additional
+BMP8A	BMPR2	# Natmi_primary# Natmi_additional
+BMP8A	TGFBR1	# Natmi_primary# Natmi_additional
+BMP8A	TGFBR2	# Natmi_primary# Natmi_additional
+BMP8B	ACVR1	# Natmi_additional# Omnipath
+BMP8B	ACVR2A	# Natmi_additional
+BMP8B	ACVR2B	# Natmi_additional
+BMP8B	BMPR1A	# Natmi_additional# Omnipath
+BMP8B	BMPR1B	# Natmi_additional
+BMP8B	BMPR2	# Natmi_additional
+BMP10	ACVR2A	# Natmi_primary# Natmi_additional# Omnipath
+BMP10	ACVRL1	# Natmi_primary# Natmi_additional# Omnipath
+BMP10	BMPR1A	# Natmi_primary# Natmi_additional# Omnipath
+BMP10	BMPR1B	# Natmi_primary# Natmi_additional# Omnipath
+BMP10	BMPR2	# Natmi_primary# Natmi_additional# Omnipath
+BMP10	ENG	# Natmi_primary# Natmi_additional
+BMP15	ACVR2A	# Natmi_primary# Natmi_additional# Omnipath
+BMP15	BMPR1A	# Natmi_primary# Natmi_additional# Omnipath
+BMP15	BMPR1B	# Natmi_primary# Natmi_additional# Omnipath
+BMP15	BMPR2	# Natmi_primary# Natmi_additional# Omnipath
+BSG	SELE	# Natmi_primary# Natmi_additional
+BSG	SLC16A1	# Natmi_primary# Natmi_additional
+BSG	SLC16A7	# Natmi_primary# Natmi_additional
+BST2	LILRA4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+BTC	EGFR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+BTC	ERBB2	# Natmi_primary# Natmi_additional# Omnipath
+BTC	ERBB3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+BTC	ERBB4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+BTLA	CD79A	# Natmi_primary# Natmi_additional
+BTLA	CD247	# Natmi_additional
+BTLA	TNFRSF14	# cellphonedb# Natmi_primary# Natmi_additional
+BTLA	VTCN1	# Natmi_primary# Natmi_additional
+C1ORF112	PLSCR4	# Natmi_additional
+C1ORF194	PLSCR4	# Natmi_additional
+C1QA	CD33	# Natmi_primary# Natmi_additional
+C1QA	CD93	# Natmi_primary# Natmi_additional
+C1QA	CSPG4	# Natmi_primary# Natmi_additional
+C1QB	CD33	# Natmi_primary# Natmi_additional
+C1QB	LRP1	# Natmi_primary# Natmi_additional
+C1QTNF1	AVPR2	# Natmi_primary# Natmi_additional# Omnipath
+C2	CR1	# Natmi_additional
+C3	C3AR1	# cellphonedb# Natmi_primary# Natmi_additional
+C3	C5AR2	# Natmi_primary# Natmi_additional
+C3	CD19	# Natmi_primary# Natmi_additional
+C3	CD46	# Natmi_primary# Natmi_additional
+C3	CD81	# Natmi_additional
+C3	CR1	# Natmi_primary# Natmi_additional
+C3	CR2	# Natmi_primary# Natmi_additional
+C3	IFITM1	# Natmi_additional
+C3	ITGAM	# Natmi_primary# Natmi_additional
+C3	ITGAX	# Natmi_primary# Natmi_additional
+C3	ITGB2	# Natmi_primary# Natmi_additional
+C3	LRP1	# Natmi_primary# Natmi_additional
+C3	NRP1	# Natmi_primary# Natmi_additional
+C4A	C3AR1	# Natmi_primary# Natmi_additional
+C4A	C5AR2	# Natmi_primary# Natmi_additional
+C4A	CD46	# Natmi_additional
+C4A	CR1	# Natmi_primary# Natmi_additional
+C4A	NRP1	# Natmi_primary# Natmi_additional
+C4BPA	BMPR2	# Natmi_primary# Natmi_additional
+C4BPA	CD40	# Natmi_primary# Natmi_additional
+C4BPA	LRP1	# Natmi_primary# Natmi_additional
+C4B	CD46	# Natmi_primary# Natmi_additional# Omnipath
+C4B	CR1	# Natmi_primary# Natmi_additional# Omnipath
+C5	C5AR1	# cellphonedb# Natmi_primary# Natmi_additional
+C5	C5AR2	# cellphonedb# Natmi_primary# Natmi_additional
+C6ORF15	DDR1	# Natmi_additional
+CACNA2D3	CACNA1C	# Natmi_additional
+CACNA2D3	CACNG1	# Natmi_additional
+CACNA2D3	CACNG2	# Natmi_additional
+CACNA2D3	CACNG3	# Natmi_additional
+CACNA2D3	CACNG4	# Natmi_additional
+CACNA2D3	CACNG5	# Natmi_additional
+CACNA2D3	CACNG6	# Natmi_additional
+CACNA2D3	CACNG7	# Natmi_additional
+CACNA2D3	CACNG8	# Natmi_additional
+CADM1	CADM1	# Natmi_primary# Natmi_additional
+CADM1	CADM3	# Natmi_primary# Natmi_additional
+CADM1	CRTAM	# cellphonedb# Natmi_primary# Natmi_additional
+CADM1	NECTIN3	# Natmi_primary# Natmi_additional
+CADM3	CADM1	# Natmi_primary# Natmi_additional
+CADM3	CADM3	# Natmi_primary# Natmi_additional
+CADM3	NECTIN1	# Natmi_primary# Natmi_additional
+CADM3	NECTIN3	# Natmi_primary# Natmi_additional
+CALCA	CALCRL	# Natmi_primary# Natmi_additional# Omnipath
+CALCA	CALCR	# cellphonedb# Natmi_primary# Natmi_additional
+CALCA	RAMP1	# Natmi_primary# Natmi_additional# Omnipath
+CALCA	RAMP2	# Natmi_primary# Natmi_additional# Omnipath
+CALCA	RAMP3	# Omnipath
+CALCB	CALCRL	# Natmi_primary# Natmi_additional# Omnipath
+CALCB	CALCR	# cellphonedb# Natmi_primary# Natmi_additional
+CALCB	RAMP1	# Natmi_primary# Natmi_additional# Omnipath
+CALCB	RAMP2	# Omnipath
+CALCB	RAMP3	# Omnipath
+CALML5	CAV1	# Natmi_additional
+CALR	CANX	# Natmi_additional
+CALR	HLA-B	# Natmi_additional
+CALR	HLA-F	# Natmi_additional
+CALR	ITGA2B	# Omnipath
+CALR	ITGA3	# Natmi_primary# Natmi_additional# Omnipath
+CALR	ITGAV	# Natmi_primary# Natmi_additional# Omnipath
+CALR	LRP1	# Natmi_primary# Natmi_additional# Omnipath
+CALR	MTNR1A	# Natmi_primary# Natmi_additional# Omnipath
+CALR	SCARF1	# Natmi_primary# Natmi_additional# Omnipath
+CALR	STX4	# Natmi_additional
+CALR	TSHR	# Natmi_primary# Natmi_additional# Omnipath
+CAMP	EGFR	# Natmi_additional
+CAMP	FPR2	# cellphonedb# Natmi_primary# Natmi_additional
+CAMP	IGF1R	# Natmi_additional
+CAMP	P2RX7	# Natmi_additional
+CCK	CCKAR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCK	CCKBR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL1	CCR1	# Omnipath
+CCL1	CCR8	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL2	ACKR1	# Natmi_primary# Natmi_additional# Omnipath
+CCL2	ACKR2	# Natmi_primary# Natmi_additional# Omnipath
+CCL2	ACKR4	# Natmi_primary# Natmi_additional# Omnipath
+CCL2	CCR1	# Natmi_primary# Natmi_additional# Omnipath
+CCL2	CCR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL2	CCR3	# Natmi_primary# Natmi_additional# Omnipath
+CCL2	CCR4	# Natmi_primary# Natmi_additional# Omnipath
+CCL2	CCR5	# Natmi_primary# Natmi_additional# Omnipath
+CCL2	CCR10	# Natmi_primary# Natmi_additional# Omnipath
+CCL3L1	ACKR2	# Natmi_primary# Natmi_additional
+CCL3L1	CCR1	# Natmi_primary# Natmi_additional
+CCL3L1	CCR3	# Natmi_primary# Natmi_additional
+CCL3L1	CCR5	# Natmi_primary# Natmi_additional
+CCL3L3	ACKR2	# Natmi_primary# Natmi_additional# Omnipath
+CCL3L3	CCR1	# Omnipath
+CCL3L3	CCR3	# Omnipath
+CCL3L3	CCR5	# Natmi_primary# Natmi_additional# Omnipath
+CCL3	ACKR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL3	CCR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL3	CCR3	# Natmi_primary# Natmi_additional# Omnipath
+CCL3	CCR4	# Natmi_primary# Natmi_additional# Omnipath
+CCL3	CCR5	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL3	CXCR5	# Omnipath
+CCL3	IDE	# cellphonedb
+CCL4L1	CCR1	# Natmi_primary# Natmi_additional
+CCL4L1	CCR3	# Natmi_primary# Natmi_additional
+CCL4L1	CCR5	# Natmi_primary# Natmi_additional
+CCL4L2	CCR1	# Natmi_additional
+CCL4L2	CCR5	# Natmi_additional
+CCL4	ACKR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL4	ADRB2	# Natmi_additional
+CCL4	AGTR2	# Natmi_additional
+CCL4	CCR1	# Natmi_primary# Natmi_additional# Omnipath
+CCL4	CCR3	# Natmi_primary# Natmi_additional# Omnipath
+CCL4	CCR5	# Natmi_primary# Natmi_additional# Omnipath
+CCL4	CCR8	# Natmi_primary# Natmi_additional# Omnipath
+CCL4	CFTR	# Natmi_additional
+CCL4	CHRM1	# Natmi_additional
+CCL4	CXCR4	# Natmi_additional
+CCL4	FPR1	# Natmi_additional
+CCL4	HTR2C	# Natmi_additional
+CCL4	P2RY2	# Natmi_additional
+CCL4	PTGER1	# Natmi_additional
+CCL5	ACKR1	# Natmi_primary# Natmi_additional# Omnipath
+CCL5	ACKR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL5	ACKR4	# Omnipath
+CCL5	CCR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL5	CCR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL5	CCR4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL5	CCR5	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL5	CXCR3	# Natmi_primary# Natmi_additional# Omnipath
+CCL5	GPR75	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL5	SDC1	# Natmi_primary# Natmi_additional# Omnipath
+CCL5	SDC4	# Natmi_primary# Natmi_additional
+CCL7	ACKR1	# Natmi_primary# Natmi_additional# Omnipath
+CCL7	ACKR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL7	ACKR4	# Natmi_primary# Natmi_additional# Omnipath
+CCL7	CCR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL7	CCR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL7	CCR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL7	CCR5	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL7	CCR10	# Natmi_primary# Natmi_additional# Omnipath
+CCL7	CXCR3	# Natmi_primary# Natmi_additional# Omnipath
+CCL8	ACKR1	# Natmi_primary# Natmi_additional# Omnipath
+CCL8	ACKR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL8	ACKR4	# Natmi_primary# Natmi_additional# Omnipath
+CCL8	CCR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL8	CCR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL8	CCR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL8	CCR5	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL11	ACKR1	# Omnipath
+CCL11	ACKR2	# Natmi_primary# Natmi_additional# Omnipath
+CCL11	ACKR4	# Natmi_primary# Natmi_additional# Omnipath
+CCL11	ADRB2	# Natmi_additional
+CCL11	AGTR2	# Natmi_additional
+CCL11	CCR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL11	CCR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL11	CCR5	# Natmi_primary# Natmi_additional# Omnipath
+CCL11	CFTR	# Natmi_additional
+CCL11	CHRM1	# Natmi_additional
+CCL11	CXCR3	# Natmi_primary# Natmi_additional# Omnipath
+CCL11	CXCR4	# Natmi_additional
+CCL11	DPP4	# cellphonedb
+CCL11	FPR1	# Natmi_additional
+CCL11	HTR2C	# Natmi_additional
+CCL11	P2RY2	# Natmi_additional
+CCL11	PTGER1	# Natmi_additional
+CCL13	ACKR1	# Omnipath
+CCL13	ACKR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL13	ACKR4	# Natmi_primary# Natmi_additional# Omnipath
+CCL13	CCR1	# cellphonedb# Omnipath
+CCL13	CCR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL13	CCR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL13	CCR5	# Natmi_primary# Natmi_additional# Omnipath
+CCL13	CCR9	# Natmi_additional
+CCL13	CXCR3	# Natmi_primary# Natmi_additional# Omnipath
+CCL14	ACKR1	# Omnipath
+CCL14	ACKR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL14	CCR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL14	CCR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL14	CCR5	# Natmi_primary# Natmi_additional# Omnipath
+CCL15	CCR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL15	CCR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL16	CCR1	# Natmi_primary# Natmi_additional# Omnipath
+CCL16	CCR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL16	CCR5	# Natmi_primary# Natmi_additional# Omnipath
+CCL16	CCR8	# Natmi_primary# Natmi_additional# Omnipath
+CCL16	HRH4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL17	ACKR1	# Natmi_primary# Natmi_additional# Omnipath
+CCL17	ACKR2	# Natmi_primary# Natmi_additional# Omnipath
+CCL17	CCR4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL17	CCR8	# Natmi_primary# Natmi_additional# Omnipath
+CCL18	CCR1	# cellphonedb
+CCL18	CCR3	# Natmi_primary# Natmi_additional# Omnipath
+CCL18	CCR8	# Natmi_primary# Natmi_additional# Omnipath
+CCL18	PITPNM3	# Natmi_primary# Natmi_additional
+CCL19	ACKR2	# Natmi_primary# Natmi_additional# Omnipath
+CCL19	ACKR4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL19	CCR1	# Natmi_additional
+CCL19	CCR7	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL19	CCR10	# Natmi_primary# Natmi_additional# Omnipath
+CCL19	CCRL2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL19	CXCR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL20	ACKR4	# Natmi_primary# Natmi_additional
+CCL20	CCR6	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL20	CXCR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL21	ACKR2	# Natmi_primary# Natmi_additional# Omnipath
+CCL21	ACKR4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL21	CCR1	# Natmi_additional
+CCL21	CCR7	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL21	CCR10	# Natmi_primary# Natmi_additional
+CCL21	CXCR3	# Natmi_primary# Natmi_additional# Omnipath
+CCL22	ACKR2	# Natmi_primary# Natmi_additional# Omnipath
+CCL22	CCR4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL22	DPP4	# cellphonedb
+CCL23	ACKR2	# Omnipath
+CCL23	CCR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL24	ACKR2	# Omnipath
+CCL24	CCR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL24	CCR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL24	XCR1	# Natmi_additional
+CCL25	ACKR2	# Natmi_primary# Natmi_additional# Omnipath
+CCL25	ACKR4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL25	CCR9	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL25	CCR10	# Natmi_primary# Natmi_additional# Omnipath
+CCL26	CCR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL26	CCR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL26	CCR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL26	CCR5	# Omnipath
+CCL26	CX3CR1	# Omnipath
+CCL27	ACKR2	# Natmi_primary# Natmi_additional# Omnipath
+CCL27	CCR10	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL28	ACKR2	# Natmi_primary# Natmi_additional# Omnipath
+CCL28	CCR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCL28	CCR10	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCN1	CAV1	# Natmi_additional
+CCN1	ITGA5	# Natmi_primary# Natmi_additional
+CCN1	ITGAM	# Natmi_primary# Natmi_additional
+CCN1	ITGAV	# Natmi_primary# Natmi_additional
+CCN1	ITGAV	# Omnipath
+CCN1	ITGB2	# Natmi_primary# Natmi_additional
+CCN1	ITGB3	# Natmi_primary# Natmi_additional
+CCN1	ITGB5	# Natmi_primary# Natmi_additional
+CCN1	ITGB5	# Omnipath
+CCN1	SDC4	# Natmi_primary# Natmi_additional
+CCN2	ERBB4	# Omnipath
+CCN2	FGFR2	# Natmi_primary# Natmi_additional
+CCN2	FGFR2	# Omnipath
+CCN2	IGF2R	# Natmi_primary# Natmi_additional
+CCN2	IGF2R	# Omnipath
+CCN2	ITGA5	# Natmi_primary# Natmi_additional
+CCN2	ITGA5	# Omnipath
+CCN2	ITGAM	# Natmi_primary# Natmi_additional
+CCN2	ITGAM	# Omnipath
+CCN2	ITGB2	# Natmi_primary# Natmi_additional
+CCN2	ITGB2	# Omnipath
+CCN2	LRP1	# Natmi_primary# Natmi_additional
+CCN2	LRP1	# Omnipath
+CCN2	LRP6	# Natmi_primary# Natmi_additional
+CCN2	LRP6	# Omnipath
+CCN2	NTRK1	# Natmi_primary# Natmi_additional
+CCN2	NTRK1	# Omnipath
+CCN3	NOTCH1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CCN3	PLXNA1	# Natmi_additional
+CCN4	ITGA5	# Natmi_primary# Natmi_additional
+CCN4	ITGB1	# Natmi_primary# Natmi_additional
+CCR1	CCL3L3	# cellphonedb
+CCR1	CCL16	# cellphonedb
+CCR3	CCL3L3	# cellphonedb
+CCR3	CCL3	# cellphonedb
+CCR5	CCL4	# cellphonedb
+CCR8	CCL16	# cellphonedb
+CCR8	CCL18	# cellphonedb
+CD1D	CD3D	# Natmi_additional
+CD1D	CD3E	# Natmi_additional
+CD1D	CD3G	# Natmi_additional
+CD1D	LILRB2	# cellphonedb# Natmi_primary# Natmi_additional
+CD2	CD48	# Natmi_primary# Natmi_additional
+CD5L	CD5	# Natmi_primary# Natmi_additional# Omnipath
+CD6	ALCAM	# Natmi_primary# Natmi_additional
+CD8B	CD3D	# Natmi_additional
+CD8B	CD3E	# Natmi_additional
+CD8B	CD3G	# Natmi_additional
+CD8B	CD4	# Natmi_additional
+CD8B	CD8A	# Natmi_additional
+CD8B	CD247	# Natmi_additional
+CD8B	HLA-B	# Natmi_additional
+CD8B	HLA-F	# Natmi_additional
+CD8B	TRAT1	# Natmi_additional
+CD9	L1CAM	# Natmi_primary# Natmi_additional
+CD14	CD36	# Natmi_additional
+CD14	F2R	# Natmi_additional
+CD14	ITGA4	# Natmi_primary# Natmi_additional
+CD14	ITGAM	# Natmi_additional
+CD14	ITGB1	# Natmi_primary# Natmi_additional
+CD14	ITGB2	# Natmi_additional
+CD14	LY96	# Natmi_additional
+CD14	TLR2	# Natmi_additional
+CD14	TLR4	# Natmi_additional
+CD14	TLR6	# Natmi_additional
+CD22	PTPRC	# Natmi_primary# Natmi_additional
+CD24	SELP	# cellphonedb# Natmi_primary# Natmi_additional
+CD28	CD2	# Natmi_additional
+CD28	CD80	# Natmi_primary# Natmi_additional
+CD28	CD86	# cellphonedb# Natmi_primary# Natmi_additional
+CD28	CTLA4	# Natmi_additional
+CD28	ITGA1	# Natmi_additional
+CD28	ITGA2	# Natmi_additional
+CD28	ITGA3	# Natmi_additional
+CD28	ITGA4	# Natmi_additional
+CD28	ITGA5	# Natmi_additional
+CD28	ITGA8	# Natmi_additional
+CD28	ITGA9	# Natmi_additional
+CD28	ITGA10	# Natmi_additional
+CD28	ITGA11	# Natmi_additional
+CD28	ITGAD	# Natmi_additional
+CD28	ITGAE	# Natmi_additional
+CD28	ITGAL	# Natmi_additional
+CD28	ITGAM	# Natmi_additional
+CD28	ITGAV	# Natmi_additional
+CD28	ITGAX	# Natmi_additional
+CD28	ITGB1	# Natmi_additional
+CD28	ITGB2	# Natmi_additional
+CD28	ITGB3	# Natmi_additional
+CD28	ITGB4	# Natmi_additional
+CD28	ITGB5	# Natmi_additional
+CD28	ITGB6	# Natmi_additional
+CD28	ITGB7	# Natmi_additional
+CD28	ITGB8	# Natmi_additional
+CD34	SELE	# Natmi_primary# Natmi_additional
+CD34	SELL	# Natmi_primary# Natmi_additional# Omnipath
+CD34	SELP	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CD38	PECAM1	# Natmi_primary# Natmi_additional
+CD40LG	CD40	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CD40LG	ITGAM	# Natmi_additional
+CD40LG	ITGB2	# Natmi_additional
+CD44	CD74	# Natmi_additional
+CD44	ERBB2	# Natmi_additional
+CD44	HGF	# cellphonedb
+CD44	SELE	# Natmi_primary# Natmi_additional
+CD44	SLC9A1	# Natmi_additional
+CD47	ITGA2B	# Natmi_additional
+CD47	ITGAV	# Natmi_additional
+CD47	ITGB3	# Natmi_additional
+CD47	SIRPA	# Natmi_primary# Natmi_additional
+CD47	SIRPG	# cellphonedb# Natmi_primary# Natmi_additional
+CD48	CD2	# Natmi_primary# Natmi_additional
+CD48	CD244	# cellphonedb# Natmi_primary# Natmi_additional
+CD52	SIGLEC10	# cellphonedb# Natmi_primary# Natmi_additional
+CD55	ADGRE2	# Natmi_additional
+CD55	ADGRE5	# Natmi_primary# Natmi_additional
+CD55	TMEM115	# Natmi_additional
+CD58	CD2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CD59	CD2	# Natmi_primary# Natmi_additional# Omnipath
+CD59	TMEM115	# Natmi_additional
+CD70	CD27	# cellphonedb# Natmi_primary# Natmi_additional
+CD74	MIF	# cellphonedb
+CD80	CD28	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CD80	CD86	# Natmi_additional
+CD80	CD274	# Natmi_primary# Natmi_additional
+CD80	CTLA4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CD80	ITGA1	# Natmi_additional
+CD80	ITGA2	# Natmi_additional
+CD80	ITGA3	# Natmi_additional
+CD80	ITGA4	# Natmi_additional
+CD80	ITGA5	# Natmi_additional
+CD80	ITGA8	# Natmi_additional
+CD80	ITGA9	# Natmi_additional
+CD80	ITGA10	# Natmi_additional
+CD80	ITGA11	# Natmi_additional
+CD80	ITGAD	# Natmi_additional
+CD80	ITGAE	# Natmi_additional
+CD80	ITGAL	# Natmi_additional
+CD80	ITGAM	# Natmi_additional
+CD80	ITGAV	# Natmi_additional
+CD80	ITGAX	# Natmi_additional
+CD80	ITGB1	# Natmi_additional
+CD80	ITGB2	# Natmi_additional
+CD80	ITGB3	# Natmi_additional
+CD80	ITGB4	# Natmi_additional
+CD80	ITGB5	# Natmi_additional
+CD80	ITGB6	# Natmi_additional
+CD80	ITGB7	# Natmi_additional
+CD80	ITGB8	# Natmi_additional
+CD84	CD84	# Natmi_primary# Natmi_additional
+CD86	CD28	# Natmi_primary# Natmi_additional
+CD86	CD80	# Natmi_additional
+CD86	CTLA4	# cellphonedb# Natmi_primary# Natmi_additional
+CD96	NECTIN1	# cellphonedb# Natmi_primary# Natmi_additional
+CD96	PVR	# cellphonedb# Natmi_primary# Natmi_additional
+CD99	PILRA	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CD99	PILRB	# Natmi_primary# Natmi_additional
+CD160	HLA-B	# Natmi_additional
+CD160	HLA-F	# Natmi_additional
+CD160	TNFRSF14	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CD177	PECAM1	# cellphonedb# Natmi_primary# Natmi_additional
+CD177	PROCR	# Natmi_additional
+CD200R1	CD200R1L	# Natmi_additional
+CD200R1	CD200	# Natmi_primary# Natmi_additional
+CD200	CD200R1L	# Natmi_primary# Natmi_additional# Omnipath
+CD200	CD200R1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CD209	CEACAM1	# Omnipath
+CD209	ICAM3	# cellphonedb# Natmi_primary# Natmi_additional
+CD226	NECTIN2	# Natmi_primary# Natmi_additional
+CD226	PVR	# Natmi_primary# Natmi_additional
+CD244	CD48	# Natmi_primary# Natmi_additional
+CD274	CD80	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CD274	PDCD1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CDH1	CDH2	# Natmi_additional
+CDH1	EGFR	# Natmi_primary# Natmi_additional
+CDH1	ERBB3	# Natmi_additional
+CDH1	F2RL2	# Natmi_additional
+CDH1	IGF1R	# Natmi_primary# Natmi_additional
+CDH1	ITGA6	# Natmi_additional
+CDH1	ITGAE	# Natmi_primary# Natmi_additional
+CDH1	ITGB4	# Natmi_additional
+CDH1	ITGB7	# Natmi_primary# Natmi_additional
+CDH1	KLRG1	# Natmi_primary# Natmi_additional
+CDH1	LRP5	# Natmi_additional
+CDH1	PTPRM	# Natmi_primary# Natmi_additional
+CDH4	CDON	# Natmi_additional
+CEACAM1	CD209	# cellphonedb# Natmi_primary# Natmi_additional
+CEACAM1	HAVCR2	# Natmi_primary# Natmi_additional
+CEACAM1	SELE	# cellphonedb# Natmi_primary# Natmi_additional
+CEACAM5	CD1D	# cellphonedb# Natmi_primary# Natmi_additional
+CEACAM5	CD8A	# cellphonedb# Natmi_primary# Natmi_additional
+CEACAM5	CEACAM1	# cellphonedb
+CEACAM6	CEACAM1	# cellphonedb# Omnipath
+CEACAM6	CEACAM8	# cellphonedb# Natmi_primary# Natmi_additional
+CEACAM8	CEACAM1	# cellphonedb# Natmi_primary# Natmi_additional
+CELA3B	CHRM3	# Natmi_additional
+CEL	CXCR4	# Natmi_primary# Natmi_additional
+CER1	BAMBI	# Natmi_additional
+CER1	BMPR1A	# Natmi_additional
+CER1	BMPR1B	# Natmi_additional
+CER1	BMPR2	# Natmi_additional
+CER1	HJV	# Natmi_additional
+CER1	RGMB	# Natmi_additional
+CETP	APP	# Natmi_additional
+CFB	CR1	# Natmi_additional
+CFH	ITGAM	# Natmi_primary# Natmi_additional
+CFH	SELL	# Natmi_primary# Natmi_additional
+CFI	CD46	# Natmi_additional
+CFI	CR1	# Natmi_additional
+CFP	NCR1	# Natmi_primary# Natmi_additional
+CGA	FSHR	# Omnipath
+CGA	LHCGR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CGA	SIRPA	# Natmi_additional
+CGA	TSHR	# Natmi_additional# Omnipath
+CGB3	LHCGR	# Natmi_primary# Natmi_additional
+CGB8	LHCGR	# Omnipath
+CGB8	SIRPA	# Natmi_additional
+CGN	F11R	# Natmi_primary# Natmi_additional
+CGN	OCLN	# Natmi_additional
+CGN	TGFBR1	# Natmi_additional
+CGN	TGFBR2	# Natmi_additional
+CHAD	ITGA2	# Natmi_primary# Natmi_additional# Omnipath
+CHAD	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+CHRDL1	BAMBI	# Natmi_additional
+CHRDL1	BMPR1A	# Natmi_additional
+CHRDL1	BMPR1B	# Natmi_additional
+CHRDL1	BMPR2	# Natmi_additional
+CHRDL1	HJV	# Natmi_additional
+CHRDL1	RGMB	# Natmi_additional
+CHRD	BAMBI	# Natmi_additional
+CHRD	BMPR1A	# Natmi_additional
+CHRD	BMPR1B	# Natmi_additional
+CHRD	BMPR2	# Natmi_additional
+CHRD	HJV	# Natmi_additional
+CHRD	RGMB	# Natmi_additional
+CIRBP	TREM1	# Natmi_primary# Natmi_additional
+CKLF	CCR4	# Omnipath
+CLCF1	CNTFR	# Natmi_primary# Natmi_additional# Omnipath
+CLCF1	CRLF1	# Natmi_primary# Natmi_additional# Omnipath
+CLCF1	IL6ST	# Natmi_primary# Natmi_additional# Omnipath
+CLCF1	LIFR	# Natmi_primary# Natmi_additional# Omnipath
+CLEC2A	KLRB1	# Natmi_additional
+CLEC2A	KLRF2	# cellphonedb# Natmi_primary# Natmi_additional
+CLEC2B	KLRF1	# cellphonedb# Natmi_primary# Natmi_additional
+CLEC2D	ADIPOQ	# cellphonedb
+CLEC2D	FAM3C	# cellphonedb
+CLEC2D	KLRB1	# Natmi_primary# Natmi_additional
+CLEC3A	CLEC2B	# Natmi_additional
+CLEC3A	CLEC10A	# Natmi_additional
+CLEC4C	FCER1G	# Natmi_additional
+CLEC4G	LAG3	# Natmi_primary# Natmi_additional
+CLEC4M	ICAM3	# cellphonedb
+CLEC11A	ITGA10	# Natmi_primary# Natmi_additional
+CLEC11A	ITGA11	# Natmi_primary# Natmi_additional
+CLEC11A	ITGB1	# Natmi_primary# Natmi_additional
+CLEC11A	KIT	# Natmi_additional
+CNTF	CNTFR	# Natmi_primary# Natmi_additional
+CNTF	IL6R	# Natmi_primary# Natmi_additional
+CNTF	IL6ST	# Natmi_primary# Natmi_additional
+CNTF	LIFR	# Natmi_primary# Natmi_additional
+CNTN1	CNTNAP1	# Natmi_additional
+CNTN1	NFASC	# Natmi_additional
+CNTN1	NOTCH1	# Natmi_primary# Natmi_additional# Omnipath
+CNTN1	NOTCH2	# Natmi_primary# Natmi_additional# Omnipath
+CNTN1	PTPRZ1	# Natmi_primary# Natmi_additional# Omnipath
+CNTN2	CNTN1	# Natmi_primary# Natmi_additional# Omnipath
+CNTN2	CNTNAP2	# Natmi_primary# Natmi_additional# Omnipath
+CNTN2	NRCAM	# Natmi_primary# Natmi_additional# Omnipath
+CNTN2	NRP1	# Natmi_additional
+CNTN4	PTPRG	# Natmi_primary# Natmi_additional# Omnipath
+CNTN6	CHL1	# Natmi_additional
+CNTN6	NOTCH1	# Natmi_primary# Natmi_additional
+COL1A1	CD36	# Natmi_primary# Natmi_additional
+COL1A1	CD44	# Natmi_primary# Natmi_additional
+COL1A1	CD93	# Natmi_primary# Natmi_additional
+COL1A1	DDR1	# Natmi_primary# Natmi_additional
+COL1A1	DDR2	# Natmi_primary# Natmi_additional
+COL1A1	FLT4	# Natmi_additional
+COL1A1	GP6	# Natmi_primary# Natmi_additional
+COL1A1	ITGA1	# Natmi_additional
+COL1A1	ITGA2	# Natmi_primary# Natmi_additional
+COL1A1	ITGA5	# Natmi_primary# Natmi_additional
+COL1A1	ITGA11	# Natmi_primary# Natmi_additional
+COL1A1	ITGAV	# Natmi_additional
+COL1A1	ITGB1	# Natmi_primary# Natmi_additional
+COL1A1	ITGB3	# Natmi_additional
+COL1A1	SDC1	# Natmi_additional
+COL1A2	CD36	# Natmi_additional
+COL1A2	CD44	# Natmi_primary# Natmi_additional
+COL1A2	CD93	# Natmi_primary# Natmi_additional
+COL1A2	FLT4	# Natmi_additional
+COL1A2	GP6	# Natmi_primary# Natmi_additional
+COL1A2	ITGA1	# Natmi_additional
+COL1A2	ITGA2	# Natmi_primary# Natmi_additional
+COL1A2	ITGA11	# Natmi_primary# Natmi_additional
+COL1A2	ITGAV	# Natmi_additional
+COL1A2	ITGB1	# Natmi_primary# Natmi_additional
+COL1A2	ITGB3	# Natmi_primary# Natmi_additional
+COL1A2	SDC1	# Natmi_additional
+COL2A1	DDR1	# Natmi_primary# Natmi_additional
+COL2A1	ITGA1	# Natmi_additional
+COL2A1	ITGA2	# Natmi_primary# Natmi_additional
+COL2A1	ITGA10	# Natmi_primary# Natmi_additional
+COL2A1	ITGB1	# Natmi_primary# Natmi_additional
+COL2A1	MAG	# Natmi_primary# Natmi_additional
+COL2A1	OR1E1	# Natmi_additional
+COL2A1	SDC1	# Natmi_additional
+COL2A1	TNFRSF10A	# Natmi_primary# Natmi_additional
+COL3A1	DDR1	# Natmi_primary# Natmi_additional
+COL3A1	DDR2	# Natmi_primary# Natmi_additional
+COL3A1	ITGA2	# Natmi_additional
+COL3A1	ITGB1	# Natmi_additional
+COL3A1	MAG	# Natmi_primary# Natmi_additional
+COL3A1	SDC1	# Natmi_additional
+COL4A1	CD47	# Natmi_additional
+COL4A1	CD93	# Natmi_primary# Natmi_additional
+COL4A1	ITGA1	# Natmi_primary# Natmi_additional
+COL4A1	ITGA2	# Natmi_additional
+COL4A1	ITGAV	# Natmi_primary# Natmi_additional
+COL4A1	ITGB1	# Natmi_primary# Natmi_additional
+COL4A1	ITGB3	# Natmi_additional
+COL4A1	ITGB8	# Natmi_primary# Natmi_additional
+COL4A1	SDC1	# Natmi_additional
+COL4A2	CD47	# Natmi_additional
+COL4A2	CD93	# Natmi_primary# Natmi_additional
+COL4A2	ITGA1	# Natmi_additional
+COL4A2	ITGA2	# Natmi_additional
+COL4A2	ITGAV	# Natmi_additional
+COL4A2	ITGB1	# Natmi_additional
+COL4A2	ITGB3	# Natmi_additional
+COL4A2	ITGB5	# Natmi_additional
+COL4A2	SDC1	# Natmi_additional
+COL4A3	CD47	# Natmi_primary# Natmi_additional
+COL4A3	CD93	# Natmi_primary# Natmi_additional
+COL4A3	ITGA1	# Natmi_additional
+COL4A3	ITGA2	# Natmi_additional
+COL4A3	ITGA3	# Natmi_additional
+COL4A3	ITGAV	# Natmi_primary# Natmi_additional
+COL4A3	ITGB1	# Natmi_additional
+COL4A3	ITGB3	# Natmi_additional
+COL4A3	SDC1	# Natmi_additional
+COL4A4	CD47	# Natmi_additional
+COL4A4	ITGA1	# Natmi_additional
+COL4A4	ITGA2	# Natmi_additional
+COL4A4	ITGAV	# Natmi_additional
+COL4A4	ITGB1	# Natmi_additional
+COL4A4	ITGB3	# Natmi_additional
+COL4A4	SDC1	# Natmi_additional
+COL4A5	CD47	# Natmi_additional
+COL4A5	CD93	# Natmi_primary# Natmi_additional
+COL4A5	ITGA1	# Natmi_additional
+COL4A5	ITGA2	# Natmi_additional
+COL4A5	ITGAV	# Natmi_additional
+COL4A5	ITGB1	# Natmi_additional
+COL4A5	ITGB3	# Natmi_additional
+COL4A5	SDC1	# Natmi_additional
+COL4A6	CD47	# Natmi_additional
+COL4A6	CD93	# Natmi_primary# Natmi_additional
+COL4A6	ITGA1	# Natmi_additional
+COL4A6	ITGA2	# Natmi_additional
+COL4A6	ITGAV	# Natmi_additional
+COL4A6	ITGB1	# Natmi_additional
+COL4A6	ITGB3	# Natmi_additional
+COL4A6	SDC1	# Natmi_additional
+COL5A1	ITGA1	# Natmi_additional
+COL5A1	ITGB1	# Natmi_additional
+COL5A1	SDC1	# Natmi_additional
+COL5A1	SDC3	# Natmi_primary# Natmi_additional
+COL5A2	DDR1	# Natmi_primary# Natmi_additional
+COL5A2	ITGA1	# Natmi_additional
+COL5A2	ITGB1	# Natmi_additional
+COL5A2	SDC1	# Natmi_additional
+COL5A3	SDC3	# Natmi_primary# Natmi_additional
+COL6A1	ITGA1	# Natmi_additional
+COL6A1	ITGA2	# Natmi_additional
+COL6A1	ITGA6	# Natmi_additional
+COL6A1	ITGB1	# Natmi_additional
+COL6A1	SDC1	# Natmi_additional
+COL6A2	ITGA1	# Natmi_additional
+COL6A2	ITGA2	# Natmi_additional
+COL6A2	ITGB1	# Natmi_additional
+COL6A2	SDC1	# Natmi_additional
+COL6A3	ITGA1	# Natmi_additional
+COL6A3	ITGA2	# Natmi_additional
+COL6A3	ITGB1	# Natmi_additional
+COL6A3	SDC1	# Natmi_additional
+COL6A5	ITGA1	# Natmi_additional
+COL6A5	ITGA2	# Natmi_additional
+COL6A5	ITGB1	# Natmi_additional
+COL6A5	SDC1	# Natmi_additional
+COL6A6	ITGA1	# Natmi_additional
+COL6A6	ITGA2	# Natmi_additional
+COL6A6	ITGB1	# Natmi_additional
+COL6A6	SDC1	# Natmi_additional
+COL7A1	ITGA2	# Natmi_additional
+COL7A1	ITGB1	# Natmi_additional
+COL7A1	SDC1	# Natmi_additional
+COL8A1	ITGA1	# Natmi_primary# Natmi_additional
+COL8A1	ITGA2	# Natmi_primary# Natmi_additional
+COL9A1	ITGA1	# Natmi_additional
+COL9A1	ITGA2	# Natmi_additional
+COL9A1	ITGA10	# Natmi_additional
+COL9A1	ITGA11	# Natmi_additional
+COL9A1	ITGB1	# Natmi_additional
+COL9A1	MAG	# Natmi_primary# Natmi_additional
+COL9A2	ITGA1	# Natmi_additional
+COL9A2	ITGA2	# Natmi_additional
+COL9A2	ITGA10	# Natmi_additional
+COL9A2	ITGA11	# Natmi_additional
+COL9A2	ITGB1	# Natmi_additional
+COL9A2	MAG	# Natmi_primary# Natmi_additional
+COL9A3	ITGA1	# Natmi_additional
+COL9A3	ITGA2	# Natmi_additional
+COL9A3	ITGA10	# Natmi_additional
+COL9A3	ITGA11	# Natmi_additional
+COL9A3	ITGB1	# Natmi_additional
+COL9A3	MAG	# Natmi_primary# Natmi_additional
+COL11A1	DDR1	# Natmi_primary# Natmi_additional
+COL11A1	ITGA2	# Natmi_additional
+COL11A1	ITGB1	# Natmi_additional
+COL11A1	SDC1	# Natmi_additional
+COL11A2	ITGA2	# Natmi_additional
+COL11A2	ITGB1	# Natmi_additional
+COL11A2	SDC1	# Natmi_additional
+COL14A1	CD44	# Natmi_primary# Natmi_additional
+COL16A1	ITGA1	# Natmi_additional
+COL16A1	ITGA2	# Natmi_additional
+COL16A1	ITGA10	# Natmi_additional
+COL16A1	ITGB1	# Natmi_additional
+COL18A1	GPC1	# Natmi_primary# Natmi_additional
+COL18A1	GPC4	# Natmi_primary# Natmi_additional
+COL18A1	ITGA3	# Natmi_additional
+COL18A1	ITGA5	# Natmi_primary# Natmi_additional
+COL18A1	ITGAV	# Natmi_additional
+COL18A1	ITGB1	# Natmi_primary# Natmi_additional
+COL18A1	ITGB3	# Natmi_additional
+COL18A1	ITGB5	# Natmi_additional
+COL18A1	KDR	# Natmi_primary# Natmi_additional
+COL18A1	PTPRS	# Natmi_primary# Natmi_additional
+COLQ	MUSK	# Natmi_primary# Natmi_additional
+COMP	CD47	# Natmi_primary# Natmi_additional
+COMP	ITGA5	# Natmi_primary# Natmi_additional
+COMP	ITGAV	# Natmi_additional
+COMP	ITGB1	# Natmi_additional
+COMP	ITGB3	# Natmi_primary# Natmi_additional# Omnipath
+CORT	GHSR	# Natmi_primary# Natmi_additional# Omnipath
+CORT	MRGPRX2	# Natmi_primary# Natmi_additional# Omnipath
+CORT	SSTR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CORT	SSTR2	# Natmi_primary# Natmi_additional# Omnipath
+CORT	SSTR3	# Natmi_primary# Natmi_additional# Omnipath
+CORT	SSTR4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CORT	SSTR5	# Natmi_primary# Natmi_additional# Omnipath
+CPAMD8	SCTR	# Natmi_primary# Natmi_additional
+CP	SLC40A1	# Natmi_primary# Natmi_additional
+CRHR2	CRH	# cellphonedb
+CRH	CRHR1	# Natmi_primary# Natmi_additional# Omnipath
+CRH	CRHR2	# Natmi_primary# Natmi_additional# Omnipath
+CRLF1	CNTFR	# Natmi_primary# Natmi_additional# Omnipath
+CRLF1	IL6ST	# Natmi_additional
+CRLF1	LIFR	# Natmi_additional
+CRP	OLR1	# Natmi_primary# Natmi_additional
+CRTAM	CADM1	# Natmi_primary# Natmi_additional
+CSF1	CSF1R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CSF1	CSF2RA	# Omnipath
+CSF1	CSF3R	# Omnipath
+CSF2	CSF1R	# cellphonedb
+CSF2	CSF2RA	# Natmi_primary# Natmi_additional# Omnipath
+CSF2	CSF2RB	# Natmi_primary# Natmi_additional# Omnipath
+CSF2	CSF3R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CSF2	IL3RA	# Natmi_primary# Natmi_additional# Omnipath
+CSF2	ITGA9	# Natmi_additional
+CSF2	ITGB1	# Natmi_additional
+CSF2	SDC2	# Natmi_primary# Natmi_additional# Omnipath
+CSF3	CSF1R	# cellphonedb
+CSF3	CSF2RA	# Omnipath
+CSF3	CSF3R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CSH1	PRLR	# Natmi_primary# Natmi_additional# Omnipath
+CSHL1	GHR	# Natmi_additional
+CSHL1	PRLR	# cellphonedb
+CTF1	IL6ST	# Natmi_primary# Natmi_additional# Omnipath
+CTF1	LIFR	# Natmi_primary# Natmi_additional# Omnipath
+CTHRC1	FZD3	# Natmi_primary# Natmi_additional
+CTHRC1	FZD5	# Natmi_primary# Natmi_additional
+CTHRC1	FZD6	# Natmi_primary# Natmi_additional
+CTHRC1	ROR2	# Natmi_primary# Natmi_additional
+CTLA4	CD28	# Natmi_additional
+CTLA4	CD80	# Natmi_additional
+CTLA4	CD86	# Natmi_additional
+CTLA4	ITGA1	# Natmi_additional
+CTLA4	ITGA2	# Natmi_additional
+CTLA4	ITGA3	# Natmi_additional
+CTLA4	ITGA4	# Natmi_additional
+CTLA4	ITGA5	# Natmi_additional
+CTLA4	ITGA8	# Natmi_additional
+CTLA4	ITGA9	# Natmi_additional
+CTLA4	ITGA10	# Natmi_additional
+CTLA4	ITGA11	# Natmi_additional
+CTLA4	ITGAD	# Natmi_additional
+CTLA4	ITGAE	# Natmi_additional
+CTLA4	ITGAL	# Natmi_additional
+CTLA4	ITGAM	# Natmi_additional
+CTLA4	ITGAV	# Natmi_additional
+CTLA4	ITGAX	# Natmi_additional
+CTLA4	ITGB1	# Natmi_additional
+CTLA4	ITGB2	# Natmi_additional
+CTLA4	ITGB3	# Natmi_additional
+CTLA4	ITGB4	# Natmi_additional
+CTLA4	ITGB5	# Natmi_additional
+CTLA4	ITGB6	# Natmi_additional
+CTLA4	ITGB7	# Natmi_additional
+CTLA4	ITGB8	# Natmi_additional
+CUBN	LRP2	# Natmi_additional
+CX3CL1	CX3CR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CX3CL1	ITGAV	# Natmi_primary# Natmi_additional
+CX3CL1	ITGB3	# Natmi_primary# Natmi_additional# Omnipath
+CXADR	CXADR	# Natmi_primary# Natmi_additional
+CXADR	JAML	# Natmi_primary# Natmi_additional
+CXCL1	ACKR1	# Natmi_primary# Natmi_additional# Omnipath
+CXCL1	CXCR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CXCL1	CXCR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CXCL2	ACKR1	# Omnipath
+CXCL2	CXCR1	# Natmi_primary# Natmi_additional# Omnipath
+CXCL2	CXCR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CXCL2	DPP4	# cellphonedb
+CXCL2	XCR1	# Natmi_primary# Natmi_additional# Omnipath
+CXCL3	CXCR1	# Natmi_primary# Natmi_additional# Omnipath
+CXCL3	CXCR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CXCL5	ACKR1	# Natmi_primary# Natmi_additional# Omnipath
+CXCL5	CXCR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CXCL5	CXCR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CXCL6	ACKR1	# Omnipath
+CXCL6	CXCR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CXCL6	CXCR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CXCL8	ACKR1	# Natmi_primary# Natmi_additional# Omnipath
+CXCL8	CD79A	# Natmi_additional
+CXCL8	CXCR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CXCL8	CXCR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CXCL8	KDR	# Natmi_additional
+CXCL8	SDC1	# Natmi_primary# Natmi_additional# Omnipath
+CXCL8	SDC2	# Natmi_primary# Natmi_additional# Omnipath
+CXCL8	SDC3	# Natmi_additional
+CXCL9	CCR3	# Natmi_primary# Natmi_additional# Omnipath
+CXCL9	CXCR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CXCL9	DPP4	# cellphonedb
+CXCL10	CCR3	# Natmi_primary# Natmi_additional# Omnipath
+CXCL10	CXCR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CXCL10	DPP4	# cellphonedb
+CXCL10	SDC4	# Natmi_primary# Natmi_additional
+CXCL11	ACKR1	# Omnipath
+CXCL11	ACKR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CXCL11	CCR3	# Natmi_primary# Natmi_additional# Omnipath
+CXCL11	CXCR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CXCL11	DPP4	# cellphonedb
+CXCL12	ACKR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CXCL12	ADRB2	# Natmi_additional
+CXCL12	AGTR2	# Natmi_additional
+CXCL12	CCR3	# Natmi_additional
+CXCL12	CCR4	# Natmi_additional
+CXCL12	CCR5	# Natmi_additional
+CXCL12	CD4	# Natmi_primary# Natmi_additional# Omnipath
+CXCL12	CFTR	# Natmi_additional
+CXCL12	CHRM1	# Natmi_additional
+CXCL12	CXCR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CXCL12	CXCR4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CXCL12	DPP4	# cellphonedb
+CXCL12	FPR1	# Natmi_additional
+CXCL12	HTR2C	# Natmi_additional
+CXCL12	ITGA4	# Natmi_primary# Natmi_additional
+CXCL12	ITGA5	# Natmi_primary# Natmi_additional
+CXCL12	ITGAV	# Natmi_primary# Natmi_additional
+CXCL12	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+CXCL12	ITGB3	# Natmi_primary# Natmi_additional
+CXCL12	P2RY2	# Natmi_additional
+CXCL12	PTGER1	# Natmi_additional
+CXCL12	ROBO1	# Natmi_additional
+CXCL12	SDC4	# Natmi_additional
+CXCL13	ACKR4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CXCL13	CCR10	# Natmi_primary# Natmi_additional# Omnipath
+CXCL13	CXCR3	# Natmi_primary# Natmi_additional# Omnipath
+CXCL13	CXCR5	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CXCL13	HTR2A	# Natmi_additional
+CXCL13	OPRD1	# Natmi_additional
+CXCL14	CXCR4	# Natmi_primary# Natmi_additional# Omnipath
+CXCL16	CXCR6	# cellphonedb# Natmi_primary# Natmi_additional
+CXCL17	GPR35	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+CXCR1	PPBP	# cellphonedb
+CXCR3	PF4	# cellphonedb
+CYTL1	CCR2	# Natmi_primary# Natmi_additional
+DAG1	LAMA4	# Natmi_primary# Natmi_additional
+DCN	EGFR	# Natmi_primary# Natmi_additional# Omnipath
+DCN	ERBB2	# Natmi_additional
+DCN	ERBB3	# Natmi_additional
+DCN	ERBB4	# Natmi_primary# Natmi_additional# Omnipath
+DCN	MET	# Natmi_primary# Natmi_additional# Omnipath
+DCN	TLR2	# Natmi_primary# Natmi_additional# Omnipath
+DCN	TLR4	# Natmi_primary# Natmi_additional# Omnipath
+DEFA3	CD4	# Natmi_additional
+DEFB1	CCR6	# Natmi_primary# Natmi_additional# Omnipath
+DEFB4A	CCR6	# Natmi_primary# Natmi_additional# Omnipath
+DEFB4A	TLR4	# Natmi_primary# Natmi_additional# Omnipath
+DEFB4B	CCR6	# Natmi_primary# Natmi_additional
+DEFB103A	CCR2	# Omnipath
+DEFB103A	CCR6	# Natmi_primary# Natmi_additional# Omnipath
+DEFB103B	CCR2	# Natmi_primary# Natmi_additional
+DEFB103B	CCR6	# Natmi_primary# Natmi_additional
+DEFB106A	CCR2	# Natmi_primary# Natmi_additional
+DEFB106B	CCR2	# Omnipath
+DHH	BOC	# Natmi_primary# Natmi_additional# Omnipath
+DHH	CDON	# Natmi_primary# Natmi_additional# Omnipath
+DHH	HHIP	# Natmi_primary# Natmi_additional
+DHH	PTCH1	# Natmi_primary# Natmi_additional# Omnipath
+DHH	PTCH2	# Natmi_primary# Natmi_additional# Omnipath
+DKK1	FZD1	# Natmi_additional
+DKK1	FZD8	# Natmi_additional
+DKK1	KREMEN1	# Natmi_primary# Natmi_additional# Omnipath
+DKK1	KREMEN2	# Natmi_primary# Natmi_additional# Omnipath
+DKK1	LRP4	# Natmi_primary# Natmi_additional
+DKK1	LRP5	# Natmi_primary# Natmi_additional# Omnipath
+DKK1	LRP6	# Natmi_primary# Natmi_additional# Omnipath
+DKK2	KREMEN1	# Natmi_primary# Natmi_additional
+DKK2	KREMEN2	# Natmi_primary# Natmi_additional# Omnipath
+DKK2	LRP5	# Natmi_primary# Natmi_additional
+DKK2	LRP6	# Natmi_primary# Natmi_additional# Omnipath
+DKK4	KREMEN1	# Natmi_primary# Natmi_additional
+DKK4	KREMEN2	# Natmi_primary# Natmi_additional
+DKK4	LRP5	# Natmi_additional
+DKK4	LRP6	# Natmi_primary# Natmi_additional# Omnipath
+DLK1	NOTCH1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+DLK1	NOTCH2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+DLK1	NOTCH3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+DLK1	NOTCH4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+DLK2	NOTCH1	# Natmi_primary# Natmi_additional# Omnipath
+DLL1	NOTCH1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+DLL1	NOTCH2	# Natmi_primary# Natmi_additional# Omnipath
+DLL1	NOTCH3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+DLL1	NOTCH4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+DLL3	NOTCH1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+DLL3	NOTCH2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+DLL3	NOTCH3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+DLL3	NOTCH4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+DLL4	NOTCH1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+DLL4	NOTCH2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+DLL4	NOTCH3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+DLL4	NOTCH4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+DNAJB11	PRTG	# Natmi_primary# Natmi_additional
+DPP4	PYY	# cellphonedb
+DSC1	DSG1	# cellphonedb# Natmi_primary# Natmi_additional
+DSC1	DSG2	# Natmi_primary# Natmi_additional
+DSC1	DSG3	# Natmi_primary# Natmi_additional
+DSC1	DSG4	# Natmi_primary# Natmi_additional
+DSC2	DSG1	# cellphonedb# Natmi_primary# Natmi_additional
+DSC2	DSG2	# cellphonedb# Natmi_primary# Natmi_additional
+DSC2	DSG3	# Natmi_primary# Natmi_additional
+DSC2	DSG4	# Natmi_primary# Natmi_additional
+DSC3	DSG1	# Natmi_primary# Natmi_additional
+DSC3	DSG2	# Natmi_primary# Natmi_additional
+DSC3	DSG3	# Natmi_primary# Natmi_additional
+DSC3	DSG4	# Natmi_primary# Natmi_additional
+DSCAM	DCC	# Natmi_additional
+DSG1	DSC1	# Natmi_additional
+DSG1	DSC3	# cellphonedb# Natmi_primary# Natmi_additional
+DSG2	DSC1	# cellphonedb# Natmi_primary# Natmi_additional
+DSG2	DSC3	# cellphonedb# Natmi_primary# Natmi_additional
+DSPP	ITGAV	# Natmi_additional
+DSPP	ITGB1	# Natmi_additional
+DSPP	ITGB6	# Natmi_primary# Natmi_additional
+EBI3	CANX	# Natmi_additional
+EBI3	IL6ST	# Natmi_primary# Natmi_additional# Omnipath
+EBI3	IL12RB2	# Natmi_additional
+EBI3	IL27RA	# Natmi_primary# Natmi_additional# Omnipath
+ECM1	CACHD1	# Natmi_additional
+ECM1	ITGB4	# Natmi_primary# Natmi_additional
+EDA	EDA2R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EDA	EDAR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EDIL3	ITGAV	# Natmi_additional# Omnipath
+EDIL3	ITGB3	# Natmi_primary# Natmi_additional
+EDIL3	ITGB5	# Natmi_additional
+EDN1	ADGRL4	# Natmi_additional
+EDN1	ADRB2	# Natmi_additional
+EDN1	AGTR2	# Natmi_additional
+EDN1	CCR3	# Natmi_additional
+EDN1	CCR5	# Natmi_additional
+EDN1	CFTR	# Natmi_additional
+EDN1	CHRM1	# Natmi_additional
+EDN1	CXCR4	# Natmi_additional
+EDN1	EDNRA	# Natmi_primary# Natmi_additional# Omnipath
+EDN1	EDNRB	# Natmi_primary# Natmi_additional# Omnipath
+EDN1	FPR1	# Natmi_additional
+EDN1	HTR2C	# Natmi_additional
+EDN1	KEL	# Natmi_primary# Natmi_additional
+EDN1	P2RY2	# Natmi_additional
+EDN1	PTGER1	# Natmi_additional
+EDN2	EDNRA	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EDN2	EDNRB	# Natmi_primary# Natmi_additional# Omnipath
+EDN2	KEL	# Natmi_primary# Natmi_additional
+EDN3	EDNRA	# Natmi_primary# Natmi_additional# Omnipath
+EDN3	EDNRB	# Natmi_primary# Natmi_additional# Omnipath
+EDN3	KEL	# Natmi_primary# Natmi_additional
+EFEMP1	EGFR	# Natmi_primary# Natmi_additional# Omnipath
+EFEMP2	LINGO1	# Omnipath
+EFNA1	EPHA1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNA1	EPHA2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNA1	EPHA3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNA1	EPHA4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNA1	EPHA5	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNA1	EPHA6	# Natmi_primary# Natmi_additional# Omnipath
+EFNA1	EPHA7	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNA1	EPHA8	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNA1	EPHA10	# Natmi_additional# Omnipath
+EFNA1	EPHB1	# Omnipath
+EFNA1	EPHB6	# Natmi_additional
+EFNA2	EPHA1	# cellphonedb# Natmi_primary# Natmi_additional
+EFNA2	EPHA2	# cellphonedb# Natmi_primary# Natmi_additional
+EFNA2	EPHA3	# cellphonedb# Natmi_primary# Natmi_additional
+EFNA2	EPHA4	# Natmi_primary# Natmi_additional
+EFNA2	EPHA5	# cellphonedb# Natmi_primary# Natmi_additional
+EFNA2	EPHA6	# Natmi_primary# Natmi_additional
+EFNA2	EPHA7	# Natmi_primary# Natmi_additional
+EFNA2	EPHA8	# cellphonedb# Natmi_primary# Natmi_additional
+EFNA2	EPHA10	# Natmi_additional
+EFNA3	EPHA1	# cellphonedb# Natmi_primary# Natmi_additional
+EFNA3	EPHA2	# cellphonedb# Natmi_primary# Natmi_additional
+EFNA3	EPHA3	# cellphonedb# Natmi_primary# Natmi_additional
+EFNA3	EPHA4	# cellphonedb# Natmi_primary# Natmi_additional
+EFNA3	EPHA5	# cellphonedb# Natmi_primary# Natmi_additional
+EFNA3	EPHA6	# Natmi_primary# Natmi_additional
+EFNA3	EPHA7	# cellphonedb# Natmi_primary# Natmi_additional
+EFNA3	EPHA8	# cellphonedb# Natmi_primary# Natmi_additional
+EFNA3	EPHA10	# Natmi_additional
+EFNA3	EPHB1	# Natmi_primary# Natmi_additional
+EFNA3	EPHB6	# Natmi_additional
+EFNA4	EPHA1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNA4	EPHA2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNA4	EPHA3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNA4	EPHA4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNA4	EPHA5	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNA4	EPHA6	# Natmi_primary# Natmi_additional# Omnipath
+EFNA4	EPHA7	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNA4	EPHA8	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNA4	EPHA10	# Natmi_additional# Omnipath
+EFNA5	EPHA1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNA5	EPHA2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNA5	EPHA3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNA5	EPHA4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNA5	EPHA5	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNA5	EPHA6	# Natmi_primary# Natmi_additional# Omnipath
+EFNA5	EPHA7	# Natmi_primary# Natmi_additional# Omnipath
+EFNA5	EPHA8	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNA5	EPHA10	# Natmi_additional# Omnipath
+EFNA5	EPHB1	# Natmi_primary# Natmi_additional# Omnipath
+EFNA5	EPHB2	# Natmi_primary# Natmi_additional# Omnipath
+EFNA5	EPHB6	# Natmi_primary# Natmi_additional# Omnipath
+EFNB1	EPHA4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNB1	EPHA6	# Natmi_additional
+EFNB1	EPHB1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNB1	EPHB2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNB1	EPHB3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNB1	EPHB4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNB1	EPHB6	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNB1	ERBB2	# Natmi_primary# Natmi_additional# Omnipath
+EFNB2	EPHA3	# Natmi_primary# Natmi_additional# Omnipath
+EFNB2	EPHA4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNB2	EPHA5	# Natmi_additional
+EFNB2	EPHA6	# Natmi_primary# Natmi_additional# Omnipath
+EFNB2	EPHB1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNB2	EPHB2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNB2	EPHB3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNB2	EPHB4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNB2	EPHB6	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNB2	EPO	# cellphonedb
+EFNB2	GRM1	# Natmi_primary# Natmi_additional# Omnipath
+EFNB2	GRM5	# Natmi_primary# Natmi_additional# Omnipath
+EFNB2	PECAM1	# Natmi_primary# Natmi_additional# Omnipath
+EFNB2	RHBDL2	# Natmi_primary# Natmi_additional
+EFNB3	EPHA4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNB3	EPHB1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNB3	EPHB2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNB3	EPHB3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNB3	EPHB4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNB3	EPHB6	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EFNB3	RHBDL2	# Natmi_primary# Natmi_additional
+EGFL8	NCR3	# Natmi_additional
+EGFR	TGFB1	# cellphonedb
+EGF	AXL	# Omnipath
+EGF	CAV1	# Natmi_additional
+EGF	EGFR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EGF	EPHA2	# Omnipath
+EGF	ERBB2	# Natmi_primary# Natmi_additional# Omnipath
+EGF	ERBB3	# Natmi_primary# Natmi_additional# Omnipath
+EGF	ERBB4	# Natmi_primary# Natmi_additional# Omnipath
+EGF	FSHR	# Natmi_additional
+EGF	MET	# Omnipath
+EGF	NOTCH3	# Natmi_additional
+EMB	SLC16A7	# Natmi_additional
+ENAM	CD63	# Natmi_primary# Natmi_additional
+ENHO	GPR19	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+ENTPD1	ADORA1	# cellphonedb
+ENTPD1	ADORA2A	# cellphonedb
+ENTPD1	ADORA2B	# cellphonedb
+ENTPD1	ADORA3	# cellphonedb
+ENTPD5	ENTPD3	# Natmi_additional
+ENTPD5	ENTPD8	# Natmi_additional
+ENTPD5	NT5E	# Natmi_additional
+EPCAM	EPCAM	# Natmi_primary# Natmi_additional
+EPGN	EGFR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EPGN	ERBB4	# Omnipath
+EPHA4	EFNA2	# cellphonedb
+EPHA4	EFNB1	# Natmi_primary# Natmi_additional
+EPHA7	EFNA2	# cellphonedb
+EPHA7	EFNA5	# cellphonedb
+EPHB2	EFNA5	# cellphonedb
+EPO	CRLF3	# Natmi_primary# Natmi_additional
+EPO	EPHB4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EPO	EPOR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EPO	KIT	# Natmi_additional
+EREG	EGFR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+EREG	ERBB2	# Natmi_additional# Omnipath
+EREG	ERBB3	# Natmi_additional# Omnipath
+EREG	ERBB4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+F2	ADRB2	# Natmi_additional
+F2	AGTR2	# Natmi_additional
+F2	CCR3	# Natmi_additional
+F2	CCR5	# Natmi_additional
+F2	CFTR	# Natmi_additional
+F2	CHRM1	# Natmi_additional
+F2	CXCR4	# Natmi_additional
+F2	F2RL1	# Natmi_primary# Natmi_additional
+F2	F2RL2	# Natmi_primary# Natmi_additional
+F2	F2RL3	# Natmi_primary# Natmi_additional
+F2	F2R	# Natmi_primary# Natmi_additional
+F2	FPR1	# Natmi_additional
+F2	GP1BA	# Natmi_primary# Natmi_additional
+F2	GP1BB	# Natmi_additional
+F2	GP9	# Natmi_primary# Natmi_additional
+F2	HTR2C	# Natmi_additional
+F2	ITGA2B	# Natmi_primary# Natmi_additional
+F2	P2RY2	# Natmi_additional
+F2	PTGER1	# Natmi_additional
+F2	THBD	# Natmi_primary# Natmi_additional
+F7	F3	# Natmi_primary# Natmi_additional
+F8	ASGR2	# Natmi_primary# Natmi_additional
+F8	LDLR	# Natmi_primary# Natmi_additional
+F8	LRP1	# Natmi_primary# Natmi_additional
+F9	LRP1	# Natmi_primary# Natmi_additional
+F10	F3	# Natmi_primary# Natmi_additional
+F10	ITGAM	# Natmi_additional
+F10	ITGB2	# Natmi_additional
+F11R	BDNF	# cellphonedb
+F11R	JAM2	# Natmi_primary# Natmi_additional
+F11	GP1BA	# Natmi_primary# Natmi_additional
+F11	GP1BB	# Natmi_additional
+F11	GP9	# Natmi_additional
+F12	GP1BA	# Natmi_primary# Natmi_additional
+F13A1	ITGA4	# Natmi_primary# Natmi_additional
+F13A1	ITGA9	# Natmi_primary# Natmi_additional
+F13A1	ITGB1	# Natmi_primary# Natmi_additional
+FAM3C	LIFR	# Natmi_primary# Natmi_additional
+FAM3D	FPR1	# Natmi_primary# Natmi_additional
+FAM3D	FPR2	# Natmi_primary# Natmi_additional
+FAM20C	ANO8	# Natmi_additional
+FAM20C	APLP2	# Natmi_additional
+FAM20C	APP	# Natmi_additional
+FAM20C	CDH2	# Natmi_additional
+FAM20C	MXRA8	# Natmi_additional
+FAM20C	SDC2	# Natmi_additional
+FARP2	NRP1	# Natmi_additional
+FARP2	PLXNA1	# Natmi_additional
+FARP2	PLXNA2	# Natmi_additional
+FARP2	PLXNA3	# Natmi_additional
+FARP2	PLXNA4	# Natmi_additional
+FASLG	FAS	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+FASLG	TNFRSF6B	# Natmi_primary# Natmi_additional# Omnipath
+FAS	TNFSF13	# cellphonedb
+FAS	TNF	# cellphonedb
+FAT4	DCHS1	# Natmi_primary# Natmi_additional
+FBLN1	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+FBLN2	ITGB3	# Omnipath
+FBN1	ITGA5	# Natmi_primary# Natmi_additional
+FBN1	ITGAV	# Natmi_primary# Natmi_additional
+FBN1	ITGB1	# Natmi_primary# Natmi_additional
+FBN1	ITGB3	# Natmi_primary# Natmi_additional
+FBN1	ITGB6	# Natmi_additional
+FCER2	CR2	# cellphonedb# Natmi_primary# Natmi_additional
+FCGR3B	CD2	# Natmi_additional
+FCGR3B	CD28	# Natmi_additional
+FCGR3B	CD247	# Natmi_additional
+FCGR3B	FCER1G	# Natmi_additional
+FCGR3B	LILRA1	# Natmi_additional
+FCGR3B	LILRA2	# Natmi_additional
+FCGR3B	LILRA4	# Natmi_additional
+FCGR3B	LILRA5	# Natmi_additional
+FCGR3B	LILRA6	# Natmi_additional
+FCGR3B	LILRB1	# Natmi_additional
+FCGR3B	LILRB2	# Natmi_additional
+FCGR3B	LILRB3	# Natmi_additional
+FCGR3B	LILRB5	# Natmi_additional
+FCN2	LRP1	# Natmi_primary# Natmi_additional# Omnipath
+FCRL4	TFF1	# cellphonedb
+FGA	ITGA2B	# Natmi_primary# Natmi_additional
+FGA	ITGA5	# Natmi_primary# Natmi_additional
+FGA	ITGAD	# Natmi_additional
+FGA	ITGAM	# Natmi_primary# Natmi_additional
+FGA	ITGAV	# Natmi_primary# Natmi_additional
+FGA	ITGAX	# Natmi_primary# Natmi_additional
+FGA	ITGB1	# Natmi_primary# Natmi_additional
+FGA	ITGB2	# Natmi_primary# Natmi_additional
+FGA	ITGB3	# Natmi_primary# Natmi_additional
+FGA	KIAA1549	# Natmi_additional
+FGA	LY96	# Natmi_additional
+FGA	PLAUR	# Natmi_additional
+FGA	TLR4	# Natmi_primary# Natmi_additional
+FGB	ITGA2B	# Natmi_primary# Natmi_additional
+FGB	ITGA5	# Natmi_primary# Natmi_additional
+FGB	ITGAD	# Natmi_additional
+FGB	ITGAM	# Natmi_primary# Natmi_additional
+FGB	ITGAV	# Natmi_primary# Natmi_additional
+FGB	ITGAX	# Natmi_additional
+FGB	ITGB1	# Natmi_primary# Natmi_additional
+FGB	ITGB2	# Natmi_primary# Natmi_additional
+FGB	ITGB3	# Natmi_additional
+FGB	KIAA1549	# Natmi_additional
+FGB	LY96	# Natmi_additional
+FGB	PLAUR	# Natmi_additional
+FGB	TLR4	# Natmi_primary# Natmi_additional
+FGF1	CD44	# Natmi_primary# Natmi_additional# Omnipath
+FGF1	CSPG4	# Natmi_primary# Natmi_additional
+FGF1	EGFR	# Natmi_additional# Omnipath
+FGF1	FGFR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+FGF1	FGFR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+FGF1	FGFR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+FGF1	FGFR4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+FGF1	FGFRL1	# Natmi_additional
+FGF1	FLRT1	# Natmi_additional
+FGF1	FLRT2	# Natmi_additional
+FGF1	NRP1	# Natmi_primary# Natmi_additional# Omnipath
+FGF2	CD44	# Natmi_primary# Natmi_additional# Omnipath
+FGF2	FGFR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+FGF2	FGFR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+FGF2	FGFR3	# Natmi_primary# Natmi_additional# Omnipath
+FGF2	FGFR4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+FGF2	FGFRL1	# Natmi_primary# Natmi_additional# Omnipath
+FGF2	FLRT1	# Natmi_additional
+FGF2	FLRT2	# Natmi_additional
+FGF2	GPC1	# Natmi_additional
+FGF2	GPC4	# Natmi_primary# Natmi_additional# Omnipath
+FGF2	NRP1	# Natmi_primary# Natmi_additional# Omnipath
+FGF2	SDC1	# Natmi_primary# Natmi_additional# Omnipath
+FGF2	SDC2	# Natmi_primary# Natmi_additional# Omnipath
+FGF2	SDC3	# Natmi_primary# Natmi_additional# Omnipath
+FGF2	SDC4	# Natmi_primary# Natmi_additional
+FGF3	FGFR1	# Natmi_primary# Natmi_additional# Omnipath
+FGF3	FGFR2	# Natmi_primary# Natmi_additional# Omnipath
+FGF3	FGFR3	# Natmi_primary# Natmi_additional# Omnipath
+FGF3	FGFR4	# Natmi_primary# Natmi_additional# Omnipath
+FGF3	FGFRL1	# Natmi_primary# Natmi_additional
+FGF3	FLRT1	# Natmi_additional
+FGF3	FLRT2	# Natmi_additional
+FGF4	FGFR1	# Natmi_primary# Natmi_additional# Omnipath
+FGF4	FGFR2	# Natmi_primary# Natmi_additional# Omnipath
+FGF4	FGFR3	# Natmi_primary# Natmi_additional# Omnipath
+FGF4	FGFR4	# Natmi_primary# Natmi_additional# Omnipath
+FGF4	FGFRL1	# Natmi_primary# Natmi_additional
+FGF4	FLRT1	# Natmi_additional
+FGF4	FLRT2	# Natmi_additional
+FGF4	NRP1	# Natmi_primary# Natmi_additional# Omnipath
+FGF5	FGFR1	# Natmi_primary# Natmi_additional# Omnipath
+FGF5	FGFR2	# Natmi_primary# Natmi_additional# Omnipath
+FGF5	FGFR3	# Natmi_primary# Natmi_additional# Omnipath
+FGF5	FGFR4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+FGF6	FGFR1	# Natmi_primary# Natmi_additional# Omnipath
+FGF6	FGFR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+FGF6	FGFR3	# Natmi_primary# Natmi_additional# Omnipath
+FGF6	FGFR4	# Natmi_primary# Natmi_additional# Omnipath
+FGF6	FLRT1	# Natmi_additional
+FGF6	FLRT2	# Natmi_additional
+FGF6	SDC4	# Natmi_additional
+FGF7	FGFR1	# Natmi_primary# Natmi_additional# Omnipath
+FGF7	FGFR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+FGF7	FGFR3	# Natmi_primary# Natmi_additional# Omnipath
+FGF7	FGFR4	# Omnipath
+FGF7	NRP1	# Natmi_primary# Natmi_additional# Omnipath
+FGF8	FGFR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+FGF8	FGFR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+FGF8	FGFR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+FGF8	FGFR4	# Natmi_primary# Natmi_additional# Omnipath
+FGF8	FGFRL1	# Natmi_primary# Natmi_additional# Omnipath
+FGF9	FGFR1	# Natmi_primary# Natmi_additional# Omnipath
+FGF9	FGFR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+FGF9	FGFR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+FGF9	FGFR4	# Natmi_primary# Natmi_additional# Omnipath
+FGF9	FLRT1	# Natmi_additional
+FGF9	FLRT2	# Natmi_additional
+FGF10	FGFR1	# Natmi_primary# Natmi_additional# Omnipath
+FGF10	FGFR2	# Natmi_primary# Natmi_additional# Omnipath
+FGF10	FGFR3	# Natmi_additional
+FGF10	FGFR4	# Natmi_additional
+FGF10	FGFRL1	# Natmi_primary# Natmi_additional# Omnipath
+FGF10	FLRT1	# Natmi_additional
+FGF10	FLRT2	# Natmi_additional
+FGF11	FGFR1	# Natmi_additional
+FGF11	FGFR2	# Natmi_additional
+FGF11	FGFR3	# Natmi_additional
+FGF11	FGFR4	# Natmi_additional
+FGF12	FGFR1	# Natmi_additional
+FGF12	FGFR2	# Natmi_additional
+FGF12	FGFR3	# Natmi_additional
+FGF12	FGFR4	# Natmi_additional
+FGF12	SCN5A	# Natmi_additional
+FGF13	EGFR	# Natmi_additional
+FGF13	FGFR1	# Natmi_additional# Omnipath
+FGF13	FGFR2	# Natmi_additional# Omnipath
+FGF13	FGFR3	# Natmi_additional# Omnipath
+FGF13	FGFR4	# Natmi_additional# Omnipath
+FGF13	SCN5A	# Natmi_primary# Natmi_additional
+FGF13	SCN8A	# Natmi_primary# Natmi_additional
+FGF14	FGFR1	# Natmi_additional
+FGF14	FGFR2	# Natmi_additional
+FGF14	FGFR3	# Natmi_additional
+FGF14	FGFR4	# Natmi_additional
+FGF16	FGFR1	# Natmi_additional# Omnipath
+FGF16	FGFR2	# Natmi_primary# Natmi_additional# Omnipath
+FGF16	FGFR3	# Natmi_primary# Natmi_additional# Omnipath
+FGF16	FGFR4	# Natmi_primary# Natmi_additional# Omnipath
+FGF17	FGFR1	# Natmi_primary# Natmi_additional# Omnipath
+FGF17	FGFR2	# Natmi_primary# Natmi_additional# Omnipath
+FGF17	FGFR3	# Natmi_primary# Natmi_additional# Omnipath
+FGF17	FGFR4	# Natmi_primary# Natmi_additional# Omnipath
+FGF18	FGFR1	# Natmi_primary# Natmi_additional# Omnipath
+FGF18	FGFR2	# Natmi_primary# Natmi_additional# Omnipath
+FGF18	FGFR3	# Natmi_primary# Natmi_additional# Omnipath
+FGF18	FGFR4	# Natmi_primary# Natmi_additional# Omnipath
+FGF18	FGFRL1	# Natmi_additional
+FGF19	FGFR1	# Natmi_primary# Natmi_additional# Omnipath
+FGF19	FGFR2	# Natmi_primary# Natmi_additional# Omnipath
+FGF19	FGFR3	# Natmi_primary# Natmi_additional# Omnipath
+FGF19	FGFR4	# Natmi_primary# Natmi_additional# Omnipath
+FGF19	KLB	# Natmi_primary# Natmi_additional# Omnipath
+FGF19	SDC1	# Natmi_additional
+FGF19	SDC2	# Natmi_additional
+FGF19	SDC3	# Natmi_additional
+FGF20	FGFR1	# Natmi_primary# Natmi_additional# Omnipath
+FGF20	FGFR2	# Natmi_primary# Natmi_additional# Omnipath
+FGF20	FGFR3	# Natmi_primary# Natmi_additional# Omnipath
+FGF20	FGFR4	# Natmi_primary# Natmi_additional# Omnipath
+FGF20	FLRT1	# Natmi_additional
+FGF20	FLRT2	# Natmi_additional
+FGF21	FGFR1	# Omnipath
+FGF21	FGFR2	# Natmi_additional# Omnipath
+FGF21	FGFR3	# Omnipath
+FGF21	FGFR4	# Natmi_primary# Natmi_additional# Omnipath
+FGF21	KLB	# Omnipath
+FGF22	FGFR1	# Natmi_primary# Natmi_additional# Omnipath
+FGF22	FGFR2	# Natmi_primary# Natmi_additional# Omnipath
+FGF22	FGFRL1	# Natmi_primary# Natmi_additional
+FGF22	FLRT1	# Natmi_additional
+FGF22	FLRT2	# Natmi_additional
+FGF23	FGFR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+FGF23	FGFR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+FGF23	FGFR3	# Natmi_primary# Natmi_additional# Omnipath
+FGF23	FGFR4	# Natmi_primary# Natmi_additional# Omnipath
+FGF23	FGFRL1	# Natmi_additional
+FGF23	FLRT1	# Natmi_additional
+FGF23	FLRT2	# Natmi_additional
+FGF23	KL	# Natmi_primary# Natmi_additional
+FGF23	PHEX	# Natmi_additional
+FGF23	SDC1	# Natmi_additional
+FGF23	SDC2	# Natmi_additional
+FGF23	SDC3	# Natmi_additional
+FGFR1	FGF5	# cellphonedb
+FGFR1	FGF19	# cellphonedb
+FGFR1	NCAM1	# cellphonedb
+FGFR2	FGF3	# cellphonedb
+FGFR2	FGF5	# cellphonedb
+FGFR2	FGF10	# cellphonedb
+FGFR2	FGFR3	# cellphonedb
+FGFR3	FGF2	# cellphonedb
+FGFR3	FGF4	# cellphonedb
+FGFR3	FGF5	# cellphonedb
+FGFR3	FGF7	# cellphonedb
+FGFR4	FGF19	# cellphonedb
+FGG	ITGA2B	# Natmi_primary# Natmi_additional
+FGG	ITGA5	# Natmi_primary# Natmi_additional
+FGG	ITGAD	# Natmi_additional
+FGG	ITGAM	# Natmi_additional
+FGG	ITGAV	# Natmi_primary# Natmi_additional
+FGG	ITGAX	# Natmi_additional
+FGG	ITGB1	# Natmi_primary# Natmi_additional
+FGG	ITGB2	# Natmi_primary# Natmi_additional
+FGG	ITGB3	# Natmi_additional
+FGG	KIAA1549	# Natmi_additional
+FGG	LY96	# Natmi_additional
+FGG	PLAUR	# Natmi_additional
+FGG	TLR4	# Natmi_primary# Natmi_additional
+FGL1	EGFR	# Natmi_primary# Natmi_additional# Omnipath
+FGL1	LAG3	# Natmi_primary# Natmi_additional
+FLT1	PGF	# cellphonedb
+FLT1	VEGFA	# cellphonedb
+FLT1	VEGFB	# cellphonedb
+FLT3LG	FLT3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+FN1	C5AR1	# Natmi_additional
+FN1	CD44	# Natmi_primary# Natmi_additional
+FN1	CD79A	# Natmi_additional
+FN1	COL13A1	# Natmi_primary# Natmi_additional
+FN1	EGFR	# Natmi_additional
+FN1	FLT4	# Natmi_additional
+FN1	IL17RC	# Natmi_additional
+FN1	ITGA2B	# Natmi_primary# Natmi_additional
+FN1	ITGA2	# Natmi_primary# Natmi_additional
+FN1	ITGA4	# Natmi_primary# Natmi_additional
+FN1	ITGA5	# Natmi_primary# Natmi_additional
+FN1	ITGA6	# Natmi_additional
+FN1	ITGA8	# Natmi_primary# Natmi_additional
+FN1	ITGA9	# Natmi_primary# Natmi_additional
+FN1	ITGAV	# Natmi_primary# Natmi_additional
+FN1	ITGB1	# Natmi_primary# Natmi_additional
+FN1	ITGB3	# Natmi_primary# Natmi_additional
+FN1	ITGB6	# Natmi_primary# Natmi_additional
+FN1	ITGB7	# Natmi_primary# Natmi_additional
+FN1	ITGB8	# Natmi_primary# Natmi_additional
+FN1	KIAA1549	# Natmi_additional
+FN1	MAG	# Natmi_primary# Natmi_additional
+FN1	NT5E	# Natmi_primary# Natmi_additional
+FN1	PLAUR	# Natmi_primary# Natmi_additional
+FN1	ROBO4	# Natmi_additional
+FN1	SDC2	# Natmi_primary# Natmi_additional
+FN1	TNFRSF11B	# Natmi_primary# Natmi_additional
+FN1	TSHR	# Natmi_primary# Natmi_additional
+FNDC5	ITGAV	# Natmi_primary# Natmi_additional
+FNDC5	ITGB5	# Natmi_primary# Natmi_additional
+FSHB	FSHR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+FSHR	CGA	# cellphonedb
+FSTL1	DIP2A	# Natmi_primary# Natmi_additional
+FST	BAMBI	# Natmi_additional
+FST	BMPR1A	# Natmi_additional
+FST	BMPR1B	# Natmi_additional
+FST	BMPR2	# Natmi_additional
+FST	HJV	# Natmi_additional
+FST	RGMB	# Natmi_additional
+FZD1	WNT3A	# cellphonedb
+FZD1	WNT5A	# cellphonedb
+FZD8	ATP6AP2	# Natmi_additional
+FZD8	CKAP4	# Natmi_primary# Natmi_additional
+FZD8	LRP5	# Natmi_additional
+FZD8	LRP6	# Natmi_additional
+FZD8	RYK	# Natmi_additional
+FZD8	ZNRF3	# Natmi_additional
+GALP	GALR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GALP	GALR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GALP	GALR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GAL	GALR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GAL	GALR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GAL	GALR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GAL	GPR151	# Natmi_primary# Natmi_additional# Omnipath
+GAS6	AXL	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GAS6	MERTK	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GAS6	TYRO3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GAST	CCKBR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GCG	DPP4	# cellphonedb
+GCG	GCGR	# Natmi_primary# Natmi_additional# Omnipath
+GCG	GIPR	# Omnipath
+GCG	GLP1R	# Natmi_primary# Natmi_additional# Omnipath
+GCG	GLP2R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GCG	IDE	# cellphonedb
+GDF1	ACVR1	# Natmi_primary# Natmi_additional
+GDF1	BMPR1A	# Natmi_primary# Natmi_additional
+GDF1	BMPR2	# Natmi_primary# Natmi_additional
+GDF2	ACVR1	# Natmi_primary# Natmi_additional# Omnipath
+GDF2	ACVR2A	# Natmi_primary# Natmi_additional# Omnipath
+GDF2	ACVR2B	# Natmi_primary# Natmi_additional# Omnipath
+GDF2	ACVRL1	# Natmi_primary# Natmi_additional# Omnipath
+GDF2	BMPR2	# Natmi_primary# Natmi_additional# Omnipath
+GDF2	ENG	# Natmi_primary# Natmi_additional
+GDF3	TDGF1	# Natmi_primary# Natmi_additional
+GDF5	ACVR1	# Natmi_primary# Natmi_additional# Omnipath
+GDF5	ACVR2A	# Natmi_primary# Natmi_additional# Omnipath
+GDF5	ACVR2B	# Natmi_primary# Natmi_additional# Omnipath
+GDF5	BMPR1A	# Natmi_primary# Natmi_additional# Omnipath
+GDF5	BMPR1B	# Natmi_primary# Natmi_additional# Omnipath
+GDF5	BMPR2	# Natmi_primary# Natmi_additional# Omnipath
+GDF5	ROR2	# Natmi_primary# Natmi_additional# Omnipath
+GDF6	BMPR1A	# Natmi_primary# Natmi_additional# Omnipath
+GDF6	BMPR1B	# Natmi_primary# Natmi_additional# Omnipath
+GDF6	BMPR2	# Natmi_primary# Natmi_additional# Omnipath
+GDF7	ACVR2A	# Natmi_primary# Natmi_additional# Omnipath
+GDF7	BMPR1A	# Natmi_primary# Natmi_additional# Omnipath
+GDF7	BMPR2	# Natmi_primary# Natmi_additional# Omnipath
+GDF9	ACVR2A	# Natmi_primary# Natmi_additional# Omnipath
+GDF9	BMPR1A	# Natmi_primary# Natmi_additional# Omnipath
+GDF9	BMPR1B	# Natmi_primary# Natmi_additional# Omnipath
+GDF9	BMPR2	# Natmi_primary# Natmi_additional# Omnipath
+GDF9	FXYD6	# Omnipath
+GDF9	TGFBR1	# Natmi_primary# Natmi_additional# Omnipath
+GDF10	ACVR1B	# Natmi_additional
+GDF11	ACVR1B	# Natmi_primary# Natmi_additional# Omnipath
+GDF11	ACVR2A	# Natmi_primary# Natmi_additional# Omnipath
+GDF11	ACVR2B	# Natmi_primary# Natmi_additional# Omnipath
+GDF15	GFRAL	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GDNF	EDNRB	# Natmi_additional
+GDNF	GFRA1	# Natmi_primary# Natmi_additional# Omnipath
+GDNF	GFRA2	# Natmi_primary# Natmi_additional
+GDNF	GFRA4	# Natmi_additional
+GDNF	RET	# Natmi_primary# Natmi_additional# Omnipath
+GDNF	SLC44A5	# Natmi_additional
+GH1	GHR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GH1	PRLR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GH2	GHR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GH2	PRLR	# Natmi_additional
+GHRH	GHRHR	# Natmi_primary# Natmi_additional# Omnipath
+GHRH	VIPR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GHRL	GHRHR	# Omnipath
+GHRL	GHSR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GHRL	GPR39	# Natmi_primary# Natmi_additional# Omnipath
+GHRL	MLNR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GHRL	PTGER3	# cellphonedb# Omnipath
+GHRL	PTGIR	# cellphonedb
+GHRL	TBXA2R	# cellphonedb# Omnipath
+GIP	DPP4	# cellphonedb# Natmi_primary# Natmi_additional
+GIP	GIPR	# Natmi_primary# Natmi_additional# Omnipath
+GIP	INSR	# Natmi_additional
+GLG1	SELE	# Natmi_primary# Natmi_additional
+GNAI2	ACKR3	# Natmi_additional
+GNAI2	ADCY1	# Natmi_primary# Natmi_additional
+GNAI2	ADCY7	# Natmi_additional
+GNAI2	ADCY8	# Natmi_additional
+GNAI2	ADCY9	# Natmi_additional
+GNAI2	ADORA1	# Natmi_primary# Natmi_additional
+GNAI2	ADRA2A	# Natmi_primary# Natmi_additional
+GNAI2	ADRA2B	# Natmi_primary# Natmi_additional
+GNAI2	ADRA2C	# Natmi_additional
+GNAI2	AGTR2	# Natmi_primary# Natmi_additional
+GNAI2	APLNR	# Natmi_additional
+GNAI2	APP	# Natmi_additional
+GNAI2	BDKRB1	# Natmi_additional
+GNAI2	BDKRB2	# Natmi_additional
+GNAI2	C3AR1	# Natmi_additional
+GNAI2	C5AR1	# Natmi_primary# Natmi_additional
+GNAI2	CASR	# Natmi_additional
+GNAI2	CAV1	# Natmi_primary# Natmi_additional
+GNAI2	CCR1	# Natmi_additional
+GNAI2	CCR2	# Natmi_additional
+GNAI2	CCR3	# Natmi_additional
+GNAI2	CCR4	# Natmi_additional
+GNAI2	CCR5	# Natmi_primary# Natmi_additional
+GNAI2	CCR7	# Natmi_additional
+GNAI2	CCR8	# Natmi_additional
+GNAI2	CCR9	# Natmi_additional
+GNAI2	CCR10	# Natmi_additional
+GNAI2	CHRM4	# Natmi_additional
+GNAI2	CNR1	# Natmi_primary# Natmi_additional
+GNAI2	CNR2	# Natmi_additional
+GNAI2	CX3CR1	# Natmi_additional
+GNAI2	CXCR1	# Natmi_primary# Natmi_additional
+GNAI2	CXCR2	# Natmi_primary# Natmi_additional
+GNAI2	CXCR3	# Natmi_additional
+GNAI2	CXCR4	# Natmi_additional
+GNAI2	CXCR5	# Natmi_additional
+GNAI2	CXCR6	# Natmi_additional
+GNAI2	DRD3	# Natmi_additional
+GNAI2	DRD4	# Natmi_additional
+GNAI2	EDNRA	# Natmi_primary# Natmi_additional
+GNAI2	EDNRB	# Natmi_additional
+GNAI2	EGFR	# Natmi_primary# Natmi_additional
+GNAI2	F2R	# Natmi_primary# Natmi_additional
+GNAI2	FPR1	# Natmi_primary# Natmi_additional
+GNAI2	FPR2	# Natmi_additional
+GNAI2	FPR3	# Natmi_additional
+GNAI2	GABBR2	# Natmi_additional
+GNAI2	GALR1	# Natmi_additional
+GNAI2	GALR2	# Natmi_additional
+GNAI2	GALR3	# Natmi_additional
+GNAI2	GPR17	# Natmi_additional
+GNAI2	GPR18	# Natmi_additional
+GNAI2	GPR31	# Natmi_additional
+GNAI2	GPR37L1	# Natmi_additional
+GNAI2	GPR37	# Natmi_additional
+GNAI2	GPR55	# Natmi_additional
+GNAI2	GPR183	# Natmi_additional
+GNAI2	GRM2	# Natmi_additional
+GNAI2	GRM3	# Natmi_additional
+GNAI2	GRM4	# Natmi_additional
+GNAI2	GRM6	# Natmi_additional
+GNAI2	GRM7	# Natmi_additional
+GNAI2	GRM8	# Natmi_additional
+GNAI2	HCAR1	# Natmi_additional
+GNAI2	HCAR2	# Natmi_additional
+GNAI2	HCAR3	# Natmi_additional
+GNAI2	HRH3	# Natmi_additional
+GNAI2	HRH4	# Natmi_additional
+GNAI2	HTR1A	# Natmi_additional
+GNAI2	HTR1B	# Natmi_additional
+GNAI2	HTR1D	# Natmi_additional
+GNAI2	HTR1E	# Natmi_additional
+GNAI2	HTR1F	# Natmi_additional
+GNAI2	HTR5A	# Natmi_additional
+GNAI2	IGF1R	# Natmi_primary# Natmi_additional
+GNAI2	LHCGR	# Natmi_primary# Natmi_additional
+GNAI2	LPAR1	# Natmi_additional
+GNAI2	LPAR2	# Natmi_additional
+GNAI2	LPAR3	# Natmi_primary# Natmi_additional
+GNAI2	LPAR5	# Natmi_additional
+GNAI2	MCHR1	# Natmi_additional
+GNAI2	MCHR2	# Natmi_additional
+GNAI2	MTNR1A	# Natmi_primary# Natmi_additional
+GNAI2	MTNR1B	# Natmi_primary# Natmi_additional
+GNAI2	NMUR1	# Natmi_additional
+GNAI2	NMUR2	# Natmi_additional
+GNAI2	NPBWR1	# Natmi_additional
+GNAI2	NPBWR2	# Natmi_additional
+GNAI2	NPY1R	# Natmi_additional
+GNAI2	NPY2R	# Natmi_additional
+GNAI2	NPY4R	# Natmi_additional
+GNAI2	NPY5R	# Natmi_additional
+GNAI2	OPRD1	# Natmi_primary# Natmi_additional
+GNAI2	OPRK1	# Natmi_additional
+GNAI2	OPRL1	# Natmi_additional
+GNAI2	OPRM1	# Natmi_primary# Natmi_additional
+GNAI2	OXER1	# Natmi_additional
+GNAI2	OXGR1	# Natmi_additional
+GNAI2	P2RY4	# Natmi_additional
+GNAI2	P2RY12	# Natmi_primary# Natmi_additional
+GNAI2	P2RY13	# Natmi_additional
+GNAI2	P2RY14	# Natmi_additional
+GNAI2	PTGDR2	# Natmi_additional
+GNAI2	RXFP1	# Natmi_additional
+GNAI2	RXFP3	# Natmi_additional
+GNAI2	RXFP4	# Natmi_additional
+GNAI2	S1PR1	# Natmi_additional
+GNAI2	S1PR3	# Natmi_additional
+GNAI2	S1PR4	# Natmi_additional
+GNAI2	S1PR5	# Natmi_additional
+GNAI2	SSTR1	# Natmi_additional
+GNAI2	SSTR2	# Natmi_additional
+GNAI2	SSTR3	# Natmi_additional
+GNAI2	SSTR4	# Natmi_additional
+GNAI2	SSTR5	# Natmi_additional
+GNAI2	SUCNR1	# Natmi_additional
+GNAI2	TAS1R1	# Natmi_additional
+GNAI2	TAS1R2	# Natmi_additional
+GNAI2	TAS1R3	# Natmi_additional
+GNAI2	TAS2R1	# Natmi_additional
+GNAI2	TAS2R3	# Natmi_additional
+GNAI2	TAS2R4	# Natmi_additional
+GNAI2	TAS2R5	# Natmi_additional
+GNAI2	TAS2R7	# Natmi_additional
+GNAI2	TAS2R8	# Natmi_additional
+GNAI2	TAS2R9	# Natmi_additional
+GNAI2	TAS2R10	# Natmi_additional
+GNAI2	TAS2R13	# Natmi_additional
+GNAI2	TAS2R14	# Natmi_additional
+GNAI2	TAS2R16	# Natmi_additional
+GNAI2	TAS2R19	# Natmi_additional
+GNAI2	TAS2R20	# Natmi_additional
+GNAI2	TAS2R30	# Natmi_additional
+GNAI2	TAS2R31	# Natmi_additional
+GNAI2	TAS2R38	# Natmi_additional
+GNAI2	TAS2R39	# Natmi_additional
+GNAI2	TAS2R40	# Natmi_additional
+GNAI2	TAS2R41	# Natmi_additional
+GNAI2	TAS2R42	# Natmi_additional
+GNAI2	TAS2R43	# Natmi_additional
+GNAI2	TAS2R46	# Natmi_additional
+GNAI2	TAS2R50	# Natmi_additional
+GNAI2	TAS2R60	# Natmi_additional
+GNAI2	TBXA2R	# Natmi_primary# Natmi_additional
+GNAI2	TSHR	# Natmi_primary# Natmi_additional
+GNAI2	UNC5B	# Natmi_additional
+GNAS	ADCY1	# Natmi_additional
+GNAS	ADCY7	# Natmi_additional
+GNAS	ADCY8	# Natmi_additional
+GNAS	ADCY9	# Natmi_additional
+GNAS	ADCYAP1R1	# Natmi_additional
+GNAS	ADORA2B	# Natmi_additional
+GNAS	ADRB1	# Natmi_additional
+GNAS	ADRB2	# Natmi_primary# Natmi_additional
+GNAS	AGTR2	# Natmi_additional
+GNAS	AVPR2	# Natmi_primary# Natmi_additional
+GNAS	CALCRL	# Natmi_additional
+GNAS	CALCR	# Natmi_additional
+GNAS	CCR3	# Natmi_additional
+GNAS	CCR5	# Natmi_additional
+GNAS	CHRM1	# Natmi_additional
+GNAS	CRHR1	# Natmi_primary# Natmi_additional
+GNAS	CRHR2	# Natmi_additional
+GNAS	CXCR4	# Natmi_additional
+GNAS	DRD1	# Natmi_additional
+GNAS	DRD5	# Natmi_additional
+GNAS	EDNRA	# Natmi_additional
+GNAS	FPR1	# Natmi_additional
+GNAS	FSHR	# Natmi_additional
+GNAS	GCGR	# Natmi_primary# Natmi_additional
+GNAS	GHRHR	# Natmi_additional
+GNAS	GIPR	# Natmi_additional
+GNAS	GLP1R	# Natmi_additional
+GNAS	GLP2R	# Natmi_additional
+GNAS	GPR20	# Natmi_additional
+GNAS	GPR25	# Natmi_additional
+GNAS	GPR27	# Natmi_additional
+GNAS	GPR32	# Natmi_additional
+GNAS	GPR39	# Natmi_additional
+GNAS	GPR45	# Natmi_additional
+GNAS	GPR83	# Natmi_additional
+GNAS	GPR84	# Natmi_additional
+GNAS	GPR150	# Natmi_additional
+GNAS	GPR176	# Natmi_additional
+GNAS	HRH2	# Natmi_additional
+GNAS	HTR2C	# Natmi_additional
+GNAS	HTR7	# Natmi_additional
+GNAS	LHCGR	# Natmi_primary# Natmi_additional
+GNAS	MC1R	# Natmi_additional
+GNAS	MC2R	# Natmi_additional
+GNAS	MC3R	# Natmi_additional
+GNAS	MC4R	# Natmi_additional
+GNAS	MC5R	# Natmi_additional
+GNAS	NPSR1	# Natmi_additional
+GNAS	P2RY2	# Natmi_additional
+GNAS	P2RY11	# Natmi_additional
+GNAS	PTGDR	# Natmi_primary# Natmi_additional
+GNAS	PTGER1	# Natmi_additional
+GNAS	PTGER2	# Natmi_additional
+GNAS	PTGIR	# Natmi_additional
+GNAS	PTH1R	# Natmi_additional
+GNAS	PTH2R	# Natmi_additional
+GNAS	RAMP1	# Natmi_additional
+GNAS	RAMP2	# Natmi_additional
+GNAS	RAMP3	# Natmi_additional
+GNAS	RXFP1	# Natmi_additional
+GNAS	RXFP2	# Natmi_additional
+GNAS	SCTR	# Natmi_additional
+GNAS	TAAR1	# Natmi_additional
+GNAS	TAAR2	# Natmi_additional
+GNAS	TAAR5	# Natmi_additional
+GNAS	TAAR6	# Natmi_additional
+GNAS	TAAR8	# Natmi_additional
+GNAS	TAAR9	# Natmi_additional
+GNAS	TSHR	# Natmi_primary# Natmi_additional
+GNAS	VIPR1	# Natmi_primary# Natmi_additional
+GNAS	VIPR2	# Natmi_additional
+GNRH1	GNRHR	# Natmi_primary# Natmi_additional
+GNRH2	GNRHR	# cellphonedb# Natmi_primary# Natmi_additional
+GPC3	CD81	# Natmi_primary# Natmi_additional
+GPC3	IGF1R	# Natmi_primary# Natmi_additional
+GPC3	PTCH1	# Natmi_additional
+GPC6	GPC4	# Natmi_additional
+GPHA2	TSHR	# Natmi_primary# Natmi_additional# Omnipath
+GPHB5	TSHR	# Natmi_primary# Natmi_additional
+GPI	AMFR	# Natmi_primary# Natmi_additional
+GPR25	RETN	# cellphonedb
+GREM1	BAMBI	# Natmi_additional
+GREM1	BMPR1A	# Natmi_additional
+GREM1	BMPR1B	# Natmi_additional
+GREM1	BMPR2	# Natmi_additional
+GREM1	HJV	# Natmi_additional
+GREM1	KDR	# Natmi_primary# Natmi_additional# Omnipath
+GREM1	RGMB	# Natmi_additional
+GRN	SORT1	# Natmi_primary# Natmi_additional
+GRN	TNFRSF1A	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GRN	TNFRSF1B	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GRP	BRS3	# Natmi_primary# Natmi_additional# Omnipath
+GRP	GRPR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GRP	NMBR	# Natmi_primary# Natmi_additional# Omnipath
+GUCA2A	GUCY2C	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GUCA2B	GUCY2C	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+GUCA2B	GUCY2D	# Natmi_primary# Natmi_additional
+GZMB	CHRM3	# Natmi_primary# Natmi_additional
+GZMB	IGF2R	# Natmi_primary# Natmi_additional
+GZMB	PGRMC1	# Natmi_additional
+HAS2	CD44	# Natmi_primary# Natmi_additional
+HAS2	HMMR	# Natmi_primary# Natmi_additional
+HAVCR1	CD300LB	# Natmi_primary# Natmi_additional
+HAVCR1	HAVCR1	# Natmi_primary# Natmi_additional
+HBB	CD163	# Natmi_additional
+HBEGF	CD9	# Natmi_primary# Natmi_additional
+HBEGF	CD44	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+HBEGF	CD82	# Natmi_primary# Natmi_additional
+HBEGF	EGFR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+HBEGF	ERBB2	# Natmi_primary# Natmi_additional# Omnipath
+HBEGF	ERBB4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+HBEGF	PRLR	# Natmi_additional
+HCRT	HCRTR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+HCRT	HCRTR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+HCRT	NPFFR2	# Natmi_primary# Natmi_additional# Omnipath
+HEBP1	FPR3	# cellphonedb# Natmi_primary# Natmi_additional
+HGF	AXL	# Omnipath
+HGF	CD44	# Natmi_primary# Natmi_additional# Omnipath
+HGF	EGFR	# Omnipath
+HGF	EPHA2	# Omnipath
+HGF	INSR	# Omnipath
+HGF	ITGB1	# Natmi_additional
+HGF	MET	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+HGF	MST1R	# Omnipath
+HGF	SDC1	# Natmi_primary# Natmi_additional# Omnipath
+HGF	SDC2	# Natmi_primary# Natmi_additional# Omnipath
+HGF	ST14	# Natmi_primary# Natmi_additional
+HHIPL2	CACHD1	# Natmi_additional
+HHLA2	TMIGD2	# Natmi_primary# Natmi_additional
+HHLA3	CHRM3	# Natmi_additional
+HLAC	KIR2DL3	# cellphonedb
+HLA-A	APLP2	# Natmi_primary# Natmi_additional# Omnipath
+HLA-A	CANX	# Natmi_additional
+HLA-A	CD3D	# Natmi_additional
+HLA-A	CD3E	# Natmi_additional
+HLA-A	CD3G	# Natmi_additional
+HLA-A	CD8A	# Natmi_additional# Omnipath
+HLA-A	CD247	# Natmi_additional
+HLA-A	ERBB2	# Natmi_primary# Natmi_additional# Omnipath
+HLA-A	GYPC	# Natmi_additional
+HLA-A	HLA-B	# Natmi_additional
+HLA-A	KIR2DL1	# Natmi_additional
+HLA-A	KIR2DL3	# Natmi_additional
+HLA-A	KIR2DL4	# Natmi_additional
+HLA-A	KIR3DL1	# Natmi_primary# Natmi_additional# Omnipath
+HLA-A	KIR3DL2	# Natmi_primary# Natmi_additional# Omnipath
+HLA-A	KLRC1	# Natmi_additional
+HLA-A	KLRC2	# Natmi_additional
+HLA-A	KLRC4	# Natmi_additional
+HLA-A	KLRD1	# Natmi_additional
+HLA-A	LILRA1	# Natmi_additional
+HLA-A	LILRA2	# Natmi_additional
+HLA-A	LILRA4	# Natmi_additional
+HLA-A	LILRA5	# Natmi_additional
+HLA-A	LILRA6	# Natmi_additional
+HLA-A	LILRB1	# Natmi_primary# Natmi_additional# Omnipath
+HLA-A	LILRB2	# Natmi_primary# Natmi_additional# Omnipath
+HLA-A	LILRB3	# Natmi_additional
+HLA-A	LILRB5	# Natmi_additional
+HLA-B	CANX	# Natmi_primary# Natmi_additional
+HLA-B	CD3D	# Natmi_additional
+HLA-B	CD3E	# Natmi_additional
+HLA-B	CD3G	# Natmi_additional
+HLA-B	CD8A	# Natmi_additional# Omnipath
+HLA-B	KIR2DL1	# Natmi_additional
+HLA-B	KIR2DL3	# Natmi_primary# Natmi_additional# Omnipath
+HLA-B	KIR2DL4	# Natmi_additional
+HLA-B	KIR3DL1	# Natmi_primary# Natmi_additional# Omnipath
+HLA-B	KIR3DL2	# Natmi_primary# Natmi_additional# Omnipath
+HLA-B	KLRD1	# Natmi_primary# Natmi_additional# Omnipath
+HLA-B	LILRA1	# Natmi_additional
+HLA-B	LILRA2	# Natmi_additional
+HLA-B	LILRA4	# Natmi_additional
+HLA-B	LILRA5	# Natmi_additional
+HLA-B	LILRA6	# Natmi_additional
+HLA-B	LILRB1	# Natmi_primary# Natmi_additional# Omnipath
+HLA-B	LILRB2	# Natmi_primary# Natmi_additional# Omnipath
+HLA-B	LILRB3	# Natmi_additional
+HLA-B	LILRB5	# Natmi_additional
+HLA-B	TYROBP	# Natmi_additional
+HLA-C	CANX	# Natmi_additional
+HLA-C	CD3D	# Natmi_additional
+HLA-C	CD3E	# Natmi_additional
+HLA-C	CD3G	# Natmi_additional
+HLA-C	CD8A	# Natmi_additional# Omnipath
+HLA-C	DDR1	# Natmi_additional
+HLA-C	HLA-B	# Natmi_additional
+HLA-C	KIR2DL1	# Natmi_primary# Natmi_additional# Omnipath
+HLA-C	KIR2DL2	# Omnipath
+HLA-C	KIR2DL3	# Natmi_primary# Natmi_additional# Omnipath
+HLA-C	KIR2DL4	# Natmi_additional
+HLA-C	KIR2DS1	# Omnipath
+HLA-C	KIR2DS4	# Natmi_primary# Natmi_additional# Omnipath
+HLA-C	KIR3DL1	# Natmi_additional
+HLA-C	LILRA1	# Natmi_additional
+HLA-C	LILRA2	# Natmi_additional
+HLA-C	LILRA3	# Natmi_primary# Natmi_additional# Omnipath
+HLA-C	LILRA4	# Natmi_additional
+HLA-C	LILRA5	# Natmi_additional
+HLA-C	LILRA6	# Natmi_additional
+HLA-C	LILRB1	# Natmi_primary# Natmi_additional# Omnipath
+HLA-C	LILRB2	# Natmi_primary# Natmi_additional# Omnipath
+HLA-C	LILRB3	# Natmi_additional
+HLA-C	LILRB5	# Natmi_additional
+HLA-C	NOTCH4	# Natmi_additional
+HLA-C	SLC9C2	# Natmi_additional
+HLA-C	TYROBP	# Natmi_additional
+HLA-E	CANX	# Natmi_additional
+HLA-E	CD3D	# Natmi_additional
+HLA-E	CD3E	# Natmi_additional
+HLA-E	CD3G	# Natmi_additional
+HLA-E	CD8A	# Natmi_additional
+HLA-E	HFE	# Natmi_additional
+HLA-E	HLA-B	# Natmi_additional
+HLA-E	KIR2DL1	# Natmi_additional
+HLA-E	KIR2DL3	# Natmi_additional
+HLA-E	KIR2DL4	# Natmi_additional
+HLA-E	KIR3DL1	# Natmi_additional
+HLA-E	KLRC1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+HLA-E	KLRC2	# Natmi_primary# Natmi_additional# Omnipath
+HLA-E	KLRD1	# Natmi_primary# Natmi_additional# Omnipath
+HLA-E	KLRK1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+HLA-E	LILRA1	# Natmi_additional
+HLA-E	LILRA2	# Natmi_additional
+HLA-E	LILRA4	# Natmi_additional
+HLA-E	LILRA5	# Natmi_additional
+HLA-E	LILRA6	# Natmi_additional
+HLA-E	LILRB1	# Natmi_additional
+HLA-E	LILRB2	# Natmi_additional
+HLA-E	LILRB3	# Natmi_additional
+HLA-E	LILRB5	# Natmi_additional
+HLA-E	SLC16A4	# Natmi_additional
+HLA-E	TYROBP	# Natmi_additional
+HLA-F	CANX	# Natmi_additional
+HLA-F	CD3D	# Natmi_additional
+HLA-F	CD3E	# Natmi_additional
+HLA-F	CD3G	# Natmi_additional
+HLA-F	CD8A	# Natmi_additional
+HLA-F	KIR2DL1	# Natmi_additional
+HLA-F	KIR2DL3	# Natmi_additional
+HLA-F	KIR2DL4	# Natmi_additional
+HLA-F	KIR2DS4	# Omnipath
+HLA-F	KIR3DL1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+HLA-F	KIR3DL2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+HLA-F	KIR3DS1	# cellphonedb# Omnipath
+HLA-F	LILRA1	# Natmi_additional
+HLA-F	LILRA2	# Natmi_additional
+HLA-F	LILRA4	# Natmi_additional
+HLA-F	LILRA5	# Natmi_additional
+HLA-F	LILRA6	# Natmi_additional
+HLA-F	LILRB1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+HLA-F	LILRB2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+HLA-F	LILRB3	# Natmi_additional
+HLA-F	LILRB5	# Natmi_additional
+HLA-G	CANX	# Natmi_additional
+HLA-G	CD3D	# Natmi_additional
+HLA-G	CD3E	# Natmi_additional
+HLA-G	CD3G	# Natmi_additional
+HLA-G	CD4	# Natmi_additional
+HLA-G	CD8A	# Natmi_additional# Omnipath
+HLA-G	HLA-F	# Natmi_additional
+HLA-G	KIR2DL1	# Natmi_additional
+HLA-G	KIR2DL3	# Natmi_additional
+HLA-G	KIR2DL4	# Natmi_primary# Natmi_additional# Omnipath
+HLA-G	KIR3DL1	# Omnipath
+HLA-G	KLRC1	# Natmi_primary# Natmi_additional# Omnipath
+HLA-G	KLRD1	# Natmi_primary# Natmi_additional# Omnipath
+HLA-G	LILRA1	# Natmi_additional
+HLA-G	LILRA2	# Natmi_additional
+HLA-G	LILRA4	# Natmi_additional
+HLA-G	LILRA5	# Natmi_additional
+HLA-G	LILRA6	# Natmi_additional
+HLA-G	LILRB1	# Natmi_primary# Natmi_additional# Omnipath
+HLA-G	LILRB2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+HLA-G	LILRB3	# Natmi_additional
+HLA-G	LILRB5	# Natmi_additional
+HMGB1	HAVCR2	# Natmi_primary# Natmi_additional
+HMGB1	ITGAM	# Natmi_additional
+HMGB1	ITGAV	# Natmi_additional
+HMGB1	ITGB2	# Natmi_additional
+HMGB1	ITGB3	# Natmi_additional
+HMGB1	LY96	# Natmi_additional
+HMGB1	SDC1	# Natmi_primary# Natmi_additional
+HMGB1	THBD	# Natmi_primary# Natmi_additional
+HMGB1	TLR1	# Natmi_additional
+HMGB1	TLR2	# Natmi_additional
+HMGB1	TLR4	# Natmi_additional
+HPR	APP	# Natmi_additional
+HPX	LRP1	# Natmi_additional
+HP	APP	# Natmi_additional
+HP	ASGR1	# Natmi_additional
+HP	ASGR2	# Natmi_additional
+HP	CD22	# Omnipath
+HP	CD163	# Natmi_primary# Natmi_additional# Omnipath
+HP	ITGAM	# Natmi_primary# Natmi_additional# Omnipath
+HP	ITGB2	# Natmi_primary# Natmi_additional# Omnipath
+HRAS	AGTR1	# Natmi_primary# Natmi_additional
+HRAS	CAV1	# Natmi_primary# Natmi_additional
+HRAS	INSR	# Natmi_primary# Natmi_additional
+HRAS	ITGA2B	# Natmi_additional
+HRAS	ITGB3	# Natmi_additional
+HRAS	SDC2	# Natmi_additional
+HRG	FCGR1A	# Natmi_primary# Natmi_additional
+HSP90AA1	AR	# Natmi_additional
+HSP90AA1	CAV1	# Natmi_additional
+HSP90AA1	CFTR	# Natmi_primary# Natmi_additional
+HSP90AA1	EGFR	# Natmi_primary# Natmi_additional
+HSP90AA1	ERBB2	# Natmi_additional
+HSP90AA1	ERBB3	# Natmi_additional
+HSP90AA1	FGFR3	# Natmi_primary# Natmi_additional
+HSP90AA1	HMMR	# Natmi_additional
+HSP90AA1	ITGAV	# Natmi_additional
+HSP90AA1	ITGB3	# Natmi_additional
+HSP90AA1	KDR	# Natmi_additional
+HSP90AA1	PGR	# Natmi_additional
+HSP90AA1	TMEM67	# Natmi_additional
+HSPG2	CHRM3	# Natmi_additional
+HSPG2	COL13A1	# Natmi_primary# Natmi_additional
+HSPG2	ITGA2	# Natmi_primary# Natmi_additional
+HSPG2	ITGB1	# Natmi_primary# Natmi_additional
+HSPG2	KDR	# Natmi_additional
+HSPG2	PTPRS	# Natmi_primary# Natmi_additional
+HSPG2	SDC1	# Natmi_additional
+IAPP	CALCR	# cellphonedb# Natmi_primary# Natmi_additional
+IAPP	RAMP1	# Natmi_primary# Natmi_additional# Omnipath
+IAPP	RAMP2	# Natmi_primary# Natmi_additional# Omnipath
+IAPP	RAMP3	# Natmi_additional# Omnipath
+IBSP	ITGAV	# Natmi_additional
+IBSP	ITGB3	# Natmi_additional
+ICAM1	CAV1	# Natmi_additional
+ICAM1	EGFR	# Omnipath
+ICAM1	IL2RA	# Natmi_primary# Natmi_additional# Omnipath
+ICAM1	IL2RG	# Omnipath
+ICAM1	ITGAL	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+ICAM1	ITGAM	# Natmi_primary# Natmi_additional# Omnipath
+ICAM1	ITGAX	# Natmi_primary# Natmi_additional# Omnipath
+ICAM1	ITGB2	# Natmi_primary# Natmi_additional# Omnipath
+ICAM1	SPN	# Natmi_primary# Natmi_additional# Omnipath
+ICAM2	CD209	# Natmi_additional
+ICAM2	ITGAL	# Natmi_primary# Natmi_additional# Omnipath
+ICAM2	ITGAM	# Natmi_primary# Natmi_additional# Omnipath
+ICAM2	ITGB2	# Natmi_primary# Natmi_additional# Omnipath
+ICAM3	CD209	# Natmi_primary# Natmi_additional
+ICAM3	CLEC4M	# Natmi_primary# Natmi_additional# Omnipath
+ICAM3	ITGAD	# Natmi_primary# Natmi_additional# Omnipath
+ICAM3	ITGAL	# Natmi_primary# Natmi_additional# Omnipath
+ICAM3	ITGB2	# Natmi_primary# Natmi_additional# Omnipath
+ICAM4	ITGA2B	# Natmi_primary# Natmi_additional# Omnipath
+ICAM4	ITGA4	# Natmi_primary# Natmi_additional# Omnipath
+ICAM4	ITGAL	# Natmi_primary# Natmi_additional# Omnipath
+ICAM4	ITGAM	# Natmi_primary# Natmi_additional# Omnipath
+ICAM4	ITGAV	# Natmi_primary# Natmi_additional# Omnipath
+ICAM4	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+ICAM4	ITGB2	# Natmi_primary# Natmi_additional# Omnipath
+ICAM4	ITGB3	# Natmi_primary# Natmi_additional# Omnipath
+ICAM5	ITGAL	# Natmi_primary# Natmi_additional# Omnipath
+ICAM5	ITGB2	# Natmi_primary# Natmi_additional# Omnipath
+ICOSLG	CD28	# Natmi_primary# Natmi_additional# Omnipath
+ICOSLG	CTLA4	# Natmi_primary# Natmi_additional
+ICOSLG	ICOS	# Natmi_primary# Natmi_additional# Omnipath
+ICOS	ICOSLG	# cellphonedb# Natmi_primary# Natmi_additional
+IDE	IAPP	# cellphonedb
+IFNA1	CR2	# Omnipath
+IFNA1	IFNAR1	# Natmi_primary# Natmi_additional# Omnipath
+IFNA1	IFNAR2	# Natmi_primary# Natmi_additional# Omnipath
+IFNA2	CR2	# Natmi_additional
+IFNA2	IFNAR1	# Natmi_primary# Natmi_additional# Omnipath
+IFNA2	IFNAR2	# Natmi_primary# Natmi_additional# Omnipath
+IFNA4	IFNAR1	# Natmi_primary# Natmi_additional# Omnipath
+IFNA4	IFNAR2	# Natmi_primary# Natmi_additional# Omnipath
+IFNA5	IFNAR1	# Natmi_primary# Natmi_additional# Omnipath
+IFNA5	IFNAR2	# Natmi_primary# Natmi_additional# Omnipath
+IFNA6	IFNAR1	# Natmi_primary# Natmi_additional# Omnipath
+IFNA6	IFNAR2	# Natmi_primary# Natmi_additional# Omnipath
+IFNA7	IFNAR1	# Natmi_primary# Natmi_additional# Omnipath
+IFNA7	IFNAR2	# Natmi_primary# Natmi_additional# Omnipath
+IFNA8	IFNAR1	# Natmi_primary# Natmi_additional# Omnipath
+IFNA8	IFNAR2	# Natmi_primary# Natmi_additional# Omnipath
+IFNA10	IFNAR1	# Natmi_primary# Natmi_additional# Omnipath
+IFNA10	IFNAR2	# Natmi_primary# Natmi_additional# Omnipath
+IFNA13	IFNAR1	# Natmi_primary# Natmi_additional
+IFNA13	IFNAR2	# Natmi_primary# Natmi_additional
+IFNA14	IFNAR1	# Natmi_primary# Natmi_additional# Omnipath
+IFNA14	IFNAR2	# Natmi_primary# Natmi_additional# Omnipath
+IFNA16	IFNAR1	# Natmi_primary# Natmi_additional# Omnipath
+IFNA16	IFNAR2	# Natmi_primary# Natmi_additional# Omnipath
+IFNA17	CR2	# Natmi_additional
+IFNA17	IFNAR1	# Natmi_primary# Natmi_additional# Omnipath
+IFNA17	IFNAR2	# Natmi_primary# Natmi_additional# Omnipath
+IFNA21	CR2	# Natmi_additional
+IFNA21	IFNAR1	# Natmi_primary# Natmi_additional# Omnipath
+IFNA21	IFNAR2	# Natmi_primary# Natmi_additional# Omnipath
+IFNB1	IFNAR1	# Natmi_primary# Natmi_additional# Omnipath
+IFNB1	IFNAR2	# Natmi_primary# Natmi_additional# Omnipath
+IFNE	IFNAR1	# Natmi_primary# Natmi_additional# Omnipath
+IFNE	IFNAR2	# Natmi_primary# Natmi_additional# Omnipath
+IFNG	IFNGR1	# Natmi_primary# Natmi_additional# Omnipath
+IFNG	IFNGR2	# Natmi_primary# Natmi_additional# Omnipath
+IFNK	IFNAR1	# Natmi_primary# Natmi_additional# Omnipath
+IFNK	IFNAR2	# Natmi_primary# Natmi_additional# Omnipath
+IFNL1	IFNLR1	# Natmi_primary# Natmi_additional# Omnipath
+IFNL1	IL10RB	# Natmi_primary# Natmi_additional# Omnipath
+IFNL2	IFNLR1	# Natmi_primary# Natmi_additional# Omnipath
+IFNL2	IL10RB	# Natmi_primary# Natmi_additional# Omnipath
+IFNL3	IFNLR1	# Natmi_primary# Natmi_additional# Omnipath
+IFNL3	IL10RB	# Natmi_primary# Natmi_additional# Omnipath
+IFNL4	IFNLR1	# Natmi_primary# Natmi_additional
+IFNL4	IL10RB	# Natmi_primary# Natmi_additional
+IFNW1	IFNAR1	# Natmi_primary# Natmi_additional# Omnipath
+IFNW1	IFNAR2	# Natmi_primary# Natmi_additional# Omnipath
+IGF1R	IGF1	# cellphonedb
+IGF1R	IGF2	# cellphonedb
+IGF1	IGF1R	# Natmi_primary# Natmi_additional# Omnipath
+IGF1	INSR	# Natmi_additional# Omnipath
+IGF1	ITGAV	# Natmi_additional
+IGF1	ITGB3	# Natmi_additional
+IGF2	IDE	# cellphonedb
+IGF2	IGF1R	# Natmi_primary# Natmi_additional# Omnipath
+IGF2	IGF2R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+IGF2	INSR	# Natmi_primary# Natmi_additional# Omnipath
+IGFBP4	FZD8	# Natmi_primary# Natmi_additional
+IGFBP4	LRP6	# Natmi_primary# Natmi_additional
+IGFL1	IGFLR1	# Natmi_primary# Natmi_additional# Omnipath
+IGFL2	IGFLR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+IGFL3	IGFLR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+IGFLR1	IGFL1	# cellphonedb
+IGSF5	F11R	# Natmi_additional
+IGSF5	JAM3	# Natmi_additional
+IGSF11	VSIR	# Natmi_primary# Natmi_additional
+IHH	BOC	# Natmi_primary# Natmi_additional# Omnipath
+IHH	CDON	# Natmi_primary# Natmi_additional# Omnipath
+IHH	DISP2	# Natmi_additional
+IHH	GPC5	# Natmi_additional
+IHH	HHIP	# Natmi_primary# Natmi_additional
+IHH	PTCH1	# Natmi_primary# Natmi_additional# Omnipath
+IHH	PTCH2	# Natmi_primary# Natmi_additional# Omnipath
+IL1A	IL1R1	# Natmi_primary# Natmi_additional# Omnipath
+IL1A	IL1R2	# Natmi_primary# Natmi_additional# Omnipath
+IL1A	IL1RAP	# Natmi_primary# Natmi_additional# Omnipath
+IL1B	ADRB2	# Omnipath
+IL1B	IL1R1	# Natmi_primary# Natmi_additional# Omnipath
+IL1B	IL1R2	# Natmi_primary# Natmi_additional# Omnipath
+IL1B	IL1RAP	# Natmi_primary# Natmi_additional# Omnipath
+IL1F10	IL1R1	# Natmi_primary# Natmi_additional# Omnipath
+IL1F10	IL1RAPL1	# Natmi_additional# Omnipath
+IL1F10	IL1RAPL2	# Omnipath
+IL1F10	IL1RL2	# Natmi_additional# Omnipath
+IL1F10	SIGIRR	# Omnipath
+IL1RAPL1	IL37	# cellphonedb
+IL1RAPL1	PTPRD	# Natmi_primary# Natmi_additional
+IL1RAPL1	PTPRF	# Natmi_primary# Natmi_additional
+IL1RAPL1	PTPRS	# Natmi_primary# Natmi_additional
+IL1RN	IL1R1	# Natmi_primary# Natmi_additional# Omnipath
+IL1RN	IL1R2	# Natmi_primary# Natmi_additional# Omnipath
+IL1RN	IL1RL2	# Natmi_additional
+IL2RB	IL2RA	# Natmi_additional
+IL2RB	IL2RG	# Natmi_additional
+IL2RB	IL15RA	# Natmi_additional
+IL2	CD53	# Natmi_primary# Natmi_additional# Omnipath
+IL2	GYPE	# Natmi_additional
+IL2	IL2RA	# Natmi_primary# Natmi_additional# Omnipath
+IL2	IL2RB	# Natmi_primary# Natmi_additional# Omnipath
+IL2	IL2RG	# Natmi_primary# Natmi_additional# Omnipath
+IL2	NGFR	# Omnipath
+IL3	CSF2RB	# Natmi_primary# Natmi_additional# Omnipath
+IL3	IL3RA	# Natmi_primary# Natmi_additional# Omnipath
+IL4	CD53	# Natmi_primary# Natmi_additional# Omnipath
+IL4	IL2RG	# Natmi_primary# Natmi_additional# Omnipath
+IL4	IL4R	# Natmi_primary# Natmi_additional# Omnipath
+IL4	IL13RA1	# Natmi_primary# Natmi_additional# Omnipath
+IL4	IL13RA2	# Natmi_primary# Natmi_additional# Omnipath
+IL5	CSF2RB	# Natmi_primary# Natmi_additional# Omnipath
+IL5	IL5RA	# Natmi_primary# Natmi_additional# Omnipath
+IL6R	IL6ST	# Omnipath
+IL6	ERBB2	# Natmi_additional
+IL6	F3	# Natmi_additional
+IL6	HRH1	# cellphonedb
+IL6	IL6R	# Natmi_primary# Natmi_additional# Omnipath
+IL6	IL6ST	# Natmi_primary# Natmi_additional# Omnipath
+IL7	IL2RG	# Natmi_primary# Natmi_additional# Omnipath
+IL7	IL7R	# Natmi_primary# Natmi_additional# Omnipath
+IL9	IL2RG	# Natmi_primary# Natmi_additional# Omnipath
+IL9	IL9R	# Natmi_primary# Natmi_additional# Omnipath
+IL10	IL10RA	# Natmi_primary# Natmi_additional# Omnipath
+IL10	IL10RB	# Natmi_primary# Natmi_additional# Omnipath
+IL10	SIRPG	# Natmi_additional
+IL11	IL6ST	# Natmi_primary# Natmi_additional# Omnipath
+IL11	IL11RA	# Natmi_primary# Natmi_additional# Omnipath
+IL12A	CANX	# Natmi_additional
+IL12A	CD28	# Omnipath
+IL12A	IL6ST	# Natmi_additional
+IL12A	IL12RB1	# Natmi_primary# Natmi_additional# Omnipath
+IL12A	IL12RB2	# Natmi_primary# Natmi_additional# Omnipath
+IL12A	IL27RA	# Natmi_additional
+IL12B	IL12RB1	# Natmi_primary# Natmi_additional# Omnipath
+IL12B	IL12RB2	# Natmi_primary# Natmi_additional# Omnipath
+IL12B	IL23R	# Natmi_primary# Natmi_additional# Omnipath
+IL13	IL2RG	# Natmi_primary# Natmi_additional# Omnipath
+IL13	IL4R	# Natmi_primary# Natmi_additional# Omnipath
+IL13	IL13RA1	# Natmi_primary# Natmi_additional# Omnipath
+IL13	IL13RA2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+IL15	IL2RA	# Natmi_primary# Natmi_additional# Omnipath
+IL15	IL2RB	# Natmi_primary# Natmi_additional# Omnipath
+IL15	IL2RG	# Natmi_primary# Natmi_additional# Omnipath
+IL15	IL15RA	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+IL16	CCR5	# Natmi_additional
+IL16	CD4	# Natmi_primary# Natmi_additional# Omnipath
+IL16	GRIN2D	# Natmi_primary# Natmi_additional
+IL16	KCNJ10	# Natmi_primary# Natmi_additional
+IL16	KCNJ15	# Natmi_primary# Natmi_additional
+IL17A	IL17RA	# Natmi_primary# Natmi_additional# Omnipath
+IL17A	IL17RC	# Natmi_primary# Natmi_additional# Omnipath
+IL17B	IL17RA	# Natmi_additional
+IL17B	IL17RB	# Natmi_primary# Natmi_additional# Omnipath
+IL17C	IL17RA	# Natmi_primary# Natmi_additional
+IL17C	IL17RE	# Natmi_primary# Natmi_additional# Omnipath
+IL17F	IL17RA	# Natmi_primary# Natmi_additional# Omnipath
+IL17F	IL17RC	# Natmi_additional# Omnipath
+IL18	CD48	# Natmi_additional
+IL18	IL1RAPL1	# Natmi_primary# Natmi_additional# Omnipath
+IL18	IL1RL2	# Omnipath
+IL18	IL18R1	# Natmi_primary# Natmi_additional# Omnipath
+IL18	IL18RAP	# Natmi_primary# Natmi_additional# Omnipath
+IL19	IL20RA	# Natmi_primary# Natmi_additional# Omnipath
+IL19	IL20RB	# Natmi_primary# Natmi_additional# Omnipath
+IL20	IL20RA	# Natmi_primary# Natmi_additional# Omnipath
+IL20	IL20RB	# Natmi_primary# Natmi_additional# Omnipath
+IL20	IL22RA1	# Natmi_primary# Natmi_additional# Omnipath
+IL21	IL2RG	# Natmi_primary# Natmi_additional# Omnipath
+IL21	IL21R	# Natmi_primary# Natmi_additional# Omnipath
+IL22	IL10RA	# Natmi_primary# Natmi_additional# Omnipath
+IL22	IL10RB	# Natmi_primary# Natmi_additional# Omnipath
+IL22	IL20RA	# Omnipath
+IL22	IL21R	# Natmi_additional
+IL22	IL22RA1	# Natmi_primary# Natmi_additional# Omnipath
+IL22	IL22RA2	# Natmi_primary# Natmi_additional# Omnipath
+IL23A	IL12RB1	# Natmi_primary# Natmi_additional# Omnipath
+IL23A	IL23R	# Natmi_primary# Natmi_additional# Omnipath
+IL24	IL20RA	# Natmi_primary# Natmi_additional# Omnipath
+IL24	IL20RB	# Natmi_primary# Natmi_additional# Omnipath
+IL24	IL22RA1	# Natmi_primary# Natmi_additional# Omnipath
+IL24	NOTCH2	# cellphonedb
+IL25	IL17RA	# Natmi_additional
+IL25	IL17RB	# Natmi_primary# Natmi_additional# Omnipath
+IL26	IL10RB	# Natmi_additional# Omnipath
+IL26	IL20RA	# Natmi_primary# Natmi_additional# Omnipath
+IL26	IL20RB	# Natmi_primary# Natmi_additional
+IL27	CANX	# Natmi_additional
+IL27	CRLF1	# Natmi_additional
+IL27	IL6ST	# Natmi_additional
+IL27	IL27RA	# Natmi_primary# Natmi_additional# Omnipath
+IL31	IL31RA	# Natmi_primary# Natmi_additional# Omnipath
+IL31	OSMR	# Natmi_primary# Natmi_additional# Omnipath
+IL32	ITGB3	# Natmi_primary# Natmi_additional
+IL33	IL1RAP	# Omnipath
+IL33	IL1RL1	# Natmi_primary# Natmi_additional# Omnipath
+IL34	CSF1R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+IL34	PTPRZ1	# Natmi_primary# Natmi_additional
+IL34	SDC1	# Natmi_additional
+IL36A	IL1RL2	# Natmi_primary# Natmi_additional# Omnipath
+IL36B	IL1RL2	# Natmi_additional
+IL36G	IFNAR1	# Omnipath
+IL36G	IFNAR2	# Omnipath
+IL36RN	IL1RL2	# Natmi_primary# Natmi_additional# Omnipath
+IL37	IL1RAPL1	# Omnipath
+IL37	IL18R1	# Omnipath
+INHA	ACVR1B	# Natmi_additional
+INHA	ACVR1	# Natmi_additional# Omnipath
+INHA	ACVR2A	# Natmi_primary# Natmi_additional# Omnipath
+INHA	ACVR2B	# Natmi_additional# Omnipath
+INHA	TGFBR3	# Natmi_primary# Natmi_additional# Omnipath
+INHBA	ACVR1B	# Natmi_primary# Natmi_additional# Omnipath
+INHBA	ACVR1C	# Natmi_primary# Natmi_additional
+INHBA	ACVR1	# Natmi_primary# Natmi_additional# Omnipath
+INHBA	ACVR2A	# Natmi_primary# Natmi_additional# Omnipath
+INHBA	ACVR2B	# Natmi_primary# Natmi_additional# Omnipath
+INHBA	ACVRL1	# Natmi_additional
+INHBA	BAMBI	# Natmi_primary# Natmi_additional# Omnipath
+INHBA	ENG	# Natmi_primary# Natmi_additional
+INHBA	TGFBR3	# Natmi_primary# Natmi_additional# Omnipath
+INHBB	ACVR1B	# Natmi_primary# Natmi_additional# Omnipath
+INHBB	ACVR1C	# Natmi_primary# Natmi_additional# Omnipath
+INHBB	ACVR1	# Natmi_primary# Natmi_additional# Omnipath
+INHBB	ACVR2A	# Natmi_primary# Natmi_additional# Omnipath
+INHBB	ACVR2B	# Natmi_primary# Natmi_additional# Omnipath
+INHBB	CFC1B	# Natmi_primary# Natmi_additional
+INHBB	CFC1	# Natmi_primary# Natmi_additional
+INHBC	ACVR1B	# Omnipath
+INHBC	ACVR1	# Omnipath
+INHBC	ACVR2A	# Natmi_primary# Natmi_additional# Omnipath
+INHBC	ACVR2B	# Natmi_primary# Natmi_additional# Omnipath
+INHBE	ACVR1B	# Natmi_additional
+INHBE	ACVR1	# Natmi_additional
+INHBE	ACVR2A	# Omnipath
+INHBE	ACVR2B	# Omnipath
+INHBE	ENG	# Natmi_additional
+INSL3	RXFP1	# cellphonedb
+INSL3	RXFP2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+INSL5	RXFP3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+INSL5	RXFP4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+INSL6	NOTCH1	# cellphonedb
+INSR	INS	# cellphonedb
+INS	ERBB3	# Omnipath
+INS	IDE	# cellphonedb
+INS	IGF1R	# Natmi_primary# Natmi_additional# Omnipath
+INS	INSR	# Natmi_primary# Natmi_additional# Omnipath
+INS	LRP2	# Natmi_primary# Natmi_additional# Omnipath
+INS	TMEM115	# Natmi_additional
+ITGAV	THY1	# Natmi_primary# Natmi_additional
+ITGB2	THY1	# Natmi_primary# Natmi_additional
+IZUMO2	CD9	# Natmi_additional
+IZUMO3	CD9	# Natmi_additional
+IZUMO4	CD9	# Natmi_additional
+JAG1	CD46	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+JAG1	NOTCH1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+JAG1	NOTCH2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+JAG1	NOTCH3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+JAG1	NOTCH4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+JAG2	NOTCH1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+JAG2	NOTCH2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+JAG2	NOTCH3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+JAG2	NOTCH4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+JAM2	F11R	# Natmi_primary# Natmi_additional
+JAM2	ITGA4	# Natmi_additional
+JAM2	ITGAM	# Natmi_additional
+JAM2	ITGB1	# Natmi_additional
+JAM2	ITGB2	# Natmi_additional
+JAM2	JAM3	# cellphonedb# Natmi_primary# Natmi_additional
+JAM3	JAM2	# Natmi_primary# Natmi_additional
+JAML	CXADR	# Natmi_primary# Natmi_additional
+KDR	VEGFA	# cellphonedb
+KDR	VEGFC	# cellphonedb
+KDR	VEGFD	# cellphonedb
+KIR2DL1	HLAC	# cellphonedb
+KIR3DL1	HLAA	# cellphonedb
+KIR3DL1	KIR2DL1	# Natmi_additional
+KIR3DL1	KIR2DL3	# Natmi_additional
+KIR3DL1	KIR3DL2	# Natmi_additional
+KIR3DL1	KLRC1	# Natmi_additional
+KIR3DL1	KLRD1	# Natmi_additional
+KIR3DL2	HLAB	# cellphonedb
+KIR3DL2	KIR2DL1	# Natmi_additional
+KIR3DL2	KIR2DL3	# Natmi_additional
+KIR3DL2	KIR3DL1	# Natmi_additional
+KIR3DL2	KLRC1	# Natmi_additional
+KIR3DL2	KLRD1	# Natmi_additional
+KIR3DS1	HLA-F	# Natmi_primary# Natmi_additional
+KIRREL1	F2RL2	# Natmi_additional
+KISS1	KISS1R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+KISS1	MMP24	# Natmi_primary# Natmi_additional
+KITLG	EPOR	# Natmi_additional# Omnipath
+KITLG	KIT	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+KLRB1	CLEC2D	# cellphonedb# Natmi_primary# Natmi_additional
+KLRC2	HLA-E	# cellphonedb
+KLRF1	CLEC2B	# Natmi_primary# Natmi_additional
+KLRG1	CDH1	# cellphonedb
+KL	IGF1R	# Omnipath
+KMT2E	NCR2	# Natmi_primary# Natmi_additional
+KNG1	BDKRB1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+KNG1	BDKRB2	# Natmi_primary# Natmi_additional# Omnipath
+KNG1	CD93	# Omnipath
+KNG1	GP1BA	# Natmi_primary# Natmi_additional# Omnipath
+KNG1	GPR135	# Natmi_primary# Natmi_additional# Omnipath
+KNG1	ITGAM	# Natmi_additional
+KNG1	ITGB2	# Natmi_primary# Natmi_additional# Omnipath
+KNG1	PLAUR	# Natmi_primary# Natmi_additional# Omnipath
+KNG1	RXFP4	# Natmi_primary# Natmi_additional# Omnipath
+KNG1	SDC2	# Natmi_additional# Omnipath
+KRTAP5-11	NECTIN3	# Natmi_additional
+L1CAM	ALCAM	# Natmi_primary# Natmi_additional
+L1CAM	CD9	# Natmi_primary# Natmi_additional
+L1CAM	CNTN1	# Natmi_primary# Natmi_additional# Omnipath
+L1CAM	EGFR	# Natmi_primary# Natmi_additional# Omnipath
+L1CAM	EPHB2	# Natmi_primary# Natmi_additional# Omnipath
+L1CAM	ERBB2	# Natmi_primary# Natmi_additional# Omnipath
+L1CAM	ERBB3	# Natmi_primary# Natmi_additional# Omnipath
+L1CAM	FGFR2	# Natmi_additional
+L1CAM	ITGA2B	# Natmi_additional
+L1CAM	ITGA5	# Natmi_primary# Natmi_additional# Omnipath
+L1CAM	ITGA9	# Natmi_additional
+L1CAM	ITGAV	# Natmi_primary# Natmi_additional# Omnipath
+L1CAM	ITGB1	# Natmi_additional
+L1CAM	ITGB3	# Natmi_additional
+L1CAM	NRP1	# Natmi_additional# Omnipath
+L1CAM	PLXNA1	# Omnipath
+L1CAM	PTPRZ1	# Natmi_primary# Natmi_additional
+LACRT	SDC1	# Natmi_primary# Natmi_additional# Omnipath
+LAMA1	CHRM1	# Natmi_additional
+LAMA1	CHRNA1	# Natmi_additional
+LAMA1	COL17A1	# Natmi_additional
+LAMA1	DAG1	# Omnipath
+LAMA1	ERBB3	# Natmi_additional
+LAMA1	GPC1	# Natmi_additional
+LAMA1	ITGA1	# Natmi_primary# Natmi_additional# Omnipath
+LAMA1	ITGA2	# Natmi_primary# Natmi_additional# Omnipath
+LAMA1	ITGA3	# Natmi_additional
+LAMA1	ITGA6	# Natmi_additional# Omnipath
+LAMA1	ITGA7	# Natmi_primary# Natmi_additional# Omnipath
+LAMA1	ITGAV	# Natmi_additional
+LAMA1	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+LAMA1	ITGB4	# Natmi_additional# Omnipath
+LAMA1	ITGB8	# Natmi_primary# Natmi_additional# Omnipath
+LAMA1	PMP22	# Natmi_additional
+LAMA1	RPSA	# Natmi_primary# Natmi_additional# Omnipath
+LAMA1	SDC2	# Natmi_additional
+LAMA1	SDC4	# Natmi_additional
+LAMA2	CHRM1	# Natmi_additional
+LAMA2	CHRNA1	# Natmi_additional
+LAMA2	DAG1	# Natmi_primary# Natmi_additional# Omnipath
+LAMA2	ITGA1	# Natmi_additional
+LAMA2	ITGA2	# Natmi_additional
+LAMA2	ITGA3	# Natmi_additional
+LAMA2	ITGA6	# Natmi_additional# Omnipath
+LAMA2	ITGA7	# Natmi_primary# Natmi_additional# Omnipath
+LAMA2	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+LAMA2	ITGB4	# Natmi_additional# Omnipath
+LAMA2	RPSA	# Natmi_primary# Natmi_additional# Omnipath
+LAMA3	CD151	# Natmi_additional
+LAMA3	CHRM1	# Natmi_additional
+LAMA3	CHRNA1	# Natmi_additional
+LAMA3	COL17A1	# Natmi_additional
+LAMA3	ITGA1	# Natmi_additional
+LAMA3	ITGA2	# Natmi_additional
+LAMA3	ITGA3	# Natmi_additional
+LAMA3	ITGA6	# Natmi_additional
+LAMA3	ITGB1	# Natmi_additional
+LAMA3	ITGB4	# Natmi_additional# Omnipath
+LAMA3	RPSA	# Natmi_additional
+LAMA3	SDC2	# Natmi_primary# Natmi_additional# Omnipath
+LAMA3	SDC4	# Natmi_additional
+LAMA4	CHRM1	# Natmi_additional
+LAMA4	CHRNA1	# Natmi_additional
+LAMA4	ITGA1	# Natmi_additional
+LAMA4	ITGA2	# Natmi_additional
+LAMA4	ITGA3	# Natmi_additional
+LAMA4	ITGA6	# Natmi_additional
+LAMA4	ITGA7	# Natmi_additional
+LAMA4	ITGAV	# Natmi_additional
+LAMA4	ITGB1	# Natmi_additional
+LAMA4	ITGB3	# Natmi_additional
+LAMA4	ITGB4	# Natmi_additional
+LAMA4	RPSA	# Natmi_additional
+LAMA5	BCAM	# Natmi_primary# Natmi_additional# Omnipath
+LAMA5	CHRM1	# Natmi_additional
+LAMA5	CHRNA1	# Natmi_additional
+LAMA5	ITGA1	# Natmi_additional
+LAMA5	ITGA2	# Natmi_additional
+LAMA5	ITGA3	# Natmi_additional
+LAMA5	ITGA6	# Natmi_additional# Omnipath
+LAMA5	ITGA7	# Natmi_additional
+LAMA5	ITGB1	# Natmi_additional
+LAMA5	ITGB4	# Natmi_additional# Omnipath
+LAMA5	RPSA	# Natmi_additional
+LAMA5	SDC1	# Natmi_additional
+LAMB1	CHRM1	# Natmi_additional
+LAMB1	CHRNA1	# Natmi_additional
+LAMB1	COL17A1	# Natmi_additional
+LAMB1	ERBB3	# Natmi_additional
+LAMB1	ITGA1	# Natmi_additional
+LAMB1	ITGA2	# Natmi_additional
+LAMB1	ITGA3	# Natmi_additional
+LAMB1	ITGA6	# Natmi_primary# Natmi_additional# Omnipath
+LAMB1	ITGA7	# Natmi_additional
+LAMB1	ITGAV	# Natmi_additional
+LAMB1	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+LAMB1	ITGB3	# Natmi_additional
+LAMB1	ITGB4	# Natmi_additional# Omnipath
+LAMB1	PMP22	# Natmi_additional
+LAMB1	RPSA	# Natmi_additional
+LAMB2	CHRM1	# Natmi_additional
+LAMB2	CHRNA1	# Natmi_additional
+LAMB2	ITGA1	# Natmi_additional
+LAMB2	ITGA2	# Natmi_additional
+LAMB2	ITGA3	# Natmi_additional
+LAMB2	ITGA6	# Natmi_additional# Omnipath
+LAMB2	ITGA7	# Natmi_additional
+LAMB2	ITGB1	# Natmi_additional
+LAMB2	ITGB4	# Natmi_additional# Omnipath
+LAMB2	RPSA	# Natmi_primary# Natmi_additional# Omnipath
+LAMB3	CD151	# Natmi_additional
+LAMB3	CHRM1	# Natmi_additional
+LAMB3	CHRNA1	# Natmi_additional
+LAMB3	COL17A1	# Natmi_additional
+LAMB3	ITGA1	# Natmi_additional
+LAMB3	ITGA2	# Natmi_additional
+LAMB3	ITGA3	# Natmi_additional
+LAMB3	ITGA6	# Natmi_additional# Omnipath
+LAMB3	ITGB1	# Natmi_additional
+LAMB3	ITGB4	# Natmi_additional# Omnipath
+LAMB3	RPSA	# Natmi_additional
+LAMC1	CHRM1	# Natmi_additional
+LAMC1	CHRNA1	# Natmi_additional
+LAMC1	ITGA1	# Natmi_additional
+LAMC1	ITGA2	# Natmi_additional
+LAMC1	ITGA3	# Natmi_additional
+LAMC1	ITGA6	# Natmi_additional# Omnipath
+LAMC1	ITGA7	# Natmi_additional
+LAMC1	ITGAV	# Natmi_additional
+LAMC1	ITGB1	# Natmi_additional
+LAMC1	ITGB3	# Natmi_additional
+LAMC1	ITGB4	# Natmi_additional# Omnipath
+LAMC1	RPSA	# Natmi_additional
+LAMC2	CD151	# Natmi_additional
+LAMC2	CHRM1	# Natmi_additional
+LAMC2	CHRNA1	# Natmi_additional
+LAMC2	COL17A1	# Natmi_additional
+LAMC2	ERBB3	# Natmi_additional
+LAMC2	ITGA1	# Natmi_additional
+LAMC2	ITGA2	# Natmi_additional
+LAMC2	ITGA3	# Natmi_primary# Natmi_additional# Omnipath
+LAMC2	ITGA6	# Natmi_primary# Natmi_additional# Omnipath
+LAMC2	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+LAMC2	ITGB4	# Natmi_primary# Natmi_additional# Omnipath
+LAMC2	PMP22	# Natmi_additional
+LAMC2	RPSA	# Natmi_additional
+LAMC3	CHRM1	# Natmi_additional
+LAMC3	CHRNA1	# Natmi_additional
+LAMC3	ITGA1	# Natmi_additional
+LAMC3	ITGA2	# Natmi_additional
+LAMC3	ITGA3	# Natmi_additional
+LAMC3	ITGA6	# Natmi_additional
+LAMC3	ITGB1	# Natmi_additional
+LAMC3	ITGB4	# Natmi_additional
+LAMC3	RPSA	# Natmi_additional
+LCAT	APP	# Natmi_additional
+LCN1	LMBR1L	# Natmi_primary# Natmi_additional
+LCN2	CTLA4	# Natmi_additional
+LCN2	LRP2	# Natmi_primary# Natmi_additional
+LEAP2	GHSR	# cellphonedb# Natmi_primary# Natmi_additional
+LEFTY1	ACVR1B	# Natmi_additional
+LEFTY1	ACVR1C	# Natmi_additional
+LEFTY1	ACVR2A	# Natmi_additional
+LEFTY1	ACVR2B	# Natmi_additional
+LEFTY1	CFC1	# Natmi_additional
+LEFTY1	TDGF1	# cellphonedb# Natmi_additional
+LEFTY2	ACVR1B	# Natmi_additional
+LEFTY2	ACVR1C	# Natmi_additional
+LEFTY2	ACVR2A	# Natmi_additional
+LEFTY2	ACVR2B	# Natmi_primary# Natmi_additional# Omnipath
+LEFTY2	CFC1	# Natmi_additional
+LEFTY2	TDGF1	# cellphonedb# Natmi_additional
+LEP	LEPR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+LEP	LRP2	# Natmi_additional
+LGALS1	CD69	# Natmi_primary# Natmi_additional
+LGALS1	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+LGALS1	PTPRC	# Natmi_primary# Natmi_additional# Omnipath
+LGALS3BP	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+LGALS3BP	VANGL1	# Natmi_additional
+LGALS3	LAG3	# Natmi_primary# Natmi_additional
+LGALS9	CD44	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+LGALS9	HAVCR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+LGI1	ADAM11	# Natmi_primary# Natmi_additional
+LGI1	ADAM22	# Natmi_primary# Natmi_additional
+LGI1	ADAM23	# Natmi_primary# Natmi_additional
+LGI1	CACNG2	# Natmi_additional
+LGI1	CACNG3	# Natmi_additional
+LGI1	CACNG4	# Natmi_additional
+LGI1	CACNG8	# Natmi_additional
+LGI1	RTN4R	# Natmi_primary# Natmi_additional
+LGI2	ADAM11	# Natmi_primary# Natmi_additional
+LGI2	ADAM22	# Natmi_primary# Natmi_additional
+LGI2	ADAM23	# Natmi_primary# Natmi_additional
+LGI3	ADAM22	# Natmi_primary# Natmi_additional
+LGI3	ADAM23	# Natmi_primary# Natmi_additional
+LGI3	FLOT1	# Natmi_primary# Natmi_additional
+LGI3	STX1A	# Natmi_primary# Natmi_additional
+LGI3	STX1B	# Natmi_additional
+LGI4	ADAM11	# Natmi_primary# Natmi_additional
+LGI4	ADAM22	# Natmi_primary# Natmi_additional
+LGI4	ADAM23	# Natmi_primary# Natmi_additional
+LHB	LHCGR	# Natmi_primary# Natmi_additional# Omnipath
+LIF	IL6ST	# Natmi_primary# Natmi_additional# Omnipath
+LIF	LIFR	# Natmi_primary# Natmi_additional# Omnipath
+LILRB1	HLA-G	# cellphonedb
+LILRB4	FCGR1A	# Natmi_additional
+LILRB4	FCGR2A	# Natmi_additional
+LILRB4	FCGR2B	# Natmi_additional
+LILRB4	HLA-B	# Natmi_additional
+LILRB4	HLA-F	# Natmi_additional
+LILRB4	LAIR1	# cellphonedb# Natmi_primary# Natmi_additional
+LIN7C	HTR2C	# Natmi_primary# Natmi_additional
+LIN7C	KCNJ4	# Natmi_additional
+LIN7C	NRXN1	# Natmi_additional
+LIN7C	NRXN2	# Natmi_additional
+LIN7C	NRXN3	# Natmi_additional
+LIPC	LRP1	# Natmi_primary# Natmi_additional
+LIPH	LPAR1	# Natmi_primary# Natmi_additional
+LIPH	LPAR2	# Natmi_primary# Natmi_additional
+LIPH	LPAR4	# Natmi_primary# Natmi_additional
+LPA	APP	# Natmi_additional
+LPA	ITGAM	# Natmi_additional
+LPA	ITGB2	# Natmi_additional
+LPA	LRP2	# Natmi_primary# Natmi_additional# Omnipath
+LPL	CD44	# Natmi_additional
+LPL	GPIHBP1	# Natmi_primary# Natmi_additional
+LPL	LRP1	# Natmi_primary# Natmi_additional
+LPL	LRP2	# Natmi_primary# Natmi_additional
+LPL	SDC1	# Natmi_primary# Natmi_additional
+LPL	VLDLR	# Natmi_primary# Natmi_additional
+LRFN2	GRIN2C	# Natmi_additional
+LRFN2	GRIN2D	# Natmi_additional
+LRFN3	LRFN3	# Natmi_primary# Natmi_additional
+LRFN5	LRFN5	# Natmi_primary# Natmi_additional
+LRIG3	LRIG1	# Natmi_additional
+LRP1	MDK	# cellphonedb
+LRP1	PDGFB	# cellphonedb
+LRPAP1	LDLR	# Natmi_primary# Natmi_additional
+LRPAP1	LRP1	# Natmi_primary# Natmi_additional
+LRPAP1	LRP2	# Natmi_primary# Natmi_additional
+LRPAP1	LRP8	# Natmi_primary# Natmi_additional
+LRPAP1	SORL1	# Natmi_primary# Natmi_additional
+LRPAP1	SORT1	# Natmi_primary# Natmi_additional
+LRPAP1	VLDLR	# Natmi_primary# Natmi_additional
+LRRC4B	PTPRD	# Natmi_primary# Natmi_additional
+LRRC4B	PTPRF	# Natmi_primary# Natmi_additional# Omnipath
+LRRC4B	PTPRS	# Natmi_primary# Natmi_additional
+LRRTM4	NRXN1	# Natmi_additional
+LRRTM4	NRXN2	# Natmi_additional
+LRRTM4	NRXN3	# Natmi_additional
+LTA	CACHD1	# Natmi_additional
+LTA	EDNRA	# Natmi_additional
+LTA	LTBR	# Natmi_primary# Natmi_additional# Omnipath
+LTA	RIPK1	# cellphonedb
+LTA	TNFRSF1A	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+LTA	TNFRSF1B	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+LTA	TNFRSF14	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+LTBP1	ITGB5	# Natmi_primary# Natmi_additional
+LTBP3	ITGB5	# Natmi_primary# Natmi_additional# Omnipath
+LTBR	LTA	# cellphonedb
+LTB	CD40	# Natmi_primary# Natmi_additional
+LTB	LTBR	# cellphonedb# Natmi_primary# Natmi_additional
+LTB	TNFRSF1A	# Natmi_primary# Natmi_additional
+LTF	GP9	# Natmi_additional
+LTF	GPR162	# Natmi_additional
+LTF	LRP1	# Natmi_primary# Natmi_additional
+LTF	LRP11	# Natmi_primary# Natmi_additional
+LTF	TFRC	# Natmi_additional
+LUM	ITGA2	# Natmi_additional
+LUM	ITGB1	# Natmi_additional
+LY6G5C	PGAP6	# Natmi_additional
+LY9	LY9	# Natmi_primary# Natmi_additional
+LY86	CD180	# Natmi_primary# Natmi_additional
+LYPD3	AGR2	# Natmi_additional
+LYZ	ITGAL	# Natmi_additional
+MADCAM1	CD44	# Natmi_primary# Natmi_additional
+MADCAM1	ITGA4	# Natmi_primary# Natmi_additional
+MADCAM1	ITGB7	# Natmi_primary# Natmi_additional
+MADCAM1	SELL	# Natmi_additional
+MARCO	SCGB3A1	# cellphonedb
+MATN1	ITGA1	# Natmi_primary# Natmi_additional
+MATN1	ITGB1	# Natmi_primary# Natmi_additional
+MATN1	PTPRD	# Natmi_additional
+MBL2	CD93	# Natmi_primary# Natmi_additional
+MCAM	MCAM	# Natmi_primary# Natmi_additional
+MDK	ALK	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+MDK	GPC2	# Natmi_additional
+MDK	ITGA4	# Natmi_primary# Natmi_additional# Omnipath
+MDK	ITGA6	# Natmi_primary# Natmi_additional# Omnipath
+MDK	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+MDK	LRP1	# Natmi_primary# Natmi_additional# Omnipath
+MDK	LRP2	# Omnipath
+MDK	NOTCH2	# Natmi_primary# Natmi_additional# Omnipath
+MDK	PTPRB	# Natmi_additional
+MDK	PTPRZ1	# Natmi_primary# Natmi_additional# Omnipath
+MDK	SDC1	# Natmi_primary# Natmi_additional# Omnipath
+MDK	SDC3	# Natmi_primary# Natmi_additional# Omnipath
+MDK	SDC4	# Natmi_primary# Natmi_additional
+MDK	TSPAN1	# Natmi_primary# Natmi_additional# Omnipath
+MELTF	PLG	# Natmi_primary# Natmi_additional
+MELTF	TFRC	# Natmi_additional
+MEPE	PHEX	# Natmi_primary# Natmi_additional
+MFAP2	NOTCH1	# Omnipath
+MFGE8	ITGAV	# Natmi_primary# Natmi_additional# Omnipath
+MFGE8	ITGB3	# Natmi_primary# Natmi_additional# Omnipath
+MFGE8	PDGFRB	# Natmi_primary# Natmi_additional# Omnipath
+MFNG	NOTCH1	# Natmi_primary# Natmi_additional
+MFNG	NOTCH2	# Natmi_primary# Natmi_additional
+MIA	CDH7	# Natmi_primary# Natmi_additional# Omnipath
+MIA	CDH19	# Natmi_additional
+MICA	HCST	# Natmi_additional
+MICA	KLRK1	# Natmi_primary# Natmi_additional# Omnipath
+MICB	HCST	# Natmi_additional
+MICB	KLRK1	# Natmi_primary# Natmi_additional# Omnipath
+MIF	CD74	# Natmi_primary# Natmi_additional# Omnipath
+MIF	CXCR2	# Natmi_primary# Natmi_additional# Omnipath
+MIF	CXCR4	# Natmi_primary# Natmi_additional# Omnipath
+MIF	TNFRSF10D	# cellphonedb
+MIF	TNFRSF14	# cellphonedb
+MLN	MLNR	# Natmi_primary# Natmi_additional# Omnipath
+MMP1	ITGA2	# Natmi_primary# Natmi_additional
+MMP2	CD44	# Natmi_additional
+MMP2	ITGAM	# Natmi_additional
+MMP2	ITGB2	# Natmi_additional
+MMP2	SDC2	# Natmi_primary# Natmi_additional
+MMP7	CD44	# Natmi_primary# Natmi_additional
+MMP7	CD151	# Natmi_primary# Natmi_additional
+MMP7	CDH6	# Natmi_additional
+MMP7	ERBB4	# Natmi_primary# Natmi_additional
+MMP9	CD44	# Natmi_primary# Natmi_additional
+MMP9	EPHB2	# Natmi_primary# Natmi_additional
+MMP9	ITGAM	# Natmi_additional
+MMP9	ITGB2	# Natmi_additional
+MMP9	LRP1	# Natmi_primary# Natmi_additional
+MMP12	PLAUR	# Natmi_primary# Natmi_additional
+MMP13	LRP1	# Natmi_primary# Natmi_additional
+MMRN2	CD93	# Natmi_primary# Natmi_additional
+MMRN2	CD248	# Natmi_primary# Natmi_additional
+MMRN2	CLEC14A	# Natmi_primary# Natmi_additional
+MRC1	PTPRC	# Natmi_primary# Natmi_additional
+MSMP	CCR2	# Natmi_primary# Natmi_additional
+MST1	MST1R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+MSTN	ACVR2B	# Natmi_primary# Natmi_additional# Omnipath
+MTNR1B	COPA	# cellphonedb
+MUC1	CLEC10A	# Natmi_additional
+MUC1	SIGLEC9	# Natmi_primary# Natmi_additional
+MUC2	AGR2	# Natmi_primary# Natmi_additional
+MUC3A	CLEC10A	# Natmi_additional
+MUC5AC	CLEC10A	# Natmi_additional
+MUC5B	CLEC10A	# Natmi_additional
+MUC6	CLEC10A	# Natmi_additional
+MUC7	CLEC10A	# Natmi_additional
+MUC7	SELL	# Natmi_primary# Natmi_additional
+MUC12	CLEC10A	# Natmi_additional
+MUCL1	CLEC10A	# Natmi_additional
+MYL9	CD69	# Natmi_primary# Natmi_additional
+MYL9	ITGA1	# Natmi_additional
+MYL9	ITGB5	# Natmi_additional
+MYOC	FZD1	# Natmi_primary# Natmi_additional
+MYOC	FZD3	# Natmi_primary# Natmi_additional# Omnipath
+MYOC	FZD4	# Natmi_primary# Natmi_additional# Omnipath
+MYOC	FZD7	# Natmi_primary# Natmi_additional# Omnipath
+MYOC	FZD10	# Natmi_primary# Natmi_additional# Omnipath
+NAMPT	INSR	# Natmi_primary# Natmi_additional
+NCAM1	CACNA1C	# Natmi_additional
+NCAM1	FGFR1	# Natmi_primary# Natmi_additional
+NCAM1	FGFR2	# Natmi_additional
+NCAM1	FGFR4	# Natmi_additional
+NCAM1	GFRA1	# Natmi_primary# Natmi_additional
+NCAM1	GFRA2	# Natmi_additional
+NCAM1	GFRA4	# Natmi_additional
+NCAM1	PTPRA	# Natmi_additional
+NCAM1	PTPRZ1	# Natmi_primary# Natmi_additional
+NCAM1	ROBO1	# Natmi_primary# Natmi_additional
+NCAM1	ROBO3	# Natmi_primary# Natmi_additional
+NCAN	CDH2	# Natmi_additional
+NCAN	SDC3	# Natmi_additional
+NCR3LG1	FCGR1A	# Natmi_additional
+NCR3LG1	NCR3	# Natmi_primary# Natmi_additional# Omnipath
+NCR3	BAG6	# cellphonedb
+NCR3	NCR3LG1	# cellphonedb
+NDP	FZD4	# Natmi_primary# Natmi_additional# Omnipath
+NDP	LGR4	# Natmi_primary# Natmi_additional# Omnipath
+NECTIN1	CADM3	# Natmi_primary# Natmi_additional
+NECTIN1	CD96	# Natmi_primary# Natmi_additional
+NECTIN1	NECTIN1	# Natmi_primary# Natmi_additional
+NECTIN1	NECTIN2	# Natmi_additional
+NECTIN1	NECTIN3	# cellphonedb# Natmi_primary# Natmi_additional
+NECTIN1	NECTIN4	# Natmi_primary# Natmi_additional
+NECTIN2	CD96	# Natmi_primary# Natmi_additional
+NECTIN2	CD226	# cellphonedb# Natmi_primary# Natmi_additional
+NECTIN2	CRTAM	# Natmi_additional
+NECTIN2	NECTIN1	# Natmi_additional
+NECTIN2	NECTIN2	# Natmi_primary# Natmi_additional
+NECTIN2	NECTIN3	# cellphonedb# Natmi_primary# Natmi_additional
+NECTIN2	PVRIG	# Natmi_primary# Natmi_additional
+NECTIN2	TIGIT	# Natmi_primary# Natmi_additional
+NECTIN3	CADM1	# Natmi_primary# Natmi_additional
+NECTIN3	CADM3	# Natmi_primary# Natmi_additional
+NECTIN3	NECTIN2	# Natmi_primary# Natmi_additional
+NECTIN3	NECTIN3	# Natmi_primary# Natmi_additional
+NECTIN3	PVR	# Natmi_primary# Natmi_additional
+NECTIN4	NECTIN4	# Natmi_primary# Natmi_additional
+NECTIN4	TIGIT	# Natmi_primary# Natmi_additional
+NELL2	ROBO3	# Natmi_primary# Natmi_additional
+NENF	CDH2	# Natmi_additional
+NGFR	TTR	# cellphonedb
+NGF	BEX3	# Natmi_additional
+NGF	KIDINS220	# Natmi_additional
+NGF	MAGED1	# Natmi_additional
+NGF	NGFR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NGF	NTRK1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NGF	SORCS3	# Natmi_primary# Natmi_additional
+NGF	SORT1	# Natmi_primary# Natmi_additional
+NID1	COL13A1	# Natmi_primary# Natmi_additional
+NID1	ITGA3	# Natmi_additional
+NID1	ITGAV	# Natmi_primary# Natmi_additional# Omnipath
+NID1	ITGB1	# Natmi_additional
+NID1	ITGB3	# Natmi_primary# Natmi_additional# Omnipath
+NID1	PTPRF	# Natmi_primary# Natmi_additional# Omnipath
+NID2	COL13A1	# Natmi_primary# Natmi_additional
+NLGN1	GRM1	# Natmi_additional
+NLGN1	GRM5	# Natmi_additional
+NLGN1	NRXN1	# Natmi_primary# Natmi_additional
+NLGN1	NRXN2	# Natmi_primary# Natmi_additional# Omnipath
+NLGN1	NRXN3	# Natmi_primary# Natmi_additional
+NLGN2	GRM1	# Natmi_additional
+NLGN2	GRM5	# Natmi_additional
+NLGN2	MDGA1	# Natmi_additional
+NLGN2	NRXN1	# Natmi_primary# Natmi_additional
+NLGN2	NRXN2	# Natmi_primary# Natmi_additional# Omnipath
+NLGN2	NRXN3	# Natmi_primary# Natmi_additional
+NLGN3	GRM1	# Natmi_additional
+NLGN3	GRM5	# Natmi_additional
+NLGN3	NRXN1	# Natmi_primary# Natmi_additional
+NLGN3	NRXN2	# Natmi_primary# Natmi_additional# Omnipath
+NLGN3	NRXN3	# Natmi_primary# Natmi_additional
+NLGN4X	GRM1	# Natmi_additional
+NLGN4X	GRM5	# Natmi_additional
+NLGN4X	NRXN1	# Natmi_primary# Natmi_additional
+NLGN4X	NRXN2	# Natmi_additional
+NLGN4X	NRXN3	# Natmi_additional
+NMB	BRS3	# Natmi_primary# Natmi_additional# Omnipath
+NMB	GRPR	# Natmi_primary# Natmi_additional# Omnipath
+NMB	NMBR	# Natmi_primary# Natmi_additional# Omnipath
+NMS	NMUR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NMS	NMUR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NMU	NMUR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NMU	NMUR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NODAL	ACVR1B	# Natmi_primary# Natmi_additional# Omnipath
+NODAL	ACVR1C	# Natmi_primary# Natmi_additional# Omnipath
+NODAL	ACVR2A	# Natmi_primary# Natmi_additional# Omnipath
+NODAL	ACVR2B	# Natmi_primary# Natmi_additional# Omnipath
+NODAL	CFC1	# Natmi_primary# Natmi_additional
+NODAL	TDGF1	# Natmi_primary# Natmi_additional
+NOG	BAMBI	# Natmi_additional
+NOG	BMPR1A	# Natmi_additional
+NOG	BMPR1B	# Natmi_additional
+NOG	BMPR2	# Natmi_additional
+NOG	HJV	# Natmi_additional
+NOG	RGMB	# Natmi_additional
+NOTCH2	DLL1	# cellphonedb
+NPB	NPBWR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NPB	NPBWR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NPFF	NPFFR1	# Natmi_primary# Natmi_additional# Omnipath
+NPFF	NPFFR2	# Natmi_primary# Natmi_additional# Omnipath
+NPNT	ITGA8	# Natmi_primary# Natmi_additional# Omnipath
+NPNT	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+NPPA	NPR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NPPA	NPR2	# Natmi_primary# Natmi_additional# Omnipath
+NPPA	NPR3	# Natmi_primary# Natmi_additional# Omnipath
+NPPB	DPP4	# cellphonedb
+NPPB	NPR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NPPB	NPR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NPPB	NPR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NPPC	NPR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NPPC	NPR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NPR1	NPPC	# cellphonedb
+NPR2	NPPA	# cellphonedb
+NPR2	NPR1	# Natmi_additional
+NPR3	NPPA	# cellphonedb
+NPS	NPSR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NPVF	NPFFR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NPVF	NPFFR2	# Natmi_primary# Natmi_additional# Omnipath
+NPW	NPBWR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NPW	NPBWR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NPY	FAP	# Natmi_primary# Natmi_additional
+NPY	MC4R	# Omnipath
+NPY	NPFFR2	# Natmi_primary# Natmi_additional# Omnipath
+NPY	NPY1R	# Natmi_primary# Natmi_additional# Omnipath
+NPY	NPY2R	# Natmi_primary# Natmi_additional# Omnipath
+NPY	NPY4R	# Natmi_primary# Natmi_additional# Omnipath
+NPY	NPY5R	# Natmi_primary# Natmi_additional# Omnipath
+NPY	PRLHR	# Natmi_primary# Natmi_additional# Omnipath
+NRG1	EGFR	# cellphonedb# Natmi_additional# Omnipath
+NRG1	ERBB2	# Natmi_primary# Natmi_additional# Omnipath
+NRG1	ERBB3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NRG1	ERBB4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NRG1	GPC1	# Natmi_additional
+NRG1	MS4A4A	# cellphonedb
+NRG2	EGFR	# Natmi_additional
+NRG2	ERBB2	# Natmi_additional# Omnipath
+NRG2	ERBB3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NRG2	ERBB4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NRG3	EGFR	# Natmi_additional# Omnipath
+NRG3	ERBB2	# Natmi_additional# Omnipath
+NRG3	ERBB3	# Natmi_additional# Omnipath
+NRG3	ERBB4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NRG4	EGFR	# Natmi_additional# Omnipath
+NRG4	ERBB2	# Natmi_additional# Omnipath
+NRG4	ERBB4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NRP1	KDR	# Omnipath
+NRP1	PGF	# cellphonedb
+NRP1	PLXNA1	# Omnipath
+NRP1	SEMA3A	# cellphonedb
+NRP1	VEGFA	# cellphonedb
+NRP1	VEGFB	# cellphonedb
+NRP2	PGF	# cellphonedb
+NRP2	SEMA3C	# cellphonedb
+NRP2	SEMA3F	# cellphonedb
+NRP2	VEGFA	# cellphonedb
+NRTN	GFRA1	# Natmi_primary# Natmi_additional# Omnipath
+NRTN	GFRA2	# Natmi_primary# Natmi_additional
+NRTN	GFRA4	# Natmi_additional
+NRTN	RET	# Natmi_primary# Natmi_additional# Omnipath
+NTF3	NGFR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NTF3	NTRK1	# Natmi_primary# Natmi_additional# Omnipath
+NTF3	NTRK2	# Natmi_primary# Natmi_additional# Omnipath
+NTF3	NTRK3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NTF3	RET	# Omnipath
+NTF4	BEX3	# Natmi_primary# Natmi_additional
+NTF4	NGFR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NTF4	NTRK1	# Natmi_primary# Natmi_additional# Omnipath
+NTF4	NTRK2	# Natmi_primary# Natmi_additional# Omnipath
+NTF4	NTRK3	# Natmi_additional
+NTN1	ADORA2B	# Natmi_primary# Natmi_additional# Omnipath
+NTN1	DCC	# Natmi_primary# Natmi_additional# Omnipath
+NTN1	MCAM	# Natmi_primary# Natmi_additional
+NTN1	NEO1	# Natmi_primary# Natmi_additional# Omnipath
+NTN1	UNC5A	# Natmi_primary# Natmi_additional# Omnipath
+NTN1	UNC5B	# Natmi_primary# Natmi_additional# Omnipath
+NTN1	UNC5C	# Natmi_primary# Natmi_additional# Omnipath
+NTN1	UNC5D	# Natmi_primary# Natmi_additional# Omnipath
+NTN3	CDON	# Natmi_primary# Natmi_additional# Omnipath
+NTN3	NEO1	# Natmi_primary# Natmi_additional# Omnipath
+NTN4	DCC	# Natmi_primary# Natmi_additional# Omnipath
+NTN4	UNC5A	# Natmi_primary# Natmi_additional# Omnipath
+NTNG1	LRRC4C	# Natmi_primary# Natmi_additional
+NTNG2	LRRC4C	# Natmi_additional
+NTNG2	LRRC4	# Natmi_primary# Natmi_additional
+NTRK1	NTF3	# cellphonedb
+NTRK2	NTF3	# cellphonedb
+NTRK2	NTF4	# cellphonedb
+NTRK3	PTPRD	# Natmi_primary# Natmi_additional
+NTRK3	PTPRF	# Natmi_primary# Natmi_additional
+NTRK3	PTPRS	# Natmi_primary# Natmi_additional
+NTS	NGFR	# Natmi_additional
+NTS	NTSR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+NTS	NTSR2	# Natmi_primary# Natmi_additional# Omnipath
+NTS	SORT1	# Natmi_primary# Natmi_additional
+NXPH1	NRXN1	# Natmi_primary# Natmi_additional# Omnipath
+NXPH1	NRXN2	# Natmi_primary# Natmi_additional# Omnipath
+NXPH1	NRXN3	# Natmi_primary# Natmi_additional
+NXPH2	NRXN1	# Natmi_primary# Natmi_additional
+NXPH3	NRXN1	# Natmi_primary# Natmi_additional
+NXPH3	NRXN2	# Natmi_primary# Natmi_additional# Omnipath
+NXPH3	NRXN3	# Natmi_primary# Natmi_additional
+OBP2A	OR1G1	# Omnipath
+OLAH	MOG	# Natmi_additional
+OLFM2	ROBO2	# Omnipath
+OMG	LINGO1	# Natmi_primary# Natmi_additional
+OMG	NGFR	# Natmi_additional
+OMG	RTN4RL1	# Natmi_primary# Natmi_additional
+OMG	RTN4R	# Natmi_primary# Natmi_additional
+OMG	TNFRSF1B	# Natmi_primary# Natmi_additional
+ORM1	CCR5	# Natmi_primary# Natmi_additional# Omnipath
+OSCAR	FCGR1A	# Natmi_additional
+OSCAR	FCGR2A	# Natmi_additional
+OSCAR	FCGR2B	# Natmi_additional
+OSM	IL6ST	# Natmi_primary# Natmi_additional# Omnipath
+OSM	LIFR	# Natmi_primary# Natmi_additional# Omnipath
+OSM	OSMR	# Natmi_primary# Natmi_additional# Omnipath
+OSTN	NPR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+OVGP1	ADAM21	# Natmi_additional
+OVGP1	ADAM30	# Natmi_additional
+OXT	AVPR1A	# Natmi_primary# Natmi_additional# Omnipath
+OXT	AVPR1B	# Natmi_primary# Natmi_additional# Omnipath
+OXT	AVPR2	# Natmi_primary# Natmi_additional# Omnipath
+OXT	OXTR	# Natmi_primary# Natmi_additional# Omnipath
+P4HB	COL13A1	# Natmi_additional
+P4HB	COL17A1	# Natmi_additional
+P4HB	GPR162	# Natmi_additional
+PAPLN	NECTIN4	# Natmi_additional
+PAPLN	SIRPA	# Natmi_additional
+PCNA	NCR2	# Natmi_primary# Natmi_additional
+PCSK9	LDLR	# Natmi_additional# Omnipath
+PCSK9	VLDLR	# Natmi_primary# Natmi_additional# Omnipath
+PDCD1LG2	PDCD1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PDCD1LG2	RGMB	# Natmi_primary# Natmi_additional
+PDGFA	PDGFRA	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PDGFA	PDGFRB	# Natmi_additional# Omnipath
+PDGFB	ART1	# Natmi_primary# Natmi_additional
+PDGFB	ITGAV	# Natmi_additional
+PDGFB	ITGB3	# Natmi_additional
+PDGFB	LRP1	# Natmi_primary# Natmi_additional# Omnipath
+PDGFB	PDGFRA	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PDGFB	PDGFRB	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PDGFB	S1PR1	# Natmi_additional
+PDGFC	FLT1	# Natmi_additional# Omnipath
+PDGFC	FLT4	# cellphonedb
+PDGFC	PDGFRA	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PDGFC	PDGFRB	# Natmi_primary# Natmi_additional# Omnipath
+PDGFD	PDGFRA	# Natmi_additional# Omnipath
+PDGFD	PDGFRB	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PDPN	CLEC1B	# Natmi_primary# Natmi_additional
+PDYN	OPRD1	# Natmi_primary# Natmi_additional
+PDYN	OPRK1	# Natmi_primary# Natmi_additional# Omnipath
+PDYN	OPRM1	# Natmi_primary# Natmi_additional# Omnipath
+PECAM1	CD38	# cellphonedb# Natmi_primary# Natmi_additional
+PENK	MRGPRX1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PENK	MRGPRX4	# Omnipath
+PENK	OGFR	# Natmi_primary# Natmi_additional# Omnipath
+PENK	OPRD1	# Natmi_primary# Natmi_additional
+PENK	OPRK1	# Natmi_additional# Omnipath
+PENK	OPRM1	# Natmi_primary# Natmi_additional# Omnipath
+PF4V1	CXCR3	# Natmi_primary# Natmi_additional
+PF4	ACKR1	# cellphonedb# Omnipath
+PF4	CXCR2	# Natmi_additional
+PF4	CXCR3	# Natmi_primary# Natmi_additional# Omnipath
+PF4	FGFR2	# Natmi_primary# Natmi_additional# Omnipath
+PF4	LDLR	# Natmi_primary# Natmi_additional# Omnipath
+PF4	PROCR	# Natmi_primary# Natmi_additional# Omnipath
+PF4	SDC2	# Natmi_primary# Natmi_additional# Omnipath
+PF4	THBD	# Natmi_primary# Natmi_additional# Omnipath
+PFN1	ROBO1	# Natmi_additional
+PGF	FLT1	# Natmi_primary# Natmi_additional# Omnipath
+PGF	KDR	# Natmi_additional
+PGF	NRP1	# Natmi_primary# Natmi_additional# Omnipath
+PGF	NRP2	# Natmi_primary# Natmi_additional# Omnipath
+PGLYRP1	TREM1	# Natmi_primary# Natmi_additional
+PI3	PLD2	# Natmi_additional
+PIP	CD4	# Natmi_primary# Natmi_additional# Omnipath
+PIP	NPTN	# Natmi_additional
+PKM	CD44	# Natmi_additional
+PLA2G2A	GPC1	# Natmi_additional
+PLA2G2A	ITGA4	# Natmi_primary# Natmi_additional
+PLA2G2A	ITGA5	# Natmi_primary# Natmi_additional
+PLA2G2A	ITGAV	# Natmi_primary# Natmi_additional
+PLA2G2A	ITGB1	# Natmi_primary# Natmi_additional
+PLA2G2A	ITGB3	# Natmi_primary# Natmi_additional
+PLA2G2C	PLD2	# Natmi_additional
+PLA2G2E	PLD2	# Natmi_additional
+PLA2G2F	PLD2	# Natmi_additional
+PLA2G10	PLA2R1	# Natmi_primary# Natmi_additional
+PLA2G10	PLD2	# Natmi_additional
+PLAT	CD4	# Natmi_additional
+PLAT	ITGAM	# Natmi_additional
+PLAT	ITGB2	# Natmi_additional
+PLAT	LRP1	# Natmi_primary# Natmi_additional
+PLAU	IGF2R	# Natmi_primary# Natmi_additional
+PLAU	ITGA3	# Natmi_additional
+PLAU	ITGA5	# Natmi_additional
+PLAU	ITGAM	# Natmi_additional
+PLAU	ITGAV	# Natmi_additional
+PLAU	ITGB1	# Natmi_additional
+PLAU	ITGB2	# Natmi_additional
+PLAU	ITGB3	# Natmi_additional
+PLAU	ITGB5	# Natmi_additional
+PLAU	LRP1	# Natmi_primary# Natmi_additional
+PLAU	LRP2	# Natmi_primary# Natmi_additional
+PLAU	MRC2	# Natmi_additional
+PLAU	PDGFRB	# Natmi_additional
+PLAU	PLAUR	# Natmi_primary# Natmi_additional
+PLAU	ST14	# Natmi_primary# Natmi_additional
+PLAU	VLDLR	# Natmi_additional
+PLG	F2RL1	# Natmi_primary# Natmi_additional# Omnipath
+PLG	F2R	# Natmi_primary# Natmi_additional# Omnipath
+PLG	F3	# Natmi_primary# Natmi_additional# Omnipath
+PLG	FLT1	# Natmi_additional
+PLG	ITGA9	# Natmi_primary# Natmi_additional# Omnipath
+PLG	ITGAM	# Natmi_additional
+PLG	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+PLG	ITGB2	# Natmi_additional
+PLG	PLAUR	# Natmi_additional
+PLG	PLGRKT	# Natmi_primary# Natmi_additional
+PLTP	ABCA1	# Natmi_primary# Natmi_additional
+PLTP	APP	# Natmi_additional
+PLXNC1	SEMA7A	# cellphonedb
+PMCH	MCHR1	# Natmi_primary# Natmi_additional# Omnipath
+PMCH	MCHR2	# Natmi_primary# Natmi_additional# Omnipath
+PNOC	OPRL1	# Natmi_primary# Natmi_additional# Omnipath
+PODXL2	SELL	# Natmi_primary# Natmi_additional# Omnipath
+PODXL	SELL	# Natmi_primary# Natmi_additional
+POMC	MC1R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+POMC	MC2R	# Natmi_primary# Natmi_additional# Omnipath
+POMC	MC3R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+POMC	MC4R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+POMC	MC5R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+POMC	OPRD1	# Natmi_primary# Natmi_additional
+POMC	OPRK1	# Natmi_primary# Natmi_additional# Omnipath
+POMC	OPRM1	# Natmi_primary# Natmi_additional# Omnipath
+POMC	SDC3	# Natmi_additional
+PON1	APP	# Natmi_additional
+POSTN	PTK7	# Natmi_primary# Natmi_additional
+PPBP	ACKR1	# Natmi_additional# Omnipath
+PPBP	CXCR1	# Natmi_primary# Natmi_additional# Omnipath
+PPBP	CXCR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PPY	NPY1R	# Natmi_additional
+PPY	NPY2R	# Natmi_additional
+PPY	NPY4R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PPY	NPY5R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PRG4	TLR2	# Natmi_primary# Natmi_additional
+PRG4	TLR4	# Natmi_primary# Natmi_additional
+PRLH	PRLHR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PRL	ERBB4	# Natmi_additional
+PRL	PRLR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PRND	RPSA	# Natmi_primary# Natmi_additional
+PROC	F2R	# Natmi_additional
+PROC	ITGAM	# Natmi_additional
+PROC	ITGB2	# Natmi_additional
+PROC	PROCR	# Natmi_primary# Natmi_additional
+PROC	TEK	# Natmi_primary# Natmi_additional
+PROC	THBD	# Natmi_primary# Natmi_additional
+PROK1	PROKR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PROK1	PROKR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PROK2	PROKR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PROK2	PROKR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PROKR2	ADIPOQ	# cellphonedb
+PROS1	AXL	# cellphonedb# Natmi_primary# Natmi_additional
+PROS1	MERTK	# Natmi_primary# Natmi_additional
+PROS1	TYRO3	# cellphonedb# Natmi_primary# Natmi_additional
+PSAP	CD1B	# Natmi_primary# Natmi_additional
+PSAP	GPR37L1	# cellphonedb# Natmi_primary# Natmi_additional
+PSAP	GPR37	# cellphonedb# Natmi_primary# Natmi_additional
+PSAP	LRP1	# Natmi_primary# Natmi_additional
+PSAP	SORT1	# Natmi_additional
+PSEN1	CD44	# Natmi_additional
+PSEN1	NCSTN	# Natmi_primary# Natmi_additional
+PSEN1	NOTCH1	# Natmi_primary# Natmi_additional
+PSEN1	NOTCH2	# Natmi_primary# Natmi_additional
+PSEN1	NOTCH3	# Natmi_primary# Natmi_additional
+PSEN1	NOTCH4	# Natmi_primary# Natmi_additional
+PSEN2	NCSTN	# Natmi_additional
+PSG3	GPC1	# Natmi_additional
+PSG3	SDC1	# Natmi_additional
+PSG3	SDC2	# Natmi_additional
+PSG3	SDC3	# Natmi_additional
+PSG3	SDC4	# Natmi_additional
+PSG4	GPC1	# Natmi_additional
+PSG4	SDC1	# Natmi_additional
+PSG4	SDC2	# Natmi_additional
+PSG4	SDC3	# Natmi_additional
+PSG4	SDC4	# Natmi_additional
+PSG6	GPC1	# Natmi_additional
+PSG6	SDC1	# Natmi_additional
+PSG6	SDC2	# Natmi_additional
+PSG6	SDC3	# Natmi_additional
+PSG6	SDC4	# Natmi_additional
+PSG8	GPC1	# Natmi_additional
+PSG8	SDC1	# Natmi_additional
+PSG8	SDC2	# Natmi_additional
+PSG8	SDC3	# Natmi_additional
+PSG8	SDC4	# Natmi_additional
+PSPN	GFRA1	# Natmi_primary# Natmi_additional# Omnipath
+PSPN	GFRA2	# Natmi_additional
+PSPN	GFRA4	# Natmi_primary# Natmi_additional# Omnipath
+PSPN	RET	# Natmi_primary# Natmi_additional# Omnipath
+PSPN	SDC3	# Natmi_additional
+PTDSS1	JMJD6	# Natmi_primary# Natmi_additional
+PTDSS1	SCARB1	# Natmi_primary# Natmi_additional
+PTGS2	CAV1	# Natmi_primary# Natmi_additional
+PTGS2	PTGDR2	# Natmi_primary# Natmi_additional
+PTH2	PTH1R	# Natmi_primary# Natmi_additional# Omnipath
+PTH2	PTH2R	# Natmi_primary# Natmi_additional# Omnipath
+PTHLH	PRLHR	# cellphonedb
+PTHLH	PTH1R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PTHLH	PTH2R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PTH	LRP6	# Omnipath
+PTH	PTH1R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PTH	PTH2R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PTMA	VIPR1	# Natmi_primary# Natmi_additional
+PTN	ALK	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PTN	CDH10	# Omnipath
+PTN	PLXNB2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PTN	PTPRB	# Natmi_primary# Natmi_additional# Omnipath
+PTN	PTPRS	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PTN	PTPRZ1	# Natmi_primary# Natmi_additional# Omnipath
+PTN	SDC1	# Natmi_additional# Omnipath
+PTN	SDC2	# Omnipath
+PTN	SDC3	# Natmi_primary# Natmi_additional# Omnipath
+PTPRC	CD22	# cellphonedb# Natmi_primary# Natmi_additional
+PTPRC	CXCR4	# Natmi_additional
+PTPRC	MRC1	# cellphonedb# Natmi_primary# Natmi_additional
+PTPRK	PTPRK	# Natmi_primary# Natmi_additional
+PTPRM	PTPRM	# Natmi_primary# Natmi_additional
+PTPRZ1	L1CAM	# Natmi_primary# Natmi_additional
+PTPRZ1	MDK	# cellphonedb
+PTPRZ1	NCAM1	# Natmi_primary# Natmi_additional
+PTPRZ1	PTN	# cellphonedb
+PVR	CD96	# Natmi_primary# Natmi_additional
+PVR	CD226	# cellphonedb# Natmi_primary# Natmi_additional
+PVR	ITGAV	# Natmi_additional
+PVR	ITGB3	# Natmi_additional
+PVR	NECTIN3	# cellphonedb# Natmi_primary# Natmi_additional
+PVR	PVRIG	# Natmi_primary# Natmi_additional
+PVR	TIGIT	# Natmi_primary# Natmi_additional
+PYY	FAP	# Natmi_primary# Natmi_additional
+PYY	NPY1R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PYY	NPY2R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PYY	NPY4R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+PYY	NPY5R	# Natmi_primary# Natmi_additional# Omnipath
+QDPR	DYSF	# Natmi_additional
+QRFP	P2RY14	# Natmi_primary# Natmi_additional# Omnipath
+QRFP	QRFPR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RAET1E	HCST	# Natmi_additional
+RAET1E	KLRK1	# Natmi_primary# Natmi_additional# Omnipath
+RAET1G	KLRK1	# Natmi_primary# Natmi_additional# Omnipath
+RAET1L	KLRK1	# Natmi_primary# Natmi_additional
+RARRES2	CCRL2	# Natmi_primary# Natmi_additional# Omnipath
+RARRES2	CMKLR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RARRES2	CMKLR2	# cellphonedb
+RARRES2	GPR1	# Natmi_primary# Natmi_additional
+RBP3	NOTCH1	# Natmi_primary# Natmi_additional# Omnipath
+RBP4	STRA6	# Natmi_primary# Natmi_additional
+RELN	ITGA3	# Natmi_primary# Natmi_additional# Omnipath
+RELN	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+RELN	LRP8	# Natmi_primary# Natmi_additional# Omnipath
+RELN	VLDLR	# Natmi_primary# Natmi_additional# Omnipath
+REN	ASIC3	# Natmi_additional
+REN	ATP6AP2	# Natmi_primary# Natmi_additional
+RGMA	BAMBI	# Natmi_additional
+RGMA	BMPR1A	# Natmi_additional
+RGMA	BMPR1B	# Natmi_additional
+RGMA	BMPR2	# Natmi_additional
+RGMA	HJV	# Natmi_additional
+RGMA	NEO1	# Natmi_primary# Natmi_additional# Omnipath
+RGMA	RGMB	# Natmi_additional
+RGMB	BAMBI	# Natmi_additional
+RGMB	BMPR1A	# Natmi_additional
+RGMB	BMPR1B	# Natmi_additional
+RGMB	BMPR2	# Natmi_additional
+RGMB	HJV	# Natmi_additional
+RGMB	NEO1	# Natmi_primary# Natmi_additional
+RIMS1	SLC17A7	# Natmi_additional
+RIMS1	SLC18A2	# Natmi_additional
+RIMS1	SLC18A3	# Natmi_additional
+RIPK1	TNFSF10	# cellphonedb
+RLN1	RXFP1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RLN1	RXFP2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RLN2	RXFP1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RLN2	RXFP2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RLN2	RXFP3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RLN3	RXFP1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RLN3	RXFP2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RLN3	RXFP3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RLN3	RXFP4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RNASE2	TLR2	# Natmi_primary# Natmi_additional
+ROBO1	ROBO1	# Natmi_primary# Natmi_additional
+ROBO2	ROBO2	# Natmi_primary# Natmi_additional
+ROR1	NGF	# cellphonedb
+ROR1	WNT5A	# cellphonedb
+RPH3A	NRXN1	# Natmi_primary# Natmi_additional
+RPS19	C5AR1	# Natmi_primary# Natmi_additional
+RPS19	RPSA	# Natmi_additional
+RSPO1	FZD8	# Natmi_additional# Omnipath
+RSPO1	LGR4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RSPO1	LGR5	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RSPO1	LGR6	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RSPO1	LRP6	# Natmi_primary# Natmi_additional# Omnipath
+RSPO1	ZNRF3	# Natmi_primary# Natmi_additional
+RSPO2	LGR4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RSPO2	LGR5	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RSPO2	LGR6	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RSPO2	RNF43	# Natmi_primary# Natmi_additional
+RSPO2	ZNRF3	# Natmi_primary# Natmi_additional
+RSPO3	FZD8	# Natmi_primary# Natmi_additional# Omnipath
+RSPO3	LGR4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RSPO3	LGR5	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RSPO3	LGR6	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RSPO3	LRP6	# Natmi_primary# Natmi_additional# Omnipath
+RSPO3	SDC4	# Natmi_primary# Natmi_additional
+RSPO3	ZNRF3	# Natmi_additional
+RSPO4	LGR4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RSPO4	LGR5	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RSPO4	LGR6	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+RSPO4	ZNRF3	# Natmi_additional
+RTN3	LRFN3	# Natmi_additional
+RTN3	LRFN4	# Natmi_additional
+RTN4	CNTNAP1	# Natmi_primary# Natmi_additional
+RTN4	GJB2	# Natmi_additional
+RTN4	LINGO1	# Natmi_primary# Natmi_additional
+RTN4	NGFR	# Natmi_additional
+RTN4	RTN4RL1	# Natmi_primary# Natmi_additional
+RTN4	RTN4R	# Natmi_primary# Natmi_additional
+RTN4	S1PR2	# Natmi_primary# Natmi_additional
+RTN4	TNFRSF19	# Natmi_primary# Natmi_additional
+RYK	WNT1	# cellphonedb
+RYK	WNT3A	# cellphonedb
+S100A8	LY96	# Natmi_additional
+S100A8	TLR4	# Natmi_primary# Natmi_additional# Omnipath
+S100A9	AGER	# Omnipath
+S100A9	LY96	# Natmi_additional
+S100A9	TLR4	# Natmi_primary# Natmi_additional# Omnipath
+SAA1	CD36	# Natmi_primary# Natmi_additional
+SAA1	FPR1	# Omnipath
+SAA1	FPR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+SAA1	SCARB1	# Natmi_additional
+SCGB1A1	LRP2	# Natmi_primary# Natmi_additional# Omnipath
+SCGB3A1	FGFR4	# cellphonedb
+SCGB3A1	MARCO	# Natmi_primary# Natmi_additional
+SCGB3A2	MARCO	# Natmi_primary# Natmi_additional
+SCT	SCTR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+SCT	VIPR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+SCT	VIPR2	# Natmi_primary# Natmi_additional# Omnipath
+SDC2	PTPRJ	# Natmi_primary# Natmi_additional
+SECTM1	CD7	# Natmi_primary# Natmi_additional
+SELE	CD44	# cellphonedb# Natmi_primary# Natmi_additional
+SELE	GLG1	# cellphonedb
+SELE	SPN	# Natmi_additional
+SELE	TNFRSF25	# Natmi_additional
+SELL	CD34	# cellphonedb
+SELL	PODXL	# cellphonedb
+SELL	SELPLG	# cellphonedb
+SELPLG	ESAM	# Natmi_additional
+SELPLG	ITGAM	# Natmi_additional
+SELPLG	ITGB2	# Natmi_additional
+SELPLG	SELE	# cellphonedb# Natmi_primary# Natmi_additional
+SELPLG	SELL	# Natmi_primary# Natmi_additional
+SELPLG	SELP	# Natmi_primary# Natmi_additional
+SELPLG	SIGLEC5	# Natmi_primary# Natmi_additional
+SELP	SELPLG	# cellphonedb
+SEMA3A	NRP1	# Natmi_primary# Natmi_additional# Omnipath
+SEMA3A	NRP2	# Natmi_primary# Natmi_additional# Omnipath
+SEMA3A	PLXNA1	# Natmi_primary# Natmi_additional# Omnipath
+SEMA3A	PLXNA2	# Natmi_primary# Natmi_additional# Omnipath
+SEMA3A	PLXNA3	# Natmi_additional
+SEMA3A	PLXNA4	# Natmi_primary# Natmi_additional# Omnipath
+SEMA3B	NRP1	# Natmi_primary# Natmi_additional# Omnipath
+SEMA3B	NRP2	# Natmi_primary# Natmi_additional# Omnipath
+SEMA3C	NRP1	# Natmi_primary# Natmi_additional# Omnipath
+SEMA3C	NRP2	# Natmi_primary# Natmi_additional# Omnipath
+SEMA3C	PLXND1	# Natmi_primary# Natmi_additional# Omnipath
+SEMA3D	NRP1	# Natmi_primary# Natmi_additional# Omnipath
+SEMA3E	NRP1	# Natmi_additional# Omnipath
+SEMA3E	PLXND1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+SEMA3F	NRP1	# Natmi_primary# Natmi_additional# Omnipath
+SEMA3F	NRP2	# Natmi_primary# Natmi_additional# Omnipath
+SEMA3F	PLXNA1	# Natmi_additional
+SEMA3F	PLXNA3	# Natmi_primary# Natmi_additional# Omnipath
+SEMA3G	NRP2	# Natmi_primary# Natmi_additional# Omnipath
+SEMA4A	LILRB2	# Natmi_primary# Natmi_additional
+SEMA4A	PLXNB1	# Natmi_primary# Natmi_additional
+SEMA4A	PLXNB2	# Natmi_primary# Natmi_additional
+SEMA4A	PLXND1	# cellphonedb# Natmi_primary# Natmi_additional
+SEMA4B	DCBLD2	# Natmi_primary# Natmi_additional# Omnipath
+SEMA4C	PLXNB2	# cellphonedb# Natmi_primary# Natmi_additional
+SEMA4D	CD72	# cellphonedb# Natmi_primary# Natmi_additional
+SEMA4D	ERBB2	# Natmi_primary# Natmi_additional
+SEMA4D	MET	# Natmi_primary# Natmi_additional
+SEMA4D	PLXNB1	# cellphonedb# Natmi_primary# Natmi_additional
+SEMA4D	PLXNB2	# cellphonedb# Natmi_primary# Natmi_additional
+SEMA4G	PLXNB2	# cellphonedb# Natmi_primary# Natmi_additional
+SEMA5A	MET	# Natmi_primary# Natmi_additional# Omnipath
+SEMA5A	PLXNB3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+SEMA6A	PLXNA2	# Natmi_primary# Natmi_additional
+SEMA6A	PLXNA4	# Natmi_primary# Natmi_additional
+SEMA6B	PLXNA2	# Natmi_primary# Natmi_additional
+SEMA6D	KDR	# Natmi_primary# Natmi_additional# Omnipath
+SEMA6D	PLXNA1	# Natmi_primary# Natmi_additional# Omnipath
+SEMA6D	TREM2	# Natmi_primary# Natmi_additional# Omnipath
+SEMA6D	TYROBP	# Natmi_primary# Natmi_additional
+SEMA7A	ITGA1	# Natmi_primary# Natmi_additional# Omnipath
+SEMA7A	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+SEMA7A	PLXNC1	# Natmi_primary# Natmi_additional# Omnipath
+SERPINA1	LRP1	# Natmi_primary# Natmi_additional
+SERPINC1	GPC1	# Natmi_additional
+SERPINC1	LRP1	# Natmi_primary# Natmi_additional
+SERPINC1	SDC2	# Natmi_primary# Natmi_additional
+SERPINE1	ITGAV	# Natmi_additional
+SERPINE1	ITGB3	# Natmi_additional
+SERPINE1	ITGB5	# Natmi_additional
+SERPINE1	LRP1	# Natmi_primary# Natmi_additional
+SERPINE1	LRP2	# Natmi_primary# Natmi_additional
+SERPINE1	PLAUR	# Natmi_additional
+SERPINE2	LRP1	# Natmi_primary# Natmi_additional
+SERPINF1	PLXDC1	# Natmi_primary# Natmi_additional
+SERPINF1	PLXDC2	# Natmi_primary# Natmi_additional
+SERPING1	LRP1	# Natmi_primary# Natmi_additional
+SERPING1	SELE	# Natmi_primary# Natmi_additional
+SERPING1	SELP	# Natmi_primary# Natmi_additional
+SERTAD1	AR	# Natmi_primary# Natmi_additional
+SFRP1	FZD2	# Natmi_primary# Natmi_additional
+SFRP1	FZD6	# Natmi_primary# Natmi_additional
+SFRP2	FZD5	# Natmi_primary# Natmi_additional# Omnipath
+SFTA3	CSF2RA	# Natmi_additional
+SFTA3	CSF2RB	# Natmi_additional
+SFTPA1	CSF2RA	# Natmi_additional
+SFTPA1	CSF2RB	# Natmi_additional
+SFTPA1	TLR1	# Natmi_additional
+SFTPA1	TLR2	# Natmi_primary# Natmi_additional# Omnipath
+SFTPA1	TLR4	# Natmi_additional
+SFTPA2	CD93	# Natmi_primary# Natmi_additional
+SFTPA2	CSF2RA	# Natmi_additional
+SFTPA2	CSF2RB	# Natmi_additional
+SFTPB	CSF2RA	# Natmi_additional
+SFTPB	CSF2RB	# Natmi_additional
+SFTPC	CSF2RA	# Natmi_additional
+SFTPC	CSF2RB	# Natmi_additional
+SFTPD	CSF2RA	# Natmi_additional
+SFTPD	CSF2RB	# Natmi_additional
+SFTPD	LAIR1	# Natmi_primary# Natmi_additional
+SFTPD	LY96	# Natmi_additional
+SFTPD	SIRPA	# Natmi_primary# Natmi_additional# Omnipath
+SFTPD	TLR4	# Natmi_additional# Omnipath
+SHANK1	ADGRL1	# Natmi_primary# Natmi_additional
+SHANK1	GRM1	# Natmi_additional
+SHANK1	GRM5	# Natmi_additional
+SHANK1	NRXN1	# Natmi_additional
+SHANK1	NRXN2	# Natmi_additional
+SHANK1	NRXN3	# Natmi_additional
+SHANK1	SSTR2	# Natmi_primary# Natmi_additional
+SHANK2	GRM1	# Natmi_additional
+SHANK2	GRM5	# Natmi_additional
+SHANK2	NRXN1	# Natmi_additional
+SHANK2	NRXN2	# Natmi_additional
+SHANK2	NRXN3	# Natmi_additional
+SHH	BOC	# Natmi_primary# Natmi_additional# Omnipath
+SHH	CDON	# Natmi_primary# Natmi_additional# Omnipath
+SHH	DISP2	# Natmi_additional
+SHH	GAS1	# Natmi_primary# Natmi_additional
+SHH	GPC5	# Natmi_primary# Natmi_additional
+SHH	HHIP	# Natmi_primary# Natmi_additional
+SHH	LRP2	# Natmi_primary# Natmi_additional# Omnipath
+SHH	PTCH1	# Natmi_primary# Natmi_additional# Omnipath
+SHH	PTCH2	# Natmi_primary# Natmi_additional# Omnipath
+SHH	SMO	# Natmi_primary# Natmi_additional# Omnipath
+SIGLEC1	SPN	# Natmi_primary# Natmi_additional
+SIRPA	CD47	# cellphonedb# Natmi_primary# Natmi_additional
+SIRPA	SIRPG	# Natmi_additional
+SIRPA	TREM2	# Natmi_additional
+SIRPA	TYROBP	# Natmi_additional
+SIRPB2	CD47	# Natmi_primary# Natmi_additional
+SIRPG	CD47	# Natmi_primary# Natmi_additional
+SLAMF1	SLAMF1	# Natmi_primary# Natmi_additional
+SLAMF6	SLAMF6	# Natmi_primary# Natmi_additional
+SLAMF7	SLAMF7	# Natmi_primary# Natmi_additional
+SLIT1	DCC	# Natmi_additional
+SLIT1	GPC1	# Natmi_primary# Natmi_additional# Omnipath
+SLIT1	ROBO1	# Natmi_primary# Natmi_additional# Omnipath
+SLIT1	ROBO2	# Natmi_primary# Natmi_additional# Omnipath
+SLIT1	SDC1	# Natmi_primary# Natmi_additional# Omnipath
+SLIT2	APP	# Natmi_primary# Natmi_additional
+SLIT2	CXCR4	# Natmi_additional
+SLIT2	DCC	# Natmi_additional
+SLIT2	GPC1	# Natmi_primary# Natmi_additional# Omnipath
+SLIT2	ROBO1	# Natmi_primary# Natmi_additional# Omnipath
+SLIT2	ROBO2	# Natmi_primary# Natmi_additional# Omnipath
+SLIT2	ROBO4	# Natmi_primary# Natmi_additional# Omnipath
+SLIT2	SDC1	# Natmi_primary# Natmi_additional# Omnipath
+SLIT3	DCC	# Natmi_additional
+SLIT3	ROBO1	# Natmi_primary# Natmi_additional# Omnipath
+SLIT3	ROBO2	# Natmi_primary# Natmi_additional# Omnipath
+SLIT3	ROBO4	# Natmi_primary# Natmi_additional
+SLITRK1	PTPRD	# Natmi_primary# Natmi_additional
+SLITRK1	PTPRS	# Natmi_primary# Natmi_additional
+SLITRK2	PTPRD	# Natmi_primary# Natmi_additional
+SLITRK2	PTPRS	# Natmi_primary# Natmi_additional
+SLITRK3	PTPRD	# Natmi_primary# Natmi_additional
+SLITRK3	PTPRS	# Natmi_primary# Natmi_additional
+SLITRK4	PTPRD	# Natmi_additional
+SLITRK5	PTPRD	# Natmi_primary# Natmi_additional
+SLITRK6	PTPRD	# Natmi_additional
+SLITRK6	PTPRS	# Natmi_primary# Natmi_additional
+SLPI	CD4	# Natmi_additional
+SLPI	PLSCR1	# Natmi_primary# Natmi_additional
+SLPI	PLSCR4	# Natmi_primary# Natmi_additional
+SLURP1	CHRNA7	# Natmi_primary# Natmi_additional
+SNCA	LAG3	# Natmi_primary# Natmi_additional
+SORBS1	ITGA1	# Natmi_additional
+SORBS1	ITGB5	# Natmi_additional
+SORT1	COPA	# cellphonedb
+SORT1	GRN	# cellphonedb
+SOSTDC1	BAMBI	# Natmi_additional
+SOSTDC1	BMPR1A	# Natmi_additional
+SOSTDC1	BMPR1B	# Natmi_additional
+SOSTDC1	BMPR2	# Natmi_additional
+SOSTDC1	HJV	# Natmi_additional
+SOSTDC1	LRP4	# Natmi_primary# Natmi_additional
+SOSTDC1	LRP5	# Natmi_primary# Natmi_additional
+SOSTDC1	LRP6	# Natmi_primary# Natmi_additional# Omnipath
+SOSTDC1	RGMB	# Natmi_additional
+SOST	FZD8	# Natmi_additional
+SOST	LRP4	# Natmi_primary# Natmi_additional# Omnipath
+SOST	LRP5	# Natmi_primary# Natmi_additional# Omnipath
+SOST	LRP6	# Natmi_primary# Natmi_additional# Omnipath
+SPINK1	EGFR	# Natmi_primary# Natmi_additional
+SPN	ICAM1	# cellphonedb
+SPN	SELE	# Natmi_additional
+SPN	SIGLEC1	# cellphonedb# Natmi_primary# Natmi_additional
+SPON1	APP	# Natmi_primary# Natmi_additional
+SPON1	LRP8	# Natmi_primary# Natmi_additional
+SPON2	ITGA4	# Natmi_primary# Natmi_additional
+SPON2	ITGA5	# Natmi_primary# Natmi_additional
+SPON2	ITGAM	# Natmi_primary# Natmi_additional# Omnipath
+SPON2	ITGB1	# Natmi_primary# Natmi_additional
+SPON2	ITGB2	# Natmi_primary# Natmi_additional# Omnipath
+SPP1	CD44	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+SPP1	ITGA4	# Natmi_primary# Natmi_additional# Omnipath
+SPP1	ITGA5	# Omnipath
+SPP1	ITGA8	# Natmi_additional
+SPP1	ITGA9	# Natmi_primary# Natmi_additional# Omnipath
+SPP1	ITGAV	# Natmi_primary# Natmi_additional# Omnipath
+SPP1	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+SPP1	ITGB3	# Natmi_primary# Natmi_additional# Omnipath
+SPP1	ITGB5	# Natmi_primary# Natmi_additional# Omnipath
+SPP1	S1PR1	# Omnipath
+SPX	GALR2	# Natmi_primary# Natmi_additional# Omnipath
+SPX	GALR3	# Natmi_primary# Natmi_additional# Omnipath
+SST	SSTR1	# Natmi_primary# Natmi_additional# Omnipath
+SST	SSTR2	# Natmi_primary# Natmi_additional# Omnipath
+SST	SSTR3	# Natmi_primary# Natmi_additional# Omnipath
+SST	SSTR4	# Natmi_primary# Natmi_additional# Omnipath
+SST	SSTR5	# Natmi_primary# Natmi_additional# Omnipath
+ST6GAL1	CD22	# Natmi_primary# Natmi_additional
+SYN2	SLC18A2	# Natmi_additional
+SYN3	SLC18A2	# Natmi_additional
+TAC1	TACR1	# Natmi_primary# Natmi_additional
+TAC1	TACR2	# Natmi_primary# Natmi_additional# Omnipath
+TAC1	TACR3	# Natmi_primary# Natmi_additional
+TAC3	TACR1	# Natmi_primary# Natmi_additional
+TAC3	TACR2	# Natmi_primary# Natmi_additional# Omnipath
+TAC3	TACR3	# Natmi_primary# Natmi_additional
+TAC4	TACR1	# Natmi_primary# Natmi_additional
+TAC4	TACR2	# Natmi_primary# Natmi_additional# Omnipath
+TAC4	TACR3	# Natmi_primary# Natmi_additional
+TAFA4	FPR1	# Natmi_primary# Natmi_additional
+TCN1	CD320	# Natmi_primary# Natmi_additional
+TCN2	CD320	# Natmi_additional
+TCN2	CNR1	# Natmi_additional
+TCN2	LRP2	# Natmi_additional
+TCTN1	TMEM67	# Natmi_primary# Natmi_additional
+TCTN2	TMEM67	# Natmi_additional
+TCTN3	TMEM67	# Natmi_additional
+TDGF1	ACVR1B	# Natmi_primary# Natmi_additional
+TDGF1	ACVR1C	# Natmi_additional
+TDGF1	ACVR2A	# Natmi_primary# Natmi_additional
+TDGF1	ACVR2B	# Natmi_additional
+TDGF1	GPC1	# Natmi_additional
+TFF1	EGFR	# Natmi_additional
+TFF1	ERBB2	# Natmi_additional
+TFF1	FCRL4	# Omnipath
+TFF1	FGFR2	# cellphonedb
+TFF2	CXCR4	# Natmi_primary# Natmi_additional# Omnipath
+TFF2	EGFR	# Natmi_additional
+TFF2	ERBB2	# Natmi_additional
+TFF3	ACKR3	# Natmi_primary# Natmi_additional
+TFF3	CXCR4	# Natmi_primary# Natmi_additional
+TFF3	EGFR	# Natmi_additional
+TFF3	ERBB2	# Natmi_additional
+TFPI	F3	# Natmi_additional
+TFPI	LRP1	# Natmi_primary# Natmi_additional
+TFPI	SDC4	# Natmi_additional
+TFPI	VLDLR	# Natmi_primary# Natmi_additional
+TF	GPR162	# Natmi_additional
+TF	HFE	# Natmi_additional
+TF	HJV	# Natmi_additional
+TF	TFR2	# Natmi_primary# Natmi_additional# Omnipath
+TF	TFRC	# Natmi_primary# Natmi_additional# Omnipath
+TGFA	EGFR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+TGFA	ERBB2	# Natmi_primary# Natmi_additional# Omnipath
+TGFA	ERBB3	# Natmi_additional# Omnipath
+TGFA	ERBB4	# Natmi_primary# Natmi_additional# Omnipath
+TGFB1	ACVRL1	# Natmi_primary# Natmi_additional# Omnipath
+TGFB1	CAV1	# Natmi_additional
+TGFB1	CD109	# Natmi_additional
+TGFB1	CXCR4	# Natmi_additional# Omnipath
+TGFB1	EGFR	# Omnipath
+TGFB1	ENG	# Natmi_primary# Natmi_additional
+TGFB1	ITGAV	# Natmi_primary# Natmi_additional# Omnipath
+TGFB1	ITGB1	# Omnipath
+TGFB1	ITGB6	# Natmi_primary# Natmi_additional# Omnipath
+TGFB1	ITGB8	# Natmi_primary# Natmi_additional# Omnipath
+TGFB1	SDC2	# Natmi_primary# Natmi_additional# Omnipath
+TGFB1	TGFBR1	# Natmi_primary# Natmi_additional# Omnipath
+TGFB1	TGFBR2	# Natmi_primary# Natmi_additional# Omnipath
+TGFB1	TGFBR3	# Natmi_primary# Natmi_additional# Omnipath
+TGFB1	VASN	# Natmi_primary# Natmi_additional
+TGFB2	ACVR1	# Natmi_primary# Natmi_additional# Omnipath
+TGFB2	ENG	# Natmi_primary# Natmi_additional
+TGFB2	TGFBR1	# Natmi_primary# Natmi_additional# Omnipath
+TGFB2	TGFBR2	# Natmi_primary# Natmi_additional# Omnipath
+TGFB2	TGFBR3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+TGFB3	ACVRL1	# Natmi_primary# Natmi_additional# Omnipath
+TGFB3	CAV1	# Natmi_additional
+TGFB3	ENG	# Natmi_primary# Natmi_additional
+TGFB3	GPC1	# Natmi_additional
+TGFB3	ITGAV	# Natmi_additional
+TGFB3	ITGB1	# Natmi_additional
+TGFB3	ITGB3	# Natmi_additional
+TGFB3	ITGB5	# Natmi_additional
+TGFB3	ITGB6	# Natmi_additional
+TGFB3	ITGB8	# Natmi_additional
+TGFB3	OCLN	# Natmi_additional
+TGFB3	TGFBR1	# Natmi_primary# Natmi_additional# Omnipath
+TGFB3	TGFBR2	# Natmi_primary# Natmi_additional# Omnipath
+TGFB3	TGFBR3	# Natmi_primary# Natmi_additional# Omnipath
+TGFBR3	TGFB1	# cellphonedb
+TGFBR3	TGFB3	# cellphonedb
+TGM2	ADGRG1	# Natmi_primary# Natmi_additional
+TGM2	ITGA4	# Natmi_additional
+TGM2	ITGA9	# Natmi_additional
+TGM2	ITGB1	# Natmi_primary# Natmi_additional
+TGM2	ITGB3	# Natmi_primary# Natmi_additional
+TGM2	SDC4	# Natmi_primary# Natmi_additional
+TGM2	TBXA2R	# Natmi_additional
+TG	ASGR1	# Natmi_primary# Natmi_additional# Omnipath
+TG	ASGR2	# Natmi_additional
+TG	LRP2	# Natmi_primary# Natmi_additional# Omnipath
+THBS1	CD36	# Natmi_primary# Natmi_additional# Omnipath
+THBS1	CD47	# Natmi_primary# Natmi_additional# Omnipath
+THBS1	ITGA2B	# Natmi_primary# Natmi_additional# Omnipath
+THBS1	ITGA3	# Natmi_primary# Natmi_additional# Omnipath
+THBS1	ITGA4	# Natmi_primary# Natmi_additional# Omnipath
+THBS1	ITGA6	# Natmi_primary# Natmi_additional# Omnipath
+THBS1	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+THBS1	ITGB3	# Natmi_primary# Natmi_additional# Omnipath
+THBS1	LRP1	# Natmi_primary# Natmi_additional# Omnipath
+THBS1	LRP5	# Omnipath
+THBS1	PTPRJ	# Natmi_primary# Natmi_additional
+THBS1	SCARB1	# Natmi_additional
+THBS1	SDC1	# Natmi_primary# Natmi_additional# Omnipath
+THBS1	SDC4	# Natmi_primary# Natmi_additional
+THBS1	TNFRSF11B	# Natmi_primary# Natmi_additional# Omnipath
+THBS2	CD47	# Natmi_primary# Natmi_additional# Omnipath
+THBS2	ITGA4	# Natmi_primary# Natmi_additional# Omnipath
+THBS2	ITGA6	# Natmi_primary# Natmi_additional# Omnipath
+THBS2	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+THBS2	NOTCH3	# Natmi_primary# Natmi_additional# Omnipath
+THBS2	NOTCH4	# Natmi_additional
+THPO	MPL	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+THPO	SIRPB1	# Natmi_additional
+TIGIT	NECTIN2	# cellphonedb# Natmi_primary# Natmi_additional
+TIGIT	NECTIN3	# cellphonedb
+TIGIT	PVR	# cellphonedb# Natmi_primary# Natmi_additional
+TIMD4	HAVCR1	# Natmi_primary# Natmi_additional
+TIMP1	CD63	# Natmi_primary# Natmi_additional
+TIMP2	ITGA3	# Natmi_primary# Natmi_additional
+TIMP2	ITGB1	# Natmi_primary# Natmi_additional
+TIMP3	AGTR2	# Natmi_primary# Natmi_additional
+TIMP3	KDR	# Natmi_primary# Natmi_additional
+TNC	CNTN1	# Natmi_primary# Natmi_additional# Omnipath
+TNC	EGFR	# Natmi_primary# Natmi_additional# Omnipath
+TNC	ITGA2	# Natmi_additional
+TNC	ITGA5	# Omnipath
+TNC	ITGA7	# Natmi_primary# Natmi_additional# Omnipath
+TNC	ITGA8	# Natmi_additional
+TNC	ITGA9	# Natmi_additional
+TNC	ITGAV	# Natmi_primary# Natmi_additional# Omnipath
+TNC	ITGAX	# Natmi_additional
+TNC	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+TNC	ITGB3	# Natmi_primary# Natmi_additional
+TNC	ITGB6	# Natmi_additional
+TNC	NT5E	# Natmi_additional
+TNC	PTPRB	# Natmi_primary# Natmi_additional# Omnipath
+TNC	PTPRZ1	# Natmi_primary# Natmi_additional# Omnipath
+TNC	SDC1	# Natmi_additional
+TNC	SDC3	# Natmi_additional
+TNC	SDC4	# Natmi_additional
+TNFRSF1A	FASLG	# cellphonedb
+TNFRSF1A	TNFSF13	# cellphonedb
+TNFRSF6B	FASLG	# cellphonedb
+TNFRSF6B	TNFSF14	# cellphonedb
+TNFRSF6B	TNFSF15	# cellphonedb
+TNFRSF10B	FASLG	# cellphonedb
+TNFRSF10C	TNFSF10	# cellphonedb
+TNFRSF14	BTLA	# Natmi_primary# Natmi_additional
+TNFRSF14	CD160	# Natmi_primary# Natmi_additional
+TNFSF4	TNFRSF4	# cellphonedb# Natmi_primary# Natmi_additional
+TNFSF8	TNFRSF8	# cellphonedb# Natmi_primary# Natmi_additional
+TNFSF9	TNFRSF9	# cellphonedb# Natmi_primary# Natmi_additional
+TNFSF10	TNFRSF10A	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+TNFSF10	TNFRSF10B	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+TNFSF10	TNFRSF10C	# Natmi_primary# Natmi_additional
+TNFSF10	TNFRSF10D	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+TNFSF10	TNFRSF11B	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+TNFSF11	TNFRSF11A	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+TNFSF11	TNFRSF11B	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+TNFSF12	CD163	# Natmi_primary# Natmi_additional# Omnipath
+TNFSF12	TNFRSF12A	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+TNFSF12	TNFRSF25	# Omnipath
+TNFSF13B	CD40	# cellphonedb
+TNFSF13B	TNFRSF13B	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+TNFSF13B	TNFRSF13C	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+TNFSF13B	TNFRSF17	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+TNFSF13	FAS	# Natmi_primary# Natmi_additional# Omnipath
+TNFSF13	SDC2	# Natmi_primary# Natmi_additional# Omnipath
+TNFSF13	TNFRSF1A	# Natmi_primary# Natmi_additional# Omnipath
+TNFSF13	TNFRSF11B	# Natmi_primary# Natmi_additional# Omnipath
+TNFSF13	TNFRSF13B	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+TNFSF13	TNFRSF14	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+TNFSF13	TNFRSF17	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+TNFSF14	LTBR	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+TNFSF14	TNFRSF6B	# Natmi_primary# Natmi_additional# Omnipath
+TNFSF14	TNFRSF14	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+TNFSF15	TNFRSF6B	# Natmi_primary# Natmi_additional# Omnipath
+TNFSF15	TNFRSF25	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+TNFSF18	TNFRSF18	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+TNF	CLEC3B	# Natmi_additional
+TNF	LTBR	# cellphonedb# Omnipath
+TNF	RIPK1	# cellphonedb
+TNF	SLC5A11	# Natmi_additional
+TNF	SMPD2	# Natmi_additional
+TNF	TNFRSF1A	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+TNF	TNFRSF1B	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+TNF	TNFRSF21	# Natmi_primary# Natmi_additional# Omnipath
+TNS3	MET	# Natmi_additional
+TOR2A	ATP5F1B	# Natmi_primary# Natmi_additional
+TRH	TRHR	# Natmi_primary# Natmi_additional# Omnipath
+TRIL	LY96	# Natmi_additional
+TRIL	TLR4	# Natmi_additional
+TSHB	TSHR	# Natmi_primary# Natmi_additional# Omnipath
+TSLP	CRLF2	# Natmi_primary# Natmi_additional# Omnipath
+TSLP	IL7R	# Natmi_primary# Natmi_additional# Omnipath
+TTR	AGER	# cellphonedb
+TTR	DDR1	# cellphonedb
+TUSC3	ALG10B	# Natmi_additional
+TUSC3	MAGT1	# Natmi_additional
+UBA52	AMFR	# Natmi_additional
+UBA52	CFTR	# Natmi_additional
+UBA52	F11R	# Natmi_additional
+UBA52	FGFR4	# Natmi_additional
+UBA52	KLB	# Natmi_additional
+UBA52	NOTCH2	# Natmi_additional
+UBA52	RPSA	# Natmi_additional
+UCN2	CRHR1	# Natmi_primary# Natmi_additional# Omnipath
+UCN2	CRHR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+UCN2	IL10RB	# Natmi_primary# Natmi_additional# Omnipath
+UCN3	CRHR1	# Natmi_primary# Natmi_additional# Omnipath
+UCN3	CRHR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+UCN3	IL10RB	# Natmi_primary# Natmi_additional# Omnipath
+UCN	CRHR1	# Natmi_primary# Natmi_additional# Omnipath
+UCN	CRHR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+ULBP1	HCST	# Natmi_additional
+ULBP1	KLRK1	# Natmi_primary# Natmi_additional
+ULBP2	KLRK1	# Natmi_primary# Natmi_additional# Omnipath
+ULBP3	HCST	# Natmi_additional
+ULBP3	KLRK1	# Natmi_primary# Natmi_additional
+UTS2B	UTS2R	# Natmi_primary# Natmi_additional# Omnipath
+UTS2R	UTS2B	# cellphonedb
+UTS2	UTS2R	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+VASP	CXCR2	# Natmi_primary# Natmi_additional
+VASP	ROBO1	# Natmi_additional
+VCAM1	ITGA4	# Natmi_primary# Natmi_additional# Omnipath
+VCAM1	ITGA9	# Natmi_primary# Natmi_additional# Omnipath
+VCAM1	ITGAD	# Natmi_primary# Natmi_additional# Omnipath
+VCAM1	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+VCAM1	ITGB2	# Natmi_primary# Natmi_additional# Omnipath
+VCAM1	ITGB7	# Natmi_primary# Natmi_additional# Omnipath
+VCAN	CD44	# Natmi_primary# Natmi_additional# Omnipath
+VCAN	EGFR	# Natmi_primary# Natmi_additional# Omnipath
+VCAN	ITGA4	# Omnipath
+VCAN	ITGB1	# Natmi_primary# Natmi_additional# Omnipath
+VCAN	SELL	# Natmi_additional# Omnipath
+VCAN	SELP	# Natmi_primary# Natmi_additional# Omnipath
+VCAN	TLR1	# Natmi_additional
+VCAN	TLR2	# Natmi_primary# Natmi_additional# Omnipath
+VCAN	TLR6	# Natmi_additional
+VEGFA	CDH5	# Natmi_additional
+VEGFA	EGFR	# Natmi_additional# Omnipath
+VEGFA	EPHB2	# Omnipath
+VEGFA	FLT1	# Natmi_primary# Natmi_additional# Omnipath
+VEGFA	FLT4	# Natmi_additional
+VEGFA	GPC1	# Natmi_primary# Natmi_additional# Omnipath
+VEGFA	ITGA3	# Natmi_additional
+VEGFA	ITGA9	# Natmi_additional
+VEGFA	ITGAV	# Natmi_additional
+VEGFA	ITGB1	# Natmi_additional
+VEGFA	ITGB3	# Natmi_additional
+VEGFA	KDR	# Natmi_primary# Natmi_additional# Omnipath
+VEGFA	NRP1	# Natmi_primary# Natmi_additional# Omnipath
+VEGFA	NRP2	# Natmi_primary# Natmi_additional# Omnipath
+VEGFA	RET	# Natmi_additional# Omnipath
+VEGFA	SIRPA	# Natmi_additional
+VEGFA	TYRO3	# Natmi_additional# Omnipath
+VEGFB	FLT1	# Natmi_primary# Natmi_additional# Omnipath
+VEGFB	NRP1	# Natmi_primary# Natmi_additional# Omnipath
+VEGFB	RET	# Natmi_additional# Omnipath
+VEGFB	TYRO3	# Natmi_additional
+VEGFC	FLT1	# Natmi_additional# Omnipath
+VEGFC	FLT4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+VEGFC	ITGA9	# Natmi_additional
+VEGFC	ITGB1	# Natmi_additional
+VEGFC	KDR	# Natmi_primary# Natmi_additional# Omnipath
+VEGFC	LYVE1	# Natmi_additional
+VEGFC	NRP2	# Natmi_primary# Natmi_additional# Omnipath
+VEGFC	VIPR2	# Natmi_primary# Natmi_additional# Omnipath
+VEGFD	FLT1	# Natmi_additional# Omnipath
+VEGFD	FLT4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+VEGFD	ITGA1	# Natmi_additional
+VEGFD	ITGA2	# Natmi_additional
+VEGFD	ITGA4	# Natmi_additional
+VEGFD	ITGA5	# Natmi_additional
+VEGFD	ITGA9	# Natmi_primary# Natmi_additional# Omnipath
+VEGFD	ITGB1	# Natmi_additional
+VEGFD	KDR	# Natmi_primary# Natmi_additional# Omnipath
+VEGFD	NRP2	# Natmi_primary# Natmi_additional# Omnipath
+VIM	CD44	# Natmi_primary# Natmi_additional
+VIP	ADCYAP1R1	# Natmi_primary# Natmi_additional# Omnipath
+VIP	DPP4	# cellphonedb
+VIP	NPR3	# Natmi_additional
+VIP	SCTR	# Natmi_primary# Natmi_additional# Omnipath
+VIP	VIPR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+VIP	VIPR2	# Natmi_primary# Natmi_additional# Omnipath
+VTN	CD47	# Natmi_additional
+VTN	ITGA2B	# Natmi_additional
+VTN	ITGA3	# Natmi_additional
+VTN	ITGA5	# Natmi_primary# Natmi_additional# Omnipath
+VTN	ITGA8	# Natmi_primary# Natmi_additional# Omnipath
+VTN	ITGAV	# Natmi_primary# Natmi_additional# Omnipath
+VTN	ITGB1	# Natmi_additional# Omnipath
+VTN	ITGB3	# Natmi_primary# Natmi_additional# Omnipath
+VTN	ITGB5	# Natmi_additional
+VTN	ITGB6	# Natmi_primary# Natmi_additional# Omnipath
+VTN	ITGB8	# Natmi_primary# Natmi_additional# Omnipath
+VTN	KDR	# Natmi_additional
+VTN	PLAUR	# Natmi_primary# Natmi_additional# Omnipath
+VTN	PVR	# Natmi_primary# Natmi_additional# Omnipath
+VTN	SDC1	# Natmi_additional
+VTN	SDC2	# Natmi_additional
+VTN	SDC4	# Natmi_additional
+VTN	TNFRSF11B	# Natmi_primary# Natmi_additional# Omnipath
+VWF	GP1BA	# Natmi_primary# Natmi_additional# Omnipath
+VWF	GP1BB	# Natmi_additional
+VWF	GP9	# Natmi_additional
+VWF	ITGA2B	# Natmi_primary# Natmi_additional# Omnipath
+VWF	ITGB3	# Natmi_additional
+VWF	KIAA1549	# Natmi_additional
+VWF	SELP	# Natmi_additional
+VWF	SIRPA	# Natmi_additional
+VWF	TNFRSF11B	# Natmi_primary# Natmi_additional# Omnipath
+WNT1	CD36	# cellphonedb
+WNT1	FZD1	# cellphonedb# Natmi_primary# Natmi_additional
+WNT1	FZD2	# Natmi_primary# Natmi_additional# Omnipath
+WNT1	FZD3	# Natmi_primary# Natmi_additional# Omnipath
+WNT1	FZD4	# Natmi_primary# Natmi_additional# Omnipath
+WNT1	FZD5	# Natmi_additional# Omnipath
+WNT1	FZD6	# Natmi_additional# Omnipath
+WNT1	FZD7	# Natmi_additional# Omnipath
+WNT1	FZD8	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+WNT1	FZD9	# Natmi_primary# Natmi_additional# Omnipath
+WNT1	FZD10	# Natmi_primary# Natmi_additional# Omnipath
+WNT1	LRP5	# Natmi_additional# Omnipath
+WNT1	LRP6	# Natmi_primary# Natmi_additional# Omnipath
+WNT1	ROR2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+WNT1	RYK	# Natmi_primary# Natmi_additional# Omnipath
+WNT2B	FZD1	# Natmi_additional
+WNT2B	FZD2	# Natmi_additional
+WNT2B	FZD3	# Natmi_additional# Omnipath
+WNT2B	FZD4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+WNT2B	FZD5	# Natmi_additional
+WNT2B	FZD6	# Natmi_additional
+WNT2B	FZD7	# Natmi_primary# Natmi_additional# Omnipath
+WNT2B	FZD8	# Natmi_additional
+WNT2B	FZD9	# Natmi_additional
+WNT2B	FZD10	# Natmi_additional
+WNT2	FZD1	# Natmi_primary# Natmi_additional
+WNT2	FZD2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+WNT2	FZD3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+WNT2	FZD4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+WNT2	FZD5	# Natmi_primary# Natmi_additional# Omnipath
+WNT2	FZD6	# Natmi_additional
+WNT2	FZD7	# Natmi_primary# Natmi_additional# Omnipath
+WNT2	FZD8	# Natmi_primary# Natmi_additional# Omnipath
+WNT2	FZD9	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+WNT2	FZD10	# Natmi_additional
+WNT2	LRP6	# Natmi_additional# Omnipath
+WNT3A	APCDD1	# Natmi_primary# Natmi_additional# Omnipath
+WNT3A	ATP6AP2	# Natmi_additional
+WNT3A	CAV1	# Natmi_additional
+WNT3A	FZD1	# Natmi_primary# Natmi_additional
+WNT3A	FZD2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+WNT3A	FZD3	# Natmi_additional# Omnipath
+WNT3A	FZD4	# Natmi_additional# Omnipath
+WNT3A	FZD5	# Natmi_primary# Natmi_additional# Omnipath
+WNT3A	FZD6	# Natmi_primary# Natmi_additional# Omnipath
+WNT3A	FZD7	# Natmi_primary# Natmi_additional# Omnipath
+WNT3A	FZD8	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+WNT3A	FZD9	# Natmi_additional# Omnipath
+WNT3A	FZD10	# Natmi_primary# Natmi_additional# Omnipath
+WNT3A	LRP1	# Natmi_primary# Natmi_additional# Omnipath
+WNT3A	LRP5	# Natmi_additional# Omnipath
+WNT3A	LRP6	# Natmi_primary# Natmi_additional# Omnipath
+WNT3A	ROR2	# Natmi_additional
+WNT3A	RYK	# Natmi_primary# Natmi_additional# Omnipath
+WNT3A	ZNRF3	# Natmi_additional
+WNT3	FZD1	# Natmi_primary# Natmi_additional
+WNT3	FZD2	# Natmi_additional
+WNT3	FZD3	# Natmi_additional# Omnipath
+WNT3	FZD4	# Natmi_additional
+WNT3	FZD5	# Natmi_additional# Omnipath
+WNT3	FZD6	# Natmi_additional
+WNT3	FZD7	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+WNT3	FZD8	# Natmi_primary# Natmi_additional# Omnipath
+WNT3	FZD9	# Natmi_additional
+WNT3	FZD10	# Natmi_additional
+WNT3	LRP5	# Natmi_additional
+WNT3	LRP6	# Natmi_primary# Natmi_additional# Omnipath
+WNT3	ROR2	# Omnipath
+WNT3	RYK	# Natmi_primary# Natmi_additional# Omnipath
+WNT4	FZD1	# Natmi_additional
+WNT4	FZD2	# Natmi_primary# Natmi_additional# Omnipath
+WNT4	FZD3	# Natmi_additional# Omnipath
+WNT4	FZD4	# Natmi_additional
+WNT4	FZD5	# Natmi_additional
+WNT4	FZD6	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+WNT4	FZD7	# Natmi_additional
+WNT4	FZD8	# Natmi_additional# Omnipath
+WNT4	FZD9	# Natmi_additional
+WNT4	FZD10	# Natmi_additional
+WNT5A	FZD1	# Natmi_primary# Natmi_additional
+WNT5A	FZD2	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+WNT5A	FZD3	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+WNT5A	FZD4	# Natmi_primary# Natmi_additional# Omnipath
+WNT5A	FZD5	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+WNT5A	FZD6	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+WNT5A	FZD7	# Natmi_primary# Natmi_additional# Omnipath
+WNT5A	FZD8	# Natmi_primary# Natmi_additional# Omnipath
+WNT5A	FZD9	# Natmi_additional# Omnipath
+WNT5A	FZD10	# Natmi_additional# Omnipath
+WNT5A	LRP5	# Natmi_primary# Natmi_additional# Omnipath
+WNT5A	LRP6	# Natmi_additional# Omnipath
+WNT5A	MCAM	# Natmi_primary# Natmi_additional# Omnipath
+WNT5A	ROR1	# Natmi_primary# Natmi_additional# Omnipath
+WNT5A	ROR2	# Natmi_primary# Natmi_additional# Omnipath
+WNT5A	RYK	# Natmi_primary# Natmi_additional# Omnipath
+WNT5A	VANGL2	# Natmi_additional
+WNT5B	FZD1	# Natmi_additional
+WNT5B	FZD2	# Natmi_primary# Natmi_additional# Omnipath
+WNT5B	FZD3	# Natmi_additional# Omnipath
+WNT5B	FZD6	# Natmi_additional# Omnipath
+WNT5B	FZD7	# Natmi_additional
+WNT5B	FZD8	# Natmi_primary# Natmi_additional# Omnipath
+WNT6	FZD1	# Natmi_additional
+WNT6	FZD2	# Natmi_additional
+WNT6	FZD3	# Natmi_additional# Omnipath
+WNT6	FZD4	# Natmi_additional# Omnipath
+WNT6	FZD5	# Natmi_additional
+WNT6	FZD6	# Natmi_additional
+WNT6	FZD7	# Natmi_primary# Natmi_additional# Omnipath
+WNT6	FZD8	# Natmi_additional
+WNT6	FZD9	# Natmi_additional
+WNT6	FZD10	# Natmi_additional
+WNT7A	FZD1	# Natmi_primary# Natmi_additional
+WNT7A	FZD2	# Natmi_additional# Omnipath
+WNT7A	FZD3	# Natmi_additional# Omnipath
+WNT7A	FZD4	# Natmi_additional# Omnipath
+WNT7A	FZD5	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+WNT7A	FZD6	# Natmi_additional# Omnipath
+WNT7A	FZD7	# Natmi_additional# Omnipath
+WNT7A	FZD8	# Natmi_additional# Omnipath
+WNT7A	FZD9	# Natmi_primary# Natmi_additional# Omnipath
+WNT7A	FZD10	# Natmi_primary# Natmi_additional# Omnipath
+WNT7A	LRP6	# Natmi_additional# Omnipath
+WNT7B	FZD1	# cellphonedb# Natmi_primary# Natmi_additional
+WNT7B	FZD2	# Natmi_additional
+WNT7B	FZD3	# Natmi_additional# Omnipath
+WNT7B	FZD4	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+WNT7B	FZD5	# Natmi_primary# Natmi_additional# Omnipath
+WNT7B	FZD6	# Natmi_additional
+WNT7B	FZD7	# Natmi_additional
+WNT7B	FZD8	# Natmi_primary# Natmi_additional# Omnipath
+WNT7B	FZD9	# Natmi_additional
+WNT7B	FZD10	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+WNT7B	LRP5	# Natmi_primary# Natmi_additional# Omnipath
+WNT8A	FZD1	# Natmi_additional
+WNT8A	FZD2	# Natmi_additional
+WNT8A	FZD3	# Natmi_additional# Omnipath
+WNT8A	FZD4	# Natmi_primary# Natmi_additional# Omnipath
+WNT8A	FZD5	# Natmi_primary# Natmi_additional# Omnipath
+WNT8A	FZD6	# Natmi_additional
+WNT8A	FZD7	# Natmi_additional# Omnipath
+WNT8A	FZD8	# Natmi_primary# Natmi_additional# Omnipath
+WNT8A	FZD9	# Natmi_additional
+WNT8A	FZD10	# Natmi_additional
+WNT8A	LRP5	# Natmi_additional# Omnipath
+WNT8A	LRP6	# Natmi_additional
+WNT8B	FZD1	# Natmi_additional
+WNT8B	FZD2	# Natmi_additional
+WNT8B	FZD3	# Natmi_additional# Omnipath
+WNT8B	FZD4	# Natmi_additional
+WNT8B	FZD5	# Natmi_additional
+WNT8B	FZD6	# Natmi_additional
+WNT8B	FZD7	# Natmi_additional
+WNT8B	FZD8	# Natmi_additional
+WNT8B	FZD9	# Natmi_additional
+WNT8B	FZD10	# Natmi_additional
+WNT8B	LRP5	# Natmi_additional
+WNT8B	LRP6	# Natmi_additional
+WNT9A	FZD1	# Natmi_additional
+WNT9A	FZD2	# Natmi_additional
+WNT9A	FZD3	# Natmi_additional# Omnipath
+WNT9A	FZD4	# Natmi_primary# Natmi_additional# Omnipath
+WNT9A	FZD5	# Natmi_additional
+WNT9A	FZD6	# Natmi_additional
+WNT9A	FZD7	# Natmi_additional
+WNT9A	FZD8	# Natmi_additional
+WNT9A	FZD9	# Natmi_additional
+WNT9A	FZD10	# Natmi_primary# Natmi_additional# Omnipath
+WNT9B	FZD1	# Natmi_additional
+WNT9B	FZD2	# Natmi_additional
+WNT9B	FZD3	# Natmi_additional# Omnipath
+WNT9B	FZD4	# Natmi_primary# Natmi_additional# Omnipath
+WNT9B	FZD5	# Natmi_primary# Natmi_additional# Omnipath
+WNT9B	FZD6	# Natmi_additional
+WNT9B	FZD7	# Natmi_additional
+WNT9B	FZD8	# Natmi_primary# Natmi_additional# Omnipath
+WNT9B	FZD9	# Natmi_additional
+WNT9B	FZD10	# Natmi_primary# Natmi_additional# Omnipath
+WNT9B	LRP6	# Omnipath
+WNT10A	FZD1	# Natmi_primary# Natmi_additional
+WNT10A	FZD2	# Natmi_additional
+WNT10A	FZD3	# Natmi_additional# Omnipath
+WNT10A	FZD4	# Natmi_additional
+WNT10A	FZD5	# Natmi_primary# Natmi_additional# Omnipath
+WNT10A	FZD6	# Natmi_additional
+WNT10A	FZD7	# Natmi_additional
+WNT10A	FZD8	# Natmi_primary# Natmi_additional# Omnipath
+WNT10A	FZD9	# Natmi_additional
+WNT10A	FZD10	# Natmi_additional
+WNT10B	FZD1	# Natmi_additional
+WNT10B	FZD2	# Natmi_additional# Omnipath
+WNT10B	FZD3	# Natmi_additional# Omnipath
+WNT10B	FZD4	# Natmi_additional
+WNT10B	FZD5	# Natmi_additional# Omnipath
+WNT10B	FZD6	# Natmi_additional
+WNT10B	FZD7	# Natmi_primary# Natmi_additional# Omnipath
+WNT10B	FZD8	# Natmi_additional
+WNT10B	FZD9	# Natmi_additional
+WNT10B	FZD10	# Natmi_additional
+WNT11	FZD1	# Natmi_additional
+WNT11	FZD2	# Natmi_additional# Omnipath
+WNT11	FZD3	# Natmi_additional# Omnipath
+WNT11	FZD4	# Natmi_additional# Omnipath
+WNT11	FZD5	# Natmi_additional# Omnipath
+WNT11	FZD6	# Natmi_additional# Omnipath
+WNT11	FZD7	# Natmi_primary# Natmi_additional# Omnipath
+WNT11	FZD8	# Natmi_primary# Natmi_additional# Omnipath
+WNT11	FZD9	# Natmi_additional# Omnipath
+WNT11	FZD10	# Natmi_additional# Omnipath
+WNT11	MUSK	# Omnipath
+WNT16	FZD1	# Natmi_additional
+WNT16	FZD2	# Natmi_primary# Natmi_additional# Omnipath
+WNT16	FZD3	# Natmi_additional# Omnipath
+WNT16	FZD4	# Natmi_additional
+WNT16	FZD5	# Natmi_additional
+WNT16	FZD6	# Natmi_additional# Omnipath
+WNT16	FZD7	# Natmi_additional
+WNT16	FZD8	# Natmi_additional
+WNT16	FZD9	# Natmi_additional
+WNT16	FZD10	# Natmi_additional
+WNT16	LRP5	# Natmi_primary# Natmi_additional
+XCL1	XCR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+XCL2	XCR1	# cellphonedb# Natmi_primary# Natmi_additional# Omnipath
+YBX1	NOTCH1	# Natmi_primary# Natmi_additional
+ZG16B	CXCR4	# Natmi_primary# Natmi_additional
+ZG16B	TLR2	# Natmi_primary# Natmi_additional
+ZG16B	TLR4	# Natmi_primary# Natmi_additional
+ZG16B	TLR5	# Natmi_primary# Natmi_additional
+ZG16B	TLR6	# Natmi_primary# Natmi_additional
+ZP3	ADAM21	# Natmi_additional
+ZP3	ADAM30	# Natmi_additional
+ZP3	CHRNA7	# Natmi_primary# Natmi_additional
+ZP3	EGFR	# Natmi_primary# Natmi_additional# Omnipath
+ZP3	MERTK	# Natmi_additional# Omnipath
+ZP3	MERT	# Natmi_primary
