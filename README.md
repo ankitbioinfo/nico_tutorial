@@ -15,7 +15,7 @@
         -   [About Tutorial](#background)
         -   [Prerequisites](#prerequisites)
         -   [Installation](#installation)
-    -   [Notes and Warnings](#Notes)
+    -   [Notes and Warnings](#Font)
     -   [Documentation](#documentation)
     -   [Citing NiCo](#citing-nico)
     -   [Contact](#contact)
