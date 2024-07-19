@@ -52,7 +52,7 @@ By default, the figures generated are saved both in the respective directory and
 Please refer to the documentation for details on functions and parameters. <br>
 The data source is provided in the manuscript. 
 
-* **Part C: Running NiCo on all cell types**
+* **Part B: Running NiCo on all cell types**
 If users want to perform NiCo analysis on the full data without specifying any cell type, refer to the script. [``nico_analysis_highres_image_tech.py``](nico_analysis_highres_image_tech.py). The output log can be seen [here](log_output.txt). Due to large number of images, Jupyter notebook might not display them properly. However, leaving the ``choose_celltypes`` and ``choose_factors_id`` lists blank will enable the full analysis.
 
 ## Tutorial 2: Sequencing-based spatial technologies 
