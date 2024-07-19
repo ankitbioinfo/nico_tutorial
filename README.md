@@ -112,13 +112,13 @@ If you encounter any issues while running, please ensure that the cell barcode n
 
 # Documentation 
 
-The detailed [documentation of NiCo](https://nico-sc-sp.readthedocs.io/en/latest/) modules and their usage functions can be seen in the given link. 
-
+The detailed documentation on NiCo modules and their usage, visit [NiCo documentation](https://nico-sc-sp.readthedocs.io/en/latest/).
 
 
 # Citing NiCo
+If you use NiCo in your research, please cite it as follows: 
 
--   Ankit Agrawal, Stefan Thomann, Dominic Grün. NiCo Identifies Extrinsic Drivers of Cell State Modulation by Niche Covariation Analysis.
+-   Ankit Agrawal, Stefan Thomann, Sukanya Basu, Dominic Grün. NiCo Identifies Extrinsic Drivers of Cell State Modulation by Niche Covariation Analysis.
     ***Submitted***, 2024
 
 # Contact
