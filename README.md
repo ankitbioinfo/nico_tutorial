@@ -8,7 +8,7 @@
 
 # Table of Contents
 
--   [NiCo](#nico)
+-   [NiCo](#NiCo)
     -   [Table of Contents](#table-of-contents)
     -   [Overview](#overview)
     -   [Getting Started](#getting-started)
