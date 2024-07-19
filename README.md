@@ -24,10 +24,16 @@
 
 ## Overview
 
-We have developed the NiCo (Niche Covariation) package for the integration of single-cell resolution spatial transcriptomics and scRNA-seq data to (1) perform cell type annotations in the spatial modality by label transfer, (2) predict niche cell type interactions within local neighborhoods, and (3) infer cell state covariation and the underlying molecular crosstalk in the niche. NiCo infers factors capturing cell state variability in both modalities and identifies genes correlated to these latent factors for the prediction of ligand-receptor interactions and factor-associated pathways.
+We have developed the NiCo (Niche Covariation) package for the integration of single-cell resolution spatial transcriptomics and scRNA-seq data. NiCo allows you to:
 
-### About Tutorial
-NiCo can run any spatial technologies, but it is mainly designed for single-cell resolution of spatial technologies such as MERFISH, SEQFISH, XENIUM. etc. 
+(1) Perform cell type annotations in the spatial modality by label transfer.
+(2) Predict niche cell type interactions within local neighborhoods.  
+(3) Infer cell state covariation and the underlying molecular crosstalk in the niche. 
+
+NiCo infers factors capturing cell state variability in both modalities and identifies genes correlated to these latent factors to predict ligand-receptor interactions and factor-associated pathways.
+
+### Tutorial
+NiCo can run any spatial technologies, but it is mainly designed for single-cell resolution spatial technologies such as MERFISH, SEQFISH, and XENIUM. 
 
 We are providing a **first tutorial** on running the NiCo pipeline for the data integration of single-cell RNA sequencing (reference) and single-cell resolution of spatial transcriptomics data (query). 
 This tutorial explains all steps of the NiCo pipeline, i.e., annotation of cell types in the spatial modality by label transfer from the scRNA-seq data, prediction of significant cell type niche interactions, and derivation of cell state covariation within the local niche.  
@@ -35,6 +41,26 @@ This tutorial explains all steps of the NiCo pipeline, i.e., annotation of cell 
 The **second NiCo tutorial** is designed for low-resoution sequencing-based spatial transcriptomics technologies where integration with single-cell RNA sequencing is not required. 
 
 Please get the tutorial link below and keep all the files (NiCoLRdb.txt and *.ipynb) and folders (inputRef, inputQuery) in the same path to complete the tutorial. 
+
+
+### Tuturial 1: High-resolution spatial technologies
+
+## Part A: Data Preparation 
+Extract all zip files and run the Juypter notebook [``Start_Data_prep_new.ipynb``](Start_Data_prep_new.ipynb) to create the data files for NiCo analysis. 
+
+### Part B: Running NiCo 
+After running the data preparation script and having generated normalised data files, run the Jupyter notebook [``nico_analysis_highres_image_tech.ipynb``](nico_analysis_highres_image_tech.ipynb) to perform the core steps of NiCo.
+
+By default, the tutorial generates all the figures both in the respective directory and inside the notebook. Please refer to the documentation for details on functions and parameters. 
+The source of data is provided in the manuscript. 
+
+If user want to perform NiCo analysis for full data without specifying any cell type for the whole then please look this script. [nico analysis on all cell types](nico_analysis_highres_image_tech.py). The output of this log can be seen it [here](log_output.txt). 
+
+### Tutorial 2: Running NiCo for sequencing based spatial technologies 
+To run the NiCo on cerebellum data from Slide-seqV2 technology [data is taken from figure 3 of Cable, D. M. et al. Nature methods 19, 1076–1087 (2022)]. <br> 
+The NiCo niche detection and covariation analysis task is shown in following jupyter notebook [``nico_analysis_lowres_seq_tech.ipynb``](nico_analysis_lowres_seq_tech.ipynb)
+Please download the data from [this link](https://www.dropbox.com/scl/fi/6hxyp2pxpxalw9rfirby6/nico_cerebellum.zip?rlkey=9ye6rsk92uj9648ogjw5ypcum&st=lvc8e366&dl=0)
+and keep the data in following path ``nico_cerebellum/cerebellum.h5ad`` to complete the tutorial.  
 
 
 ### Prerequisites
@@ -62,23 +88,7 @@ pip install jupyterlab
 ```
 
 
-### Tuturial 1A: Data preparation for high resolution spatial technologies 
 
-For data preparation, first extract all zip files and run the Juypter notebook [``Start_Data_prep_new.ipynb``](Start_Data_prep_new.ipynb) for creating the data files for NiCo analysis. 
-
-### Tutorial 1B: Running NiCo for high resolution spatial technologies 
-After running the data preparation script and having generated normalised data files, run the Jupyter notebook [``nico_analysis_highres_image_tech.ipynb``](nico_analysis_highres_image_tech.ipynb) to perform the core steps of NiCo.
-
-By default, the tutorial generates all the figures both in the respective directory and inside the notebook. Please refer to the documentation for details on functions and parameters. 
-The source of data is provided in the manuscript. 
-
-If user want to perform NiCo analysis for full data without specifying any cell type for the whole then please look this script. [nico analysis on all cell types](nico_analysis_highres_image_tech.py). The output of this log can be seen it [here](log_output.txt). 
-
-### Tutorial 2: Running NiCo for sequencing based spatial technologies 
-To run the NiCo on cerebellum data from Slide-seqV2 technology [data is taken from figure 3 of Cable, D. M. et al. Nature methods 19, 1076–1087 (2022)]. <br> 
-The NiCo niche detection and covariation analysis task is shown in following jupyter notebook [``nico_analysis_lowres_seq_tech.ipynb``](nico_analysis_lowres_seq_tech.ipynb)
-Please download the data from [this link](https://www.dropbox.com/scl/fi/6hxyp2pxpxalw9rfirby6/nico_cerebellum.zip?rlkey=9ye6rsk92uj9648ogjw5ypcum&st=lvc8e366&dl=0)
-and keep the data in following path ``nico_cerebellum/cerebellum.h5ad`` to complete the tutorial.  
 
 ### Warnings 
 If at any step it shows the warning ```findfont: Font family 'Helvetica' not found```
