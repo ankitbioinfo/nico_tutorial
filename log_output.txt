@@ -1,0 +1,147 @@
+Nico based cluster annotations are saved in .obs['nico_ct'] slot
+
+
+Module A visualization
+The figures are saved:  ./nico_analysis/annotations/tissue_and_umap_with_all_celltype_annotations.png
+The figures are saved:  ./nico_analysis/annotations/fig_individual_annotation/BZE0.png
+The figures are saved:  ./nico_analysis/annotations/fig_individual_annotation/Blood_vasc1.png
+The figures are saved:  ./nico_analysis/annotations/fig_individual_annotation/Cycling_GC_B_cell2.png
+The figures are saved:  ./nico_analysis/annotations/fig_individual_annotation/Glial3.png
+The figures are saved:  ./nico_analysis/annotations/fig_individual_annotation/Goblet4.png
+The figures are saved:  ./nico_analysis/annotations/fig_individual_annotation/Lymphatic5.png
+The figures are saved:  ./nico_analysis/annotations/fig_individual_annotation/MZE6.png
+The figures are saved:  ./nico_analysis/annotations/fig_individual_annotation/Macrophage7.png
+The figures are saved:  ./nico_analysis/annotations/fig_individual_annotation/NM8.png
+The figures are saved:  ./nico_analysis/annotations/fig_individual_annotation/Paneth9.png
+The figures are saved:  ./nico_analysis/annotations/fig_individual_annotation/Plasma10.png
+The figures are saved:  ./nico_analysis/annotations/fig_individual_annotation/Rest_B11.png
+The figures are saved:  ./nico_analysis/annotations/fig_individual_annotation/Stem_TA12.png
+The figures are saved:  ./nico_analysis/annotations/fig_individual_annotation/Stroma13.png
+The figures are saved:  ./nico_analysis/annotations/fig_individual_annotation/T_cell14.png
+The figures are saved:  ./nico_analysis/annotations/fig_individual_annotation/TZE15.png
+The figures are saved:  ./nico_analysis/annotations/fig_individual_annotation/Tuft16.png
+The figures are saved:  ./nico_analysis/annotations/fig_individual_annotation/cDC_monocyte17.png
+The figures are saved:  ./nico_analysis/annotations/fig_individual_annotation/neurons_enteroendocrine18.png
+The figures are saved:  ./nico_analysis/annotations/fig_individual_annotation/pDC19.png
+
+
+Module B
+average neighbors: 4.83637851104445
+average distance: 64.08306688807858
+data shape (7305, 19) (7305,) neighbor shape (7305, 17)
+Searching hyperparameters  Grid method: 0.015625
+Searching hyperparameters  Grid method: 0.0078125
+Searching hyperparameters  Grid method: 0.0078125
+Inverse of lambda regularization found 0.0078125
+training (5844, 17) testing (1461, 17) coeff (17, 17)
+The figures are saved:  ./nico_analysis/niche_prediction_linear/Niche_interactions_with_edge_weights_R0.png
+The figures are saved:  ./nico_analysis/niche_prediction_linear/Niche_interactions_without_edge_weights_R0.png
+The figures are saved:  ./nico_analysis/niche_prediction_linear/TopCoeff_R0/Rank1_Paneth.png
+The figures are saved:  ./nico_analysis/niche_prediction_linear/TopCoeff_R0/Rank2_TZE.png
+The figures are saved:  ./nico_analysis/niche_prediction_linear/TopCoeff_R0/Rank3_Stem_TA.png
+The figures are saved:  ./nico_analysis/niche_prediction_linear/TopCoeff_R0/Rank4_Glial.png
+The figures are saved:  ./nico_analysis/niche_prediction_linear/TopCoeff_R0/Rank5_Lymphatic.png
+The figures are saved:  ./nico_analysis/niche_prediction_linear/TopCoeff_R0/Rank6_MZE.png
+The figures are saved:  ./nico_analysis/niche_prediction_linear/TopCoeff_R0/Rank7_Plasma.png
+The figures are saved:  ./nico_analysis/niche_prediction_linear/TopCoeff_R0/Rank8_T_cell.png
+The figures are saved:  ./nico_analysis/niche_prediction_linear/TopCoeff_R0/Rank9_cDC_monocyte.png
+The figures are saved:  ./nico_analysis/niche_prediction_linear/TopCoeff_R0/Rank10_neurons_enteroendocrine.png
+The figures are saved:  ./nico_analysis/niche_prediction_linear/TopCoeff_R0/Rank11_Stroma.png
+The figures are saved:  ./nico_analysis/niche_prediction_linear/TopCoeff_R0/Rank12_Blood_vasc.png
+The figures are saved:  ./nico_analysis/niche_prediction_linear/TopCoeff_R0/Rank13_Tuft.png
+The figures are saved:  ./nico_analysis/niche_prediction_linear/TopCoeff_R0/Rank14_Goblet.png
+The figures are saved:  ./nico_analysis/niche_prediction_linear/TopCoeff_R0/Rank15_BZE.png
+The figures are saved:  ./nico_analysis/niche_prediction_linear/TopCoeff_R0/Rank16_Macrophage.png
+The figures are saved:  ./nico_analysis/niche_prediction_linear/TopCoeff_R0/Rank17_Rest_B.png
+The figures are saved:  ./nico_analysis/niche_prediction_linear/Confusing_matrix_R0.png
+The figures are saved:  ./nico_analysis/niche_prediction_linear/weight_matrix_R0.png
+The figures are saved:  ./nico_analysis/niche_prediction_linear/scores_0.png
+
+
+Module C
+common genes between sc and sp 203 203
+
+
+ Spatial and scRNA-seq number of clusters, respectively  17 19
+Common cell types between spatial and scRNA-seq data   17 {'Lymphatic', 'Macrophage', 'Glial', 'TZE', 'Stem/TA', 'Rest B', 'Blood vasc.', 'Paneth', 'Stroma', 'cDC/monocyte', 'T cell', 'Tuft', 'MZE', 'Plasma', 'BZE', 'Goblet', 'neurons/enteroendocrine'}
+
+The spatial cluster name does not match the scRNA-seq cluster name  set()
+If the above answer is Null, then everything is okay. However, if any spatial cell type does not exist in the scRNA-seq data, please correct this manually; otherwise, NiCo will not run.
+
+
+
+BZE alpha, H size, W size, spH size: 30 (3, 325) (120, 3) (3, 1639)
+Blood vasc. alpha, H size, W size, spH size: 28 (3, 33) (58, 3) (3, 148)
+Glial alpha, H size, W size, spH size: 4 (3, 10) (44, 3) (3, 96)
+Lymphatic alpha, H size, W size, spH size: 24 (3, 267) (97, 3) (3, 1301)
+MZE alpha, H size, W size, spH size: 2 (3, 63) (60, 3) (3, 111)
+Macrophage alpha, H size, W size, spH size: 16 (3, 89) (113, 3) (3, 346)
+Paneth alpha, H size, W size, spH size: 12 (3, 128) (127, 3) (3, 184)
+Plasma alpha, H size, W size, spH size: 16 (3, 85) (101, 3) (3, 439)
+Rest B alpha, H size, W size, spH size: 12 (3, 234) (71, 3) (3, 48)
+Stem/TA alpha, H size, W size, spH size: 8 (3, 420) (140, 3) (3, 1131)
+Stroma alpha, H size, W size, spH size: 6 (3, 84) (107, 3) (3, 271)
+T cell alpha, H size, W size, spH size: 46 (3, 54) (86, 3) (3, 488)
+TZE alpha, H size, W size, spH size: 8 (3, 40) (72, 3) (3, 340)
+Tuft alpha, H size, W size, spH size: 40 (3, 90) (68, 3) (3, 25)
+cDC/monocyte alpha, H size, W size, spH size: 26 (3, 40) (86, 3) (3, 76)
+neurons/enteroendocrine alpha, H size, W size, spH size: 2 (3, 26) (103, 3) (3, 250)
+The figures are saved:  ./nico_analysis/covariations_R0_F3/NMF_output/BZE.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/NMF_output/Blood_vasc.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/NMF_output/Glial.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/NMF_output/Goblet.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/NMF_output/Lymphatic.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/NMF_output/MZE.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/NMF_output/Macrophage.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/NMF_output/Paneth.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/NMF_output/Plasma.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/NMF_output/Rest_B.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/NMF_output/Stem_TA.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/NMF_output/Stroma.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/NMF_output/T_cell.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/NMF_output/TZE.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/NMF_output/Tuft.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/NMF_output/cDC_monocyte.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/NMF_output/neurons_enteroendocrine.png
+
+
+Module D
+The regression figures as pvalue circle plots are saved in following path  ./nico_analysis/covariations_R0_F3/Regression_outputs/pvalue_coeff_circleplot_*
+
+
+Module E
+The Excel sheet is saved:  ./nico_analysis/covariations_R0_F3/Lig_and_Rec_enrichment_in_interacting_celltypes.xlsx
+The text file is saved: ./nico_analysis/covariations_R0_F3/Regression_summary.txt
+LR figures for both ways are saved in following path  ./nico_analysis/covariations_R0_F3/Plot_ligand_receptor_in_niche/
+LR figures for CC to NC are saved in following path  ./nico_analysis/covariations_R0_F3/Plot_ligand_receptor_in_niche_cc_vs_nc/
+LR figures for NC to CC are saved in following path  ./nico_analysis/covariations_R0_F3/Plot_ligand_receptor_in_niche_nc_vs_cc/
+
+
+Module G
+The figures are saved:  ./nico_analysis/covariations_R0_F3/dotplots/BZE.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/dotplots/Blood_vasc.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/dotplots/Glial.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/dotplots/Goblet.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/dotplots/Lymphatic.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/dotplots/MZE.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/dotplots/Macrophage.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/dotplots/Paneth.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/dotplots/Plasma.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/dotplots/Rest_B.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/dotplots/Stem_TA.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/dotplots/Stroma.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/dotplots/T_cell.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/dotplots/TZE.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/dotplots/Tuft.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/dotplots/cDC_monocyte.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/dotplots/neurons_enteroendocrine.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/dotplots/combined_Stem_TA_Paneth.png
+
+
+Module F
+The pathway figures are saved in  ./nico_analysis/covariations_R0_F3/Pathway_figures/
+
+
+Module H
+The figures are saved:  ./nico_analysis/covariations_R0_F3/spatial_factors_in_umap.png
+The figures are saved:  ./nico_analysis/covariations_R0_F3/scRNAseq_factors_in_umap.png
