@@ -92,7 +92,8 @@ pip install jupyterlab
 
 
 
-# Warnings 
+# Notes and Warnings 
+### Font 
 If at any step it shows the warning ```findfont: Font family 'Helvetica' not found```
 Then please initialize the matplotlibrc file to use different font as 
 
@@ -102,16 +103,18 @@ plt.rcParams['font.family'] = 'sans-serif'
 plt.rcParams['font.sans-serif'] = ['Tahoma', 'DejaVu Sans','Lucida Grande', 'Verdana']
 ```
 
+### Vizgen MERSCOPE data 
+If you are working with Vizgen MERSCOPE spatial data, please process with "process_vizgenData.py" script to convert Vizgen data into gene_by_cell.csv and tissue_positions_list.csv files. 
+
+### Cellbarcode name 
+If you encounter any issues while running, please ensure that the cell barcode name is composed of characters rather than integer numbers. When pandas reads numeric values, it will read as int64 instead of object which create datatype confusion for other parts of the code. Therefore, please convert your cell barcode numbers to strings if they are purely numeric.
+
 
 # Documentation 
 
 The detailed [documentation of NiCo](https://nico-sc-sp.readthedocs.io/en/latest/) modules and their usage functions can be seen in the given link. 
 
-# Vizgen MERSCOPE data 
-If you are working with Vizgen MERSCOPE spatial data, please process with "process_vizgenData.py" script to convert Vizgen data into gene_by_cell.csv and tissue_positions_list.csv files. 
 
-# Cellbarcode name 
-If you encounter any issues while running, please ensure that the cell barcode name is composed of characters rather than integer numbers. When pandas reads numeric values, it will read as int64 instead of object which create datatype confusion for other parts of the code. Therefore, please convert your cell barcode numbers to strings if they are purely numeric.
 
 # Citing NiCo
 
