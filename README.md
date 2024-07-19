@@ -1,4 +1,4 @@
-# NiCo Tutorial
+# NiCo Package
 
 <div align="center">
 
@@ -6,7 +6,7 @@
 
 </div>
 
-## Table of Contents
+# Table of Contents
 
 -   [NiCo](#nico)
     -   [Table of Contents](#table-of-contents)
@@ -22,17 +22,17 @@
     -   [Citing NiCo](#citing-nico)
     -   [Contact](#contact)
 
-## Overview
+# Overview
 
 We have developed the NiCo (Niche Covariation) package for the integration of single-cell resolution spatial transcriptomics and scRNA-seq data. NiCo allows you to:
 
-(1) Perform cell type annotations in the spatial modality by label transfer.
-(2) Predict niche cell type interactions within local neighborhoods.  
+(1) Perform cell type annotations in the spatial modality by label transfer. <br>
+(2) Predict niche cell type interactions within local neighborhoods.  <br>
 (3) Infer cell state covariation and the underlying molecular crosstalk in the niche. 
 
 NiCo infers factors capturing cell state variability in both modalities and identifies genes correlated to these latent factors to predict ligand-receptor interactions and factor-associated pathways.
 
-### Tutorial
+# Tutorial
 NiCo can run any spatial technologies, but it is mainly designed for single-cell resolution spatial technologies such as MERFISH, SEQFISH, and XENIUM. 
 
 We are providing a **first tutorial** on running the NiCo pipeline for the data integration of single-cell RNA sequencing (reference) and single-cell resolution of spatial transcriptomics data (query). 
@@ -43,9 +43,9 @@ The **second NiCo tutorial** is designed for low-resoution sequencing-based spat
 Please get the tutorial link below and keep all the files (NiCoLRdb.txt and *.ipynb) and folders (inputRef, inputQuery) in the same path to complete the tutorial. 
 
 
-### Tuturial 1: High-resolution spatial technologies
+## Tuturial 1: High-resolution spatial technologies
 
-## Part A: Data Preparation 
+### Part A: Data Preparation 
 Extract all zip files and run the Juypter notebook [``Start_Data_prep_new.ipynb``](Start_Data_prep_new.ipynb) to create the data files for NiCo analysis. 
 
 ### Part B: Running NiCo 
@@ -56,19 +56,19 @@ The source of data is provided in the manuscript.
 
 If user want to perform NiCo analysis for full data without specifying any cell type for the whole then please look this script. [nico analysis on all cell types](nico_analysis_highres_image_tech.py). The output of this log can be seen it [here](log_output.txt). 
 
-### Tutorial 2: Running NiCo for sequencing based spatial technologies 
+## Tutorial 2: Running NiCo for sequencing based spatial technologies 
 To run the NiCo on cerebellum data from Slide-seqV2 technology [data is taken from figure 3 of Cable, D. M. et al. Nature methods 19, 1076–1087 (2022)]. <br> 
 The NiCo niche detection and covariation analysis task is shown in following jupyter notebook [``nico_analysis_lowres_seq_tech.ipynb``](nico_analysis_lowres_seq_tech.ipynb)
 Please download the data from [this link](https://www.dropbox.com/scl/fi/6hxyp2pxpxalw9rfirby6/nico_cerebellum.zip?rlkey=9ye6rsk92uj9648ogjw5ypcum&st=lvc8e366&dl=0)
 and keep the data in following path ``nico_cerebellum/cerebellum.h5ad`` to complete the tutorial.  
 
 
-### Prerequisites
+# Prerequisites
 
 Please follow the information provided at [nico-sc-sp pip repository](https://pypi.org/project/nico-sc-sp/)
 
 
-### Installation
+# Installation
 For detailed instruction please follow the instructions at [nico-sc-sp pip repository](https://pypi.org/project/nico-sc-sp/)
 
 ``` console
@@ -90,7 +90,7 @@ pip install jupyterlab
 
 
 
-### Warnings 
+# Warnings 
 If at any step it shows the warning ```findfont: Font family 'Helvetica' not found```
 Then please initialize the matplotlibrc file to use different font as 
 
@@ -101,22 +101,22 @@ plt.rcParams['font.sans-serif'] = ['Tahoma', 'DejaVu Sans','Lucida Grande', 'Ver
 ```
 
 
-## Documentation 
+# Documentation 
 
 The detailed [documentation of NiCo](https://nico-sc-sp.readthedocs.io/en/latest/) modules and their usage functions can be seen in the given link. 
 
-## Vizgen MERSCOPE data 
+# Vizgen MERSCOPE data 
 If you are working with Vizgen MERSCOPE spatial data, please process with "process_vizgenData.py" script to convert Vizgen data into gene_by_cell.csv and tissue_positions_list.csv files. 
 
-## Cellbarcode name 
+# Cellbarcode name 
 If you encounter any issues while running, please ensure that the cell barcode name is composed of characters rather than integer numbers. When pandas reads numeric values, it will read as int64 instead of object which create datatype confusion for other parts of the code. Therefore, please convert your cell barcode numbers to strings if they are purely numeric.
 
-## Citing NiCo
+# Citing NiCo
 
 -   Ankit Agrawal, Stefan Thomann, Dominic Grün. NiCo Identifies Extrinsic Drivers of Cell State Modulation by Niche Covariation Analysis.
     ***Submitted***, 2024
 
-## Contact
+# Contact
 
 > **_contact:_** If you face any problem during the tutorial or have any questions, please email me (ankitplusplus at gmail.com) or raise an issue on Git Hub. 
 
