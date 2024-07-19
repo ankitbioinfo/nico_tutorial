@@ -339,8 +339,8 @@ coeff_cutoff_for_rid_reg=0,logistic_coef_cutoff=0):
         flag=1
         if os.path.isfile(outputname):
             filesize = os.path.getsize(outputname)
-            if filesize>0: #If file is already exist and have size greater than 0 then no need to run again. It will save some time if you want to run it again with different parameters
-                flag=0
+            #if filesize>0: #If file is already exist and have size greater than 0 then no need to run again. It will save some time if you want to run it again with different parameters
+            #    flag=0
 
         if flag==1:
             pc_of_sp_clusterid,PCA_of_sc_cluster_accordingto_spatial_clusterid,save_scFactors,save_spFactors=compute_PC_space(input,full_ad_sc)
