@@ -45,10 +45,10 @@ Please get the tutorial link below and keep all the files (NiCoLRdb.txt and *.ip
 
 ## Tuturial 1: High-resolution spatial technologies
 
-### Part A: Data Preparation 
+* Part A: Data Preparation 
 Extract all zip files and run the Juypter notebook [``Start_Data_prep_new.ipynb``](Start_Data_prep_new.ipynb) to create the data files for NiCo analysis. 
 
-### Part B: Running NiCo 
+* Part B: Running NiCo 
 After running the data preparation script and having generated normalised data files, run the Jupyter notebook [``nico_analysis_highres_image_tech.ipynb``](nico_analysis_highres_image_tech.ipynb) to perform the core steps of NiCo.
 
 By default, the tutorial generates all the figures both in the respective directory and inside the notebook. Please refer to the documentation for details on functions and parameters. 
