@@ -55,7 +55,7 @@ Please refer to the documentation for details on functions and parameters. <br>
 The data source is provided in the manuscript. 
 
 * **Part C: Running NiCo on all cell types**
-If user want to perform NiCo analysis for full data without specifying any cell type, refer to the script. [``nico_analysis_highres_image_tech.py``](nico_analysis_highres_image_tech.py). The output of this log can be seen it [here](log_output.txt). Due to large number of images Jupyter notebook can not be seen but essentially leaving the ``choose_celltypes`` and ``choose_factors_id`` list blank can do the job. 
+If users want to perform NiCo analysis on the full data without specifying any cell type, refer to the script. [``nico_analysis_highres_image_tech.py``](nico_analysis_highres_image_tech.py). The output log can be seen [here](log_output.txt). Due to large number of images, Jupyter notebook might not display them properly. However, leaving the ``choose_celltypes`` and ``choose_factors_id`` lists blank will enable the full analysis.
 
 ## Tutorial 2: Sequencing-based spatial technologies 
 To run NiCo on cerebellum data from Slide-seqV2 technology [data from Cable, D. M. et al. Nature methods 19, 1076–1087 (2022)]. <br> 
