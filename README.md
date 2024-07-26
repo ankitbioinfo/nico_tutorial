@@ -56,7 +56,7 @@ Please get the tutorial link below and keep all the files (NiCoLRdb.txt and \*.i
 
 ### Tutorial 2: Sequencing-based spatial technologies
 
-To run NiCo on cerebellum data from Slide-seqV2 technology \[data from Cable, D. M. et al. Nature methods 19, 1076–1087 (2022)].\
+To run NiCo on cerebellum data from Slide-seqV2 technology \[data from Cable, D. M. et al. Nature methods 19, 1076–1087 (2022)].
 
 
 * Download the data from [this link](https://www.dropbox.com/scl/fi/6hxyp2pxpxalw9rfirby6/nico\_cerebellum.zip?rlkey=9ye6rsk92uj9648ogjw5ypcum\&st=lvc8e366\&dl=0) and place the data in following path `nico_cerebellum/cerebellum.h5ad` to complete the tutorial.
