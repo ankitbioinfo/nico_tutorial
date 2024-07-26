@@ -1,10 +1,10 @@
-#from nico import Annotations as sann
-#from nico import Interactions as sint
-#from nico import Covariations as scov
+from nico import Annotations as sann
+from nico import Interactions as sint
+from nico import Covariations as scov
 
-import Annotations as sann
-import Interactions as sint
-import Covariations as scov
+#import Annotations as sann
+#import Interactions as sint
+#import Covariations as scov
 import scanpy as sc
 import numpy as np
 
