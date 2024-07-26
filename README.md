@@ -44,7 +44,7 @@ Please get the tutorial link below and keep all the files (NiCoLRdb.txt and \*.i
 
 ### Tuturial 1: High-resolution spatial technologies
 
-* **Part A: Data Preparation** Extract all zip files and run the Juypter notebook [`Start_Data_prep_new.ipynb`](Start\_Data\_prep\_new.ipynb) to create the data files for NiCo analysis.
+* **Part A: Data Preparation** Extract all zip files and run the Juypter notebook [`Start_Data_prep.ipynb`](Start\_Data\_prep.ipynb) to create the data files for NiCo analysis.
 * **Part B: Running NiCo on selected cell types** After data preparation, generating normalised data files, run the Jupyter notebook [`nico_analysis_highres_image_tech.ipynb`](nico\_analysis\_highres\_image\_tech.ipynb) to perform the core steps of NiCo.\
   This tutorial explains all steps of the NiCo pipeline, including annotation of cell types in the spatial modality by label transfer from the scRNA-seq data, prediction of significant cell type niche interactions, and derivation of cell state covariation within the local niche.\
   By default, the figures generated are saved both in the respective directory and inside the notebook.\
