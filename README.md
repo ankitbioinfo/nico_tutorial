@@ -24,6 +24,8 @@
 
 ## Overview
 
+For a nicer presentation of this page, you can also visit [Gitbook](https://ankitbioinfo.gitbook.io/nico-tutorial) page.
+
 We have developed the NiCo (Niche Covariation) package for the integration of single-cell resolution spatial transcriptomics and scRNA-seq data. NiCo allows you to:
 
 (1) Perform cell type annotations in the spatial modality by label transfer.\
