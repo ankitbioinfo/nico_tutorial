@@ -90,6 +90,10 @@ pip install jupyterlab
 
 #### Font
 
+To check the usage of any function you can check via following command. 
+```print(scov.save_LR_interactions_in_excelsheet_and_regression_summary_in_textfile_for_interacting_cell_types.__doc__)```
+
+
 If at any step it shows the warning `findfont: Font family 'Helvetica' not found` Then please initialize the matplotlibrc file to use different font as
 
 ```
