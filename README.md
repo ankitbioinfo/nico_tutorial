@@ -90,7 +90,7 @@ pip install jupyterlab
 
 #### Font
 
-To check the usage of any function you can check via following command. 
+To check the usage of any function you can check like following example. [moduleName.functionName.__doc__) 
 ```print(scov.save_LR_interactions_in_excelsheet_and_regression_summary_in_textfile_for_interacting_cell_types.__doc__)```
 
 
