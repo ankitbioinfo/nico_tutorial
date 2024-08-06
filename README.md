@@ -44,7 +44,7 @@ The **second NiCo tutorial** is designed for low-resoution sequencing-based spat
 
 Please get the tutorial link below and keep all the files (NiCoLRdb.txt and \*.ipynb) and folders (inputRef, inputQuery) in the same path to complete the tutorial.
 
-### Tuturial 1: High-resolution spatial technologies (seqFISH, MERFISH (MERSCOPE), and Xenium)
+### Tuturial 1: High-resolution spatial technologies (seqFISH, MERFISH or MERSCOPE, and Xenium)
 
 * **Part A: Data Preparation** Extract all zip files and run the Juypter notebook [`Start_Data_prep.ipynb`](Start\_Data\_prep.ipynb) to create the data files for NiCo analysis.
 * **Part B: Running NiCo on selected cell types** After data preparation, generating normalised data files, run the Jupyter notebook [`nico_analysis_highres_image_tech.ipynb`](nico\_analysis\_highres\_image\_tech.ipynb) to perform the core steps of NiCo.\
