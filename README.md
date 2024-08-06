@@ -44,7 +44,7 @@ The **second NiCo tutorial** is designed for low-resoution sequencing-based spat
 
 Please get the tutorial link below and keep all the files (NiCoLRdb.txt and \*.ipynb) and folders (inputRef, inputQuery) in the same path to complete the tutorial.
 
-### Tuturial 1: High-resolution spatial technologies
+### Tuturial 1: High-resolution spatial technologies (seqFISH, MERFISH (MERSCOPE), and Xenium)
 
 * **Part A: Data Preparation** Extract all zip files and run the Juypter notebook [`Start_Data_prep.ipynb`](Start\_Data\_prep.ipynb) to create the data files for NiCo analysis.
 * **Part B: Running NiCo on selected cell types** After data preparation, generating normalised data files, run the Jupyter notebook [`nico_analysis_highres_image_tech.ipynb`](nico\_analysis\_highres\_image\_tech.ipynb) to perform the core steps of NiCo.\
@@ -54,7 +54,7 @@ Please get the tutorial link below and keep all the files (NiCoLRdb.txt and \*.i
   The data source is provided in the manuscript.
 * **Part B: Running NiCo on all cell types** If users want to perform NiCo analysis on the full data without specifying any cell type, refer to the script. [`nico_analysis_highres_image_tech.py`](nico\_analysis\_highres\_image\_tech.py). The output log can be seen [here](log\_output.txt). Due to large number of images, Jupyter notebook might not display them properly. However, leaving the `choose_celltypes` and `choose_factors_id` lists blank will enable the full analysis.
 
-### Tutorial 2: Sequencing-based spatial technologies
+### Tutorial 2: Sequencing-based spatial technologies (Slide-seqV2)
 
 To run NiCo on cerebellum data from Slide-seqV2 technology \[data from Cable, D. M. et al. Nature methods 19, 1076–1087 (2022)].
 
