@@ -51,6 +51,7 @@ output_annotation_dir=output_annotation_dir)
 output_info=sann.nico_based_annotation(anchors_and_neighbors_info,
 guiding_spatial_cluster_resolution_tag='leiden0.4',
 across_spatial_clusters_dispersion_cutoff=0.15,
+ref_cluster_tag=ref_cluster_tag,
 resolved_tie_issue_with_weighted_nearest_neighbor='No')
 
 
@@ -81,7 +82,6 @@ spatial_coordinate_tag='spatial',
 umap_tag='X_umap',
 choose_celltypes=[],
 saveas=saveas,transparent_mode=transparent_mode)
-
 
 
 #Module B: Infer significant niche cell type interactions
@@ -132,7 +132,7 @@ refpath=ref_datapath,quepath=query_datapath,
 output_niche_prediction_dir=output_nico_dir,
 ref_cluster_tag=ref_cluster_tag)
 
-#Cosine and spearman correlation: visualize the correlation of genes from NMF")
+#Cosine and spearman correlation: visualize the correlation of genes from NMF
 scov.plot_cosine_and_spearman_correlation_to_factors(cov_out,
 choose_celltypes=[],
 NOG_Fa=30,
@@ -153,7 +153,7 @@ figsize=(6,1.25))
 #choose_celltypes=[],
 #saveas=saveas,transparent_mode=transparent_mode,figsize=(6,1.25))
 
-#Module E: Analysis of ligand-receptor interactions within the cell type covariation state
+#Module E: Analysis of ligand-receptor interactions between covarying niche cell types
 print('\n\nModule E')
 scov.save_LR_interactions_in_excelsheet_and_regression_summary_in_textfile_for_interacting_cell_types(cov_out,
 pvalueCutoff=0.05,correlation_with_spearman=True,
@@ -169,7 +169,7 @@ saveas=saveas,transparent_mode=transparent_mode,
 figsize=(12, 10))
 
 
-#Module G: Visualization of top genes across cell type and factors as dotplot
+#Module G: Visualization of top genes across cell types and factors as dotplot
 print('\n\nModule G')
 scov.plot_top_genes_for_a_given_celltype_from_all_three_factors(
 cov_out,choose_celltypes=[],
