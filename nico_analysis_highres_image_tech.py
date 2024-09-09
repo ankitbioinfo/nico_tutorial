@@ -1,6 +1,7 @@
 from nico import Annotations as sann
 from nico import Interactions as sint
 from nico import Covariations as scov
+import nico
 
 #import Annotations as sann
 #import Interactions as sint
@@ -31,14 +32,14 @@ transparent_mode=False
 ref_datapath='./inputRef/'
 query_datapath='./inputQuery/'
 
-
+print("version",nico.__version__)
+# answer is version 1.3.0
 
 output_nico_dir='./nico_analysis/'
 output_annotation_dir=None
 #output_annotation_dir=output_nico_dir+'annotations/'
 annotation_save_fname= 'nico_celltype_annotation.h5ad'
 inputRadius=0
-
 
 ref_cluster_tag='cluster' #scRNAseq cell type slot
 annotation_slot='nico_ct' #spatial cell type slot
@@ -126,11 +127,14 @@ saveas=saveas, transparent_mode=transparent_mode, figsize=(4,3))
 #Module C: Perform niche cell state covariation analysis using latent factors
 print('\n\nModule C')
 cov_out=scov.gene_covariation_analysis(iNMFmode=True,
-Radius=inputRadius,no_of_factors=3,
+Radius=inputRadius,
+no_of_factors=5,
 spatial_integration_modality='double',
 refpath=ref_datapath,quepath=query_datapath,
 output_niche_prediction_dir=output_nico_dir,
-ref_cluster_tag=ref_cluster_tag)
+ref_cluster_tag=ref_cluster_tag,
+LRdbFilename='NiCoLRdb.txt'
+)
 
 #Cosine and spearman correlation: visualize the correlation of genes from NMF
 scov.plot_cosine_and_spearman_correlation_to_factors(cov_out,
@@ -171,7 +175,7 @@ figsize=(12, 10))
 
 #Module G: Visualization of top genes across cell types and factors as dotplot
 print('\n\nModule G')
-scov.plot_top_genes_for_a_given_celltype_from_all_three_factors(
+scov.plot_top_genes_for_a_given_celltype_from_all_factors(
 cov_out,choose_celltypes=[],
 top_NOG=20,saveas=saveas,transparent_mode=transparent_mode)
 
@@ -188,7 +192,6 @@ print('\n\nModule F')
 scov.pathway_analysis(cov_out,choose_celltypes=[],
     NOG_pathway=50,choose_factors_id=[],savefigure=True,
     positively_correlated=True,saveas='pdf',rps_rpl_mt_genes_included=False)
-
 
 #Module H: Visualize factor values in the UMAP
 print('\n\nModule H')
