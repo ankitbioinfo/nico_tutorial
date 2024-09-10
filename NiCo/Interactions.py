@@ -47,7 +47,30 @@ os.environ["PYTHONWARNINGS"] = "ignore::UserWarning"
 
 
 def create_directory(outputFolder):
-    "This function creates empty directory."
+    """
+    Create an empty directory.
+
+    This function checks if a specified directory exists, and if not, it creates the directory.
+
+    Parameters
+    ----------
+    outputFolder : str
+        The path of the directory to be created.
+
+    Raises
+    ------
+    OSError
+        If the directory cannot be created due to permission issues or other OS-related errors.
+
+    Notes
+    -----
+    - If the directory already exists, no action is taken.
+    - This function ensures that the directory path is available for subsequent file operations.
+
+    Example
+    -------
+    >>> create_directory('./new_out/')
+    """
     answer=os.path.isdir(outputFolder)
     if answer==True:
         pass
@@ -56,8 +79,25 @@ def create_directory(outputFolder):
 
 def findNeighbors_in_given_radius(location,radius):
     """
-    The helper function is used in create_spatial_CT_feature_matrix to find the neighbors for each cell using the radius parameter.
+    Find the neighbors for each cell using the given radius.
+
+    This helper function used in ``create_spatial_CT_feature_matrix`` identifies the neighboring cells for each cell within the specified
+    radius and computes the average distance to these neighbors.
+
+    Parameters:
+    -----------
+    location : np.ndarray
+        An array of shape (n, 3) representing the coordinates of the cells.
+    radius : float
+        The radius within which to search for neighboring cells.
+        For immediate neighbors it is 0
+
+    Returns:
+    --------
+    list
+        A list of lists where each sublist contains the indices of the neighbors for each cell.
     """
+
     n=location.shape[0]
     #print('ss',location.shape)
     neighbor={}
@@ -126,15 +166,68 @@ def findNeighbors_in_given_radius(location,radius):
 
 def find_neighbors(pindex, triang):
     """
-    The helper function is used in create_spatial_CT_feature_matrix to find the neighbors for each cell using the Delaunay triangulation.
+    Find the neighbors for a given point index using Delaunay triangulation.
+
+    This helper function used in ```create_spatial_CT_feature_matrix``` identifies the neighboring points (cells) for a given point index
+    using the Delaunay triangulation.
+
+    Parameters:
+    -----------
+    pindex : int
+        The index of the point (cell) for which neighbors are to be found.
+    triang : scipy.spatial.Delaunay
+        The Delaunay triangulation of the point set.
+
+    Returns:
+    --------
+    np.ndarray
+        An array of indices representing the neighbors of the given point.
     """
+
     return triang.vertex_neighbor_vertices[1][triang.vertex_neighbor_vertices[0][pindex]:triang.vertex_neighbor_vertices[0][pindex+1]]
 
 
 def create_spatial_CT_feature_matrix(radius,PP,louvain,noct,fraction_CT,saveSpatial,epsilonThreshold):
     """
-    Helper function used in spatial_neighborhood_analysis to generate the expected spatial cell type neighborhood matrix.
+    Generate the expected spatial cell type neighborhood matrix.
+
+    This helper function is used in spatial_neighborhood_analysis to create a matrix that represents
+    the expected neighborhood cell type composition based on spatial data. It uses either a radius-based
+    approach or Delaunay triangulation to determine neighboring cells.
+
+    Parameters
+    ----------
+    radius : float
+        Radius within which to find neighbors. If set to 0, Delaunay triangulation is used instead.
+    PP : np.ndarray
+        Array of spatial coordinates of cells. Shape (n_cells, n_dimensions).
+    louvain : np.ndarray
+        Array containing Louvain clustering results for each cell. Shape (n_cells, 1).
+    noct : int
+        Number of cell types.
+    fraction_CT : list of float
+        List representing the fraction of each cell type.
+    saveSpatial : str
+        Path to save the output file containing the normalized spatial neighborhood matrix.
+    epsilonThreshold : float
+        Threshold distance cutoff to limit the distant neighbors when using Delaunay triangulation.
+
+    Returns
+    -------
+    tuple
+        - M : int
+            Placeholder for future calculations (currently always returns 0).
+        - neighbors : list of list of int
+            List of neighbors for each cell. Each sublist contains indices of neighboring cells.
+        - distance : list of list of float
+            List of distances to neighbors for each cell. Each sublist contains distances to the neighboring cells.
+
+    Notes
+    -----
+    - If radius is set to 0, Delaunay triangulation is used to find the neighbors within the epsilonThreshold distance.
+    - The function saves the normalized spatial neighborhood matrix as a .npz file at the specified location.
     """
+
 
     if radius==0:
         value=np.sum(PP,axis=0)
@@ -203,19 +296,6 @@ def create_spatial_CT_feature_matrix(radius,PP,louvain,noct,fraction_CT,saveSpat
     input_mat_for_log_reg=np.array(input_mat_for_log_reg)
     np.savez(saveSpatial+'normalized_spatial_neighborhood_'+str(radius)+'.npz',input_mat_for_log_reg=input_mat_for_log_reg)
 
-    '''
-    expectedNeighbors=np.array(expectedNeighbors)
-    M=[]
-    for i in range(len(noct)):
-        a=np.where(expectedNeighbors[:,0]==i)
-        b=np.where(expectedNeighbors[:,0]!=i)
-        #print('a',len(a[0]),len(b[0]))
-        myCT=np.mean(expectedNeighbors[a[0],1:],axis=0)
-        remainCT=np.mean(expectedNeighbors[b[0],1:],axis=0)
-        M.append(myCT/remainCT)
-        #print(i,M[i])
-    M=np.array(M)
-    '''
     M=0
 
     distance=[]
@@ -253,6 +333,39 @@ def reading_data(coordinates,louvainFull,degbased_ctname,saveSpatial,removed_CTs
     """
     Helper function used in spatial_neighborhood_analysis to read the cell coordinate file,
     cluster file, and cluster name file according to the input cell type list provided for the prediction.
+
+    Parameters:
+    -----------
+    coordinates : str
+        Path to the file containing cell coordinates.
+
+    louvainFull : str
+        Path to the file containing the full louvain clustering information.
+
+    degbased_ctname : list of tuples
+        A list where each element is a tuple containing the cell type ID and the cell type name.
+
+    saveSpatial : str
+        Path where the spatial analysis results should be saved.
+
+    removed_CTs_before_finding_CT_CT_interactions : list of str
+        A list of cell type names that should be excluded from the analysis.
+
+    Returns:
+    --------
+    CTname : list of str
+        A list of cell type names that are included in the analysis after filtering out the removed cell types.
+
+    CTid : list of int
+        A list of cell type IDs corresponding to the filtered cell type names.
+
+
+    Notes:
+    ------
+    - This function assumes that `degbased_ctname` is a list of tuples where the first element is an integer
+      representing the cell type ID and the second element is a string representing the cell type name.
+    - The function filters out the cell types listed in `removed_CTs_before_finding_CT_CT_interactions` from the
+      `degbased_ctname` list and returns the remaining cell type names and IDs.
     """
     #df=pd.read_csv(celltypeFilename)
     #data=df.to_numpy()
@@ -265,32 +378,6 @@ def reading_data(coordinates,louvainFull,degbased_ctname,saveSpatial,removed_CTs
             CTname.append(name)
             CTid.append(degbased_ctname[i][0])
 
-    '''
-    CTname=[]
-    with open(celltypeFilename,'r') as f:
-        cont = f.read()
-        lines=cont.split('\n')
-        CTname=[]
-        CTid=[]
-        for i in range(1,len(lines)):
-            l=lines[i].split(delimiter)
-            if len(l)>1:
-                name=l[1]
-                '
-                name=l[1].replace('/','_')
-                name=name.replace(' ','_')
-                name=name.replace('"','')
-                name=name.replace("'",'')
-                name=name.replace(')','')
-                name=name.replace('(','')
-                name=name.replace('+','p')
-                name=name.replace('-','n')
-                name=name.replace('.','')
-                '
-                if name not in removed_CTs_before_finding_CT_CT_interactions:
-                    CTname.append(name)
-                    CTid.append(int(l[0]))
-    '''
 
     #CTid=data[:,0]
     #CTname=data[:,1]
@@ -402,7 +489,39 @@ def reading_data(coordinates,louvainFull,degbased_ctname,saveSpatial,removed_CTs
 
 def plot_multiclass_roc(clf, X_test, y_test, n_classes):
     """
-    Compute the ROC for each cell type prediction and its performance on the test dataset.
+    Compute the ROC (Receiver Operating Characteristic) curve for each cell type prediction
+    and evaluate its performance on the test dataset.
+
+    Parameters:
+    -----------
+    clf : classifier object
+        The classifier used for making predictions. It should have a `decision_function` method.
+
+    X_test : array-like of shape (n_samples, n_features)
+        Test feature set.
+
+    y_test : array-like of shape (n_samples,)
+        True labels for the test set.
+
+    n_classes : int
+        Number of unique classes (cell types) in the dataset.
+
+    Returns:
+    --------
+    fpr : dict
+        A dictionary where the keys are class indices and the values are arrays of false positive rates.
+
+    tpr : dict
+        A dictionary where the keys are class indices and the values are arrays of true positive rates.
+
+    roc_auc : dict
+        A dictionary where the keys are class indices and the values are the area under the ROC curve (AUC) scores.
+
+    Notes:
+    ------
+    - This function uses the `decision_function` method of the classifier to get the confidence scores for each class.
+    - The true labels `y_test` are converted into a binary format using one-hot encoding.
+    - The ROC curve is computed for each class and the AUC score is calculated for each ROC curve.
     """
     y_score = clf.decision_function(X_test)
     # structures
@@ -419,24 +538,37 @@ def plot_multiclass_roc(clf, X_test, y_test, n_classes):
 
 def plot_confusion_matrix(input,saveas='pdf',showit=True,transparent_mode=False,figsize=(5.5,5)):
     """
-    Inputs:
+    Generate and save a confusion matrix plot from the results of spatial_neighborhood_analysis.
 
-    The primary input is the output from spatial_neighborhood_analysis.
+    Parameters:
+    -----------
+    input : dict, or similar object
+        The main input is the output from spatial_neighborhood_analysis.
 
-    | Save the figures in PDF or PNG format (dpi for PNG format is 300)
-    | (default) saveas='pdf'
+    saveas : str, optional, default='pdf'
+        Format to save the figure. Options are 'pdf' or 'png'. If 'png', the dpi is set to 300.
 
-    | Background color in the figures
-    | (default) transparent_mode=False
+    showit : bool, optional, default=True
+        Whether to display the plot after saving. If False, the plot will be closed after saving.
 
-    | Dimension of the figure size.
-    | (default) figsize=(5.5,5),
+    transparent_mode : bool, optional, default=False
+        Whether to save the figure with a transparent background.
+
+    figsize : tuple of float, optional, default=(5.5, 5)
+        Size of the figure in inches.
 
     Outputs:
+    --------
+    The function saves the confusion matrix plot in the directory specified by `nico_out/niche_prediction_linear/`.
+    The filename will be in the format 'Confusing_matrix_R<Radius>.<saveas>', where <Radius> is the radius value
+    from the input and <saveas> is the file format.
 
-    | The figures are saved in ./spatial_ct_ct_interactions/niche_prediction_linear/*
-    | Confusing_matrix_* shows the confusion matrix of the logistic regression classifier.
-
+    Notes:
+    ------
+    - The function loads data from a numpy file specified by `input.fout`, which should contain the confusion matrix
+      and related data.
+    - The confusion matrix is plotted using seaborn's heatmap function with annotations.
+    - The plot is saved in the specified format and directory, and optionally displayed based on the `showit` parameter.
     """
 
 
@@ -468,23 +600,30 @@ def plot_confusion_matrix(input,saveas='pdf',showit=True,transparent_mode=False,
 
 def plot_coefficient_matrix(input,saveas='pdf',showit=True,transparent_mode=False,figsize=(5,8)):
     """
-    Inputs:
+    Generate and save a coefficient matrix plot from the results of spatial_neighborhood_analysis.
 
-    The primary input is the output from spatial_neighborhood_analysis.
+    Parameters:
+    -----------
+    input : dict, or similar object
+            The main input is the output from spatial_neighborhood_analysis.
 
-    | Save the figures in PDF or PNG format (dpi for PNG format is 300)
-    | (default) saveas='pdf'
+    saveas : str, optional, default='pdf'
+        Format to save the figure. Options are 'pdf' or 'png'. If 'png', the dpi is set to 300.
 
-    | Background color in the figures
-    | (default) transparent_mode=False
+    showit : bool, optional, default=True
+        Whether to display the plot after saving. If False, the plot will be closed after saving.
 
-    | Dimension of the figure size.
-    | (default) figsize=(5,8)
+    transparent_mode : bool, optional, default=False
+        Whether to save the figure with a transparent background.
+
+    figsize : tuple of float, optional, default=(5, 8)
+        Size of the figure in inches.
 
     Outputs:
-
-    | The figures are saved in ./spatial_ct_ct_interactions/niche_prediction_linear/*
-    | weight_matrix_* shows the learned coefficient matrix from the logistic regression classifier.
+    --------
+    The function saves the coefficient matrix plot in the directory specified by ./nico_out/niche_prediction_linear/.
+    The filename will be in the format "weight_matrix_R<Radius>.<saveas>", where <Radius> is the radius value
+    from the input and <saveas> is the file format.
 
     """
 
@@ -525,25 +664,33 @@ def plot_coefficient_matrix(input,saveas='pdf',showit=True,transparent_mode=Fals
 
 def plot_predicted_probabilities(input,saveas='pdf',showit=True,transparent_mode=False,figsize=(12,6)):
     """
-    Inputs:
+    Generate and save a plot of predicted probabilities from the results of spatial_neighborhood_analysis.
 
-    The primary input is the output from spatial_neighborhood_analysis.
+    Parameters:
+    -----------
+    input : dict, or similar object
+            The main input is the output from spatial_neighborhood_analysis.
 
-    | Save the figures in PDF or PNG format (dpi for PNG format is 300)
-    | (default) saveas='pdf'
+    saveas : str, optional, default='pdf'
+        Format to save the figure. Options are 'pdf' or 'png'. If 'png', the dpi is set to 300.
 
-    | Background color in the figures
-    | (default) transparent_mode=False
+    showit : bool, optional, default=True
+        Whether to display the plot after saving. If False, the plot will be closed after saving.
 
-    | Dimension of the figure size.
-    | (default) figsize=(12,6)
+    transparent_mode : bool, optional, default=False
+        Whether to save the figure with a transparent background.
+
+    figsize : tuple of float, optional, default=(12, 6)
+        Size of the figure in inches.
 
     Outputs:
-
-    | The figures are saved in ./spatial_ct_ct_interactions/niche_prediction_linear/*
-    | predicted_probability_* shows the training, testing, and predicted probability used in the logistic regression classifier.
+    --------
+    The function saves the plot of predicted probabilities in the directory specified by ./nico_out/niche_prediction_linear/.
+    The filename will be in the format 'predicted_probability_R<Radius>.<saveas>', where <Radius> is the radius value
+    from the input and <saveas> is the file format.
 
     """
+
 
     filename='R'+str(input.Radius)
 
@@ -579,29 +726,41 @@ def plot_predicted_probabilities(input,saveas='pdf',showit=True,transparent_mode
 
 
 def plot_roc_results(input,nrows=4,ncols=4,saveas='pdf',showit=True,transparent_mode=False,figsize=(10, 7),):
-
     """
-    Inputs:
+    Generate and save ROC curves for the top 16 cell type predictions from the results of spatial_neighborhood_analysis.
 
-    The primary input is the output from spatial_neighborhood_analysis.
+    Parameters:
+    -----------
+    input : dict, or similar object
+        The main input is the output from spatial_neighborhood_analysis.
 
-    | The top 16 cell types predictions are shown as an ROC curve. These 16 are plotted as four-by-four subplots
-    | (default) nrows=4, ncols=4
+    nrows : int, optional, default=4
+        Number of rows in the subplot grid.
 
-    | Save the figures in PDF or PNG format (dpi for PNG format is 300)
-    | (default) saveas='pdf'
+    ncols : int, optional, default=4
+        Number of columns in the subplot grid.
 
-    | Background color in the figures
-    | (default) transparent_mode=False
+    saveas : str, optional, default='pdf'
+        Format to save the figure. Options are 'pdf' or 'png'. If 'png', the dpi is set to 300.
 
-    | Dimension of the figure size.
-    | (default) figsize=(10, 7)
+    showit : bool, optional, default=True
+        Whether to display the plot after saving. If False, the plot will be closed after saving.
+
+    transparent_mode : bool, optional, default=False
+        Whether to save the figure with a transparent background.
+
+    figsize : tuple of float, optional, default=(10, 7)
+        Size of the figure in inches.
 
     Outputs:
+    --------
+    The function saves the ROC curves plot in the directory specified by ./nico_out/niche_prediction_linear.
+    The filename will be in the format 'ROC_R<Radius>.<saveas>', where <Radius> is the radius value
+    from the input and <saveas> is the file format.
 
-    | The figures are saved in ./spatial_ct_ct_interactions/niche_prediction_linear/*
-    | ROC_* shows the Receiver operating characteristic for the top 16 cell types.
-
+    Notes:
+    ------
+    - The function creates a grid of ROC curves for the top 16 cell types with the highest ROC AUC values.
     """
 
     filename='R'+str(input.Radius)
@@ -646,19 +805,39 @@ def plot_roc_results(input,nrows=4,ncols=4,saveas='pdf',showit=True,transparent_
         pass
     else:
         plt.close('all')
-    #'''
-
-
-
-
-
-
 
 
 
 def read_processed_data(radius,inputdir):
+
     """
-    Helper function used in spatial_neighborhood_analysis to read the neighborhood expected feature matrix.
+    Read and process the neighborhood expected feature matrix for spatial_neighborhood_analysis.
+
+    Parameters:
+    -----------
+    radius : int or float
+        The radius value used in the spatial analysis.
+
+    inputdir : str
+        The directory containing the input data file.
+
+    Returns:
+    --------
+    neighborhoodClass : numpy.ndarray
+        The matrix of neighborhood class features.
+
+    target : numpy.ndarray
+        The target labels (cell types).
+
+    inputFeatures : range
+        A range object representing the indices of the input features.
+
+    Notes:
+    ------
+    - The function reads a compressed `.npz` file containing the neighborhood expected feature matrix.
+    - It filters out rows with NaN values.
+    - It calculates the proportion of each cell type in the dataset.
+    - The function returns the processed neighborhood class features, target labels, and input feature indices.
     """
 
     #name=inputdir+'normalized_spatial_neighbors_'+str(radius)+'.dat'
@@ -680,25 +859,66 @@ def read_processed_data(radius,inputdir):
     #print('cell type proportion')
     total=sum(prop.values())
     keys=sorted( list( prop.keys())  )
-
     nct=len(prop)
     featureVector=range(2,2+nct) # #just neighborhood
     neighborhoodClass= data[:,featureVector]
-
-
     target= data[:,1]
     print('data shape',data.shape, target.shape, "neighbor shape",neighborhoodClass.shape)
     inputFeatures=range(nct)
-
-
     return neighborhoodClass,target,inputFeatures
 
 
 
 def model_log_regression(K_fold,n_repeats,neighborhoodClass,target,lambda_c,strategy,BothLinearAndCrossTerms,seed,n_jobs):
     """
-    The helper function used in spatial_neighborhood_analysis to perform the logistic regression classifier to learn the probabilities of each cell type class.
+    Perform logistic regression classification to learn the probabilities of each cell type class. This helper function used in spatial_neighborhood_analysis.
+
+    Parameters:
+    -----------
+    K_fold : int
+        Number of folds for cross-validation.
+
+    n_repeats : int
+        Number of times the cross-validation is repeated.
+
+    neighborhoodClass : numpy.ndarray
+        Matrix of neighborhood class features.
+
+    target : numpy.ndarray
+        Target labels (cell types).
+
+    lambda_c : list or numpy.ndarray
+        Regularization strength(s) to be tested in the logistic regression.
+
+    strategy : str
+        The regularization and multi-class strategy. Options include 'L1_multi', 'L1_ovr', 'L2_multi', 'L2_ovr', 'elasticnet_multi', 'elasticnet_ovr'.
+
+    BothLinearAndCrossTerms : int
+        Degree of polynomial features including interaction terms only.
+
+    seed : int
+        Random seed for reproducibility.
+
+    n_jobs : int
+        Number of jobs to run in parallel.
+
+    Returns:
+    --------
+    log_reg_model : sklearn.linear_model.LogisticRegression
+        The logistic regression model with specified parameters.
+
+    parameters : dict
+        Dictionary of parameters used for model training.
+
+    hyperparameter_scoring : dict
+        Dictionary of scoring metrics used for hyperparameter tuning.
+
+    Notes:
+    ------
+    - The function uses polynomial features to create interaction terms based on the specified degree.
+    - Hyperparameter tuning is performed using cross-validation with f1_weighted scoring metrics.
     """
+
 
     polynomial = PolynomialFeatures(degree = BothLinearAndCrossTerms, interaction_only=True, include_bias=False)
 
@@ -850,30 +1070,6 @@ def model_log_regression(K_fold,n_repeats,neighborhoodClass,target,lambda_c,stra
 
     CTFeatures=poly.get_feature_names_out()
     #print("Features", CTFeatures,type(CTFeatures))
-    '''
-    print("accuracy score\t",np.mean(scorecalc[0]))
-    print("\nmacro")
-    print("f1 score\t",np.mean(scorecalc[1]))
-    print("precision score\t",np.mean(scorecalc[2]))
-    print("recall score\t",np.mean(scorecalc[3]))
-
-    print("\nmicro f1, precision, recall all same")
-    print("score\t",np.mean(scorecalc[4]))
-    #print("precision score in 10 run\t",np.mean(scorecalc[5]))
-    #print("recall score in 10 run\t",np.mean(scorecalc[6]))
-
-    print("\nWeighted")
-    print("f1 score\t",np.mean(scorecalc[7]))
-    print("precision\t",np.mean(scorecalc[8]))
-    print("recall score\t",np.mean(scorecalc[9]))
-
-
-    print('\ncohen_kappa_score (best=1): {0:.4f}'.format(np.mean(scorecalc[10])))
-    print('log_loss or cross entropy (best=lowest): {0:.4f}'.format(np.mean(scorecalc[11])))
-    print('matthews_corrcoef: {0:.4f}'.format( np.mean(scorecalc[12])  ))
-    print('hemming_loss (best=lowest): {0:.4f}'.format( np.mean(scorecalc[13] )))
-    print('zero_one_loss (best=0): {0:.4f}'.format(np.mean(scorecalc[14])))
-    '''
 
     return cmn,coef,comp_score,cmn_std,coef_std,comp_score_std,classes, lambda_c,CTFeatures,x_test,x_train,y_prob ,fpr, tpr, roc_auc
 
@@ -882,31 +1078,50 @@ def model_log_regression(K_fold,n_repeats,neighborhoodClass,target,lambda_c,stra
 def find_interacting_cell_types(input,choose_celltypes=[],celltype_niche_interaction_cutoff=0.1,
 coeff_cutoff=20,saveas='pdf',transparent_mode=False,showit=True,figsize=(4.0,2.0)):
     """
-    Inputs:
+    Display regression coefficients indicating cell type interactions.
 
-    The main input is the output from spatial_neighborhood_analysis.
+    Parameters:
+    -----------
+    input : object
+        The main input is the output from spatial_neighborhood_analysis.
 
-    | The cell type for which you would like to display the the regression coefficients indicating cell type interaction
-    | (default) choose_celltypes=[]
-    | If the list is empty, then the output will be shown for all cell types.
+    choose_celltypes : list, optional
+        List of cell types to display the regression coefficients for.
+        If empty, the output will be shown for all cell types.
+        Default is [].
 
-    | The maximum number of neighborhood cell types shown on the X-axis of the figures for each central cell type
-    | If there are too many interacting cell types, choosing a more stringet cutoff limits the display to the cell types with the largest positive or negative regression coefficients to avoid crowding of the figure
-    | (default) coeff_cutoff=20
+    celltype_niche_interaction_cutoff : float, optional
+        The cutoff value to consider for cell type niche interactions for normalized coefficients. This is visualized by blue dotted line.
+        Default is 0.1.
 
-    | Save the figures in PDF or PNG format (dpi for PNG format is 300)
-    | (default) saveas='pdf'
+    coeff_cutoff : int, optional
+        Maximum number of neighborhood cell types shown on the X-axis of the figures for each central cell type.
+        If there are too many interacting cell types, choosing a more stringet cutoff limits the display to the cell types with the largest positive or negative regression coefficients to avoid crowding in the figure.
+        Default is 20.
 
-    | Background color in the figures
-    | (default) transparent_mode=False
+    saveas : str, optional
+        Format to save the figures in, either 'pdf' or 'png'.
+        Default is 'pdf'.
 
-    | Dimension of the figure size.
-    | (default) figsize=(4,2)
+    transparent_mode : bool, optional
+        Background color of the figures.
+        Default is False.
+
+    showit : bool, optional
+        Whether to display the figures.
+        Default is True.
+
+    figsize : tuple, optional
+        Dimension of the figure size.
+        Default is (4.0, 2.0).
 
     Outputs:
+    --------
+    The figures are saved in ./nico_out/niche_prediction_linear/TopCoeff_R0/*
 
-    | The figures are saved in ./spatial_ct_ct_interactions/niche_prediction_linear/TopCoeff_R0/*
-
+    Notes:
+    ------
+    - The function normalizes the coefficients by dividing by maximum and then it visualizes by blue dotted line.
     """
 
 
@@ -1000,45 +1215,51 @@ coeff_cutoff=20,saveas='pdf',transparent_mode=False,showit=True,figsize=(4.0,2.0
                 else:
                     plt.close('all')
 
-'''
-def plot_celltype_nich_prediction_from_neighborhood_all_together(cmn,coef,cmn_std,coef_std,figuresize,filename):
-            a=np.diag(cmn)
-            b=np.diag(cmn_std)
-            goodPredictedCellType=np.argsort(-a)
-            create_directory(filename)
-            fig,ax=plt.subplots( figsize=(figuresize[0],figuresize[1]))
-            xx=range(len(coeff_of_CT))
-            yy=np.zeros((len(coeff_of_CT)))
-            ax.errorbar(xx, coeff_of_CT, yerr=std_of_coeff,fmt='o',markeredgewidth=0,markerfacecolor=None,markeredgecolor=None,linewidth=1,capsize=1,markersize=2,elinewidth=0.1,capthick=0.75)#markeredgecolor='blue',markerfacecolor='blue',
-            ax.plot(xx,yy,'k-',linewidth=0.2)
-            #ax.set_ylabel('value of coeff.')
-            #ax.set_xlabel('name of the coeff.')
-            #titlename=nameOfCellType[goodPredictedCellType[k]]+', conf score = {0:.3f}'.format(a[goodPredictedCellType[k]]) +'$\pm$'+str('%0.3f'%b[goodPredictedCellType[k]])
-            titlename=nameOfCellType[goodPredictedCellType[k]]+', id = '+str(goodPredictedCellType[k])+', conf score = {0:.3f}'.format(a[goodPredictedCellType[k]]) +'$\pm$'+str('%0.3f'%b[goodPredictedCellType[k]])
 
-            titlename=titlename.replace('_',' ')
-            ax.set_title(titlename,fontsize=7)
-
-
-            ax.set_xticks(xx)
-            for ind in range(len(name_of_the_coeff)):
-                name_of_the_coeff[ind]=name_of_the_coeff[ind].replace('_',' ')
-            ax.set_xticklabels(name_of_the_coeff)
-            for tick in ax.get_xticklabels():
-                tick.set_rotation(90)
-                tick.set_fontsize(7)
-
-            #fig.tight_layout()
-            savefname=remove_extra_character_from_name(nameOfCellType[goodPredictedCellType[k]])
-            fig.savefig(filename+'/Rank'+str(k+1)+'_'+savefname+'.pdf',bbox_inches='tight',transparent=True)
-            fig.savefig(filename+'/Rank'+str(k+1)+'_'+savefname,bbox_inches='tight',transparent=True,dpi=300)
-            fig.clf()
-'''
 
 def remove_extra_character_from_name(name):
     """
-    This function removes special characters from the cell type names to avoid throwing an error while saving the figures.
+    Remove special characters from cell type names to avoid errors while saving figures.
+
+    This function replaces certain special characters in the input `name` with
+    underscores or other appropriate characters to ensure the name is safe for use
+    as a filename.
+
+    Parameters
+    ----------
+    name : str
+        The original cell type name that may contain special characters.
+
+    Returns
+    -------
+    str
+        The modified cell type name with special characters removed or replaced.
+
+    Example
+    -------
+    >>> name = 'T-cell (CD4+)/CD8+'
+    >>> clean_name = remove_extra_character_from_name(name)
+    >>> print(clean_name)
+    'T-cell_CD4p_CD8p'
+
+    Notes
+    -----
+    The following replacements are made:
+
+        - '/' is replaced with '_'
+        - ' ' (space) is replaced with '_'
+        - '"' (double quote) is removed
+        - "'" (single quote) is removed
+        - ')' is removed
+        - '(' is removed
+        - '+' is replaced with 'p'
+        - '-' is replaced with 'n'
+        - '.' (dot) is removed
+
+    These substitutions help in creating filenames that do not contain characters
+    that might be problematic for file systems or software.
     """
+
     name=name.replace('/','_')
     name=name.replace(' ','_')
     name=name.replace('"','')
@@ -1064,157 +1285,172 @@ lambda_c_ranges=list(np.power(2.0, np.arange(-12, 12))),
 epsilonThreshold=100,
 removed_CTs_before_finding_CT_CT_interactions=[]):
 
+    """
+    Perform spatial neighborhood analysis to reconstruct the niche interaction patterns.
 
-        '''
-        **This is the primary function called by the user to perform spatial neighborhood analysis, i.e., reconstruction of the niche.**
+    This is the primary function called by the user to perform spatial neighborhood analysis, i.e., reconstruction of the niche.
 
-        **Before calling this function, the user must have an annotation of the spatial cell from any method. It can be obtained by NiCo's annotation module.
-        This annotation is expected to comprise two files, clusterFilename that contain cells and cluster-ID information,
-        and celltypeFilename that contains cluster-ID and cell type name information.**
+    **Prerequisites:**
+    Before calling this function, the user must have an annotation of the spatial cell from any method. This annotation is expected to comprise two files:
+    `clusterFilename` that contains cells and cluster-ID information, and `celltypeFilename` that contains cluster-ID and cell type name information.
 
-        call spatial_neighborhood_analysis function from the interaction module.
-        Perform spatial neighborhood analysis to find the niche interaction patterns.
+    **Inputs:**
 
-        If the user wants to run for multiple radius parameters, then it is good practice to change the outputdir directory name or delete the previously created one.
+    output_nico_dir : str, optional
+        Directory to save the output of niche interaction prediction.
+        Default is './nico_out/'.
 
-        If the average number of neighbors is relatively low (<1), increase the radius to perform neighborhood analysis.
+    anndata_object_name : str, optional
+        Name of the AnnData object file containing cell type annotations.
+        Default is 'nico_celltype_annotation.h5ad'.
 
-        Every input CSV file (positionFilename,clusterFilename,celltypeFilename) must contain the header information.
+    spatial_cluster_tag : str, optional
+        Slot for spatial cluster information.
+        Default is 'nico_ct' that means it is stored in anndata.obs['nico_ct'] slot.
 
-        Inputs:
+    spatial_coordinate_tag : str, optional
+        Slot for spatial coordinate information.
+        Default is 'spatial' that means it is stored in anndata.obsm['spatial'] slot.
 
-        | Please change the following two filenames (an paths) if you are using external cell type annotation
-        | The cluster partition filename from NiCo or any standard clustering method (cell barcode, cluster-ID)
-        | (default) clusterFilename='./inputQuery/MNN_based_annotations/3_deg_annotation_spatial_cluster.csv'
+    Radius : int, optional
+        Niche radius to predict the cell type-cell type interactions.
+        Radius 0 focuses on direct spatial neighbors inferred by Delaunay triangulation, and
+        nonzero Radius extends the neighborhood to include all cells within a given radius for predicting niche interactions.
+        Default is 0.
 
-        | The cell type information filename from NiCo or any standard clustering method (cluster-ID, cell type name)
-        | (default) celltypeFilename='./inputQuery/MNN_based_annotations/3_deg_annotation_spatial_ct_name.dat'
+    n_repeats : int, optional
+        Number of times to repeat the logistic regression after finding the hyperparameters.
+        Default is 1.
 
+    K_fold : int, optional
+        Number of cross-folds for the logistic regression.
+        Default is 5.
 
+    seed : int, optional
+        Random seed used in RepeatedStratifiedKFold.
+        Default is 36851234.
 
-        | The delimiter used in the celltypeFilename and clusterFilename
-        | These files should have the header information
-        | delimiter=','
+    n_jobs : int, optional
+        Number of processors to use. See https://scikit-learn.org/stable/glossary.html#term-n_jobs for details.
+        Default is -1.
 
-        | Niche radius to predict the cell type-cell type interactions
-        | Radius 0 focuses on direct spatial neighbors infered by Delaunay triangulation, and
-        | nonzero Radius extends the neighborhood to include all cells within a given radius for predicting niche interactions.
-        | (default) Radius=0
+    lambda_c_ranges : list, optional
+        The initial range of the inverse regularization parameter used in the logistic regression to find the optimal parameter.
+        Default is list(np.power(2.0, np.arange(-12, 12))).
 
-        | Number of times to run the logistic regression after finding the hyperparameters
-        | (default) n_repeats=1
+    epsilonThreshold : int, optional
+        Threshold value for neighboring cell during Delaunay Triangulation. This means those cells which are large then this cutoff cannot become neighbor at any cost.
+        Default is 100.
 
-        | Number of cross-folds
-        | (default) K_fold=5
+    removed_CTs_before_finding_CT_CT_interactions : list, optional
+        Exclude cell types from the niche interactions analysis.
+        Default is [].
 
-        | Random seed used in RepeatedStratifiedKFold
-        | seed=36851234
+    **Outputs:**
 
-        | Number of used processors For details, see here https://scikit-learn.org/stable/glossary.html#term-n_jobs
-        | n_jobs=-1
+    The function saves the output of niche interaction prediction in the specified "nico_out" directory.
 
-        | The initial range of the inverse regularization parameter used in the logistic regression to find the optimal parameter
-        | (default) lambda_c_ranges=list(np.power(2.0, np.arange(-12, 12)))
+    **Notes:**
 
-        | Exclude cell types from the niche interactions analysis
-        | (default) removed_CTs_before_finding_CT_CT_interactions=[]
+    - Before running this function, ensure you have the cell type annotation files in the anndata object slot.
+    - If running for multiple radius parameters, it's good practice to change the output directory name or delete the previously created one.
+    - If the average number of neighbors is relatively low (<1), consider increasing the radius for neighborhood analysis.
+    - Every input CSV file (`positionFilename`, `clusterFilename`, `celltypeFilename`) must contain header information.
 
-        Outputs:
+    """
 
-        | The output of niche interaction prediction
-        | (default) output_niche_prediction_dir='./spatial_ct_ct_interactions/'
+    if output_nico_dir==None:
+        output_nico_dir='./nico_out/'
+    else:
+        output_nico_dir=output_nico_dir
 
+    BothLinearAndCrossTerms=1# If only linear terms then put 1; For both linear and crossterms use 2
+    strategy='L2_multi' #Name of the strategy you want to compute the interactions options are [L1_multi, L1_ovr, L2_multi, L2_ovr, elasticnet_multi, elasticnet_ovr]
+    #strategy='L1_ovr'
+    #strategy='elasticnet_multi'
+    removed_CTs_before_finding_CT_CT_interactions=['NM']+removed_CTs_before_finding_CT_CT_interactions
 
-        '''
+    adata=sc.read_h5ad(output_nico_dir+anndata_object_name)
+    cellname=adata.obs_names.to_numpy()#df.index.to_numpy()
+    cellname=np.reshape(cellname,(len(cellname),1))
 
-        if output_nico_dir==None:
-            output_nico_dir='./nico_out/'
-        else:
-            output_nico_dir=output_nico_dir
+    posdata=np.hstack((cellname,adata.obsm[spatial_coordinate_tag]))
+    #batch=np.vstack((cellname0,adata.obs['batch'])).T
 
-        BothLinearAndCrossTerms=1# If only linear terms then put 1; For both linear and crossterms use 2
-        strategy='L2_multi' #Name of the strategy you want to compute the interactions options are [L1_multi, L1_ovr, L2_multi, L2_ovr, elasticnet_multi, elasticnet_ovr]
-        #strategy='L1_ovr'
-        #strategy='elasticnet_multi'
-        removed_CTs_before_finding_CT_CT_interactions=['NM']+removed_CTs_before_finding_CT_CT_interactions
+    annot = adata.obs[spatial_cluster_tag]
+    ctname = sorted(list(np.unique(annot)))
+    degbased_ctname=[]
+    d={}
+    for i in range(len(ctname)):
+        degbased_ctname.append([i,ctname[i]])
+        d[ctname[i]]=i
+    degbased_ctname=np.array(degbased_ctname,dtype=object)
+    #degbased_ctname[:,0]=degbased_ctname[:,0].astype(int)
 
-        adata=sc.read_h5ad(output_nico_dir+anndata_object_name)
-        cellname=adata.obs_names.to_numpy()#df.index.to_numpy()
-        cellname=np.reshape(cellname,(len(cellname),1))
-
-        posdata=np.hstack((cellname,adata.obsm[spatial_coordinate_tag]))
-        #batch=np.vstack((cellname0,adata.obs['batch'])).T
-
-        annot = adata.obs[spatial_cluster_tag]
-        ctname = sorted(list(np.unique(annot)))
-        degbased_ctname=[]
-        d={}
-        for i in range(len(ctname)):
-            degbased_ctname.append([i,ctname[i]])
-            d[ctname[i]]=i
-        degbased_ctname=np.array(degbased_ctname,dtype=object)
-        #degbased_ctname[:,0]=degbased_ctname[:,0].astype(int)
-
-        degbased_cluster=[]
-        for i in range(len(cellname)):
-            degbased_cluster.append([  adata.obs_names[i],d[annot[i]] ])
-        degbased_cluster=np.array(degbased_cluster,dtype=object)
-
-
-        if BothLinearAndCrossTerms==1:
-            niche_pred_outdir=output_nico_dir+'niche_prediction_linear/'
-        else:
-            niche_pred_outdir=output_nico_dir+'niche_prediction_cross/'
-        create_directory(niche_pred_outdir)
-
-
-        PP,cluster,noct,fraction_CT,clusterWithBarcodeId= reading_data(posdata,degbased_cluster,degbased_ctname,output_nico_dir,removed_CTs_before_finding_CT_CT_interactions)
-        M, neighbors,distance=create_spatial_CT_feature_matrix(Radius,PP,cluster,noct,fraction_CT,niche_pred_outdir,epsilonThreshold)
-        pickle.dump(neighbors,open(output_nico_dir+'neighbors_'+str(Radius)+'.p', 'wb'))
-        pickle.dump(distance,open(output_nico_dir+'distances_'+str(Radius)+'.p','wb'))
-        df=pd.DataFrame(clusterWithBarcodeId)
-        df.to_csv(output_nico_dir+'used_Clusters'+str(Radius)+'.csv',index=False)
-
-        f=open(output_nico_dir+'used_CT.txt')
-        nameOfCellType={}
-        for line in f:
-            l=line[0:-1].split('\t')
-            nameOfCellType[int(l[0])]=l[1]
-        f.close()
+    degbased_cluster=[]
+    for i in range(len(cellname)):
+        degbased_cluster.append([  adata.obs_names[i],d[annot[i]] ])
+    degbased_cluster=np.array(degbased_cluster,dtype=object)
 
 
-
-        #fw=open(mainoutputdir+'prediction_R'+str(Radius)+'.dat','w')
-        #fw.write('\nRadius = '+ str(Radius)  + '\n')
-        fout=niche_pred_outdir+'classifier_matrices_'+str(Radius)+'.npz'
-
-        inputdata={}
-        inputdata['outputdir']=output_nico_dir
-        inputdata['fout']=fout
-        inputdata['niche_pred_outdir']=niche_pred_outdir
-        inputdata['nameOfCellType']=nameOfCellType
-        inputdata['Radius']=Radius
-        inputdata['BothLinearAndCrossTerms']=BothLinearAndCrossTerms
+    if BothLinearAndCrossTerms==1:
+        niche_pred_outdir=output_nico_dir+'niche_prediction_linear/'
+    else:
+        niche_pred_outdir=output_nico_dir+'niche_prediction_cross/'
+    create_directory(niche_pred_outdir)
 
 
-        neighborhoodClass,target,inputFeatures=read_processed_data(Radius,niche_pred_outdir)
-        cmn,coef,comp_score,cmn_std,coef_std,comp_score_std,classes,lambda_c,CTFeatures,x_test,x_train,predicted_probs,fpr, tpr, roc_auc=model_log_regression(K_fold, n_repeats,neighborhoodClass,target,lambda_c_ranges,strategy,BothLinearAndCrossTerms,seed,n_jobs)
-        score=np.array([comp_score, comp_score_std]).T
-        np.savez(fout,cmn=cmn,coef=coef,cmn_std=cmn_std,coef_std=coef_std,CTFeatures=CTFeatures)
+    PP,cluster,noct,fraction_CT,clusterWithBarcodeId= reading_data(posdata,degbased_cluster,degbased_ctname,output_nico_dir,removed_CTs_before_finding_CT_CT_interactions)
+    M, neighbors,distance=create_spatial_CT_feature_matrix(Radius,PP,cluster,noct,fraction_CT,niche_pred_outdir,epsilonThreshold)
+    pickle.dump(neighbors,open(output_nico_dir+'neighbors_'+str(Radius)+'.p', 'wb'))
+    pickle.dump(distance,open(output_nico_dir+'distances_'+str(Radius)+'.p','wb'))
+    df=pd.DataFrame(clusterWithBarcodeId)
+    df.to_csv(output_nico_dir+'used_Clusters'+str(Radius)+'.csv',index=False)
 
-        inputdata['classes']=classes
-        inputdata['lambda_c']=lambda_c
-        inputdata['fpr']=fpr
-        inputdata['tpr']=tpr
-        inputdata['roc_auc']=roc_auc
-        inputdata['x_test']=x_test
-        inputdata['x_train']=x_train
-        inputdata['predicted_probs']=predicted_probs
-        inputdata['inputFeatures']=inputFeatures
-        inputdata['score']=score
-        output=SimpleNamespace(**inputdata)
+    f=open(output_nico_dir+'used_CT.txt')
+    nameOfCellType={}
+    for line in f:
+        l=line[0:-1].split('\t')
+        nameOfCellType[int(l[0])]=l[1]
+    f.close()
 
-        return output
+
+
+    #fw=open(mainoutputdir+'prediction_R'+str(Radius)+'.dat','w')
+    #fw.write('\nRadius = '+ str(Radius)  + '\n')
+    fout=niche_pred_outdir+'classifier_matrices_'+str(Radius)+'.npz'
+
+    inputdata={}
+    inputdata['outputdir']=output_nico_dir
+    inputdata['fout']=fout
+    inputdata['niche_pred_outdir']=niche_pred_outdir
+    inputdata['nameOfCellType']=nameOfCellType
+    inputdata['Radius']=Radius
+    inputdata['BothLinearAndCrossTerms']=BothLinearAndCrossTerms
+
+
+    neighborhoodClass,target,inputFeatures=read_processed_data(Radius,niche_pred_outdir)
+    cmn,coef,comp_score,cmn_std,coef_std,comp_score_std,classes,lambda_c,CTFeatures,x_test,x_train,predicted_probs,fpr, tpr, roc_auc=model_log_regression(K_fold, n_repeats,neighborhoodClass,target,lambda_c_ranges,strategy,BothLinearAndCrossTerms,seed,n_jobs)
+    score=np.array([comp_score, comp_score_std]).T
+    np.savez(fout,cmn=cmn,coef=coef,cmn_std=cmn_std,coef_std=coef_std,CTFeatures=CTFeatures)
+
+    inputdata['classes']=classes
+    inputdata['lambda_c']=lambda_c
+    inputdata['fpr']=fpr
+    inputdata['tpr']=tpr
+    inputdata['roc_auc']=roc_auc
+    inputdata['x_test']=x_test
+    inputdata['x_train']=x_train
+    inputdata['predicted_probs']=predicted_probs
+    inputdata['inputFeatures']=inputFeatures
+    inputdata['score']=score
+    output=SimpleNamespace(**inputdata)
+
+    return output
+
+
+
+
 
 
 
@@ -1225,30 +1461,49 @@ removed_CTs_before_finding_CT_CT_interactions=[]):
 def plot_evaluation_scores(input,saveas='pdf',transparent_mode=False,showit=True,figsize=(4,3)):
 
     """
-    Inputs:
+    This function generates and saves plots of evaluation scores obtained from the spatial_neighborhood_analysis.
+    The plots can be saved in PDF or PNG format and can be displayed during execution.
 
-    The main input is the output from spatial_neighborhood_analysis.
+    Parameters
+    ----------
+    input : dict or similar
+        The main input is the output from spatial_neighborhood_analysis. This should contain the evaluation scores to be plotted.
+    saveas : str, optional
+        Format to save the figures. Options are 'pdf' or 'png'. Default is 'pdf'.
+    transparent_mode : bool, optional
+        If True, the background color of the figures will be transparent. Default is False.
+    showit : bool, optional
+        If True, the figures will be displayed when the function is called. Default is True.
+    figsize : tuple, optional
+        Dimensions of the figure size in inches (width, height). Default is (4, 3).
 
-    | Save the figures in PDF or PNG format (dpi for PNG format is 300)
-    | (default) saveas='pdf'
+    Outputs
+    -------
+    None
+        The function saves the generated figures in the directory "./nico_out/niche_prediction_linear/" with filenames starting with "scores".
 
-    | Background color in the figures
-    | (default) transparent_mode=False
+    Notes
+    -----
+    - The order of scores saved in input.score as follows:
 
-    | Dimension of the figure size.
-    | (default) figsize=(4,3)
-
-    Outputs:
-
-    | The figures are saved in "./spatial_ct_ct_interactions/niche_prediction_linear/scores*"
+        - 1. accuracy
+        - 2. macro F1
+        - 3. macro precision
+        - 4. macro recall
+        - 5. micro F1
+        - 6. micro precision
+        - 7. micro recall
+        - 8. weighted F1
+        - 9. weighted precision
+        - 10. weighted recall
+        - 11. Cohen Kappa
+        - 12. cross entropy
+        - 13. mathhew correlation coefficient
+        - 14. heming loss
+        - 15. zeros one loss
 
     """
 
-    ## The order of all 15 scores are following
-    #1-4 'accuracy','macro F1','macro precision','macro recall',
-    #5-7 'micro [all]',
-    #8-11 'weighted F1','weighted precision','weighted recall','cohen kappa',
-    #12=15 'cross entropy', 'matthew correlation coefficient','heming loss', 'zero one loss'
 
     xlabels=['accuracy','macro F1','macro precision','macro recall','micro [all]','weighted F1','weighted precision','weighted recall','cohen kappa','mcc']
     index=[0,1,2,3,4,7,8,9,10,12]
@@ -1286,89 +1541,35 @@ def plot_evaluation_scores(input,saveas='pdf',transparent_mode=False,showit=True
         plt.close('all')
 
 
-'''
-def plot_normalized_coefficients_radius_wise(inputRadius,BothLinearAndCrossTerms,inputdir,strategy,figuresize):
-    f=open(inputdir+'BiologicalNameOfCT.dat')
-    nameOfCellType={}
-    featureName=[]
-    for line in f:
-        l=line[0:-1].split('\t')
-        nameOfCellType[int(l[0])]=l[1]
-        featureName.append(l[1])
-    savedir=mainoutputdir+"RadiusWiseNormalizedCoefficients/"
-    create_directory(savedir)
 
-    coef=[]
-    confusion=[]
-    for radius in inputRadius:
-        fname=mainoutputdir+'classifier_matrices_'+str(radius)+'.npz'
-        data=np.load(fname,allow_pickle=True)
-        coef.append(data['coef'])
-        cmn=data['cmn']
-        #cmn_std=data['cmn_std']
-        #coef_std=data['coef_std']
-        CTFeatures=data['CTFeatures']
-        #coef.append(np.loadtxt(maindir+'matrix_avg_coefficients_R'+str(radius)+'.dat',delimiter=','))
-        #cmn=np.loadtxt(maindir+'matrix_avg_confusion_R'+str(radius)+'.dat',delimiter=',')
-        confusion.append(np.diagonal(cmn))
-
-
-    coefSize=coef[0].shape
-    coef=np.array(coef)
-    C=np.array(confusion)
-    B=np.einsum('kij->ikj',coef)
-    #print(B.shape,C.shape)
-
-
-    name_of_the_coeff=[]
-    n=coefSize[1]
-    for i in range(n):
-        l=CTFeatures[i].split()
-        temp=''
-        for j in range(len(l)):
-            temp+=nameOfCellType[int(l[j][1:])]
-            if j!=(len(l)-1):
-                temp+='--'
-        name_of_the_coeff.append(temp)
-
-
-    for i in range(len(B)):
-        fig,ax=plt.subplots(1,1,figsize=(figuresize[0],figuresize[1]))
-        for j in range(len(B[i])):
-            value=np.max(abs(B[i][j]))
-            B[i][j]=B[i][j]/value
-        snn.heatmap(B[i],xticklabels=name_of_the_coeff)#,xticklabels=classes)
-        ax.set_yticklabels(inputRadius,fontsize=5, rotation=0)
-        ax.set_xticklabels(name_of_the_coeff,fontsize=5, rotation=90)
-        ax.set_title(featureName[i] + ' [%0.2f'%C[0,i] + ', %0.2f]'%C[-1,i]   ,fontsize=7)
-        fig.tight_layout()
-        fig.savefig(savedir+'CT_'+str(i+1)+ '_'+featureName[i]  + '.png',bbox_inches='tight',dpi=300)
-        fig.clf()
-'''
 
 def plot_niche_interactions_without_edge_weight(input,niche_cutoff=0.1,saveas='pdf',transparent_mode=False,showit=True,figsize=(10,7)):
 
     """
-    Inputs:
+    Plot niche interactions map without edge weights.
 
-    The main input is the output from spatial_neighborhood_analysis.
+    This function generates and saves a niche interactions map using the output from spatial_neighborhood_analysis.
+    The plot can be saved in PDF or PNG format and can be displayed during execution.
 
-    | Cutoff used for plotting the niche interactions map
-    | (default) niche_cutoff=0.10
+    Parameters
+    ----------
+    input : dict or similar
+        The main input is the output from spatial_neighborhood_analysis. This should contain the necessary data to plot the niche interactions.
+    niche_cutoff : float, optional
+        Cutoff value for plotting the cell type niche interactions map. Default is 0.1.
+    saveas : str, optional
+        Format to save the figures. Options are 'pdf' or 'png'. Default is 'pdf'.
+    transparent_mode : bool, optional
+        If True, the background color of the figures will be transparent. Default is False.
+    showit : bool, optional
+        If True, the figures will be displayed when the function is called. Default is True.
+    figsize : tuple, optional
+        Dimensions of the figure size in inches (width, height). Default is (10, 7).
 
-    | Save the figures in PDF or PNG format (dpi for PNG format is 300)
-    | (default) saveas='pdf'
-
-    | Background color in the figures
-    | (default) transparent_mode=False
-
-    | Dimension of the figure size.
-    | (default) figsize=(10,7)
-
-    Outputs:
-
-    | The figures are saved in ./spatial_ct_ct_interactions/niche_prediction_linear/Niche_interactions_*
-
+    Outputs
+    -------
+    None
+        The function saves the generated figures in the directory "./nico_out/niche_prediction_linear/" with filenames starting with "Niche_interactions_*".
     """
 
     data=np.load(input.fout,allow_pickle=True)
@@ -1431,29 +1632,31 @@ def plot_niche_interactions_without_edge_weight(input,niche_cutoff=0.1,saveas='p
 def plot_niche_interactions_with_edge_weight(input,niche_cutoff=0.1,saveas='pdf',transparent_mode=False,showit=True,figsize=(10,7)):
         #niche_cutoff it is normalized large value has fewer connections and small value has larger connections
         """
-        Inputs:
+        Plot niche interactions map with edge weights.
 
-        The main input is the output from spatial_neighborhood_analysis.
+        This function generates and saves a niche interactions map using the output from spatial_neighborhood_analysis. The edges in the map are weighted based on the interaction strengths. The plot can be saved in PDF or PNG format and can be displayed during execution.
 
-        | Cutoff used for plotting the niche interactions map
-        | (default) niche_cutoff=0.10
+        Parameters
+        ----------
+        input : dict or similar
+            The main input is the output from spatial_neighborhood_analysis. This should contain the necessary data to plot the niche interactions.
+        niche_cutoff : float, optional
+            Cutoff value for plotting the niche interactions map. Higher values result in fewer connections, while lower values result in more connections. Default is 0.1.
+        saveas : str, optional
+            Format to save the figures. Options are 'pdf' or 'png'. Default is 'pdf'.
+        transparent_mode : bool, optional
+            If True, the background color of the figures will be transparent. Default is False.
+        showit : bool, optional
+            If True, the figures will be displayed when the function is called. Default is True.
+        figsize : tuple, optional
+            Dimensions of the figure size in inches (width, height). Default is (10, 7).
 
-        | Save the figures in PDF or PNG format (dpi for PNG format is 300)
-        | (default) saveas='pdf'
-
-        | Background color in the figures
-        | (default) transparent_mode=False
-
-        | Dimension of the figure size.
-        | (default) figsize=(10,7)
-
-        Outputs:
-
-        | The figures are saved in ./spatial_ct_ct_interactions/niche_prediction_linear/Niche_interactions_*
+        Outputs
+        -------
+        None
+            The function saves the generated figures in the directory "./nico_out/niche_prediction_linear/" with filenames starting with "Niche_interactions_*".
 
         """
-
-
 
         data=np.load(input.fout,allow_pickle=True)
         coef=data['coef']
@@ -1464,45 +1667,6 @@ def plot_niche_interactions_with_edge_weight(input,niche_cutoff=0.1,saveas='pdf'
 
         #print(coef.shape,len(CTFeatures))
 
-        '''
-        meanCoefficients=coef[0]
-        stdCoefficients=coef_std[0]
-        #highestIndex=np.argsort(-abs(meanCoefficients))
-
-        n=min(len(meanCoefficients))
-        coeff_of_CT=[]
-        name_of_the_coeff=[]
-        std_of_coeff=[]
-
-
-        for i in range(n):
-            l=CTFeatures[i].split()
-            temp=''
-            for j in range(len(l)):
-                temp+=nameOfCellType[int(l[j][1:])]
-                if j!=(len(l)-1):
-                    temp+='--'
-        integerName=CTFeatures[i].replace('x','')
-        coeff_of_CT.append(meanCoefficients[i])
-        name_of_the_coeff.append(temp)
-        std_of_coeff.append(stdCoefficients[i])
-        #sklearn.cluster.bicluster
-        linked=linkage(coef,'single')
-        #plt.figure(figsize=(10, 7))
-        fig,ax=plt.subplots( figsize=(figsize_niche[0],figsize_niche[1]))
-        dendrogram(linked,
-            orientation='top',
-            labels=nameOfCellType,
-            distance_sort='descending',
-            show_leaf_counts=True)
-        #ax.set_xticks(xx)
-        #ax.set_xticklabels(name_of_the_coeff)
-        for tick in ax.get_xticklabels():
-            tick.set_rotation(90)
-
-        fig.savefig(mainoutputdir+'HierarchicalClustering_Rad'+str(Radius),bbox_inches='tight',dpi=300)
-        plt.close('all')
-        '''
 
         n=len(input.nameOfCellType)
         top=cm.get_cmap('jet')
@@ -1536,15 +1700,6 @@ def plot_niche_interactions_with_edge_weight(input,niche_cutoff=0.1,saveas='pdf'
         #G.add_edges_from([(1, 2,10), (1, 3,20)])
         #G.add_weighted_edges_from(edges)
 
-
-        '''
-        #layout
-        pos=nx.fruchterman_reingold_layout(G)
-        pos=nx.circular_layout(G)
-        pos=nx.random_layout(G)
-        pos=nx.spectral_layout(G)
-        pos=nx.spring_layout(G)
-        '''
 
         edges = G.edges()
         colors = [G[u][v]['color'] for u,v in edges]
