@@ -119,7 +119,7 @@ For detailed documentation of NiCo modules and their usage, visit [NiCo document
 
 If you use NiCo in your research, please cite it as follows:
 
-* Ankit Agrawal, Stefan Thomann, Sukanya Basu, Dominic Grün. NiCo Identifies Extrinsic Drivers of Cell State Modulation by Niche Covariation Analysis. _**Submitted**_, 2024
+* Ankit Agrawal, Stefan Thomann, Sukanya Basu, Dominic Grün. NiCo Identifies Extrinsic Drivers of Cell State Modulation by Niche Covariation Analysis. _**Accepted in Nature Communications**_, 2024
   [bioRxiv link](https://doi.org/10.1101/2024.09.08.611848)
 
 ## Contact
