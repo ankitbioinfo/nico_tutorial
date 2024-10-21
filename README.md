@@ -1,10 +1,13 @@
 # README
 
+<div align="center">
+<img src=".gitbook/assets/FeatureImageSuggestion.png" alt="" width="150">
+
+
 ## NiCo Package [![DOI](https://zenodo.org/badge/726983315.svg)](https://doi.org/10.5281/zenodo.13902981)
 
 
 <div align="center">
-<img src=".gitbook/assets/FeatureImageSuggestion.png" alt="" width="100">
 <img src=".gitbook/assets/Figure1old.png" alt="" width="640">
 
 </div>
