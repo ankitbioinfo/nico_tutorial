@@ -4,7 +4,7 @@
 
 
 <div align="center">
-
+<img src=".gitbook/assets/FeatureImageSuggestion.png" alt="" width="100">
 <img src=".gitbook/assets/Figure1old.png" alt="" width="640">
 
 </div>
