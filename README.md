@@ -2,6 +2,7 @@
 
 <div align="center">
 <img src=".gitbook/assets/FeatureImageSuggestion.png" alt="" width="250">
+</div>
 
 
 ## NiCo Package [![DOI](https://zenodo.org/badge/726983315.svg)](https://doi.org/10.5281/zenodo.13902981)
