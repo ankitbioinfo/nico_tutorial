@@ -1,25 +1,30 @@
 
-import matplotlib
-#matplotlib.rcParams['pdf.fonttype'] = 42
-#matplotlib.rcParams['ps.fonttype'] = 42
-#matplotlib.rcParams['axes.linewidth'] = 0.1 #set the value globally
+#import matplotlib
 import matplotlib.pyplot as plt
-#plt.rc('font', family='Helvetica')
-
 from matplotlib.colors import LinearSegmentedColormap
 from matplotlib import gridspec
+from matplotlib.tri import Triangulation
+from matplotlib.collections import PatchCollection
+from matplotlib.gridspec import SubplotSpec
 #from scipy.spatial import Voronoi, ConvexHull,voronoi_plot_2d, Delaunay
 from numpy.linalg import norm
 
+
+#Metrics
+from sklearn.cluster import SpectralBiclustering
+from sklearn.decomposition import NMF
+from sklearn.utils.extmath import svd_flip
+from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.decomposition import PCA as skPCA
+from sklearn.metrics import cohen_kappa_score,hamming_loss,log_loss,zero_one_loss,matthews_corrcoef
 from sklearn.datasets import make_classification
 from sklearn.multioutput import MultiOutputRegressor
 from sklearn.linear_model import LogisticRegression,LogisticRegressionCV, Lasso,Ridge, RidgeCV,LassoCV, LinearRegression
 from sklearn.neighbors import KNeighborsRegressor
 from sklearn.tree import DecisionTreeRegressor
-from sklearn.model_selection import RandomizedSearchCV,GridSearchCV,cross_val_predict, cross_val_score,RepeatedKFold,RepeatedStratifiedKFold,StratifiedShuffleSplit
+from sklearn.model_selection import RandomizedSearchCV,GridSearchCV,cross_val_predict, cross_val_score,RepeatedKFold,RepeatedStratifiedKFold,StratifiedShuffleSplit,KFold
 #from sklearn.metrics import make_scorer,accuracy_score, f1_score, classification_report,confusion_matrix,roc_curve, roc_auc_score, precision_score, recall_score, precision_recall_curve
 from sklearn.metrics import confusion_matrix,r2_score,mean_absolute_error,mean_squared_error,mean_squared_log_error,mean_absolute_percentage_error,median_absolute_error, max_error, explained_variance_score
-
 from sklearn.preprocessing import PolynomialFeatures, StandardScaler
 from sklearn.pipeline import Pipeline
 #from sklearn.metrics import precision_recall_fscore_support as score
@@ -27,37 +32,23 @@ from sklearn.pipeline import Pipeline
 from sklearn.utils import class_weight
 from sklearn.metrics import roc_curve, auc,consensus_score
 
-#from sklearn.datasets import make_checkerboard
-from sklearn.cluster import SpectralBiclustering
-from sklearn.decomposition import NMF
-from matplotlib.tri import Triangulation
-from matplotlib.collections import PatchCollection
-from matplotlib.gridspec import SubplotSpec
 
-from sklearn.metrics.pairwise import cosine_similarity
-#bicluster
 
 from gseapy.plot import gseaplot, heatmap
 import gseapy
-from sklearn.decomposition import PCA as skPCA
 
+import scipy
 from scipy.spatial import cKDTree
 from scipy.spatial.distance import cosine
 import scipy.sparse as scipy_sparse
-from sklearn.metrics.pairwise import cosine_similarity
+from scipy.stats import pearsonr,spearmanr,entropy
 
-#Metrics
-from sklearn.metrics import cohen_kappa_score
-from sklearn.metrics import hamming_loss
-from sklearn.metrics import log_loss
-from sklearn.metrics import zero_one_loss
-from sklearn.metrics import matthews_corrcoef
-from scipy.stats import pearsonr,spearmanr
 
 import pandas as pd
 import numpy as np
 import seaborn as snn
 import os
+import sys
 import random
 import warnings
 import time
@@ -66,14 +57,9 @@ import pickle
 import xlsxwriter
 from types import SimpleNamespace
 import math
-import scipy
-from sklearn.utils.extmath import svd_flip
 #import statsmodels.api as sm
 import statsmodels.stats.multitest as sm
 #import shap
-from scipy.stats import entropy
-import sys
-from sklearn.model_selection import KFold
 
 
 fpath=os.path.join(os.path.dirname(__file__),'utils')
@@ -386,7 +372,7 @@ coeff_cutoff_for_rid_reg=0,logistic_coef_cutoff=0):
     return input
 
 
-def plot_cosine_and_spearman_correlation_to_factors(input,choose_celltypes=[],NOG_Fa=30,saveas='pdf',transparent_mode=False,showit=True,figsize=(15,10)):
+def plot_cosine_and_spearman_correlation_to_factors(input,choose_celltypes=[],NOG_Fa=30,saveas='pdf',transparent_mode=False,showit=True,dpi=300,figsize=(15,10)):
     """
     Plots cosine and Spearman correlation to factors for given cell types.
 
@@ -500,13 +486,13 @@ def plot_cosine_and_spearman_correlation_to_factors(input,choose_celltypes=[],NO
         b.set_title('log(avg exp)')
         #plt.tight_layout()
         print("The figures are saved: ", input.nmf_output+remove_extra_character_from_name(CC_celltype_name)+'.'+saveas)
-        fig.savefig(input.nmf_output+remove_extra_character_from_name(CC_celltype_name)+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=300)
+        fig.savefig(input.nmf_output+remove_extra_character_from_name(CC_celltype_name)+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=dpi)
         if showit:
             pass
         else:
             plt.close('all')
 
-def plot_feature_matrices(input,showit=True,saveas='pdf',transparent_mode=False,figsize=(10,10)):
+def plot_feature_matrices(input,showit=True,saveas='pdf',transparent_mode=False,dpi=300,figsize=(10,10)):
     """
     Plots feature vectors of the spatial factors from the regression step.
     """
@@ -528,7 +514,7 @@ def plot_feature_matrices(input,showit=True,saveas='pdf',transparent_mode=False,
     snn.heatmap(np.log10(Feature[index,:]),xticklabels=ylabelname)
     #fig.tight_layout()
     print("The figures are saved: ", input.covariation_dir+'Feature_matrix_PC'+'.'+saveas)
-    fig.savefig(input.covariation_dir+'Feature_matrix_PC'+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=300)
+    fig.savefig(input.covariation_dir+'Feature_matrix_PC'+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=dpi)
     if showit:
         pass
     else:
@@ -536,7 +522,7 @@ def plot_feature_matrices(input,showit=True,saveas='pdf',transparent_mode=False,
 
 
 def plot_significant_regression_covariations_as_circleplot(input,choose_celltypes=[],saveas='pdf',pvalue_cutoff=0.05,mention_pvalue=True,
-transparent_mode=False,showit=True,figsize=(6,1.25)):
+transparent_mode=False,showit=True,dpi=300,figsize=(6,1.25)):
 
     """
     Plot significant regression covariations as a circle plot.
@@ -691,14 +677,14 @@ transparent_mode=False,showit=True,figsize=(6,1.25)):
         savefname=remove_extra_character_from_name(str(input.spatialcell_unique_clusterid[i])+'_'+filename)
         #print('\n\n\n',input.regression_outdir+'pvalue_coeff_circleplot_'+savefname+'.'+saveas)
         #print("The figures are saved: ", input.regression_outdir+'pvalue_significance_coeff_matrix_'+savefname+'.'+saveas)
-        fig.savefig(input.regression_outdir+'pvalue_coeff_circleplot_'+savefname+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=300)
+        fig.savefig(input.regression_outdir+'pvalue_coeff_circleplot_'+savefname+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=dpi)
         if showit:
             pass
         else:
             plt.close('all')
 
 
-def plot_significant_regression_covariations_as_heatmap(input,choose_celltypes=[],saveas='pdf',transparent_mode=False,showit=True,figsize=(6,10)):
+def plot_significant_regression_covariations_as_heatmap(input,choose_celltypes=[],saveas='pdf',transparent_mode=False,showit=True,dpi=300,figsize=(6,10)):
 
     """
     Plot significant regression covariations as a heatmap.
@@ -825,7 +811,7 @@ def plot_significant_regression_covariations_as_heatmap(input,choose_celltypes=[
         #fig.tight_layout()
         savefname=remove_extra_character_from_name(str(input.spatialcell_unique_clusterid[i])+'_'+filename)
         #print("The figures are saved: ", input.regression_outdir+'pvalue_significance_coeff_matrix_'+savefname+'.'+saveas)
-        fig.savefig(input.regression_outdir+'pvalue_coeff_heatmap_'+savefname+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=300)
+        fig.savefig(input.regression_outdir+'pvalue_coeff_heatmap_'+savefname+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=dpi)
         if showit:
             pass
         else:
@@ -1026,7 +1012,7 @@ LR_plot_NMF_Fa_thres=0.2, LR_plot_Exp_thres=0.2,number_of_top_genes_to_print=20)
 
 
 
-def find_LR_interactions_in_interacting_cell_types(input,choose_interacting_celltype_pair=[],choose_factors_id=[],pvalueCutoff=0.05,
+def find_LR_interactions_in_interacting_cell_types(input,choose_interacting_celltype_pair=[],choose_factors_id=[],pvalueCutoff=0.05,dpi=300,
 correlation_with_spearman=True, LR_plot_NMF_Fa_thres=0.2, LR_plot_Exp_thres=0.2,saveas='pdf',transparent_mode=False,showit=True,figsize=(12,10)):
 
     """
@@ -1218,9 +1204,9 @@ correlation_with_spearman=True, LR_plot_NMF_Fa_thres=0.2, LR_plot_Exp_thres=0.2,
                             else:
                                 flag=1
                             if flag==1:
-                                plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_name[index],score[index],k+1,1+pc_index_nc[j],normalized_ridge_coef[k,j],pvalue[k,j],Found1,Found2,saveLRplots,LR_plot_Exp_thres,saveas,transparent_mode,showit,figsize,'Both')
-                                plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_name[index],score[index],k+1,1+pc_index_nc[j],normalized_ridge_coef[k,j],pvalue[k,j],Found1,Found2,saveLRplotsFirst,LR_plot_Exp_thres,saveas,transparent_mode,showit,figsize,'First')
-                                plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_name[index],score[index],k+1,1+pc_index_nc[j],normalized_ridge_coef[k,j],pvalue[k,j],Found1,Found2,saveLRplotsSecond,LR_plot_Exp_thres,saveas,transparent_mode,showit,figsize,'Second')
+                                plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_name[index],score[index],k+1,1+pc_index_nc[j],normalized_ridge_coef[k,j],pvalue[k,j],Found1,Found2,saveLRplots,LR_plot_Exp_thres,saveas,transparent_mode,showit,figsize,'Both',dpi)
+                                plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_name[index],score[index],k+1,1+pc_index_nc[j],normalized_ridge_coef[k,j],pvalue[k,j],Found1,Found2,saveLRplotsFirst,LR_plot_Exp_thres,saveas,transparent_mode,showit,figsize,'First',dpi)
+                                plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_name[index],score[index],k+1,1+pc_index_nc[j],normalized_ridge_coef[k,j],pvalue[k,j],Found1,Found2,saveLRplotsSecond,LR_plot_Exp_thres,saveas,transparent_mode,showit,figsize,'Second',dpi)
 
     return 0
 
@@ -1380,86 +1366,194 @@ def make_excel_sheet_for_gene_correlation(input):
                 for ri in range(len(header)):
                     worksheetSpatialGene_cosine[k].write(worksheetrow,(input.no_of_pc+2)*i+ri,header[ri])
                 worksheetrow+=1
-
     workbook.close()
 
-
-def pathway_analysis(input,NOG_pathway=50, choose_factors_id=[],correlation_with_spearman=True,saveas='pdf',savefigure=False,
- positively_correlated=True,rps_rpl_mt_genes_included=True,choose_celltypes=[],circlesize=12,pathwayCutoff=0.5,
- pathwayorganism='Mouse',database=['GO_Biological_Process_2021','BioPlanet_2019','Reactome_2016']):#background_geneName,background_expression
+def pathway_analysis(input,
+ NOG_pathway=50,
+ choose_factors_id=[],
+ correlation_with_spearman=True,
+ saveas='pdf',
+ savefigure=False,
+ positively_correlated=True,
+ rps_rpl_mt_genes_included=True,
+ choose_celltypes=[],
+ circlesize=12,
+ pvalue_cutoff_enrichr=0.05,
+ pathwayorganism='Mouse',
+ database=['GO_Biological_Process_2021','BioPlanet_2019','Reactome_2016'],
+ dotplot_x_order= False,
+ dotplot_y_order = False,
+ pvalue_cutoff = 0.05,
+ top_term= 10,
+ figsize = (4, 6),
+ dotplot_xticklabels_rot = None,
+ dotplot_yticklabels_rot = None,
+ dotplot_marker= 'o',
+ dotplot_show_ring = False,
+ object_for_sorting='Adjusted P-value',
+ object_for_color='Adjusted P-value',
+ object_for_xaxis= 'Odds Ratio', #'Combined Score'
+ object_for_yaxis='Term',
+ barplot_edgecolor='black',
+ barplot_linewidth=0.5,
+ barplot_ascending_order=True,
+ barplot_colorbar_length_shrink=0.5,
+ barplot_log10_pvalue_roundoff=2,
+ display_plot_as='barplot',
+ fontsize=12,
+ showit=True,
+ transparent_mode=False,
+ dpi=300,
+ input_colormap='hot_r'):#background_geneName,background_expression
 
     """
-    Perform pathway analysis for gene covariations within niches.
+    Perform pathway enrichment analysis for gene covariations within cell type niches.
 
-    This function utilizes the gene covariation data from the gene_covariation_analysis to perform pathway enrichment analysis using the GSEApy package. It identifies and visualizes the pathways that are significantly enriched among the top genes associated with NMF factors.
+    This function analyzes the gene covariation identified through NMF or iNMF in gene_covariation_analysis and perform pathway enrichment analysis using the GSEApy library.
+    Enriched pathways associated with specific cell types and NMF latent factors are visualized in bar or dot plots.
 
     Parameters
     ----------
     input : object
-        The main input is the output from gene_covariation_analysis.
+        The main input object, which is the output from the gene_covariation_analysis.
 
     NOG_pathway : int, optional
-        Number of top genes associated with NMF factors to search in the pathway database. If no pathways are observed, increase the number of genes or try different databases.
+        The number of top genes associated with each NMF factor to include in the pathway enrichment analysis. If no pathways are observed, increase the number of genes or try different databases.
         (default is 50)
 
     choose_factors_id : list, optional
-        Define the factor IDs for which pathway enrichments should be visualized. If empty, pathways will be saved for all factors.
+        A list of specific factor IDs for which pathway enrichments analysis should be conducted. If empty, enrichment will be computed for all factors.
         (default is [])
 
     correlation_with_spearman : bool, optional
-        If True, visualize gene-factor correlations obtained by Spearman correlation coefficient; otherwise, use cosine similarities.
+        If True, uses Spearman correlation coefficient for gene-factor association; otherwise, use cosine similarity.
         (default is True)
 
     positively_correlated : bool, optional
-        If True and correlation_with_spearman is selected, select positively correlated genes; otherwise, select negatively correlated genes.
+        If True, selects positively correlated genes for enrichment analysis; otherwise, selects negatively correlated genes.
         (default is True)
 
     rps_rpl_mt_genes_included : bool, optional
-        If True, include rps, rpl, and mt genes in the pathway analysis; if False, filter these genes out.
+        If True, include rps, rpl, and mt- genes in the pathway enrichment analysis; if False, exclude these genes.
         (default is True)
 
-    pathwayCutoff : float, optional
-        The cutoff parameter for finding pathway-enriched libraries from the top genes for each factor of a given cell type using GSEApy.
-        (default is 0.5)
+    pvalue_cutoff_enrichr : float, optional
+        The significance threshold for including pathways in the gseapy.enrichr (based on adjusted p-value).
+        It show enriched terms which Adjusted P-value < cutoff. Only affects the output figure, not the final output file.
+        (default is 0.05)
+        For detail see here https://gseapy.readthedocs.io/en/latest/run.html
+
+    pvalue_cutoff : float, optional
+        Terms with column value < cut-off are shown. Work only for (“Adjusted P-value”, “P-value”, “NOM p-val”, “FDR q-val”)
+        https://gseapy.readthedocs.io/en/latest/run.html
 
     pathwayorganism : str, optional
-        The organism used in the GSEApy package.
+        The organism for which to perform pathway analysis, supported by the GSEApy package (e.g., 'Mouse', 'Human').
         (default is 'Mouse')
 
     database : list, optional
-        The databases used in the GSEApy package for pathway analysis. The default includes 'GO_Biological_Process_2021', 'BioPlanet_2019', and 'Reactome_2016'.
+        A list of pathway databases to use for enrichment analysis in GSEApy package. The options includes 'GO_Biological_Process_2021', 'BioPlanet_2019', and 'Reactome_2016'.
+        See detail to find available databases https://gseapy.readthedocs.io/en/latest/gseapy_example.html
         (default is ['GO_Biological_Process_2021', 'BioPlanet_2019', 'Reactome_2016'])
 
     choose_celltypes : list, optional
-        Define the cell types for which pathway enrichments should be returned from the Enrichr library. If empty, the output will be generated for all cell types.
+        A list of cell types for which pathway enrichment analysis should be performed.
+        If empty, analysis will be performed for all cell types.
         (default is [])
 
     saveas : str, optional
-        Save the figures in PDF or PNG format (dpi for PNG format is 300).
+        The file format for saving figures, either in PDF or PNG format.
         (default is 'pdf')
 
     circlesize : int, optional
-        The size of the points in the pathway figure. Increase this value if the dots are too small.
+        The size of the dots in the dot plots in pathway enrichment visualization. Increase this value to control marker size in the visualization.
         (default is 12)
 
     savefigure : bool, optional
-        If True, the generated figures will be saved.
+        If True, saves the generated figures to the specified path.
+        (default is False)
+
+    display_plot_as : str, optional
+        The format for displaying the pathway analysis plot, either 'barplot' or 'dotplot'.
+        (default is 'barplot')
+
+    fontsize : int, optional
+        The font size for labels in the pathway visualization plots.
+        (default is 12)
+
+    input_colormap : str, optional
+        The color map used for visualizing the pathways, available from matplotlib. Please look for all the available colormap
+        https://matplotlib.org/stable/users/explain/colors/colormaps.html
+        Popular choices are 'autumn_r', 'RdBu_r', 'viridis', 'viridis_r',
+        (default is 'hot_r')
+
+    transparent_mode : bool, optional
+        Background color in the figures.
         (default is False)
 
     showit : bool, optional
-        If True, the generated figures will be displayed.
+        If True, the figures are shown interactively.
         (default is True)
 
     figsize : tuple, optional
-        The dimension of the figure size.
-        (default is (12, 10))
+        Dimension of the figure size.
+        (default figure size is (4, 6)).
+
+    top_term : int, optional
+        The number of terms in the barplot.
+        (default is 10)
+
+    dpi : int, optional
+        Resolution in dots per inch for saving the figure. Default is 300.
+
+    object_for_color : str, optional
+        The dataFrame column for plotting the color
+        (default is 'Adjusted P-value')
+
+    object_for_xaxis : str, optional
+        The dataFrame column for plotting the xaxis
+        (default is 'Odds Ratio')
+
+    object_for_yaxis : str, optional
+        The dataFrame column for plotting the yaxis
+        (default is 'Term')
+
+    object_for_sorting : str, optional
+        The dataFrame sorted as -log10 and top terms are plotted as barplot
+        (default is 'Adjusted P-value')
+
+    barplot_edgecolor : str, optional
+        The color of barplot edge
+        (default is 'black')
+
+    barplot_linewidth : float, optional
+        The linewidth of barplot edge
+        (default is 0.5)
+
+    barplot_ascending_order : bool, optional
+        Order the y-axis in barplot
+        (default is True).
+
+    barplot_colorbar_length_shrink : float, optional
+        Length of colorbar in barplot
+        (default is 0.5).
+
+    barplot_log10_pvalue_roundoff : int, optional
+        Roundoff the pvalue
+        (default is 2)
+
+    dotplot_x_order, dotplot_y_order, dotplot_xticklabels_rot, dotplot_yticklabels_rot, dotplot_marker, dotplot_show_ring
+        Used in gseapy.dotplot
+        For details please check this website  https://gseapy.readthedocs.io/en/latest/run.html
+        (The default values are False, False, None, None, 'o', False)
+
 
     Outputs
     -------
     The pathway figures are saved in "./nico_out/covariations_R*_F*/Pathway_figures/".
 
-    Notes
-    -----
+    Notes General
+    -------------
     - In the sheet names, ‘i’ corresponds to the factor ID.
     - Columns include factors representing all cell types.
     - For each factor, genes are sorted based on their association with the factor ID corresponding to the respective sheet.
@@ -1467,6 +1561,50 @@ def pathway_analysis(input,NOG_pathway=50, choose_factors_id=[],correlation_with
         - Ligands are depicted in blue.
         - Receptors are depicted in red.
         - Genes with both ligand and receptor functions are depicted in magenta.
+
+    Notes Enrichr
+    -------------
+    - For original reference of below information please follow this url  https://maayanlab.cloud/Enrichr/help#background&q=4
+    - Enrichr implements four scores to report enrichment results:
+        - p-value
+        - q-value
+        - rank (Z-score) also called Odds Ratio
+        - combined score
+    - Columns contain: Term Overlap P-value Odds Ratio Combinde Score Adjusted_P-value Genes
+
+    - The p-value is computed using a standard statistical method used by most enrichment analysis tools: Fisher's exact test or the hypergeometric test.
+    - This is a binomial proportion test that assumes a binomial distribution and independence for probability of any gene belonging to any set.
+    - The q-value is an adjusted p-value using the Benjamini-Hochberg method for correction for multiple hypotheses testing. You can read more about this method,
+    - and why it is needed here [https://www.jstor.org/stable/2346101].
+    - The odds ratio is computed using this formula:
+        -                   | In Query      | Not in Query  | Row Total
+        -    -------------------------------------------------------------
+        -    In Gene Set    | a (or x)      | b             | a + b (or m)
+        -    Not in Gene Set| c            	| d 	        | c + d (or n)
+        -    -------------------------------------------------------------
+        -    Column Total   | a + c (or k)  | b + d         | a + b + c + d (bg or Annotation Database Total)
+        -
+        - oddsRatio = (1.0 * a * d) / Math.max(1.0 * b * c, 1)
+        - where:
+            - a (x) are the overlapping genes,
+            - b (m-x) are the genes in the annotated set - overlapping genes
+            - c (k-x) are the genes in the input set - overlapping genes
+            - d (bg-m-k+x) are the 20,000 genes (or total genes in the background) - genes in the annotated set - genes in the input set + overlapping genes
+
+    - The combined score is a combination of the p-value and odds ratio calculated by multiplying the two scores as follows:
+        - c = -log(p) * oddsRatio
+        - Where c is the combined score, p is the p-value computed using Fisher's exact test, and oddsRatio is the odds ratio.
+        - The combined score provides a compromise between both methods and in several benchmarks show that it reports the best rankings when compared with the other scoring schemes.
+
+    - Enrichr provides all four options for sorting enriched terms.
+    - Python vs R differences (Please read GSEApy Documentation page 68 for more detail description https://readthedocs.org/projects/gseapy/downloads/pdf/latest/)
+        - scipy.hypergeom.sf(k, M, n, N, loc=0):
+            - M: the total number of objects,
+            - n: the total number of Type I objects.
+            - k: the random variate represents the number of Type I objects in N drawn without replacement from the total population.
+        - R: > phyper(x-1, m, n, k, lower.tail=FALSE)
+        - Python: > hypergeom.sf(x-1, m+n, m, k)
+
 
     Example
     -------
@@ -1569,23 +1707,77 @@ def pathway_analysis(input,NOG_pathway=50, choose_factors_id=[],correlation_with
                 for i in range(len(database)):
                     titlename1=titlename+'['+database[i]+']'+' #G='+str(len(ga1))
                     sname2=sname1+'_'+database[i]
+                    barplotsavename=savename+sname2
                     finalsavename=savename+sname2+'.'+saveas
 
-                    enr_res1 = gseapy.enrichr(gene_list=ga1,organism=pathwayorganism,gene_sets=database[i], cutoff = pathwayCutoff)
+                    enr_res1 = gseapy.enrichr(gene_list=ga1,organism=pathwayorganism,gene_sets=database[i], cutoff = pvalue_cutoff_enrichr)
+
+
+                    data=enr_res1.res2d.loc[enr_res1.res2d[object_for_sorting]< pvalue_cutoff ].copy()
+
+                    object_for_color_key=object_for_color
+                    object_for_xaxis_key=object_for_xaxis
+
+                    if ((object_for_color=='Adjusted P-value') |(object_for_color=='P-value')) :
+                        columntag='-log10('+object_for_color+')'
+                        data[columntag]= -np.log10(data[object_for_color])
+                        data[columntag]=data[columntag].apply(lambda x: round(x, barplot_log10_pvalue_roundoff))
+                        if display_plot_as=='barplot':
+                            object_for_color_key=columntag
+
+                    if ((object_for_xaxis=='Adjusted P-value') |(object_for_xaxis=='P-value')) :
+                        columntag='-log10('+object_for_xaxis+')'
+                        data[columntag]= -np.log10(data[object_for_xaxis])
+                        data[columntag]=data[columntag].apply(lambda x: round(x, barplot_log10_pvalue_roundoff))
+                        if display_plot_as=='barplot':
+                            object_for_xaxis_key=columntag
+
+                    data = data.nlargest(top_term, columntag)  # Smallest 10 P-values
+                    data = data.sort_values(by=object_for_xaxis_key, ascending=barplot_ascending_order)
+
                     #enr_res1 = gseapy.enrichr(gene_list=g1,organism='Mouse',gene_sets=background_model,description='pathway',cutoff = 0.5)
                     finalsavename.replace(' ','_')
                     try:
-                        #gseapy.barplot(enr_res1.res2d,title=titlename1,ofname=finalsavename,fontsize=12)#database[i]+titlename
-                        if savefigure:
-                            gseapy.dotplot(enr_res1.res2d,title=titlename1,ofname=finalsavename,fontsize=12,size=circlesize,cmap = plt.cm.autumn_r)
-                        else:
-                            gseapy.dotplot(enr_res1.res2d,title=titlename1,fontsize=12,size=circlesize,cmap = plt.cm.autumn_r)
+                        if display_plot_as=='barplot':
+                            fig, ax = plt.subplots(figsize=figsize)
+                            colors = plt.colormaps.get_cmap(input_colormap)(data[object_for_color_key] / data[object_for_color_key].max())  # Normalize for colormap
+                            bars = ax.barh(data[object_for_yaxis], data[object_for_xaxis_key], color=colors, edgecolor=barplot_edgecolor,linewidth=barplot_linewidth)
+
+                            # Add color bar for reference
+                            sm = plt.cm.ScalarMappable(cmap=input_colormap, norm=plt.Normalize(vmin=data[object_for_color_key].min(),
+                            vmax=data[object_for_color_key].max()))
+                            sm.set_array([])
+                            cbar = fig.colorbar(sm, ax=ax, shrink=barplot_colorbar_length_shrink)  # Shrink the colorbar by 70%
+                            cbar.set_label(object_for_color_key, rotation=270, labelpad=15)
+
+                            ax.set_xlabel(object_for_xaxis_key)
+                            #ax.set_ylabel(object_for_yaxis)
+                            ax.set_title(titlename1)
+                            plt.savefig(barplotsavename+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=dpi)
+                            if showit:
+                                pass
+                            else:
+                                plt.close('all')
+
+                        if display_plot_as=='dotplot':
+                            if savefigure:
+                                gseapy.dotplot(enr_res1.res2d,title=titlename1,ofname=finalsavename,fontsize=fontsize,size=circlesize,cmap = plt.cm.get_cmap(input_colormap),
+                                column =  object_for_color,  x = object_for_xaxis, y= object_for_yaxis, x_order = dotplot_x_order, y_order = dotplot_y_order,
+                                cutoff = pvalue_cutoff, top_term = top_term, figsize = figsize,
+                                xticklabels_rot = dotplot_xticklabels_rot , yticklabels_rot = dotplot_yticklabels_rot, marker = dotplot_marker, show_ring = dotplot_show_ring)
+                            else:
+                                gseapy.dotplot(enr_res1.res2d,title=titlename1,fontsize=fontsize,size=circlesize,cmap = plt.cm.get_cmap(input_colormap),
+                                column =  object_for_color, x = object_for_xaxis, y= object_for_yaxis, x_order = dotplot_x_order, y_order = dotplot_y_order,
+                                cutoff = pvalue_cutoff, top_term = top_term, figsize = figsize,
+                                xticklabels_rot = dotplot_xticklabels_rot , yticklabels_rot = dotplot_yticklabels_rot, marker = dotplot_marker, show_ring = dotplot_show_ring)
+
                     except Exception as e: #Exception: Error getting the Enrichr libraries
                         pass
 
 
+
 def extract_and_plot_top_genes_from_chosen_factor_in_celltype(input,choose_celltype,choose_factor_id,top_NOG=30,rps_rpl_mt_genes_included=True,
-correlation_with_spearman=True,positively_correlated=True,saveas='pdf',cmap='RdBu_r',transparent_mode=False,showit=True,figsize=(5, 6)):
+correlation_with_spearman=True,positively_correlated=True,saveas='pdf',cmap='RdBu_r',transparent_mode=False,showit=True,dpi=300,figsize=(5, 6)):
 
 
     """
@@ -1784,7 +1976,7 @@ correlation_with_spearman=True,positively_correlated=True,saveas='pdf',cmap='RdB
             #create_subtitle(fig, grid[1, ::],  CC_celltype_name+' log(avg expression)')
             fig.tight_layout()
             print("The figures are saved: ", savefigdir+'Factors_'+remove_extra_character_from_name(CC_celltype_name)+'.'+saveas)
-            plt.savefig(savefigdir+'Factors_'+remove_extra_character_from_name(CC_celltype_name)+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=300)
+            plt.savefig(savefigdir+'Factors_'+remove_extra_character_from_name(CC_celltype_name)+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=dpi)
             if showit:
                 pass
             else:
@@ -3336,7 +3528,7 @@ def triangulation_for_triheatmap(M, N):
     return [Triangulation(x, y, triangles) for triangles in [trianglesN, trianglesE, trianglesS, trianglesW]]
 
 
-def  plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_name,logRegScore,pc1,pc2,ridgeRegScore,pvalue,Found1,Found2,saveLRplots,LR_plot_Exp_thres,saveas,transparent_mode,showit,figsize,flag):
+def  plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_name,logRegScore,pc1,pc2,ridgeRegScore,pvalue,Found1,Found2,saveLRplots,LR_plot_Exp_thres,saveas,transparent_mode,showit,figsize,flag,dpi):
     """
     Plot ligand-receptor interactions for interacting cell types.
 
@@ -3528,7 +3720,7 @@ def  plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_
 
             savefname=remove_extra_character_from_name(CC_celltype_name)+'_Fa'+str(pc1)+'_'+remove_extra_character_from_name(NC_celltype_name)+'_Fa'+str(pc2)
 
-            fig.savefig(saveLRplots+savefname+'.'+saveas,bbox_inches='tight', transparent=transparent_mode,dpi=300)
+            fig.savefig(saveLRplots+savefname+'.'+saveas,bbox_inches='tight', transparent=transparent_mode,dpi=dpi)
             if showit:
                 pass
             else:
@@ -3541,7 +3733,7 @@ def visualize_factors_in_scRNAseq_umap(input,
 choose_interacting_celltype_pair,
 visualize_factors_id,
 umap_tag='X_umap',
-msna=0.1,ms=5,cmap=matplotlib.rcParams["image.cmap"],
+msna=0.1,ms=5,cmap=plt.rcParams["image.cmap"],dpi=300,
 saveas='pdf',transparent_mode=False,showit=True,figsize=(8,3.5)):
 
     """
@@ -3564,7 +3756,7 @@ saveas='pdf',transparent_mode=False,showit=True,figsize=(8,3.5)):
     ms : int, optional
         The marker size for selected cell types (default is 5).
     cmap : str, optional
-        Colormap for visualizing factors (default is `matplotlib.rcParams["image.cmap"]`).
+        Colormap for visualizing factors (default is `plt.rcParams["image.cmap"]`).
     saveas : str, optional
         Format to save the figures ('pdf' or 'png') (default is 'pdf').
     transparent_mode : bool, optional
@@ -3656,7 +3848,7 @@ saveas='pdf',transparent_mode=False,showit=True,figsize=(8,3.5)):
 
     fig.tight_layout()
     print("The figures are saved: ", input.covariation_dir+'scRNAseq_factors_in_umap.'+saveas)
-    fig.savefig(input.covariation_dir+'scRNAseq_factors_in_umap.'+saveas,bbox_inches='tight',transparent=False,dpi=300)
+    fig.savefig(input.covariation_dir+'scRNAseq_factors_in_umap.'+saveas,bbox_inches='tight',transparent=False,dpi=dpi)
     if showit:
         pass
     else:
@@ -3716,7 +3908,7 @@ def visualize_factors_in_spatial_umap(input,
 choose_interacting_celltype_pair,
 visualize_factors_id,
 umap_tag='X_umap',
-quepath='./inputQuery/',msna=0.1,ms=5,cmap=matplotlib.rcParams["image.cmap"],
+quepath='./inputQuery/',msna=0.1,ms=5,cmap=plt.rcParams["image.cmap"],dpi=300,
 saveas='pdf',transparent_mode=False,showit=True,figsize=(8,3.5)):
 
     """
@@ -3751,7 +3943,7 @@ saveas='pdf',transparent_mode=False,showit=True,figsize=(8,3.5)):
         Marker size for selected cell types. Default is 5.
 
     cmap : str or matplotlib.colors.Colormap, optional
-        Colormap used for visualizing the factor values. Default is matplotlib.rcParams["image.cmap"].
+        Colormap used for visualizing the factor values. Default is plt.rcParams["image.cmap"].
 
     saveas : str, optional
         Format to save the figures, either 'pdf' or 'png'. Default is 'pdf'.
@@ -3848,7 +4040,7 @@ saveas='pdf',transparent_mode=False,showit=True,figsize=(8,3.5)):
 
     fig.tight_layout()
     print("The figures are saved: ", input.covariation_dir+'spatial_factors_in_umap.'+saveas)
-    fig.savefig(input.covariation_dir+'spatial_factors_in_umap.'+saveas,bbox_inches='tight',transparent=False,dpi=300)
+    fig.savefig(input.covariation_dir+'spatial_factors_in_umap.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=dpi)
     if showit:
         pass
     else:
@@ -3937,7 +4129,7 @@ def sort_index_in_right_order(correct,wrong):
     return right
 
 
-def plot_top_genes_for_a_given_celltype_from_all_factors(input,choose_celltypes=[],top_NOG=20,rps_rpl_mt_genes_included=True,correlation_with_spearman=True,saveas='pdf',transparent_mode=False,showit=True,figsize=(12, 10)):
+def plot_top_genes_for_a_given_celltype_from_all_factors(input,choose_celltypes=[],top_NOG=20,rps_rpl_mt_genes_included=True,correlation_with_spearman=True,saveas='pdf',transparent_mode=False,showit=True,dpi=300,figsize=(12, 10)):
     """
     Visualize top genes associated with given cell types across all three factors.
 
@@ -4110,7 +4302,7 @@ def plot_top_genes_for_a_given_celltype_from_all_factors(input,choose_celltypes=
 
         fig.tight_layout()
         print("The figures are saved: ", savefigdir+remove_extra_character_from_name(CC_celltype_name)+'.'+saveas)
-        plt.savefig(savefigdir+remove_extra_character_from_name(CC_celltype_name)+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=300)
+        plt.savefig(savefigdir+remove_extra_character_from_name(CC_celltype_name)+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=dpi)
         if showit:
             pass
         else:
@@ -4121,7 +4313,7 @@ def plot_top_genes_for_a_given_celltype_from_all_factors(input,choose_celltypes=
 def plot_top_genes_for_pair_of_celltypes_from_two_chosen_factors(input,
 choose_interacting_celltype_pair,
 visualize_factors_id,
-top_NOG=20,
+top_NOG=20,dpi=300,
 rps_rpl_mt_genes_included=True,correlation_with_spearman=True,
 saveas='pdf',transparent_mode=False,showit=True,figsize=(5, 8)):
 
@@ -4285,7 +4477,7 @@ saveas='pdf',transparent_mode=False,showit=True,figsize=(5, 8)):
 
     savename = remove_extra_character_from_name(choose_interacting_celltype_pair[0])+'_'+remove_extra_character_from_name(choose_interacting_celltype_pair[1])
     print("The figures are saved: ", savefigdir+'combined_'+savename+'.'+saveas)
-    plt.savefig(savefigdir+'combined_'+savename+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=300)
+    plt.savefig(savefigdir+'combined_'+savename+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=dpi)
     if showit:
         pass
     else:

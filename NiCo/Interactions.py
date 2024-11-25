@@ -536,7 +536,7 @@ def plot_multiclass_roc(clf, X_test, y_test, n_classes):
     return fpr, tpr, roc_auc
 
 
-def plot_confusion_matrix(input,saveas='pdf',showit=True,transparent_mode=False,figsize=(5.5,5)):
+def plot_confusion_matrix(input,saveas='pdf',showit=True,transparent_mode=False,dpi=300,figsize=(5.5,5)):
     """
     Generate and save a confusion matrix plot from the results of spatial_neighborhood_analysis.
 
@@ -592,13 +592,13 @@ def plot_confusion_matrix(input,saveas='pdf',showit=True,transparent_mode=False,
     plt.title('R = '+str(input.Radius)+', C='+str(input.lambda_c))
     plt.tight_layout()
     print("The figures are saved: ", input.niche_pred_outdir+'Confusing_matrix_'+filename+'.'+saveas)
-    plt.savefig(input.niche_pred_outdir+'Confusing_matrix_'+filename+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=300)
+    plt.savefig(input.niche_pred_outdir+'Confusing_matrix_'+filename+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=dpi)
     if showit:
         pass
     else:
         plt.close('all')
 
-def plot_coefficient_matrix(input,saveas='pdf',showit=True,transparent_mode=False,figsize=(5,8)):
+def plot_coefficient_matrix(input,saveas='pdf',showit=True,transparent_mode=False,dpi=300,figsize=(5,8)):
     """
     Generate and save a coefficient matrix plot from the results of spatial_neighborhood_analysis.
 
@@ -655,14 +655,14 @@ def plot_coefficient_matrix(input,saveas='pdf',showit=True,transparent_mode=Fals
     plt.title('R = '+str(input.Radius)+', C='+str(input.lambda_c))
     plt.tight_layout()
     print("The figures are saved: ", input.niche_pred_outdir+'weight_matrix_'+filename+'.'+saveas)
-    plt.savefig(input.niche_pred_outdir+'weight_matrix_'+filename+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=300)
+    plt.savefig(input.niche_pred_outdir+'weight_matrix_'+filename+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=dpi)
     if showit:
         pass
     else:
         plt.close('all')
 
 
-def plot_predicted_probabilities(input,saveas='pdf',showit=True,transparent_mode=False,figsize=(12,6)):
+def plot_predicted_probabilities(input,saveas='pdf',showit=True,transparent_mode=False,dpi=300,figsize=(12,6)):
     """
     Generate and save a plot of predicted probabilities from the results of spatial_neighborhood_analysis.
 
@@ -714,7 +714,7 @@ def plot_predicted_probabilities(input,saveas='pdf',showit=True,transparent_mode
     plt.xlabel('# of classes (no of cell types)')
     plt.tight_layout()
     print("The figures are saved: ", input.niche_pred_outdir+'predicted_probability_'+filename+'.'+saveas)
-    plt.savefig(input.niche_pred_outdir+'predicted_probability_'+filename+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=300)
+    plt.savefig(input.niche_pred_outdir+'predicted_probability_'+filename+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=dpi)
 
     if showit:
         pass
@@ -725,7 +725,7 @@ def plot_predicted_probabilities(input,saveas='pdf',showit=True,transparent_mode
     #print(prob)
 
 
-def plot_roc_results(input,nrows=4,ncols=4,saveas='pdf',showit=True,transparent_mode=False,figsize=(10, 7),):
+def plot_roc_results(input,nrows=4,ncols=4,saveas='pdf',showit=True,transparent_mode=False,dpi=300,figsize=(10, 7),):
     """
     Generate and save ROC curves for the top 16 cell type predictions from the results of spatial_neighborhood_analysis.
 
@@ -800,7 +800,7 @@ def plot_roc_results(input,nrows=4,ncols=4,saveas='pdf',showit=True,transparent_
     #plt.suptitle('Receiver operating characteristic example')
     plt.tight_layout()
     print("The figures are saved: ",input.niche_pred_outdir+'ROC_'+filename+'.'+saveas )
-    plt.savefig(input.niche_pred_outdir+'ROC_'+filename+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=300)
+    plt.savefig(input.niche_pred_outdir+'ROC_'+filename+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=dpi)
     if showit:
         pass
     else:
@@ -1075,7 +1075,7 @@ def model_log_regression(K_fold,n_repeats,neighborhoodClass,target,lambda_c,stra
 
 
 
-def find_interacting_cell_types(input,choose_celltypes=[],celltype_niche_interaction_cutoff=0.1,
+def find_interacting_cell_types(input,choose_celltypes=[],celltype_niche_interaction_cutoff=0.1,dpi=300,
 coeff_cutoff=20,saveas='pdf',transparent_mode=False,showit=True,figsize=(4.0,2.0)):
     """
     Display regression coefficients indicating cell type interactions.
@@ -1209,7 +1209,7 @@ coeff_cutoff=20,saveas='pdf',transparent_mode=False,showit=True,figsize=(4.0,2.0
                 #fig.tight_layout()
                 savefname=remove_extra_character_from_name(nameOfCellType[goodPredictedCellType[k]])
                 print("The figures are saved: ", filename+'/Rank'+str(k+1)+'_'+savefname+'.'+saveas)
-                fig.savefig(filename+'/Rank'+str(k+1)+'_'+savefname+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=300)
+                fig.savefig(filename+'/Rank'+str(k+1)+'_'+savefname+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=dpi)
                 if showit:
                     pass
                 else:
@@ -1458,7 +1458,7 @@ removed_CTs_before_finding_CT_CT_interactions=[]):
 
 
 
-def plot_evaluation_scores(input,saveas='pdf',transparent_mode=False,showit=True,figsize=(4,3)):
+def plot_evaluation_scores(input,saveas='pdf',transparent_mode=False,showit=True,dpi=300,figsize=(4,3)):
 
     """
     This function generates and saves plots of evaluation scores obtained from the spatial_neighborhood_analysis.
@@ -1534,7 +1534,7 @@ def plot_evaluation_scores(input,saveas='pdf',transparent_mode=False,showit=True
     fig.tight_layout()
 
     print("The figures are saved: ", input.niche_pred_outdir+'scores_'+str(input.Radius)+'.'+saveas)
-    fig.savefig(input.niche_pred_outdir+'scores_'+str(input.Radius)+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=300)
+    fig.savefig(input.niche_pred_outdir+'scores_'+str(input.Radius)+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=dpi)
     if showit:
         pass
     else:
@@ -1543,28 +1543,52 @@ def plot_evaluation_scores(input,saveas='pdf',transparent_mode=False,showit=True
 
 
 
-def plot_niche_interactions_without_edge_weight(input,niche_cutoff=0.1,saveas='pdf',transparent_mode=False,showit=True,figsize=(10,7)):
+def plot_niche_interactions_without_edge_weight(input,niche_cutoff=0.1,
+saveas='pdf',transparent_mode=False,showit=True,figsize=(10,7),dpi=300,input_colormap='jet',
+with_labels=True,node_size=300,linewidths=0.5, node_font_size=8, alpha=0.5,font_weight='normal'):
 
     """
     Plot niche interactions map without edge weights.
 
-    This function generates and saves a niche interactions map using the output from spatial_neighborhood_analysis.
-    The plot can be saved in PDF or PNG format and can be displayed during execution.
+    This function generates and saves a niche interactions map using data from the output of spatial_neighborhood_analysis.
+    The graph illustrates connections between cell types based on their niche interactions, without weighting the edges
+    by interaction strength. The output plot can be saved in either PDF or PNG format, and optionally displayed after generation.
 
     Parameters
     ----------
     input : dict or similar
-        The main input is the output from spatial_neighborhood_analysis. This should contain the necessary data to plot the niche interactions.
+        The main input containing data from spatial_neighborhood_analysis. This should include information on cell types
+        and interaction strengths needed to plot niche cell type interactions.
     niche_cutoff : float, optional
-        Cutoff value for plotting the cell type niche interactions map. Default is 0.1.
+         Threshold for plotting connections in the niche interactions map. Only connections with normalized interaction
+        strengths above this cutoff are displayed. Higher values reduce connections, while lower values increase them.
+        Default is 0.1.
     saveas : str, optional
         Format to save the figures. Options are 'pdf' or 'png'. Default is 'pdf'.
     transparent_mode : bool, optional
-        If True, the background color of the figures will be transparent. Default is False.
+        If True, the plot background will be transparent. Default is False.
     showit : bool, optional
         If True, the figures will be displayed when the function is called. Default is True.
     figsize : tuple, optional
-        Dimensions of the figure size in inches (width, height). Default is (10, 7).
+        Dimensions of the plot in inches (width, height). Default is (10, 7).
+    dpi : int, optional
+        Resolution in dots per inch for saving the figure. Default is 300.
+    input_colormap : str, optional
+        Color map for node colors, based on matplotlib colormaps. Default is 'jet'.
+        For details see documentation https://matplotlib.org/stable/gallery/color/colormap_reference.html
+    with_labels : bool, optional
+        If True, displays cell type labels on the nodes. Default is True.
+    node_size : int, optional
+        Size of the nodes. Default is 300.
+    linewidths : int, optional
+        Width of the node border lines. Default is 0.5.
+    node_font_size : int, optional
+        Font size for node labels. Default is 8.
+    alpha : float, optional
+        Opacity level for nodes and edges. Default is 0.5.
+    font_weight : str, optional
+        Weight of the font for node labels. Options are 'normal' or 'bold'. Default is 'normal'.
+
 
     Outputs
     -------
@@ -1580,7 +1604,7 @@ def plot_niche_interactions_without_edge_weight(input,niche_cutoff=0.1,saveas='p
     CTFeatures=data['CTFeatures']
 
     n=len(input.nameOfCellType)
-    top=cm.get_cmap('jet')
+    top=cm.get_cmap(input_colormap)
     cumsum=np.linspace(0,1,n)
     newcmp=ListedColormap(top(cumsum))
     #newcmp=ListedColormap(top(np.linspace(0.95,0.15,n)),name="OrangeBlue")
@@ -1616,12 +1640,12 @@ def plot_niche_interactions_without_edge_weight(input,niche_cutoff=0.1,saveas='p
     pos = nx.nx_pydot.graphviz_layout(G)
 
     fig,ax=plt.subplots( figsize=figsize)
-    nx.draw(G, pos = pos,labels=labeldict,with_labels=True,node_size=300,linewidths=1, font_size=8, width=weights, edge_color=colors,node_color=gradientColor)
+    nx.draw(G, pos = pos,labels=labeldict,with_labels=with_labels,node_size=node_size,linewidths=linewidths, font_size=node_font_size, font_weight=font_weight,width=weights, alpha=alpha,edge_color=colors,node_color=gradientColor)
     #labels=nx.draw_networkx_labels(G,pos=pos,**options)
     #nx.draw(G,pos=pos,**options)
     #nx.draw_networkx_edge_labels(G, pos,edge_labels=edge_labels,label_pos=0.35, font_size=3  )
     print("The figures are saved: ", input.niche_pred_outdir+'Niche_interactions_without_edge_weights_R'+str(input.Radius) +'.'+saveas)
-    fig.savefig(input.niche_pred_outdir+'Niche_interactions_without_edge_weights_R'+str(input.Radius) +'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=300)
+    fig.savefig(input.niche_pred_outdir+'Niche_interactions_without_edge_weights_R'+str(input.Radius) +'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=dpi)
     if showit:
         pass
     else:
@@ -1629,27 +1653,52 @@ def plot_niche_interactions_without_edge_weight(input,niche_cutoff=0.1,saveas='p
 
 
 
-def plot_niche_interactions_with_edge_weight(input,niche_cutoff=0.1,saveas='pdf',transparent_mode=False,showit=True,figsize=(10,7)):
+def plot_niche_interactions_with_edge_weight(input,niche_cutoff=0.1,saveas='pdf',transparent_mode=False,showit=True,figsize=(10,7),
+dpi=300,input_colormap='jet',with_labels=True,node_size=300,linewidths=0.5, node_font_size=8, alpha=0.5,font_weight='normal',
+edge_label_pos=0.35,edge_font_size=3):
         #niche_cutoff it is normalized large value has fewer connections and small value has larger connections
         """
         Plot niche interactions map with edge weights.
 
-        This function generates and saves a niche interactions map using the output from spatial_neighborhood_analysis. The edges in the map are weighted based on the interaction strengths. The plot can be saved in PDF or PNG format and can be displayed during execution.
+        This function generates and saves a directed graph that represents niche interactions map based on the output of spatial_neighborhood_analysis.
+        The nodes represent cell types, and the edges (with weights) indicate the strength of interactions between central cell typ and niche cell types.
+        The plot can be saved in PDF or PNG format and can be displayed during execution.
 
         Parameters
         ----------
         input : dict or similar
             The main input is the output from spatial_neighborhood_analysis. This should contain the necessary data to plot the niche interactions.
         niche_cutoff : float, optional
-            Cutoff value for plotting the niche interactions map. Higher values result in fewer connections, while lower values result in more connections. Default is 0.1.
+            Threshold for including interactions in the graph. Higher values result in fewer connections, while lower values include more connections. Default is 0.1.
         saveas : str, optional
-            Format to save the figures. Options are 'pdf' or 'png'. Default is 'pdf'.
+            The format for saving the figures. Options are 'pdf' or 'png'. Default is 'pdf'.
         transparent_mode : bool, optional
-            If True, the background color of the figures will be transparent. Default is False.
+            If True, saves the figure with a transparent background. Default is False.
         showit : bool, optional
-            If True, the figures will be displayed when the function is called. Default is True.
+            If True, displays the plot after generating. Default is True.
         figsize : tuple, optional
-            Dimensions of the figure size in inches (width, height). Default is (10, 7).
+            Size of the figure in inches (width, height). Default is (10, 7).
+        dpi : int, optional
+            Resolution in dots per inch for saving the figure. Default is 300.
+        input_colormap : str, optional
+            Color map for node colors, based on matplotlib colormaps. Default is 'jet'.
+            For details see documentation https://matplotlib.org/stable/gallery/color/colormap_reference.html
+        with_labels : bool, optional
+            If True, displays cell type labels on the nodes. Default is True.
+        node_size : int, optional
+            Size of the nodes. Default is 300.
+        linewidths : int, optional
+            Width of the node border lines. Default is 0.5.
+        node_font_size : int, optional
+            Font size for node labels. Default is 8.
+        alpha : float, optional
+            Opacity level for nodes and edges. Default is 0.5.
+        font_weight : str, optional
+            Weight of the font for node labels. Options are 'normal' or 'bold'. Default is 'normal'.
+        edge_label_pos : float, optional
+            Position of edge labels along the edges. Default is 0.35.
+        edge_font_size : int, optional
+            Font size for edge labels. Default is 3.
 
         Outputs
         -------
@@ -1669,7 +1718,7 @@ def plot_niche_interactions_with_edge_weight(input,niche_cutoff=0.1,saveas='pdf'
 
 
         n=len(input.nameOfCellType)
-        top=cm.get_cmap('jet')
+        top=cm.get_cmap(input_colormap)
         cumsum=np.linspace(0,1,n)
         newcmp=ListedColormap(top(cumsum))
         #newcmp=ListedColormap(top(np.linspace(0.95,0.15,n)),name="OrangeBlue")
@@ -1715,12 +1764,12 @@ def plot_niche_interactions_with_edge_weight(input,niche_cutoff=0.1,saveas='pdf'
         #pos=nx.spring_layout(G)
         #pos=nx.circular_layout(G)
         nx.draw(G, pos = pos,
-        labels=labeldict,with_labels=True,node_size=500,
-         linewidths=1, font_size=5, font_weight='bold',width=weights, edge_color=colors,node_color=gradientColor,
-        )
-        nx.draw_networkx_edge_labels(G, pos,edge_labels=edge_labels,label_pos=0.35, font_size=3  )
+        labels=labeldict,with_labels=with_labels,node_size=node_size,
+         linewidths=linewidths, font_size=node_font_size, font_weight=font_weight,width=weights, alpha=alpha,edge_color=colors,node_color=gradientColor)
+
+        nx.draw_networkx_edge_labels(G, pos,edge_labels=edge_labels,label_pos=edge_label_pos, font_size=edge_font_size)
         print("The figures are saved: ", input.niche_pred_outdir+'Niche_interactions_with_edge_weights_R'+str(input.Radius)+'.'+saveas)
-        fig.savefig(input.niche_pred_outdir+'Niche_interactions_with_edge_weights_R'+str(input.Radius)+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=300)
+        fig.savefig(input.niche_pred_outdir+'Niche_interactions_with_edge_weights_R'+str(input.Radius)+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=dpi)
         if showit:
             pass
         else:
