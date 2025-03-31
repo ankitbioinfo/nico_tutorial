@@ -119,7 +119,7 @@ To check the usage of any function you can execute the command as in the example
 
 #### Font
 
-If at any step returns the warning `findfont: Font family 'Helvetica' not found` please initialize the matplotlibrc file to use a different font:
+If at any step NiCo returns the warning `findfont: Font family 'Helvetica' not found` please initialize the matplotlibrc file to use a different font:
 
 ```
 import matplotlib.pyplot as plt
