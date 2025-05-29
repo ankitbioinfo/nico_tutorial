@@ -93,6 +93,33 @@ pip install jupyterlab
 
 ## Notes and Warnings
 
+
+### Error in Macbook with M series chips 
+Some error was reported during the installation of pygraphviz package along with NiCo. 
+```
+  note: This error originates from a subprocess, and is likely not a problem with pip.
+  ERROR: Failed building wheel for pygraphviz
+  Running setup.py clean for pygraphviz
+Failed to build pygraphviz
+ERROR: Failed to build installable wheels for some pyproject.toml based projects (pygraphviz)
+```
+
+In such cases please install the following packages manually in the same environment and then load the modules from python to verify the installation.  
+```
+pip install KDEpy==1.1.8
+pip install gseapy==1.1.4 
+pip install scanpy==1.9.6
+pip install xlsxwriter==3.1.9
+```
+
+From python prompt 
+```
+>>> from nico import Annotations as sann
+>>> from nico import Interactions as sint
+>>> from nico import Covariations as scov
+```
+
+
 #### Function Parameters 
 
 To check the usage of any function you can execute the command as in the example:. <br>[```<moduleName>.<functionName>.__doc__```]
