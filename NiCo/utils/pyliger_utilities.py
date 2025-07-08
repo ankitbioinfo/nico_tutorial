@@ -3,33 +3,46 @@ import scipy.sparse as sps
 import numpy.linalg as nla
 import scipy.linalg as sla
 from numba import jit, njit, prange
-#from ._utilities import _h5_idx_generator
+# from ._utilities import _h5_idx_generator
 
 
 def NMF_obj_eval(Xs, W, Hs, L, Sp, Vs=0):
     "Evaluates NMF objective function (sparsity, Vs optional)."
-    if Vs == 0: Vs = [zeros((1, shape(Hs[i])[0])) for i in range(len(Xs))]
-    obj = sum([np.linalg.norm(Xs[i] - (W+Vs[i]).dot(Hs[i]))**2
-        for i in range(len(Xs))])
-    if type(L) != list: L = [L]*len(Xs)
-    pen = sum([L[i]*np.linalg.norm(Vs[i].dot(Hs[i]))**2 for i in range(len(Xs))])
+    if Vs == 0:
+        Vs = [zeros((1, shape(Hs[i])[0])) for i in range(len(Xs))]
+    obj = sum(
+        [np.linalg.norm(Xs[i] - (W + Vs[i]).dot(Hs[i])) ** 2 for i in range(len(Xs))]
+    )
+    if type(L) != list:
+        L = [L] * len(Xs)
+    pen = sum([L[i] * np.linalg.norm(Vs[i].dot(Hs[i])) ** 2 for i in range(len(Xs))])
     spars = 0
     if Sp != 0:
-        spars = Sp*np.sum([np.sum(abs(Hs[i])) for i in range(len(Xs))])
-    return obj+pen + spars
+        spars = Sp * np.sum([np.sum(abs(Hs[i])) for i in range(len(Xs))])
+    return obj + pen + spars
 
 
-
-
-def iNMF(X, k,value_lambda=5.0,thresh=1e-6,max_iters=30,nrep=1,H_init=None,W_init=None,V_init=None,rand_seed=1,print_obj=False):
-    #"Integrated NMF (sparsity optional)."
-    #Ms = [Xs[i].shape[1] for i in range(K)]
-    #W_f = np.zeros((N, D))
-    #Hs_f = [np.zeros((D, Ms[i])) for i in range(K)]
-    #Vs_f = [np.zeros((N, D)) for i in range(K)]
+def iNMF(
+    X,
+    k,
+    value_lambda=5.0,
+    thresh=1e-6,
+    max_iters=30,
+    nrep=1,
+    H_init=None,
+    W_init=None,
+    V_init=None,
+    rand_seed=1,
+    print_obj=False,
+):
+    # "Integrated NMF (sparsity optional)."
+    # Ms = [Xs[i].shape[1] for i in range(K)]
+    # W_f = np.zeros((N, D))
+    # Hs_f = [np.zeros((D, Ms[i])) for i in range(K)]
+    # Vs_f = [np.zeros((N, D)) for i in range(K)]
     # used from pyliger codes optimize_ALS _iNMF_ANLS.py
     N = len(X)
-    num_genes  = X[0].shape[1]
+    num_genes = X[0].shape[1]
     ns = [X[i].shape[0] for i in range(N)]
 
     best_obj = np.Inf
@@ -39,10 +52,10 @@ def iNMF(X, k,value_lambda=5.0,thresh=1e-6,max_iters=30,nrep=1,H_init=None,W_ini
         ### 1. Initialization (W, V_i, H_i)
         W = np.abs(np.random.uniform(0, 2, (k, num_genes)))
         V = [np.abs(np.random.uniform(0, 2, (k, num_genes))) for i in range(N)]
-        H = [np.abs(np.random.uniform(0, 2, (ns[i],k))) for i in range(N)]
+        H = [np.abs(np.random.uniform(0, 2, (ns[i], k))) for i in range(N)]
 
-        #print('1b',k,N,ns,W.shape)
-        #print('2a',H[0].shape,H[1].shape,V[0].shape,V[1].shape)
+        # print('1b',k,N,ns,W.shape)
+        # print('2a',H[0].shape,H[1].shape,V[0].shape,V[1].shape)
 
         if W_init is not None:
             W = W_init
@@ -60,7 +73,7 @@ def iNMF(X, k,value_lambda=5.0,thresh=1e-6,max_iters=30,nrep=1,H_init=None,W_ini
         obj_train_approximation = 0
         obj_train_penalty = 0
         for i in range(N):
-            #print('maxi',X[i].shape,H[i].shape,W.shape,V[i].shape)
+            # print('maxi',X[i].shape,H[i].shape,W.shape,V[i].shape)
             obj_train_approximation += np.linalg.norm(X[i] - H[i] @ (W + V[i])) ** 2
             obj_train_penalty += np.linalg.norm(H[i] @ V[i]) ** 2
 
@@ -71,28 +84,39 @@ def iNMF(X, k,value_lambda=5.0,thresh=1e-6,max_iters=30,nrep=1,H_init=None,W_ini
             if delta > thresh:
                 ## 1) update H matrix
                 for i in range(N):
-                    H[i] = nnlsm_blockpivot(A=np.hstack(((W + V[i]), sqrt_lambda * V[i])).transpose(),
-                                            B=np.hstack((X[i], np.zeros((ns[i], num_genes)))).transpose())[0].transpose()
+                    H[i] = nnlsm_blockpivot(
+                        A=np.hstack(((W + V[i]), sqrt_lambda * V[i])).transpose(),
+                        B=np.hstack((X[i], np.zeros((ns[i], num_genes)))).transpose(),
+                    )[0].transpose()
 
                 ## 2) update V matrix
                 for i in range(N):
-                    V[i] = nnlsm_blockpivot(A=np.vstack((H[i], sqrt_lambda * H[i])),
-                                            B=np.vstack(((X[i] - H[i] @ W), np.zeros((ns[i], num_genes)))))[0]
+                    V[i] = nnlsm_blockpivot(
+                        A=np.vstack((H[i], sqrt_lambda * H[i])),
+                        B=np.vstack(((X[i] - H[i] @ W), np.zeros((ns[i], num_genes)))),
+                    )[0]
 
                 ## 3) update W matrix
-                W = nnlsm_blockpivot(A=np.vstack(H), B=np.vstack([(X[i] - H[i] @ V[i]) for i in range(N)]))[0]
+                W = nnlsm_blockpivot(
+                    A=np.vstack(H),
+                    B=np.vstack([(X[i] - H[i] @ V[i]) for i in range(N)]),
+                )[0]
 
                 obj_train_prev = obj0
                 obj_train_approximation = 0
                 obj_train_penalty = 0
                 for i in range(N):
-                    obj_train_approximation += np.linalg.norm(X[i] - H[i] @ (W + V[i])) ** 2
+                    obj_train_approximation += (
+                        np.linalg.norm(X[i] - H[i] @ (W + V[i])) ** 2
+                    )
                     obj_train_penalty += np.linalg.norm(H[i] @ V[i]) ** 2
                 obj0 = obj_train_approximation + value_lambda * obj_train_penalty
-                delta = np.absolute(obj_train_prev - obj0) / ((obj_train_prev + obj0) / 2)
+                delta = np.absolute(obj_train_prev - obj0) / (
+                    (obj_train_prev + obj0) / 2
+                )
             else:
                 continue
-            #print(iter,delta,obj0)
+            # print(iter,delta,obj0)
 
         if obj0 < best_obj:
             final_W = W
@@ -102,29 +126,29 @@ def iNMF(X, k,value_lambda=5.0,thresh=1e-6,max_iters=30,nrep=1,H_init=None,W_ini
             best_seed = rand_seed + i - 1
 
         if print_obj:
-            print('Objective: {}'.format(best_obj),iter,delta)
+            print("Objective: {}".format(best_obj), iter, delta)
 
-    #liger_object.W = final_W.transpose()
+    # liger_object.W = final_W.transpose()
 
     ### 3. Save results into the liger_object
-    #for i in range(N):
-        #liger_object.adata_list[i].obsm['H'] = final_H[i]
-        #liger_object.adata_list[i].varm['W'] = final_W.transpose()
-        #liger_object.adata_list[i].varm['V'] = final_V[i].transpose()
-        #idx = liger_object.adata_list[i].uns['var_gene_idx']
-        #shape = liger_object.adata_list[i].shape
-        #save_W = np.zeros((shape[1], k))
-        #save_W[idx, :] = final_W.transpose()
-        #save_V = np.zeros((shape[1], k))
-        #save_V[idx, :] = final_V[i].transpose()
-        #liger_object.adata_list[i].obsm['H'] = final_H[i]
-        #liger_object.adata_list[i].varm['W'] = save_W
-        #liger_object.adata_list[i].varm['V'] = save_V
-    return final_H[0].T,final_H[1].T,final_W.T,final_V[0].T,final_V[1].T
+    # for i in range(N):
+    # liger_object.adata_list[i].obsm['H'] = final_H[i]
+    # liger_object.adata_list[i].varm['W'] = final_W.transpose()
+    # liger_object.adata_list[i].varm['V'] = final_V[i].transpose()
+    # idx = liger_object.adata_list[i].uns['var_gene_idx']
+    # shape = liger_object.adata_list[i].shape
+    # save_W = np.zeros((shape[1], k))
+    # save_W[idx, :] = final_W.transpose()
+    # save_V = np.zeros((shape[1], k))
+    # save_V[idx, :] = final_V[i].transpose()
+    # liger_object.adata_list[i].obsm['H'] = final_H[i]
+    # liger_object.adata_list[i].varm['W'] = save_W
+    # liger_object.adata_list[i].varm['V'] = save_V
+    return final_H[0].T, final_H[1].T, final_W.T, final_V[0].T, final_V[1].T
 
 
 def nonneg(x, eps=1e-16):
-    """ Given a input matrix, set all negative values to be zero """
+    """Given a input matrix, set all negative values to be zero"""
     x[x < eps] = eps
     return x
 
@@ -145,12 +169,17 @@ def _init_W(num_genes, k, rand_seed):
 def _init_V(num_cells, num_samples, k, Xs):
     """helper function to initialize a V matrix for in-memory mode"""
     # pick k sample from datasets as initial V matrix
-    V = [Xs[i][:, np.random.choice(list(range(num_cells[i])), k)].toarray() for i in range(num_samples)]
+    V = [
+        Xs[i][:, np.random.choice(list(range(num_cells[i])), k)].toarray()
+        for i in range(num_samples)
+    ]
 
     # normalize columns of dictionaries
     V = [V[i] / np.sqrt(np.sum(np.square(V[i]), axis=0)) for i in range(num_samples)]
 
     return V
+
+
 """
 def _init_V_online(num_cells, num_samples, k, Xs, chunk_size, rand_seed):
 
@@ -176,6 +205,7 @@ def _init_V_online(num_cells, num_samples, k, Xs, chunk_size, rand_seed):
     return Vs
 """
 
+
 def _init_V_online(num_cell, k, X, chunk_size, rand_seed):
     """helper function to initialize a V matrix for online learning"""
     np.random.seed(seed=rand_seed)
@@ -184,9 +214,11 @@ def _init_V_online(num_cell, k, X, chunk_size, rand_seed):
     idx = np.sort(np.random.choice(list(range(num_cell)), k))
     V = []
     for left, right in _h5_idx_generator(chunk_size, num_cell):
-        select_idx = idx[(idx >= left) & (idx < right)] - left  # shift index because of handling chunk each time
+        select_idx = (
+            idx[(idx >= left) & (idx < right)] - left
+        )  # shift index because of handling chunk each time
         if select_idx.shape[0] > 0:  # only load chunks whose indexes are picked
-            X_chunk = X['scale_data'][left:right]
+            X_chunk = X["scale_data"][left:right]
             V.append(X_chunk[select_idx, :])
     V = sps.vstack(V).transpose().toarray()
 
@@ -201,6 +233,7 @@ def _init_H(num_cells, num_samples, k):
     H = [np.random.uniform(0, 2, (k, num_cells[i])) for i in range(num_samples)]
     return H
 
+
 def _update_W_HALS(A, B, W, V):
     """helper function to update W matrix by HALS
     A = HiHi^t, B = XiHit, W = gene x k, V = [gene x k]"""
@@ -208,7 +241,9 @@ def _update_W_HALS(A, B, W, V):
         W_update_numerator = np.zeros(W.shape[0])
         W_update_denominator = 0.0
         for i in range(len(V)):
-            W_update_numerator = W_update_numerator + B[i][:, j] - ((W + V[i]) @ A[i])[:, j]
+            W_update_numerator = (
+                W_update_numerator + B[i][:, j] - ((W + V[i]) @ A[i])[:, j]
+            )
             W_update_denominator += A[i][j, j]
         W[:, j] = nonneg(W[:, j] + W_update_numerator / W_update_denominator)
 
@@ -220,7 +255,11 @@ def _update_V_HALS(A, B, W, V, value_lambda):
     A = HiHi^t, B = XiHit, W = gene x k, V = [gene x k]"""
     for j in range(W.shape[1]):
         for i in range(len(V)):
-            V[i][:, j] = nonneg(V[i][:, j] + (B[i][:, j] - (W + (1 + value_lambda) * V[i]) @ A[i][:, j]) / ((1 + value_lambda) * A[i][j, j]))
+            V[i][:, j] = nonneg(
+                V[i][:, j]
+                + (B[i][:, j] - (W + (1 + value_lambda) * V[i]) @ A[i][:, j])
+                / ((1 + value_lambda) * A[i][j, j])
+            )
 
     return V
 
@@ -232,10 +271,15 @@ def _update_H_HALS(H, V, W, X, value_lambda):
     W_Vi_sq = [W_Vii.transpose() @ W_Vii for W_Vii in W_Vi]
     for i in range(len(V)):
         for j in range(W.shape[1]):
-            H[i][j, :] = nonneg(H[i][j, :] + (
-                    W_Vi[i][:, j].transpose() @ X[i] - W_Vi[i][:, j].transpose() @ W_Vi[i] @ H[
-                i] - value_lambda * VitVi[i][j, :] @ H[i]) / (
-                                        W_Vi_sq[i][j, j] + value_lambda * VitVi[i][j, j]))
+            H[i][j, :] = nonneg(
+                H[i][j, :]
+                + (
+                    W_Vi[i][:, j].transpose() @ X[i]
+                    - W_Vi[i][:, j].transpose() @ W_Vi[i] @ H[i]
+                    - value_lambda * VitVi[i][j, :] @ H[i]
+                )
+                / (W_Vi_sq[i][j, j] + value_lambda * VitVi[i][j, j])
+            )
     return H
 
 
@@ -267,8 +311,10 @@ def _update_V_HALS(A, B, W, V, value_lambda):
 
     return V
 """
+
+
 def nnlsm_blockpivot(A, B, is_input_prod=False, init=None):
-    """ Nonnegativity-constrained least squares with block principal pivoting method and column grouping
+    """Nonnegativity-constrained least squares with block principal pivoting method and column grouping
     Solves min ||AX-B||_2^2 s.t. X >= 0 element-wise.
     J. Kim and H. Park, Fast nonnegative matrix factorization: An active-set-like method and comparisons,
     SIAM Journal on Scientific Computing,
@@ -366,14 +412,14 @@ def nnlsm_blockpivot(A, B, is_input_prod=False, init=None):
             PassSet[false_set] = False
         if cols3.size > 0:
             for col in cols3:
-                candi_set = np.logical_or(
-                    not_opt_set[:, col], infea_set[:, col])
+                candi_set = np.logical_or(not_opt_set[:, col], infea_set[:, col])
                 to_change = np.max(candi_set.nonzero()[0])
                 PassSet[to_change, col] = ~PassSet[to_change, col]
                 num_backup += 1
 
         (X[:, not_opt_cols], temp_cholesky, temp_eq) = normal_eq_comb(
-            AtA, AtB[:, not_opt_cols], PassSet[:, not_opt_cols])
+            AtA, AtB[:, not_opt_cols], PassSet[:, not_opt_cols]
+        )
         num_cholesky += temp_cholesky
         num_eq += temp_eq
         X[abs(X) < 1e-16] = 0
@@ -381,10 +427,8 @@ def nnlsm_blockpivot(A, B, is_input_prod=False, init=None):
         Y[abs(Y) < 1e-16] = 0
 
         not_opt_mask = np.tile(not_opt_colset, (n, 1))
-        not_opt_set = np.logical_and(
-            np.logical_and(not_opt_mask, Y < 0), ~PassSet)
-        infea_set = np.logical_and(
-            np.logical_and(not_opt_mask, X < 0), PassSet)
+        not_opt_set = np.logical_and(np.logical_and(not_opt_mask, Y < 0), ~PassSet)
+        infea_set = np.logical_and(np.logical_and(not_opt_mask, X < 0), PassSet)
         not_good = np.sum(not_opt_set, axis=0) + np.sum(infea_set, axis=0)
         not_opt_colset = not_good > 0
         not_opt_cols = not_opt_colset.nonzero()[0]
@@ -393,7 +437,7 @@ def nnlsm_blockpivot(A, B, is_input_prod=False, init=None):
 
 
 def normal_eq_comb(AtA, AtB, PassSet=None):
-    """ Solve many systems of linear equations using combinatorial grouping.
+    """Solve many systems of linear equations using combinatorial grouping.
     M. H. Van Benthem and M. R. Keenan, J. Chemometrics 2004; 18: 441-450
     Parameters
     ----------
@@ -440,7 +484,7 @@ def normal_eq_comb(AtA, AtB, PassSet=None):
                     # For small n(<200), numpy.linalg.solve appears faster, whereas
                     # for large n(>500), scipy.linalg.cho_solve appears faster.
                     # Usage example of scipy.linalg.cho_solve:
-                    #Z[ix1] = sla.cho_solve(sla.cho_factor(AtA[ix2]),AtB[ix1])
+                    # Z[ix1] = sla.cho_solve(sla.cho_factor(AtA[ix2]),AtB[ix1])
                     #
                     Z[ix1] = nla.solve(AtA[ix2], AtB[ix1])
                     num_cholesky += 1
@@ -450,7 +494,7 @@ def normal_eq_comb(AtA, AtB, PassSet=None):
 
 
 def _column_group_recursive(B):
-    """ Given a binary matrix, find groups of the same columns
+    """Given a binary matrix, find groups of the same columns
         with a recursive strategy
     Parameters
     ----------
