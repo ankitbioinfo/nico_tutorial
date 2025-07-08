@@ -5,6 +5,7 @@ from matplotlib import gridspec
 from matplotlib.tri import Triangulation
 from matplotlib.collections import PatchCollection
 from matplotlib.gridspec import SubplotSpec
+import matplotlib.colors as mcolors
 
 # from scipy.spatial import Voronoi, ConvexHull,voronoi_plot_2d, Delaunay
 from numpy.linalg import norm
@@ -805,7 +806,10 @@ def plot_significant_regression_covariations_as_circleplot(
         circles = [
             plt.Circle((j, i), radius=r) for r, j, i in zip(R.flat, x.flat, y.flat)
         ]
-        col = PatchCollection(circles, array=c.flatten(), cmap="jet")  # cmap="RdYlGn")
+        vmax = abs(c).max()
+        vmin = -vmax
+        norm = mcolors.TwoSlopeNorm(vmin=vmin, vcenter=0, vmax=vmax)
+        col = PatchCollection(circles, array=c.flatten(), cmap='RdBu_r', norm=norm)
         ax.add_collection(col)
         ax.set(
             xticks=np.arange(M),
