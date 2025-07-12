@@ -73,7 +73,7 @@ Please follow the instructions provided in the [nico-sc-sp pip repository](https
 
 ## Installation
 
-Tested OS of NiCo Version 1.5.0  
+Tested NiCo 1.5.0 in following configuration 
 ```
 MacOS Sequoia with Chip Apple M4 Max 
 MacOS Sonoma with Intel graphics 
