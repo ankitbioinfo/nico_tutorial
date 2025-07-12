@@ -75,9 +75,9 @@ Please follow the instructions provided in the [nico-sc-sp pip repository](https
 
 Tested NiCo 1.5.0 in following configuration 
 ```
-MacOS Sequoia with Chip Apple M4 Max 
+MacOS Sequoia with Apple M4 Max Chip 
 MacOS Sonoma with Intel graphics 
-Ubuntu
+Ubuntu 24.10 OS 
 ```
 
 
