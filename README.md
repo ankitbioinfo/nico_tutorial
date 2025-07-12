@@ -99,11 +99,14 @@ pip install nico-sc-sp
 pip install jupyterlab
 ```
 
+#### 🔄 Changes in version 1.5.0 (from 1.4.0)
 
-🔄 Changes in version 1.5.0 (from 1.4.0)
-✅ MacBook Silicon (Apple M-series) support: The package has now been tested and confirmed to work on Apple Silicon machines.
-🎨 Centered colormap at 0 in plot_significant_regression_covariations_as_circleplot for better interpretability of regression results.
-Thanks to Andy Shing Fung Chan for the suggestion!
+- ✅ **MacBook Silicon (Apple M-series) support:**  
+  The package has now been tested and confirmed to work on Apple Silicon machines.
+
+- 🎨 **Centered colormap at 0** in `plot_significant_regression_covariations_as_circleplot`  
+  for better interpretability of regression results.  
+  *Thanks to Andy Shing Fung Chan for the suggestion!*
 
 
 
