@@ -77,7 +77,7 @@ Tested NiCo 1.5.0 in following configuration
 ```
 MacOS Sequoia with Apple M4 Max Chip 
 MacOS Sonoma with Intel graphics 
-Ubuntu 24.10 OS 
+Ubuntu OS 24.10 Oracular  
 ```
 
 
