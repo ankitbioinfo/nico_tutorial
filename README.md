@@ -73,6 +73,12 @@ Please follow the instructions provided in the [nico-sc-sp pip repository](https
 
 ## Installation
 
+Tested OS of NiCo Version 1.5.0  
+MacOS Sequoia with Chip Apple M4 Max 
+MacOS 
+Ubuntu 
+
+
 For detailed instruction, visit the [nico-sc-sp pip repository](https://pypi.org/project/nico-sc-sp/)
 
 ```console
