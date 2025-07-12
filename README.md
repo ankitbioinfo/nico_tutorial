@@ -74,9 +74,11 @@ Please follow the instructions provided in the [nico-sc-sp pip repository](https
 ## Installation
 
 Tested OS of NiCo Version 1.5.0  
+```
 MacOS Sequoia with Chip Apple M4 Max 
-MacOS 
-Ubuntu 
+MacOS Sonoma with Intel graphics 
+Ubuntu
+```
 
 
 For detailed instruction, visit the [nico-sc-sp pip repository](https://pypi.org/project/nico-sc-sp/)
@@ -100,8 +102,8 @@ pip install jupyterlab
 ## Notes and Warnings
 
 
-### Error in Macbook with M series chips 
-Some error was reported during the installation of pygraphviz package along with NiCo. So that complete installation was not possible. 
+### Error in any other system 
+Some error was reported in few cases (not every case can be tested) during the installation of pygraphviz package along with NiCo. So that complete installation was not possible. 
 ```
   note: This error originates from a subprocess, and is likely not a problem with pip.
   ERROR: Failed building wheel for pygraphviz
