@@ -106,7 +106,7 @@ pip install jupyterlab
 
 - 🎨 **Centered colormap at 0** in `plot_significant_regression_covariations_as_circleplot`  
   for better interpretability of regression results.  
-  *Thanks to Andy Shing Fung Chan for the suggestion!*
+  *Thanks to Andy Shing Fung Chan for the modification!*
 
 
 
