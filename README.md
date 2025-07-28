@@ -155,6 +155,10 @@ If you are working with Vizgen MERSCOPE spatial data, please process the output 
 
 If you encounter any issues while running, please ensure that the cell barcode name is composed of characters rather than integer numbers. When pandas reads numeric values, it will read as int64 instead of objects which creates datatype confusion in other parts of the code. Therefore, please convert your cell barcode numbers to strings if they are purely numeric.
 
+## Talk 
+I presented a talk on the NiCo algorithm at BPPB seminar. If you're curious to learn more in detail, you can check it out here!.
+[Talk about NiCo](https://www.youtube.com/watch?v=cfJm4jiMNRU&ab_channel=BPPBSeminar)
+
 ## Documentation
 
 For detailed documentation of NiCo modules and their usage, visit [NiCo documentation](https://nico-sc-sp.readthedocs.io/en/latest/).
