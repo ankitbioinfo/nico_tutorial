@@ -67,6 +67,29 @@ Run NiCo on cerebellum data from Slide-seqV2 technology \[data from Cable, D. M.
 * Download the data from [this link](https://www.dropbox.com/scl/fi/6hxyp2pxpxalw9rfirby6/nico\_cerebellum.zip?rlkey=9ye6rsk92uj9648ogjw5ypcum\&st=lvc8e366\&dl=0) and place the data in the following path to complete the tutorial: `nico_cerebellum/cerebellum.h5ad` 
 * The NiCo niche detection and covariation analysis tasks can be run via following the jupyter notebook [`nico_analysis_lowres_seq_tech.ipynb`](nico\_analysis\_lowres\_seq\_tech.ipynb)
 
+## Notes on Data Preparation
+
+Sometimes, computing Pearson residuals in the shared gene space for scRNA-seq data can result in NaN values. In such cases, it's recommended to apply filter_cells after aligning to the shared gene space to remove problematic cells. This helps ensure that downstream analyses are not affected by cells with zero counts or low-quality measurements.
+
+General 
+```
+ad_seq_common=ad_seq_ori[:,index_sc].copy()
+ad_seq_common.raw=ad_seq_common.copy()
+sc.experimental.pp.normalize_pearson_residuals(ad_seq_common,inplace=True)
+ad_seq_common.write_h5ad(scdatapath+'sct_singleCell.h5ad')
+```
+
+In special case when NaN value arises. 
+```
+ad_seq_common=ad_seq_ori[:,index_sc].copy()
+sc.pp.filter_cells(ad_seq_common, min_counts=5)
+ad_seq_common.raw=ad_seq_common.copy()
+sc.experimental.pp.normalize_pearson_residuals(ad_seq_common,inplace=True)
+ad_seq_common.write_h5ad(scdatapath+'sct_singleCell.h5ad')
+```
+
+
+
 ## Prerequisites
 
 Please follow the instructions provided in the [nico-sc-sp pip repository](https://pypi.org/project/nico-sc-sp/) for set up and installation.
