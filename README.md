@@ -123,29 +123,31 @@ pip install jupyterlab
 ```
 #### 🔄 Changes in version 1.6.0 (from 1.5.0)
 
-### 1. New Inputs and Parameters
-- Added **filename variables** as inputs in  
+##### 1. New Inputs and Parameters
+- Added filename variables *spatial_sct_anndata_filename, 
+sc_sct_anndata_filename,  
+sc_full_anndata_filename*
+as inputs in  
   `find_anchor_cells_between_ref_and_query()`  
-  (input now supports *brainfo*).
+  (Thanks to *brainfo* for this suggestion).
 
-### 2. Bug Fixes
+##### 2. Bug Fixes
 - Resolved a bug in the following functions  
-  *(Thanks to **Andy Shing Fung Chan** for the modification!)*:
+  *(Thanks to **Andy Shing Fung Chan** for spotting!)*:
   - `visualize_umap_and_cell_coordinates_with_selected_celltypes`
   - `plot_top_genes_for_a_given_celltype_from_all_factors`
 
-### 3. Added Organism Support ("Mouse" and "Human")
+##### 3. Added Organism Support ("Mouse" and "Human")
 The following functions now include an **organism** parameter.  
 Previously, `rps_rpl_mt_genes_included` only supported *Mouse*.
 
-- `rps_rpl_mt_genes_included=True`,  
   **organism = "Mouse"** or **organism = "Human"**
 - `plot_top_genes_for_pair_of_celltypes_from_two_chosen_factors(organism='Mouse')` *(new)*
 - `pathway_analysis`
 - `extract_and_plot_top_genes_from_chosen_factor_in_celltype`
 - `plot_top_genes_for_a_given_celltype_from_all_factors`
 
-### 4. Separate Cutoff Variables for Ligand and Receptor
+##### 4. Separate Cutoff Variables for Ligand and Receptor
 Added independent cutoff variables for ligand and receptor expression and factor thresholds:
 
 - `Ligand_proportion_of_cells_expressed_thres`
@@ -157,7 +159,7 @@ These updates apply to:
 - `find_LR_interactions_in_interacting_cell_types`
 - `save_LR_interactions_in_excelsheet_and_regression_summary_in_textfile_for_interacting_cell_types`
 
-### 5. New Visualization Functions
+##### 5. New Visualization Functions
 - **`visualization_of_colocalized_celltype_factors_as_scatterplot`**  
   Scatter plot of central and neighboring cell factors when both are colocalized.
 
