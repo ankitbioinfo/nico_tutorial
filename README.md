@@ -121,6 +121,8 @@ conda install -c conda-forge pygraphviz
 pip install nico-sc-sp
 pip install jupyterlab
 ```
+#### 🔄 Changes in version 1.6.0 (from 1.5.0)
+
 
 #### 🔄 Changes in version 1.5.0 (from 1.4.0)
 
