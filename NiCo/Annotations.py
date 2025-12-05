@@ -601,12 +601,19 @@ def visualize_spatial_anchored_cell_mapped_to_scRNAseq(input,saveas='pdf',transp
 
 
 
+def find_anchor_cells_between_ref_and_query(
+    refpath: str = "./inputRef/",
+    quepath: str = "./inputQuery/",
+    output_annotation_dir: str | None = None,
+    output_nico_dir: str | None = None,
+    spatial_sct_anndata_filename: str = 'sct_spatial.h5ad',
+    sc_sct_anndata_filename: str = 'sct_singleCell.h5ad',
+    sc_full_anndata_filename: str = 'Original_counts.h5ad',
+    neigh: int = 50,
+    no_of_pc: int = 50,
+    minkowski_order: int = 2,
+):
 
-
-def find_anchor_cells_between_ref_and_query(refpath='./inputRef/',quepath='./inputQuery/',
-output_annotation_dir=None,
-output_nico_dir=None,
-neigh=50,no_of_pc=50,minkowski_order=2):
 
     """
     Finds all anchor cells between query and reference data.
@@ -656,13 +663,13 @@ neigh=50,no_of_pc=50,minkowski_order=2):
         outputdir=output_nico_dir
     create_directory(outputdir)
 
-    ref_h5ad=refpath+'sct_singleCell.h5ad'
-    que_h5ad=quepath+'sct_spatial.h5ad'
+    ref_h5ad=refpath+sc_sct_anndata_filename
+    que_h5ad=quepath+spatial_sct_anndata_filename
     #delimiter=','
     sct_ad_sp=sc.read_h5ad(que_h5ad)
     sct_ad_sc=sc.read_h5ad(ref_h5ad)
 
-    original_h5ad=sc.read_h5ad(refpath+'Original_counts.h5ad')
+    original_h5ad=sc.read_h5ad(refpath+sc_full_anndata_filename)
 
     #cellname=np.reshape(cellname,(len(cellname),1))
     #annotation_singlecell_celltypename=np.reshape(annotation_singlecell_celltypename,(len(annotation_singlecell_celltypename),1))
@@ -1834,15 +1841,23 @@ cmap=plt.cm.get_cmap('jet'),saveas='pdf',transparent_mode=False,figsize=(8,3.5))
         mycluster_interest_all=choose_celltypes
 
 
+    print(mycluster_interest_all)
+
+    matching_mycluster_interest_all=[]
     mycluster_interest_id=[]
     for i in range(len(mycluster_interest_all)):
         temp=[]
+        temp2=[]
         for k in range(len(mycluster_interest_all[i])):
             for j in range(len(degbased_ctname)):
                 if degbased_ctname[j,1]==mycluster_interest_all[i][k]:
                     temp.append(degbased_ctname[j,0])
+                    temp2.append(degbased_ctname[j,1])
         mycluster_interest_id.append(temp)
+        matching_mycluster_interest_all.append(temp2)
 
+    #print(mycluster_interest_id,matching_mycluster_interest_all)
+    mycluster_interest_all=0
 
     CTname=degbased_ctname[:,1]
     fig_save_path=fig_save_path_main+'fig_individual_annotation/'
@@ -1850,9 +1865,9 @@ cmap=plt.cm.get_cmap('jet'),saveas='pdf',transparent_mode=False,figsize=(8,3.5))
     fig_save_path_leg=fig_save_path_main+'fig_individual_annotation/'+'leg/'
     create_directory(fig_save_path_leg)
 
-    for fi in range(len(mycluster_interest_all)):
+    for fi in range(len(matching_mycluster_interest_all)):
         CC_celltype_name=degbased_ctname[fi,1]+str(fi)
-        mycluster_interest=mycluster_interest_all[fi]
+        mycluster_interest=matching_mycluster_interest_all[fi]
 
         barcode=[]
         for j in range(len(mycluster_interest)):

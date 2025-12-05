@@ -36,6 +36,7 @@ import networkx as nx
 import pickle
 from types import SimpleNamespace
 import matplotlib.pyplot as plt
+from collections import defaultdict, OrderedDict
 
 
 warnings.filterwarnings('ignore')
@@ -1774,3 +1775,179 @@ edge_label_pos=0.35,edge_font_size=3):
             pass
         else:
             plt.close('all')
+
+
+
+
+def read_neighborhood_profile(niche_prediction_dir,radius):
+    neighbors=pickle.load( open(niche_prediction_dir+'neighbors_'+str(radius)+'.p', "rb" ) )
+    #distances=pickle.load( open(niche_prediction_dir+'distances_'+str(radius)+'.p', "rb" ) )
+    df1=pd.read_csv(niche_prediction_dir+'used_CT.txt',sep='\t',header=None)
+    df2=pd.read_csv(niche_prediction_dir+'used_Clusters'+str(radius)+'.csv')
+    #print("shape of ct and cluster",filename,df1.shape,df2.shape)
+    df1.columns = ['cluster_id', 'cell_type','frac']
+    df2.columns = ['cell_name', 'cluster_id']
+    #ad = adata[df2['cell_name'].values].copy()
+    #print("must be equal Global", filename,np.array_equal(df2['cell_name'],ad.obs_names))
+    cluster_to_celltype = dict(zip(df1['cluster_id'], df1['cell_type']))
+    df2['cell_type'] = df2['cluster_id'].map(cluster_to_celltype)
+    cellBarcode_and_CT = df2.drop(columns=['cluster_id'])
+    return cellBarcode_and_CT, neighbors
+
+
+
+def compute_neighborhood_from_random(cellBarcode_and_CT,neighbors,n,celltype_proximity_as_counts):
+    #print(cellBarcode_and_CT)
+    #print(neighbors[0:100])
+    agg = defaultdict(list)
+    for k in range(n):
+        #cellBarcode_and_CT_shuffled = cellBarcode_and_CT.sample(frac=1, random_state=54321+i).reset_index(drop=True)
+        shuffled_types = np.random.permutation(cellBarcode_and_CT['cell_type'].values)
+        cellBarcode_and_CT_shuffled = cellBarcode_and_CT.copy()
+        cellBarcode_and_CT_shuffled['cell_type'] = shuffled_types
+        #print("shuffle",k,len(cellBarcode_and_CT_shuffled),shuffled_types.shape,len(neighbors))
+        curr_dict=compute_neighborhood(cellBarcode_and_CT_shuffled,neighbors,celltype_proximity_as_counts)
+        for k, v in curr_dict.items():
+            agg[k].append(v)
+
+    # Compute the mean for each key
+    mean_dict_rand_permute = {k: sum(v)/len(v) for k, v in agg.items()}
+    return mean_dict_rand_permute
+
+
+def visualization_of_top_celltype_proximity_pairs(input,saveas='pdf',transparent_mode=False,showit=True,dpi=300,
+n_rand_permute=1000, number_of_top_pairs_for_visualization=20, Observed_Threshold=0, remove_self_pairs=True, celltype_proximity_as_counts=True,
+barwidth=0.5,bar_of_color='skyblue',figsize=(15, 10)):
+
+    #average proportion of cell type in neighborhood, normalized by total
+
+    if input.outputdir==None:
+        output_nico_dir='./nico_out/'
+    else:
+        output_nico_dir=input.outputdir
+
+    cellBarcode_and_CT,neighbors=read_neighborhood_profile(output_nico_dir,input.Radius)
+
+
+    counts_of_celltype_proximity=compute_neighborhood(cellBarcode_and_CT,neighbors,celltype_proximity_as_counts)
+    mean_rand_perm_global=compute_neighborhood_from_random(cellBarcode_and_CT,neighbors,n_rand_permute,celltype_proximity_as_counts)
+
+    number_of_pairs_for_visualization=min(len(counts_of_celltype_proximity),number_of_top_pairs_for_visualization)
+
+    ratio_dict = {k: (counts_of_celltype_proximity[k] / mean_rand_perm_global[k]) for k in counts_of_celltype_proximity if k in mean_rand_perm_global}
+
+    if remove_self_pairs:
+        raw_counts={k: v for k, v in counts_of_celltype_proximity.items() if k.split(':')[0] != k.split(':')[1]}
+        ratio_dict={k: v for k, v in ratio_dict.items() if k.split(':')[0] != k.split(':')[1]}
+    else:
+        raw_counts=counts_of_celltype_proximity
+        ratio_dict=ratio_dict
+
+
+
+    ratio_dict = {
+        k: v for k, v in ratio_dict.items()
+        if raw_counts[k] >= Observed_Threshold
+    }
+
+
+    observed_celltype_proximity  = dict(sorted(raw_counts.items(), key=lambda x: (x[1]), reverse=True))
+    expected_celltype_proximity  = dict(sorted(ratio_dict.items(), key=lambda x: (x[1]), reverse=True))
+
+    observed_celltype_proximity = dict(list(observed_celltype_proximity.items())[:number_of_pairs_for_visualization])
+    expected_celltype_proximity = dict(list(expected_celltype_proximity.items())[:number_of_pairs_for_visualization])
+
+    #sorted_scores = dict(sorted(normalized_scores.items(), key=lambda x: x[1], reverse=True))
+    fig,ax=plt.subplots(2,1,figsize=figsize)
+    #x = np.arange(len(local_labels))*1.5
+    #width=0.5
+
+
+    if celltype_proximity_as_counts:
+        ylabel1='Observed counts'
+        ylabel2='Observed(counts)/Random(counts)'
+    else:
+        ylabel1='Observed proportion'
+        ylabel2='Observed(proportion)/Random(proportion)'
+
+    ax[0].bar(observed_celltype_proximity.keys(),observed_celltype_proximity.values(),width=barwidth, color=bar_of_color)
+    #ax[0].bar(x+width/2,TH_values, width=barwidth, color='red',alpha=0.5,label='High Treat')
+    ax[0].set_ylabel(ylabel1)
+    #ax[0].set_xticks(x)  # Set tick positions
+    #ax[0].set_xticklabels(local_labels, rotation=90)  # Rotate labels
+    #ax[0].axhline(y=1, color='black', linestyle='--', linewidth=0.5)
+    #ax[0].legend(loc='upper right')
+    ax[0].tick_params(axis='x', labelrotation=90)
+    ax[0].set_title('Observed cell type proximity'  )
+
+
+    ax[1].bar(expected_celltype_proximity.keys(),expected_celltype_proximity.values(), width=barwidth, color=bar_of_color)
+    #ax[1].bar(x+width/2,TL_values, width=barwidth, color='red',alpha=0.5,label='Low Treat')
+    ax[1].set_ylabel(ylabel2)
+    #ax[1].set_xticks(x)  # Set tick positions
+    #ax[1].set_xticklabels(global_labels, rotation=90)  # Rotate labels
+    #ax[1].axhline(y=1, color='black', linestyle='--', linewidth=0.5)
+    #ax[1].legend(loc='upper right')
+    ax[1].tick_params(axis='x', labelrotation=90)
+    ax[1].set_title( 'Expected cell type proximity')
+
+
+    #plt.suptitle('Top 30[Each] crosstalk between non-self cell type pairs, nicheID:' + str(savename))
+    fig.tight_layout()
+
+    fig.savefig(input.niche_pred_outdir+'celltype_proximity_pairs'+str(input.Radius)+'.'+saveas,bbox_inches='tight',transparent=transparent_mode,dpi=dpi)
+    if showit:
+        pass
+    else:
+        plt.close('all')
+
+    return observed_celltype_proximity,expected_celltype_proximity
+
+
+
+
+def compute_neighborhood(cellBarcode_and_CT,neighbors,celltype_proximity_as_counts):
+    cell_dict = cellBarcode_and_CT['cell_type'].to_dict()
+    unique_edge={}
+    int_dict={}
+    n=cellBarcode_and_CT.shape[0]
+    central_cell_count={}
+    for i in range(n):
+        #print(i,neighbors[i])
+        ct1=cell_dict[i]
+        if ct1 not in central_cell_count:
+            central_cell_count[ct1]=1
+        else:
+            central_cell_count[ct1]+=1
+        nn=len(neighbors[i])
+        for j in range(nn):
+            edge=[i,neighbors[i][j]]
+            ct2=cell_dict[neighbors[i][j]]
+            name=str(edge)
+            if name not in unique_edge:
+                unique_edge[name]=1
+                #if ((ct1==ref_ct)|(ct2==ref_ct)):
+                if True:
+                    ct_sort=[ct1,ct2]
+                    value=ct_sort[0]+':'+ct_sort[1]
+                    if value not in int_dict:
+                        if celltype_proximity_as_counts:
+                            int_dict[value]=1
+                        else:
+                            int_dict[value]=1/nn
+                    else:
+                        if celltype_proximity_as_counts:
+                            int_dict[value]+=1
+                        else:
+                            int_dict[value]+=1/nn
+
+    if celltype_proximity_as_counts:
+        pass
+    else:
+        for key in int_dict:
+            cc_and_nc=key.split(':')
+            cc_cell=cc_and_nc[0]
+            value=int_dict[key]
+            int_dict[key]=value/central_cell_count[cc_cell]
+
+    return int_dict

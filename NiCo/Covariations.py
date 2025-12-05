@@ -825,7 +825,11 @@ def plot_significant_regression_covariations_as_heatmap(input,choose_celltypes=[
 
 
 def save_LR_interactions_in_excelsheet_and_regression_summary_in_textfile_for_interacting_cell_types(input,pvalueCutoff=0.05, correlation_with_spearman=True,
-LR_plot_NMF_Fa_thres=0.2, LR_plot_Exp_thres=0.2,number_of_top_genes_to_print=20):
+Ligand_Factor_thres=0.2,
+Receptor_Factor_thres=0.2,
+Ligand_proportion_of_cells_expressed_thres=0.2,
+Receptor_proportion_of_cells_expressed_thres=0.2,
+number_of_top_genes_to_print=20):
 
     """
     Save ligand-receptor (LR) interactions in an Excel sheet and regression summary in a text file for interacting cell types.
@@ -845,11 +849,11 @@ LR_plot_NMF_Fa_thres=0.2, LR_plot_Exp_thres=0.2,number_of_top_genes_to_print=20)
         If True, genes factor correlations are computed as Spearman correlation coefficient; otherwise, cosine similarities are computed.
         Default is True.
 
-    LR_plot_NMF_Fa_thres : float, optional
+    Ligand/Receptor_Factor_thres : float, optional
         Only ligands or receptors are retained that exhibit a correlation to the respective factors higher than this cutoff.
         Default is 0.2.
 
-    LR_plot_Exp_thres : float, optional
+    Ligand/Receptor_proportion_of_cells_expressed_thres : float, optional
         Only ligands or receptors are retained that are expressed in a fraction of cells of the respective cell types exceeding this cutoff.
         Default is 0.2.
 
@@ -893,7 +897,8 @@ LR_plot_NMF_Fa_thres=0.2, LR_plot_Exp_thres=0.2,number_of_top_genes_to_print=20)
     coeff_cutoff_for_log_reg=input.logistic_coef_cutoff
     coeff_cutoff_for_rid_reg=input.coeff_cutoff_for_rid_reg
     gene_set_names=input.gene_set_names
-    LRcutoff=LR_plot_NMF_Fa_thres #Used in excel sheet to show the enrichment of ligand receptor intera
+    Lig_cutoff=Ligand_Factor_thres #Used in excel sheet to show the enrichment of ligand receptor intera
+    Rec_cutoff=Receptor_Factor_thres
 
     PCA_of_sc_cluster_accordingto_spatial_clusterid,save_scFactors,save_spFactors=pickle.load(open(input.covariation_dir+'factors_info.p', 'rb'))
     n=len(input.spatialcell_unique_clustername)
@@ -964,9 +969,9 @@ LR_plot_NMF_Fa_thres=0.2, LR_plot_Exp_thres=0.2,number_of_top_genes_to_print=20)
                     if score[index]>coeff_cutoff_for_log_reg:
                         NC_corr_spearman,NC_PCA,NC_gene,NC_meanExpression,NC_popExpression,NC_corr_cosine,alpha=PCA_of_sc_cluster_accordingto_spatial_clusterid[d[NC_celltype_name[index]]]
                         if correlation_with_spearman:
-                            top_genes_in_CC,top_genes_in_NC,genesWithUP,genesWithDown,Found1,Found2=find_fold_change(CC_corr_spearman,NC_corr_spearman,CC_gene,k,pc_index_nc[j],totalLRpairs,LRcutoff,CC_meanExpression,NC_meanExpression,CC_popExpression,NC_popExpression,number_of_top_genes_to_print)
+                            top_genes_in_CC,top_genes_in_NC,genesWithUP,genesWithDown,Found1,Found2=find_fold_change(CC_corr_spearman,NC_corr_spearman,CC_gene,k,pc_index_nc[j],totalLRpairs,Lig_cutoff,Rec_cutoff,CC_meanExpression,NC_meanExpression,CC_popExpression,NC_popExpression,number_of_top_genes_to_print)
                         else:
-                            top_genes_in_CC,top_genes_in_NC,genesWithUP,genesWithDown,Found1,Found2=find_fold_change(CC_corr_cosine,NC_corr_cosine,CC_gene,k,pc_index_nc[j],totalLRpairs,LRcutoff,CC_meanExpression,NC_meanExpression,CC_popExpression,NC_popExpression,number_of_top_genes_to_print)
+                            top_genes_in_CC,top_genes_in_NC,genesWithUP,genesWithDown,Found1,Found2=find_fold_change(CC_corr_cosine,NC_corr_cosine,CC_gene,k,pc_index_nc[j],totalLRpairs,Lig_cutoff,Rec_cutoff,CC_meanExpression,NC_meanExpression,CC_popExpression,NC_popExpression,number_of_top_genes_to_print)
 
                         common_genes=list(set(top_genes_in_CC).intersection(set(top_genes_in_NC)))
 
@@ -1019,7 +1024,12 @@ LR_plot_NMF_Fa_thres=0.2, LR_plot_Exp_thres=0.2,number_of_top_genes_to_print=20)
 
 
 def find_LR_interactions_in_interacting_cell_types(input,choose_interacting_celltype_pair=[],choose_factors_id=[],pvalueCutoff=0.05,dpi=300,
-correlation_with_spearman=True, LR_plot_NMF_Fa_thres=0.2, LR_plot_Exp_thres=0.2,saveas='pdf',transparent_mode=False,showit=True,figsize=(12,10)):
+correlation_with_spearman=True,
+Ligand_Factor_thres=0.2,
+Receptor_Factor_thres=0.2,
+Ligand_proportion_of_cells_expressed_thres=0.2,
+Receptor_proportion_of_cells_expressed_thres=0.2,
+saveas='pdf',transparent_mode=False,showit=True,figsize=(12,10)):
 
     """
     Find ligand-receptor (LR) interactions in interacting cell types and visualize them.
@@ -1049,11 +1059,11 @@ correlation_with_spearman=True, LR_plot_NMF_Fa_thres=0.2, LR_plot_Exp_thres=0.2,
         If True, compute gene-factor correlation as Spearman correlation coefficient; otherwise, compute as cosine similarity.
         Default is True.
 
-    LR_plot_NMF_Fa_thres : float, optional
+    Ligand/Receptor_Factor_thres : float, optional
         Only ligands or receptors that exhibit a correlation to the respective factors higher than this cutoff are retained.
         Default is 0.2.
 
-    LR_plot_Exp_thres : float, optional
+    Ligand/Receptor_proportion_of_cells_expressed_thres : float, optional
         Only ligands or receptors that are expressed in a fraction of cells of the respective cell types exceeding this cutoff are retained.
         Default is 0.2.
 
@@ -1095,7 +1105,9 @@ correlation_with_spearman=True, LR_plot_NMF_Fa_thres=0.2, LR_plot_Exp_thres=0.2,
     coeff_cutoff_for_log_reg=input.logistic_coef_cutoff
     coeff_cutoff_for_rid_reg=input.coeff_cutoff_for_rid_reg
     gene_set_names=input.gene_set_names
-    LRcutoff=LR_plot_NMF_Fa_thres #Used in excel sheet to show the enrichment of ligand receptor intera
+    Lig_cutoff=Ligand_Factor_thres #Used in excel sheet to show the enrichment of ligand receptor intera
+    Rec_cutoff=Receptor_Factor_thres
+
 
     PCA_of_sc_cluster_accordingto_spatial_clusterid,save_scFactors,save_spFactors=pickle.load(open(input.covariation_dir+'factors_info.p', 'rb'))
     n=len(input.spatialcell_unique_clustername)
@@ -1187,9 +1199,9 @@ correlation_with_spearman=True, LR_plot_NMF_Fa_thres=0.2, LR_plot_Exp_thres=0.2,
                     if score[index]>coeff_cutoff_for_log_reg:
                         NC_corr_spearman,NC_PCA,NC_gene,NC_meanExpression,NC_popExpression,NC_corr_cosine,alpha=PCA_of_sc_cluster_accordingto_spatial_clusterid[d[NC_celltype_name[index]]]
                         if correlation_with_spearman:
-                            top_genes_in_CC,top_genes_in_NC,genesWithUP,genesWithDown,Found1,Found2=find_fold_change(CC_corr_spearman,NC_corr_spearman,CC_gene,k,pc_index_nc[j],totalLRpairs,LRcutoff,CC_meanExpression,NC_meanExpression,CC_popExpression,NC_popExpression,1)
+                            top_genes_in_CC,top_genes_in_NC,genesWithUP,genesWithDown,Found1,Found2=find_fold_change(CC_corr_spearman,NC_corr_spearman,CC_gene,k,pc_index_nc[j],totalLRpairs,Lig_cutoff,Rec_cutoff,CC_meanExpression,NC_meanExpression,CC_popExpression,NC_popExpression,1)
                         else:
-                            top_genes_in_CC,top_genes_in_NC,genesWithUP,genesWithDown,Found1,Found2=find_fold_change(CC_corr_cosine,NC_corr_cosine,CC_gene,k,pc_index_nc[j],totalLRpairs,LRcutoff,CC_meanExpression,NC_meanExpression,CC_popExpression,NC_popExpression,1)
+                            top_genes_in_CC,top_genes_in_NC,genesWithUP,genesWithDown,Found1,Found2=find_fold_change(CC_corr_cosine,NC_corr_cosine,CC_gene,k,pc_index_nc[j],totalLRpairs,Lig_cutoff,Rec_cutoff,CC_meanExpression,NC_meanExpression,CC_popExpression,NC_popExpression,1)
 
                         common_genes=list(set(top_genes_in_CC).intersection(set(top_genes_in_NC)))
 
@@ -1210,9 +1222,9 @@ correlation_with_spearman=True, LR_plot_NMF_Fa_thres=0.2, LR_plot_Exp_thres=0.2,
                             else:
                                 flag=1
                             if flag==1:
-                                plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_name[index],score[index],k+1,1+pc_index_nc[j],normalized_ridge_coef[k,j],pvalue[k,j],Found1,Found2,saveLRplots,LR_plot_Exp_thres,saveas,transparent_mode,showit,figsize,'Both',dpi)
-                                plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_name[index],score[index],k+1,1+pc_index_nc[j],normalized_ridge_coef[k,j],pvalue[k,j],Found1,Found2,saveLRplotsFirst,LR_plot_Exp_thres,saveas,transparent_mode,showit,figsize,'First',dpi)
-                                plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_name[index],score[index],k+1,1+pc_index_nc[j],normalized_ridge_coef[k,j],pvalue[k,j],Found1,Found2,saveLRplotsSecond,LR_plot_Exp_thres,saveas,transparent_mode,showit,figsize,'Second',dpi)
+                                plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_name[index],score[index],k+1,1+pc_index_nc[j],normalized_ridge_coef[k,j],pvalue[k,j],Found1,Found2,saveLRplots,Ligand_proportion_of_cells_expressed_thres, Receptor_proportion_of_cells_expressed_thres,saveas,transparent_mode,showit,figsize,'Both',dpi)
+                                plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_name[index],score[index],k+1,1+pc_index_nc[j],normalized_ridge_coef[k,j],pvalue[k,j],Found1,Found2,saveLRplotsFirst,Ligand_proportion_of_cells_expressed_thres, Receptor_proportion_of_cells_expressed_thres,saveas,transparent_mode,showit,figsize,'First',dpi)
+                                plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_name[index],score[index],k+1,1+pc_index_nc[j],normalized_ridge_coef[k,j],pvalue[k,j],Found1,Found2,saveLRplotsSecond,Ligand_proportion_of_cells_expressed_thres, Receptor_proportion_of_cells_expressed_thres,saveas,transparent_mode,showit,figsize,'Second',dpi)
 
     return 0
 
@@ -1385,7 +1397,7 @@ def pathway_analysis(input,
  choose_celltypes=[],
  circlesize=12,
  pvalue_cutoff_enrichr=0.05,
- pathwayorganism='Mouse',
+ organism='Mouse',
  database=['GO_Biological_Process_2021','BioPlanet_2019','Reactome_2016'],
  dotplot_x_order= False,
  dotplot_y_order = False,
@@ -1453,7 +1465,7 @@ def pathway_analysis(input,
         Terms with column value < cut-off are shown. Work only for (“Adjusted P-value”, “P-value”, “NOM p-val”, “FDR q-val”)
         https://gseapy.readthedocs.io/en/latest/run.html
 
-    pathwayorganism : str, optional
+    organism : str, optional
         The organism for which to perform pathway analysis, supported by the GSEApy package (e.g., 'Mouse', 'Human').
         (default is 'Mouse')
 
@@ -1667,12 +1679,20 @@ def pathway_analysis(input,
                     flag=1
                 else:
                     flag=1
-                    if temp[0:3]=='Rps':
-                        flag=0
-                    if temp[0:3]=='Rpl':
-                        flag=0
-                    if temp[0:3]=='mt-':
-                        flag=0
+                    if organism=='Mouse':
+                      if temp[0:3]=='Rps':
+                          flag=0
+                      if temp[0:3]=='Rpl':
+                          flag=0
+                      if temp[0:3]=='mt-':
+                          flag=0
+                    if organism=='Human':
+                      if temp[0:3]=='RPS':
+                          flag=0
+                      if temp[0:3]=='RPL':
+                          flag=0
+                      if temp[0:3]=='MT-':
+                          flag=0
                 if flag==1:
                     interestofGene.append(CC_gene[ind[k]])
                     value.append(source[ind[k]])
@@ -1716,7 +1736,7 @@ def pathway_analysis(input,
                     barplotsavename=savename+sname2
                     finalsavename=savename+sname2+'.'+saveas
 
-                    enr_res1 = gseapy.enrichr(gene_list=ga1,organism=pathwayorganism,gene_sets=database[i], cutoff = pvalue_cutoff_enrichr)
+                    enr_res1 = gseapy.enrichr(gene_list=ga1,organism=organism,gene_sets=database[i], cutoff = pvalue_cutoff_enrichr)
 
 
                     data=enr_res1.res2d.loc[enr_res1.res2d[object_for_sorting]< pvalue_cutoff ].copy()
@@ -1782,7 +1802,7 @@ def pathway_analysis(input,
 
 
 
-def extract_and_plot_top_genes_from_chosen_factor_in_celltype(input,choose_celltype,choose_factor_id,top_NOG=30,rps_rpl_mt_genes_included=True,
+def extract_and_plot_top_genes_from_chosen_factor_in_celltype(input,choose_celltype,choose_factor_id,top_NOG=30,rps_rpl_mt_genes_included=True,organism='Mouse',
 correlation_with_spearman=True,positively_correlated=True,saveas='pdf',cmap='RdBu_r',transparent_mode=False,showit=True,dpi=300,figsize=(5, 6)):
 
 
@@ -1904,12 +1924,20 @@ correlation_with_spearman=True,positively_correlated=True,saveas='pdf',cmap='RdB
                         flag=1
                     else:
                         flag=1
-                        if temp[0:3]=='Rps':
-                            flag=0
-                        if temp[0:3]=='Rpl':
-                            flag=0
-                        if temp[0:3]=='mt-':
-                            flag=0
+                        if organism=='Mouse':
+                          if temp[0:3]=='Rps':
+                              flag=0
+                          if temp[0:3]=='Rpl':
+                              flag=0
+                          if temp[0:3]=='mt-':
+                              flag=0
+                        if organism=='Human':
+                          if temp[0:3]=='RPS':
+                              flag=0
+                          if temp[0:3]=='RPL':
+                              flag=0
+                          if temp[0:3]=='MT-':
+                              flag=0
                     if flag==1:
                         interestofGene.append(CC_gene[ind[k]])
                         value_fact.append(source[ind[k]])
@@ -3340,7 +3368,7 @@ def create_subtitle(fig: plt.Figure, grid: SubplotSpec, title: str):
 
 
 
-def find_fold_change(PCA,NH_PCA,gene,CCPC,NCPC,totalLRpairs,LRcutoff,CC_meanExpression,NC_meanExpression,CC_popExpression,NC_popExpression,number_of_top_genes_to_print):
+def find_fold_change(PCA,NH_PCA,gene,CCPC,NCPC,totalLRpairs,Lig_cutoff,Rec_cutoff,CC_meanExpression,NC_meanExpression,CC_popExpression,NC_popExpression,number_of_top_genes_to_print):
     """
     Identify ligand-receptor genes for cell type interaction analysis.
 
@@ -3360,7 +3388,7 @@ def find_fold_change(PCA,NH_PCA,gene,CCPC,NCPC,totalLRpairs,LRcutoff,CC_meanExpr
         Principal component index for the non-host cell type.
     totalLRpairs : list of tuples
         List of tuples representing all possible ligand-receptor pairs.
-    LRcutoff : float
+    Lig_cutoff or Rec_cutoff, : float
         Threshold for selecting significant ligand-receptor interactions.
     CC_meanExpression : numpy.ndarray
         Mean expression values for the central cell type.
@@ -3422,7 +3450,7 @@ def find_fold_change(PCA,NH_PCA,gene,CCPC,NCPC,totalLRpairs,LRcutoff,CC_meanExpr
 
 
     for i in range(len(ind1)):
-        if (first[ind1[i]])>LRcutoff:
+        if (first[ind1[i]])>Lig_cutoff:
         #if (first[ind1[i]])<-0.4:
             cc_genes.append(gene[ind1[i]])
             if gene[ind1[i]].upper() in listofallLR:
@@ -3431,7 +3459,7 @@ def find_fold_change(PCA,NH_PCA,gene,CCPC,NCPC,totalLRpairs,LRcutoff,CC_meanExpr
 
 
     for i in range(len(ind2)):
-        if (second[ind2[i]])>LRcutoff:
+        if (second[ind2[i]])>Rec_cutoff:
         #if (second[ind2[i]])<-0.4:
             nc_genes.append(gene[ind2[i]])
             if gene[ind2[i]].upper() in listofallLR:
@@ -3534,7 +3562,7 @@ def triangulation_for_triheatmap(M, N):
     return [Triangulation(x, y, triangles) for triangles in [trianglesN, trianglesE, trianglesS, trianglesW]]
 
 
-def  plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_name,logRegScore,pc1,pc2,ridgeRegScore,pvalue,Found1,Found2,saveLRplots,LR_plot_Exp_thres,saveas,transparent_mode,showit,figsize,flag,dpi):
+def plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_name,logRegScore,pc1,pc2,ridgeRegScore,pvalue,Found1,Found2,saveLRplots,Ligand_proportion_of_cells_expressed_thres, Receptor_proportion_of_cells_expressed_thres,saveas,transparent_mode,showit,figsize,flag,dpi):
     """
     Plot ligand-receptor interactions for interacting cell types.
 
@@ -3566,7 +3594,7 @@ def  plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_
         List of found ligand-receptor interactions where the ligand is in the neighborhood cell type.
     saveLRplots : str
         Directory to save the ligand-receptor plots.
-    LR_plot_Exp_thres : float
+    Ligand_proportion_of_cells_expressed_thres or Receptor_proportion_of_cells_expressed_thres : float
         Expression threshold for plotting.
     saveas : str
         File format to save the plots (e.g., 'png', 'pdf').
@@ -3596,7 +3624,7 @@ def  plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_
         for ele in range(len(Found1)):
             ligExpCellPop=Found1[ele][0][3]
             recExpCellPop=Found1[ele][1][3]
-            if ((ligExpCellPop>LR_plot_Exp_thres)&(recExpCellPop>LR_plot_Exp_thres)):
+            if ((ligExpCellPop>Ligand_proportion_of_cells_expressed_thres)&(recExpCellPop>Receptor_proportion_of_cells_expressed_thres)):
                 ligand.append(Found1[ele][0][0])
                 receptor.append(Found1[ele][1][0])
                 fact_lig.append(float(Found1[ele][0][1]))
@@ -3610,7 +3638,7 @@ def  plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_
         for ele in range(len(Found2)):
             ligExpCellPop=Found2[ele][0][3]
             recExpCellPop=Found2[ele][1][3]
-            if ((ligExpCellPop>LR_plot_Exp_thres)&(recExpCellPop>LR_plot_Exp_thres)):
+            if ((ligExpCellPop>Ligand_proportion_of_cells_expressed_thres)&(recExpCellPop>Receptor_proportion_of_cells_expressed_thres)):
                 ligand.append(Found2[ele][0][0])
                 receptor.append(Found2[ele][1][0])
                 fact_lig.append(float(Found2[ele][0][1]))
@@ -3626,7 +3654,7 @@ def  plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_
             #header[12]=Found1[ele][1][2]
             ligExpCellPop=Found1[ele][0][3]
             recExpCellPop=Found1[ele][1][3]
-            if ((ligExpCellPop>LR_plot_Exp_thres)&(recExpCellPop>LR_plot_Exp_thres)):
+            if ((ligExpCellPop>Ligand_proportion_of_cells_expressed_thres)&(recExpCellPop>Receptor_proportion_of_cells_expressed_thres)):
                 ligand.append(Found1[ele][0][0])
                 receptor.append(Found1[ele][1][0])
                 fact_lig.append(float(Found1[ele][0][1]))
@@ -3639,7 +3667,7 @@ def  plot_ligand_receptor_in_interacting_celltypes(CC_celltype_name,NC_celltype_
         for ele in range(len(Found2)):
             ligExpCellPop=Found2[ele][0][3]
             recExpCellPop=Found2[ele][1][3]
-            if ((ligExpCellPop>LR_plot_Exp_thres)&(recExpCellPop>LR_plot_Exp_thres)):
+            if ((ligExpCellPop>Ligand_proportion_of_cells_expressed_thres)&(recExpCellPop>Receptor_proportion_of_cells_expressed_thres)):
                 ligand.append(Found2[ele][0][0])
                 receptor.append(Found2[ele][1][0])
                 fact_lig.append(float(Found2[ele][0][1]))
@@ -4135,7 +4163,8 @@ def sort_index_in_right_order(correct,wrong):
     return right
 
 
-def plot_top_genes_for_a_given_celltype_from_all_factors(input,choose_celltypes=[],top_NOG=20,rps_rpl_mt_genes_included=True,correlation_with_spearman=True,saveas='pdf',transparent_mode=False,showit=True,dpi=300,figsize=(12, 10)):
+def plot_top_genes_for_a_given_celltype_from_all_factors(input,choose_celltypes=[],top_NOG=20,rps_rpl_mt_genes_included=True,organism='Mouse',
+correlation_with_spearman=True,saveas='pdf',transparent_mode=False,showit=True,dpi=300,figsize=(12, 10)):
     """
     Visualize top genes associated with given cell types across all three factors.
 
@@ -4236,12 +4265,20 @@ def plot_top_genes_for_a_given_celltype_from_all_factors(input,choose_celltypes=
                     flag=1
                 else:
                     flag=1
-                    if temp[0:3]=='Rps':
-                        flag=0
-                    if temp[0:3]=='Rpl':
-                        flag=0
-                    if temp[0:3]=='mt-':
-                        flag=0
+                    if organism=='Mouse':
+                      if temp[0:3]=='Rps':
+                          flag=0
+                      if temp[0:3]=='Rpl':
+                          flag=0
+                      if temp[0:3]=='mt-':
+                          flag=0
+                    if organism=='Human':
+                      if temp[0:3]=='RPS':
+                          flag=0
+                      if temp[0:3]=='RPL':
+                          flag=0
+                      if temp[0:3]=='MT-':
+                          flag=0
                 if flag==1:
                     interestofGene.append(CC_gene[ind[k]])
                     value_fact.append(source[ind[k]])
@@ -4262,6 +4299,9 @@ def plot_top_genes_for_a_given_celltype_from_all_factors(input,choose_celltypes=
             comgene.append(gp1[0:top_NOG])
             comgene.append(gn1[0:top_NOG])
 
+
+            no_of_factors=input.no_of_pc
+
             gex=np.zeros((top_NOG,1),dtype=float)
 
             vp1=list(value_fact[index_pos])[0:top_NOG]
@@ -4279,10 +4319,14 @@ def plot_top_genes_for_a_given_celltype_from_all_factors(input,choose_celltypes=
             nvr3.append(np.hstack((np.reshape(neg_avg1,(len(neg_avg1),1)),gex)))
 
 
-        fig, ax = plt.subplots(2,6,figsize=figsize)
-        title=['Pos Fa1','Neg Fa1','Pos Fa2','Neg Fa2','Pos Fa3','Neg Fa3']
+        fig, ax = plt.subplots(2,no_of_factors*2,figsize=figsize)
 
-        for i in range(6):
+        title = []
+        for i in range(no_of_factors):
+            title.append(f'Pos Fa{i+1}')
+            title.append(f'Neg Fa{i+1}')
+
+        for i in range(no_of_factors*2):
                 x,y,z,bigs=findXYZC(nvr1[i],nvr2[i])
                 p0=ax[0,i].scatter(x,y,s=bigs,marker='o',c=z,cmap='RdBu_r') #'cm.cmap_name
                 x,y,z,bigs=findXYZC(nvr3[i],nvr2[i])
@@ -4292,7 +4336,7 @@ def plot_top_genes_for_a_given_celltype_from_all_factors(input,choose_celltypes=
                 kw = dict(prop="sizes", num=5, alpha=0.6, fmt="% {x:.0f}")
                 legend2 = ax[1,i].legend(*p1.legend_elements(**kw),loc="upper right", title="Fraction of \ncells \nexpressed",bbox_to_anchor=(1.0, 0),frameon=False)
 
-        for i in range(6):
+        for i in range(no_of_factors*2):
             for j in range(2):
                 ax[j,i].set_yticks(range(len(nvr1[i])))
                 ax[j,i].set_yticklabels(comgene[i],style='italic')
@@ -4302,7 +4346,7 @@ def plot_top_genes_for_a_given_celltype_from_all_factors(input,choose_celltypes=
                 ax[j,i].set_ylim([-0.5,len(nvr1[i])+0.5])
                 ax[0,i].set_title(title[i])
 
-        grid = plt.GridSpec(2, 6)
+        grid = plt.GridSpec(2, no_of_factors*2)
         create_subtitle(fig, grid[0, ::], CC_celltype_name+' Spearman correlation')
         create_subtitle(fig, grid[1, ::],  CC_celltype_name+' log(avg expression)')
 
@@ -4320,6 +4364,7 @@ def plot_top_genes_for_pair_of_celltypes_from_two_chosen_factors(input,
 choose_interacting_celltype_pair,
 visualize_factors_id,
 top_NOG=20,dpi=300,
+organism='Mouse',
 rps_rpl_mt_genes_included=True,correlation_with_spearman=True,
 saveas='pdf',transparent_mode=False,showit=True,figsize=(5, 8)):
 
@@ -4400,7 +4445,7 @@ saveas='pdf',transparent_mode=False,showit=True,figsize=(5, 8)):
                 z1=spearman_factors[:,visualize_factors_id[0]-1]
             else:
                 z1=cosine_factors[:,visualize_factors_id[0]-1]
-            ga1,va1=find_interest_of_genes(z1,pop1,mu1,rps_rpl_mt_genes_included,CC_gene,top_NOG)
+            ga1,va1=find_interest_of_genes(z1,pop1,mu1,rps_rpl_mt_genes_included,organism,CC_gene,top_NOG)
 
 
     for fi in range(n):
@@ -4414,7 +4459,7 @@ saveas='pdf',transparent_mode=False,showit=True,figsize=(5, 8)):
                 z2=spearman_factors[:,visualize_factors_id[1]-1]#np.hstack((z,spearman_factors))
             else:
                 z2=cosine_factors[:,visualize_factors_id[1]-1]#np.hstack((z,cosine_factors))
-            ga2,va2=find_interest_of_genes(z2,pop2,mu2,rps_rpl_mt_genes_included,CC_gene,top_NOG)
+            ga2,va2=find_interest_of_genes(z2,pop2,mu2,rps_rpl_mt_genes_included,organism,CC_gene,top_NOG)
 
 
     comgenes=[]
@@ -4494,7 +4539,7 @@ saveas='pdf',transparent_mode=False,showit=True,figsize=(5, 8)):
 
 
 
-def find_interest_of_genes(source,pop,mu,rps_rpl_mt_genes_included,CC_gene,top_NOG):
+def find_interest_of_genes(source,pop,mu,rps_rpl_mt_genes_included,organism,CC_gene,top_NOG):
     """
     Find genes of interest based on factor values, population expression, and average expression.
 
@@ -4538,12 +4583,20 @@ def find_interest_of_genes(source,pop,mu,rps_rpl_mt_genes_included,CC_gene,top_N
             flag=1
         else:
             flag=1
-            if temp[0:3]=='Rps':
-                flag=0
-            if temp[0:3]=='Rpl':
-                flag=0
-            if temp[0:3]=='mt-':
-                flag=0
+            if organism=='Mouse':
+                if temp[0:3]=='Rps':
+                    flag=0
+                if temp[0:3]=='Rpl':
+                    flag=0
+                if temp[0:3]=='mt-':
+                    flag=0
+            if organism=='Human':
+                if temp[0:3]=='RPS':
+                    flag=0
+                if temp[0:3]=='RPL':
+                    flag=0
+                if temp[0:3]=='MT-':
+                    flag=0
         if flag==1:
             interestofGene.append(CC_gene[ind[k]])
             value_fact.append(source[ind[k]])
@@ -4572,3 +4625,395 @@ def find_interest_of_genes(source,pop,mu,rps_rpl_mt_genes_included,CC_gene,top_N
     #neg_pop1=list(value_pop[index_neg])[0:top_NOG]
     #neg_avg1=list(value_avgexp[index_neg])[0:top_NOG]
     return gp1, vp1
+
+
+
+#function to print the sizebar of pvalue circle size
+def print_pvalue_sizebar(input,number_of_dots_to_print=3, gray_level=0.5,saveas='pdf',showit=True,transparent_mode=False,dpi=300,figsize=(0.8,1.25)):
+    if number_of_dots_to_print==3:
+        value2print=[10,6,2]
+        width=0.8
+        shift=0.15
+    if number_of_dots_to_print==5:
+        value2print=[10,8,6,4,2]
+        width=0.639
+        shift=0.25
+    if number_of_dots_to_print==4:
+        value2print=[10,7.5,5,2.5]
+        width=0.725
+        shift=0.2
+    fig, ax = plt.subplots(1,1,figsize=figsize)
+    pvalue=np.zeros((len(value2print),1))
+    c=np.ones((len(value2print),1))
+    for i in range(len(value2print)):
+        pvalue[i][0]=value2print[i]
+    M=pvalue.shape[1]
+    N=pvalue.shape[0]
+    x, y = np.meshgrid(np.arange(M), np.arange(N))
+    R = pvalue/10.0/2
+    maxp=pvalue.max()
+    circles = [plt.Circle((j,i), radius=r) for r, j, i in zip(R.flat, x.flat, y.flat)]
+    col = PatchCollection(circles, array=c.flatten(), cmap='gray',alpha=gray_level)#cmap="RdYlGn")
+    ax.add_collection(col)
+    ax.set_axis_off()
+    ax.set(xticks=np.arange(M), yticks=np.arange(N))
+    ax.set_xticks(np.arange(M+1)-0.5, minor=True)
+    ax.set_yticks(np.arange(N+1)-0.5, minor=True)
+    ax.grid(which='minor')
+    for i in range(len(value2print)):
+        ax.text(0.5,i-shift,str(value2print[i]))
+
+    #ax.set_xticklabels([])
+    #ax.set_yticklabels([])
+    fig.tight_layout()
+    savefigdir=input.regression_outdir
+    #print(saveas,savepath+'pvalue_cirlce_sizebar'+saveas)
+    fig.savefig(savefigdir+'pvalue_cirlce_sizebar.'+saveas,bbox_inches='tight',transparent=transparent_mode, dpi=dpi)
+    if showit:
+        pass
+    else:
+        plt.close('all')
+
+
+
+def visualization_of_colocalized_celltype_factors(input,CC_name, NC_name, CC_factor_id,NC_factor_id,
+saveas='pdf',showit=True,transparent_mode=False,dpi=300,figsize=(10,5)):
+
+
+    savefigdir=input.covariation_dir+ 'colocaalization/'
+    create_directory(savefigdir)
+
+    no_of_factors=input.no_of_pc
+    neighbors=input.neighbors
+    neigh_distances=input.neigh_distances
+    #read cell type ID information
+    #df=pd.read_csv(output_nico_dir+'used_CT.txt',sep='\t',header=None)
+    #df.columns = ['cell_type_id', 'cell_type_name', 'freq']
+    #df['cell_type_name']==central_celltype
+
+    #central_celltype_id = df.loc[df['cell_type_name'] == central_celltype, 'cell_type_id'].iloc[0]
+    #print("ID of central cell type",central_celltype_id)
+
+
+
+    flag=True
+    for i in range(len(input.spatialcell_unique_clustername)):
+        if input.spatialcell_unique_clustername==CC_name:
+            central_celltype_id=input.spatialcell_unique_clusterid[i]
+            flag=False
+
+    if flag:
+        print('Input central cell type name do not exist')
+    else:
+        CC_data_allinfo=input.save_reg_coef[central_celltype_id]
+    #information stored in CC_data in following order
+    #[coef,intercept,alpha,xlabel,score,target,neighborhoodClass,pv,percent_variance_explained,residual_variance_explained]
+
+
+    CC_instance=np.where(input.annotation_spatial_celltypename==CC_name)
+    NC_instance=np.where(input.annotation_spatial_celltypename==NC_name)
+    print(len(neighbors),)
+    find_colocalized_celltype_pairs(neighbors,CC_instance,NC_instance)
+
+
+    #dependent variable / response / target
+    CC_data=CC_data_allinfo[5]
+    CC_data_Xaxis=CC_data_allinfo[6]
+    CC_data_Xlabel=CC_data_allinfo[3]
+    print("Central cell feature", CC_data.shape, CC_data_Xaxis.shape, CC_data_Xlabel)
+
+    #independent variable / predictor / feature
+    NC_data=get_data_of_neighboring_nich_instance(CC_data_Xlabel, CC_data_Xaxis, NC_name,no_of_factors)
+    print("Neighborhood cell feature", NC_data.shape)
+
+
+    fig, ax = plt.subplots(1,2,figsize=figsize)
+
+    ax[0].plot(CC_data[:,CC_factor_id-1], NC_data[:,NC_factor_id-1],'b.')
+    ax[0].set_xlabel(CC_name +'_Fa'+str(CC_factor_id))
+    ax[0].set_ylabel(NC_name + '_Fa'+str(NC_factor_id))
+
+
+    fig.tight_layout()
+    #print(saveas,savepath+'pvalue_cirlce_sizebar'+saveas)
+    print("The figures are saved: ", savefigdir+'colocalize_celltypes.'+saveas)
+    fig.savefig(savefigdir+'colocalize_celltypes.'+saveas,bbox_inches='tight',transparent=transparent_mode, dpi=dpi)
+    if showit:
+        pass
+    else:
+        plt.close('all')
+
+
+
+
+def get_data_of_neighboring_nich_instance(Xlabel, Xdata, neighborCT,no_of_factors):
+    flag=True
+    n=Xdata.shape[1]
+    for i in range(0,n,no_of_factors):
+        ii=int(i/no_of_factors)
+        if Xlabel[ii]==neighborCT:
+            flag=False
+            neighboring_niche_data=Xdata[:,i:i+no_of_factors]
+        #print(Xlabel[ii],Xdata[:,i:i+no_of_factors].shape)
+    if flag:
+        print('Input neighboring/niche cell type name do not exist')
+    return neighboring_niche_data
+
+
+def fit_regression_line_for_scatterplot(lambda_c,X,Y):
+    linear_model = RidgeCV(alphas=lambda_c)
+    pipe=Pipeline([('ridge_regression',linear_model)])
+    X=X.reshape(-1,1)
+    Y=Y.reshape(-1,1)
+    pipe.fit(X,Y)
+    X_range = np.linspace(X.min(), X.max(), 100).reshape(-1, 1)
+    Y_pred = pipe.predict(X_range)
+
+    # Extract coefficients
+    LR = pipe.named_steps['ridge_regression']
+    coef = LR.coef_[0]
+    intercept = LR.intercept_
+
+    return X_range,Y_pred,coef,intercept
+
+
+def visualization_of_colocalized_celltype_factors_as_scatterplot(input,CC_name, NC_name, CC_factor_id,NC_factor_id,
+saveas='pdf',showFitting=True,loc1=[0.75,0.95],loc2=[0.75,0.95],axis_log_scale=True,showit=True,transparent_mode=False,dpi=300,figsize=(6,5)):
+    savefigdir=input.covariation_dir+ 'colocalization/'
+    create_directory(savefigdir)
+    no_of_factors=input.no_of_pc
+    neighbors=input.neighbors
+    neigh_distances=input.neigh_distances
+
+    data1=np.load(input.outputname,allow_pickle=True)
+    data1=data1['weighted_neighborhood_of_factors_in_niche']
+    data=np.nan_to_num(data1)
+
+    #featureVector=range(input.no_of_pc,data.shape[1]) # #just neighborhood
+    #AllneighborhoodClass= data[:,featureVector]
+    All_loadings= data[:,0:input.no_of_pc]
+
+
+    #read cell type ID information
+    #df=pd.read_csv(output_nico_dir+'used_CT.txt',sep='\t',header=None)
+    #df.columns = ['cell_type_id', 'cell_type_name', 'freq']
+    #df['cell_type_name']==central_celltype
+
+    #central_celltype_id = df.loc[df['cell_type_name'] == central_celltype, 'cell_type_id'].iloc[0]
+    #print("ID of central cell type",central_celltype_id)
+
+    flag=True
+    for i in range(len(input.spatialcell_unique_clustername)):
+        if input.spatialcell_unique_clustername[i]==CC_name:
+            central_celltype_id=input.spatialcell_unique_clusterid[i]
+            flag=False
+    if flag:
+        print('Input central cell type name do not exist')
+    else:
+        CC_data_allinfo=input.save_reg_coef[central_celltype_id]
+    #information stored in CC_data in following order
+    #[coef,intercept,alpha,xlabel,score,target,neighborhoodClass,pv,percent_variance_explained,residual_variance_explained]
+
+    #dependent variable / response / target
+    CC_loading=CC_data_allinfo[5]
+    CC_neighborhood_loading=CC_data_allinfo[6]
+    CC_neighborhood_celltype_labels=CC_data_allinfo[3]
+    #print("Central cell feature", len(neighbors),CC_neighborhood_loading.shape, CC_neighborhood_celltype_labels)
+    #independent variable / predictor / feature
+    avg_CC_neigh_loading=get_data_of_neighboring_nich_instance(CC_neighborhood_celltype_labels, CC_neighborhood_loading, NC_name,no_of_factors)
+    #print("Neighborhood cell feature", avg_CC_neigh_loading.shape)
+
+
+    CC_instance=np.where(input.annotation_spatial_celltypename==CC_name)[0]
+    NC_instance=np.where(input.annotation_spatial_celltypename==NC_name)[0]
+    no_of_colocalized_pairs,colocalized_index,not_colocalized_index,CC_colocal,NC_colocal=find_colocalized_celltype_pairs(neighbors,CC_instance,NC_instance)
+    print("Total number of colocalized celltype pairs", no_of_colocalized_pairs)
+    #,CC_instance.shape,NC_instance.shape,len(CC_colocal),len(NC_colocal))
+
+    '''
+    for i in range(len(input.spatialcell_unique_clustername)):
+        if input.spatialcell_unique_clustername[i]==NC_name:
+            NC_data_allinfo=input.save_reg_coef[input.spatialcell_unique_clusterid[i]]
+    NC_loading=NC_data_allinfo[5]
+    '''
+    CC_colocalized_loadings=All_loadings[CC_colocal,CC_factor_id-1]
+    NC_colocalized_loadings=All_loadings[NC_colocal,NC_factor_id-1]
+    NC_not_colocalized_loadings= All_loadings[not_colocalized_index,NC_factor_id-1]
+
+    X1=CC_loading[:,CC_factor_id-1]
+    Y1=avg_CC_neigh_loading[:,NC_factor_id-1]
+    X2=CC_loading[colocalized_index,CC_factor_id-1]
+    Y2=avg_CC_neigh_loading[colocalized_index,NC_factor_id-1]
+
+    #print(X1.shape,Y1.shape, X2.shape, Y2.shape)
+    X_range,Y_pred,coef,intercept=fit_regression_line_for_scatterplot(input.lambda_c,X1,Y1)
+
+    fig, ax = plt.subplots(1,1,figsize=figsize)
+    '''
+    ax[0].plot(X1,Y1 ,'b.')
+    ax[0].set_xlabel(CC_name +'_Fa'+str(CC_factor_id))
+    ax[0].set_ylabel(NC_name + '_Fa'+str(NC_factor_id))
+    ax[0].set_title(f"All {CC_name} instances")
+
+    if showFitting:
+        ax[0].plot(X_range, Y_pred, color='red', label='Regression line')
+        ax[0].text(loc1[0], loc1[1],
+                   f"coef = {coef[0]:.3f}\nintercept = {intercept[0]:.3f}",
+                   transform=ax[0].transAxes,
+                   fontsize=10,
+                   verticalalignment='top',
+                   bbox=dict(boxstyle="round", facecolor="white", alpha=0.7))
+    '''
+
+    X_range,Y_pred,coef,intercept=fit_regression_line_for_scatterplot(input.lambda_c,X2,Y2)
+    if axis_log_scale:
+        ax.plot(X2, Y2, 'b.')
+        ax.set_xscale('log')
+        ax.set_yscale('log')
+    else:
+        ax.plot(X2,Y2,'b.')
+    ax.set_xlabel(CC_name +'_Fa'+str(CC_factor_id))
+    ax.set_ylabel(NC_name + '_Fa'+str(NC_factor_id))
+    ax.set_title(f"{CC_name} instances colocalized with {NC_name}")
+
+
+    if showFitting:
+        ax.plot(X_range, Y_pred, color='red', label='Regression line')
+        ax.text(loc2[0], loc2[1],
+                   f"coef = {coef[0]:.3f}\nintercept = {intercept[0]:.3f}",
+                   transform=ax.transAxes,
+                   fontsize=10,
+                   verticalalignment='top',
+                   bbox=dict(boxstyle="round", facecolor="white", alpha=0.7))
+
+    fig.tight_layout()
+    #print(saveas,savepath+'pvalue_cirlce_sizebar'+saveas)
+    print("The figures are saved: ", savefigdir+'colocalize_celltypes_scatter.'+saveas)
+    fig.savefig(savefigdir+'colocalize_celltypes_scatter.'+saveas,bbox_inches='tight',transparent=transparent_mode, dpi=dpi)
+    if showit:
+        pass
+    else:
+        plt.close('all')
+
+    output_CC=[ X2,CC_colocalized_loadings]
+    output_NC=[ Y2,NC_colocalized_loadings]
+
+
+    return [output_CC,output_NC,NC_not_colocalized_loadings]
+
+
+def find_colocalized_celltype_pairs(neighbors, CC_instance, NC_instance):
+    # Convert arrays to sets for O(1) membership checks
+    CC = set(np.asarray(CC_instance).ravel())
+    NC = set(np.asarray(NC_instance).ravel())
+
+    CC_colocalized=[]
+    CC_colocalized_dic={}
+    NC_colocalized=[]
+    count = 0
+    for i, neigh_list in enumerate(neighbors):
+        if i in CC:  # only check neighbors if i is in CC
+            for nid in neigh_list:
+                if nid in NC:
+                    if nid not in NC_colocalized:
+                        NC_colocalized.append(nid)
+                    if i not in CC_colocalized:
+                        CC_colocalized.append(i)
+                    if i not in CC_colocalized_dic:
+                        CC_colocalized_dic[i]=1
+                    count += 1
+
+    colocalized_index=[]
+    for i in range(len(CC_instance)):
+        if CC_instance[i] in CC_colocalized_dic:
+            colocalized_index.append(i)
+
+    #print("hello", len(NC_instance), len(NC_colocalized) )
+
+    not_colocalized_index = sorted(list(NC - set(NC_colocalized)))
+
+    return count,colocalized_index,not_colocalized_index,CC_colocalized,NC_colocalized
+
+
+def visualization_of_colocalized_celltype_factors_as_bar_violin_plot(input,CC_name, NC_name,CC_factor_id, NC_factor_id,
+CC_unique_colocalized_loadings, NC_unique_colocalized_loadings, NC_not_colocalized_loadings, visualize_as='BarPlot',
+rotation_angle=20,violin_yshift=0.5,fontsize=10,saveas='pdf',showit=True,transparent_mode=False,dpi=300,figsize=(6,4)):
+
+    savefigdir=input.covariation_dir+ 'colocalization/'
+    create_directory(savefigdir)
+
+    # Put into a tidy DataFrame for seaborn
+    groups = {
+        f"{CC_name}_Fa{CC_factor_id}_coloc": CC_unique_colocalized_loadings,
+        f"{NC_name}_Fa{NC_factor_id}_coloc": NC_unique_colocalized_loadings,
+        f"{NC_name}_Fa{NC_factor_id}_not_coloc": NC_not_colocalized_loadings,
+    }
+
+    # Compute mean and std for each group
+    means = [np.mean(v) for v in groups.values()]
+    stds  = [np.std(v) for v in groups.values()]
+    ns    = [len(v)      for v in groups.values()]
+    lower_errors = np.zeros_like(stds)
+    asymmetric_error = [lower_errors, stds]
+
+    # Plot bar chart with only positive std deviation
+
+
+    fig=plt.figure(figsize=figsize)
+
+    if visualize_as=='BarPlot':
+        bars = plt.bar(groups.keys(), means, yerr=asymmetric_error, capsize=5, color=snn.color_palette("Set2"),
+                       error_kw=dict(lw=1, capsize=5, capthick=1))
+        plt.title("Bar Plot")
+        plt.ylabel("Mean of factor loading")
+
+        for bar, (group_name, values), yerr in zip(bars, groups.items(), stds):
+            n = len(values)  # sample size
+            height = bar.get_height()
+            x = bar.get_x() + bar.get_width() / 2
+            plt.text(x, height + yerr + 0.02,  # 0.02 = small vertical padding
+                     f"n={n}",
+                     ha='center', va='bottom', fontsize=9)
+
+    if visualize_as=='ViolinPlot':
+        # FIXED: create DataFrame for seaborn
+        data = pd.DataFrame({
+            "Group": np.repeat(list(groups.keys()), [len(v) for v in groups.values()]),
+            "Loadings": np.concatenate(list(groups.values()))
+        })
+
+        ax = snn.violinplot(
+            x="Group", y="Loadings",
+            data=data,
+            palette="Set2",
+            inner="box"
+        )
+
+        positions = range(len(groups))
+        for i, pos in enumerate(positions):
+            max_y = data[data["Group"] == list(groups.keys())[i]]["Loadings"].max()
+
+            plt.text(
+                pos,
+                max_y + violin_yshift,
+                f"n={ns[i]}",
+                ha="center",
+                va="bottom",
+                fontsize=fontsize,
+                #fontweight="bold"
+            )
+
+        plt.title("Violin Plot")
+        plt.ylabel("Distribution of factor loading")
+
+    plt.xticks(rotation=rotation_angle)
+    plt.tight_layout()
+
+    filename = f"colocalize_celltypes_as_{visualize_as}.{saveas}"
+
+    print("The figures are saved: ", savefigdir+filename)
+    fig.savefig(savefigdir+filename,bbox_inches='tight',transparent=transparent_mode, dpi=dpi)
+    if showit:
+        pass
+    else:
+        plt.close('all')
