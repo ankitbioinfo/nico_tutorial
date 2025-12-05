@@ -169,7 +169,7 @@ These updates apply to:
 - `visualization_of_top_celltype_proximity_pairs` 
   Displays top enriched colocalized cell-type pairs (observed vs. expected).
 
-These updates are incorporated into the update tutorial `nico_analysis_highres_image_tech.ipynb` notebook. 
+These updates are incorporated into the updated tutorial `nico_analysis_highres_image_tech.ipynb` notebook. 
 
 #### 🔄 Changes in version 1.5.0 (from 1.4.0)
 
